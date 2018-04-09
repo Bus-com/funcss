@@ -1,0 +1,20 @@
+/* ==========================================================================
+   @XL TYPE HELPERS LETTER SPACING
+  ========================================================================== */
+@include laptop {
+  .xl-ls-reset {
+    letter-spacing: normal
+  }
+  .xl-ls {
+    letter-spacing: .5px
+  }
+  .xl-ls-tight {
+    letter-spacing: -1px;
+  }
+  .xl-ls-medium {
+    letter-spacing: 1px;
+  }
+  .xl-ls-loose {
+    letter-spacing: 2px;
+  }
+}

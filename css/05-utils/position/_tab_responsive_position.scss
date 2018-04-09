@@ -1,0 +1,110 @@
+/* ==========================================================================
+   TAB POSITION HELPERS
+  ========================================================================== */
+
+@include tablet-portrait {
+  //MED-RELATIVE////////////////
+  .tab-pos-rel { position: relative }
+  
+  //MED-ABSOLUTE///////////////
+  .tab-pos-abs { position: absolute }
+  
+  //MED-FIXED///////////////////
+  .tab-pos-fixed { position: fixed }
+}
+
+//MED -> THE WHERE YOU WANT THESE TO BE MOVED OR PLACED...
+@include tablet-portrait {
+
+  .tab-top-0 { top: 0 }
+  .tab-top-xs { top: 4px }
+  .tab-top-x { top: 8px }
+  .tab-top-small { top: 16px }
+  .tab-top-medium { top: 24px }
+  .tab-top-lrg { top: 32px }
+  .tab-top-xl { top: 40px }
+  .tab-top-xxl { top: 48px}
+  .tab-top-xxxl { top: 56px}
+  .tab-top-xxxxl { top: 64px}
+
+  .tab-bottom-0 { bottom: 0 }
+  .tab-bottom-xs { bottom: 4px }
+  .tab-bottom-x { bottom: 8px }
+  .tab-bottom-small { bottom: 16px }
+  .tab-bottom-medium { bottom: 24px }
+  .tab-bottom-lrg { bottom: 32px }
+  .tab-bottom-xl { bottom: 40px }
+  .tab-bottom-xxl { bottom: 48px}
+  .tab-bottom-xxxl { bottom: 56px}
+  .tab-bottom-xxxxl { bottom: 64px}
+
+
+  .tab-left-0 { left: 0 }
+  .tab-left-xs { left: 4px }
+  .tab-left-x { left: 8px }
+  .tab-left-small { left: 16px }
+  .tab-left-medium { left: 24px }
+  .tab-left-lrg { left: 32px }
+  .tab-left-xl { left: 40px }
+  .tab-left-xxl { left: 48px}
+  .tab-left-xxxl { left: 56px}
+  .tab-left-xxxl { left: 64px}
+
+  .tab-right-0 { right: 0 }
+  .tab-right-xs { right: 4px }
+  .tab-right-x { right: 8px }
+  .tab-right-small { right: 16px }
+  .tab-right-medium { right: 24px }
+  .tab-right-lrg { right: 32px }
+  .tab-right-xl { right: 40px }
+  .tab-right-xxl { right: 48px}
+  .tab-right-xxxl { right: 56px}
+  .tab-right-xxxxl { right: 64px}
+
+  .tab-left-30 { left: 30%; }
+
+
+  //NEGATIVE SPACING////////////////////
+
+  .tab-neg-top-xs { top: -4px }
+  .tab-neg-top-x { top: -8px }
+  .tab-neg-top-small { top: -16px }
+  .tab-neg-top-medium { top: -24px }
+  .tab-neg-top-lrg { top: -32px }
+  .tab-neg-top-xl { top: -40px }
+  .tab-neg-top-xxl { top: -48px}
+  .tab-neg-top-xxxl { top: -56px}
+  .tab-neg-top-xxxxl { top: -64px}
+
+  .tab-neg-bottom-xs { bottom: -4px }
+  .tab-neg-bottom-x { bottom: -8px }
+  .tab-neg-bottom-small { bottom: -16px }
+  .tab-neg-bottom-medium { bottom: -24px }
+  .tab-neg-bottom-lrg { bottom: -32px }
+  .tab-neg-bottom-xl { bottom: -40px }
+  .tab-neg-bottom-xxl { bottom: -48px}
+  .tab-neg-bottom-xxxl { bottom: -56px}
+  .tab-neg-bottom-xxxxl { bottom: -64px}
+
+  .tab-neg-left-xs { left: -4px }
+  .tab-neg-left-x { left: -8px }
+  .tab-neg-left-small { left: -16px }
+  .tab-neg-left-medium { left: -24px }
+  .tab-neg-left-lrg { left: -32px }
+  .tab-neg-left-xl { left: -40px }
+  .tab-neg-left-xxl { left: -48px}
+  .tab-neg-left-xxxl { left: -56px}
+  .tab-neg-left-xxxl { left: -64px}
+
+  .tab-neg-right-xs { right: -4px }
+  .tab-neg-right-x { right: -8px }
+  .tab-neg-right-small { right: -16px }
+  .tab-neg-right-medium { right: -24px }
+  .tab-neg-right-lrg { right: -32px }
+  .tab-neg-right-xl { right: -40px }
+  .tab-neg-right-xxl { right: -48px}
+  .tab-neg-right-xxxl { right: -56px}
+  .tab-neg-right-xxxxl { right: -64px}
+
+
+}

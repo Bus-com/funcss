@@ -1,0 +1,106 @@
+/* ==========================================================================
+   HELPERS
+  ========================================================================== */
+
+.f-left {
+  @include tablet-portrait {
+    float: left
+  }
+}
+
+.f-right {
+  @include tablet-portrait {
+    float: right
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.rotate-45 {
+  transform: rotate(45deg);
+}
+
+.over-visible {
+  overflow: visible;
+}
+
+.over-hidden {
+  overflow: hidden;
+}
+
+.over-scroll {
+  overflow: scroll;
+}
+
+.over-auto {
+  overflow: auto;
+}
+
+.over-x-visible {
+  overflow-x: visible;
+}
+
+.over-x-hidden {
+  overflow-x: hidden;
+}
+
+.over-x-scroll {
+  overflow-x: scroll;
+}
+
+.over-x-auto {
+  overflow-x: auto;
+}
+
+.over-y-visible {
+  overflow-y: visible;
+}
+
+.over-y-hidden {
+  overflow-y: hidden;
+}
+
+.over-y-scroll {
+  overflow-y: scroll;
+}
+
+.over-y-auto {
+  overflow-y: auto;
+}
+
+.hover-pointer {
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.negative-t-1 {
+  margin-top: -1px; //makes border-top - bottom look like a single thin line and gets rid of the clunky look
+}
+
+.negative-b-1 {
+  margin-bottom: -1px; //makes border-top - bottom look like a single thin line and gets rid of the clunky look
+}
+
+.negative-l-1{
+  margin-left: -1px; //makes border-left - right look like a single thin line and gets rid of the clunky
+}
+
+.negative-r-1{
+  margin-right: -1px; //makes border-left - right look like a single thin line and gets rid of the clunky
+}
+
+.neg-text-indent {
+  text-indent: -9999px;
+}

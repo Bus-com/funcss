@@ -1,0 +1,25 @@
+.reveal-modal {
+  position: absolute;
+  padding: $unit-xl $unit-x;
+  max-width: 80%;
+  outline: none;
+  z-index: 99999999;
+  top: 100px;
+  left: 0;
+  right: 0;
+  background-color: $white;
+  margin: 0 auto;
+  border: solid 1px palette(grey, base);
+  border-radius: $unit-xs;
+}
+
+
+.reveal-modal-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
+  background: rgba(palette(grey, base), 0.25);
+}

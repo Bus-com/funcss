@@ -1,0 +1,403 @@
+/* ==========================================================================
+   FUNCTIONS
+  ========================================================================== */
+
+$rem-base: 16px !default;
+
+///Rem calculation via pixel value
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+///Color function
+@function palette($palette, $tone: 'base') {
+  @return map-get(map-get($palettes, $palette), $tone);
+}
+
+//OLD MIXINS
+/*
+  Base Mixins
+*/
+
+// RANGES
+// We use these functions to define ranges for various things, like media queries.
+@function lower-bound($range) {
+  @if length($range) <= 0 {
+    @return 0;
+  }
+  @return nth($range, 1);
+}
+
+@function upper-bound($range) {
+  @if length($range) < 2 {
+    @return 999999999999;
+  }
+  @return nth($range, 2);
+}
+
+// STRIP UNIT
+// It strips the unit of measure and returns it
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+// CONVERT TO REM
+@function convert-to-rem($value, $base-value: $rem-base) {
+  $value: strip-unit($value) / strip-unit($base-value) * 1rem;
+  @if ($value == 0rem) {
+    $value: 0;
+  }
+  // Turn 0rem into 0
+  @return $value;
+}
+
+@function rem-calc($values, $base-value: $rem-base) {
+  $max: length($values);
+
+  @if $max == 1 {
+    @return convert-to-rem(nth($values, 1), $base-value);
+  }
+
+  $remValues: ();
+  @for $i from 1 through $max {
+    $remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
+  }
+  @return $remValues;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin box-sizing($sizing) {
+  -webkit-box-sizing: $sizing;
+  -moz-box-sizing: $sizing;
+  box-sizing: $sizing;
+}
+
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+@mixin transition-property($transition-property...) {
+  -webkit-transition: $transition-property;
+  -moz-transition: $transition-property;
+  -o-transition: $transition-property;
+  transition: $transition-property;
+}
+
+@mixin transform($params) {
+  -webkit-transform: $params;
+  -moz-transform: $params;
+  -ms-transform: $params;
+  -o-transform: $params;
+  transform: $params;
+}
+
+@mixin transform-origin($params) {
+  -webkit-transform-origin: $params;
+  -moz-transform-origin: $params;
+  -ms-transform-origin: $params;
+  -o-transform-origin: $params;
+  transform-origin: $params;
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@mixin animation($animation) {
+  -webkit-animation: $animation;
+  animation: $animation;
+}
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+@mixin animation-delay($delay) {
+  -webkit-animation-delay: $delay;
+  animation-delay: $delay;
+}
+
+@mixin linear-gradient($gradient...) {
+  background: -moz-linear-gradient($gradient);
+  background: -webkit-linear-gradient($gradient);
+  background: -o-linear-gradient($gradient);
+  background: -ms-linear-gradient($gradient);
+  background: linear-gradient($gradient);
+}
+
+@mixin linear-gradient-horizontal($gradient...) {
+  background: -moz-linear-gradient($gradient);
+  background: -webkit-linear-gradient(left, $gradient);
+  background: -o-linear-gradient(left, $gradient);
+  background: -ms-linear-gradient(to right, $gradient);
+}
+
+@mixin mask($url) {
+  -webkit-mask: $url;
+  -moz-mask: $url;
+  -ms-mask: $url;
+  -o-mask: $url;
+  mask: $url;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content
+  }
+  &::-moz-placeholder {
+    @content
+  }
+  &:-moz-placeholder {
+    @content
+  }
+  &:-ms-input-placeholder {
+    @content
+  }
+}
+
+@mixin opacity($value) {
+  $percentage: $value * 100;
+
+  opacity: $value;
+  filter: alpha(opacity=$percentage);
+}
+
+/* https://gist.github.com/johnferrie/3836468#file-_filter-scss */
+@mixin filter($filter-type, $filter-amount) {
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  -o-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
+}
+
+@mixin zoom($value) {
+  -webkit-transform: scale($value);
+  -moz-transform: scale($value);
+  -o-transform: scale($value);
+  transform: scale($value);
+
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+@mixin antialised-font {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+// Values: flex-start | flex-end | center | baseline | stretch
+// Default: stretch
+@mixin align-items($position) {
+  -webkit-box-align: $position;
+  -ms-flex-align: $position;
+
+  -webkit-align-items: $position;
+  align-items: $position;
+}
+
+// Values: flex-start | flex-end | center | space-between | space-around
+// Default: flex-start
+@mixin justify-content($position) {
+  -webkit-box-pack: $position;
+  -ms-flex-pack: $position;
+
+  webkit-justify-content: $position;
+  justify-content: $position;
+}
+
+// Values: flex-start | flex-end | center | baseline | stretch
+// Default: stretch
+@mixin flex-direction($value: row) {
+  @if $value == row-reverse {
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: horizontal;
+  } @else if $value == column {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+  } @else if $value == column-reverse {
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: vertical;
+  } @else {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+  }
+
+  -webkit-flex-direction: $value;
+  -moz-flex-direction: $value;
+  -ms-flex-direction: $value;
+}
+
+// Values: auto | flex-start | flex-end | center | baseline | stretch
+// Default: auto
+@mixin align-self($value: auto) {
+  // No Webkit Box Fallback.
+  -webkit-align-self: $value;
+  -moz-align-self: $value;
+
+  @if $value == flex-start {
+    -ms-flex-item-align: start;
+  } @else if $value == flex-end {
+    -ms-flex-item-align: end;
+  } @else {
+    -ms-flex-item-align: $value;
+  }
+  align-self: $value;
+}
+
+// Values: nowrap | wrap | wrap-reverse
+// Default: nowrap
+@mixin flex-wrap($value: nowrap) {
+  // No Webkit Box fallback.
+  -webkit-flex-wrap: $value;
+  -moz-flex-wrap: $value;
+  @if $value == nowrap {
+    -ms-flex-wrap: none;
+  } @else {
+    -ms-flex-wrap: $value;
+  }
+  flex-wrap: $value;
+}
+
+@mixin filter($filter-type, $filter-amount) {
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  -o-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
+}
+
+@mixin appearance($appearance) {
+  -webkit-appearance: $appearance;
+  -moz-appearance: $appearance;
+  appearance: $appearance;
+}
+
+@mixin no-search-decoration {
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+@mixin user-select($value) {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  -o-user-select: none;
+  user-select: none;
+}
+
+@mixin round-image-container {
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+  border-radius: 50%;
+
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+
+    max-width: none;
+    max-height: none;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin element-overlay {
+  position: absolute;
+  display: block;
+  content: "";
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin after {
+  &:after {
+    position: relative;
+    content: " ";
+    display: inline-block;
+
+    @content;
+  }
+}
+
+@mixin before {
+  &:before {
+    position: relative;
+    content: " ";
+    display: inline-block;
+
+    @content;
+  }
+}

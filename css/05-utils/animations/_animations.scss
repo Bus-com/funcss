@@ -1,0 +1,13 @@
+.anim-come-up {
+  @include animation("comeUp .3s ease-in")
+}
+
+.anim-fade-in-up {
+  @include animation("fadeInUp .3s ease-in")
+}
+
+.anim-fade-in {
+  @include animation("fadeIn .3s ease-in")
+}
+
+

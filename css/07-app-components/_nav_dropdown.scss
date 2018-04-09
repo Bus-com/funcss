@@ -1,0 +1,85 @@
+.nav {
+  ul {
+    display: flex;
+  }
+  ul li {
+    position: relative;
+    margin: 0 16px 0 0;
+  }
+  ul li.is-activated > ul {
+    visibility: visible;
+    min-width: 180px;
+    @include animation ("shortslidedown .3s ease-in-out");
+    display: block;
+    top: 48px;
+    left: 0;
+    position: absolute;
+  }
+  ul li > ul {
+    visibility: hidden;
+  }
+  ul li > ul li {
+    margin: 0;
+  }
+}
+
+ul li.is-activated .nav__link .ui-icon-medium svg {
+  transform: rotate(180deg);
+}
+
+.dropdown__menu {
+  position: absolute;
+  top: 48px;
+  z-index: 10;
+  border: 1px solid palette(grey, xxxx-light);
+  border-radius: 4px;
+  left: 0;
+  list-style: none;
+  padding: 4px 0;
+  display: none;
+  background-color: white;
+  min-width: 180px;
+
+  @include tablet-landscape {
+    box-shadow: 0 10px 16px rgba(palette(grey, base), 0.175);
+  }
+}
+
+.dashboard .dropdown__menu {
+  top: 24px !important;
+}
+
+.dashboard .dropdown__toggle .dropdown__menu {
+  top: 0px !important;
+}
+
+//TOGGLE VERSION for user NAV OT
+
+.dropdown {
+  @include e(toggle) {
+    @include e(hidden-checkbox) {
+      // Dashboard has styles that change default inputs.
+      position: absolute !important;
+      display: block !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      margin: 0 !important;
+      opacity: 0 !important;
+      cursor: pointer !important;
+
+      &:checked {
+        position: fixed;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        & + .dropdown__menu {
+          display: block;
+        }
+      }
+    }
+  }
+}

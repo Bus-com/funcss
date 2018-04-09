@@ -1,0 +1,23 @@
+/* ==========================================================================
+   TYPE HELPERS KERNING LETTER SPACING
+  ========================================================================== */
+
+.ls-reset {
+  letter-spacing: normal
+}
+
+.ls {
+  letter-spacing: .5px
+}
+
+.ls-tight {
+  letter-spacing: -1px;
+}
+
+.ls-medium {
+  letter-spacing: 1px;
+}
+
+.ls-loose {
+  letter-spacing: 2px;
+}

@@ -1,0 +1,20 @@
+/* ==========================================================================
+   TYPE HELPERS LINE-HEIGHT LEADING
+  ========================================================================== */
+
+//rebasing line-height for clean icon alignment
+.lh0 { line-height: 0 }
+.lh-1 { line-height: 1 }
+.lh-1-2 { line-height: 1.2 }
+.lh-1-25 { line-height: 1.25 }
+.lh-1-5 { line-height: 1.5 }
+
+.lh-xs { line-height: $unit-xs }
+.lh-x { line-height: $unit-x }
+.lh-small { line-height: $unit-small }
+.lh-medium { line-height: $unit-medium }
+.lh-lrg { line-height: $unit-lrg }
+.lh-xl { line-height: $unit-xl }
+.lh-xxl { line-height: $unit-xxl }
+.lh-xxxl { line-height: $unit-xxxl }
+.lh-xxxxl { line-height: $unit-xxxxl }

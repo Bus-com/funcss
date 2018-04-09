@@ -1,0 +1,151 @@
+/* Heavily based on: https://github.com/tobiasahlin/SpinKit/blob/master/examples/8-circle.html */
+.fading-circle-spinner {
+  position: relative;
+  pointer-events: none;
+  width: 18px;
+  height: 18px;
+
+  @include keyframes(fadingCicle) {
+    0%, 39%, 100% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+  }
+
+  [class^="circle-"] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &:before {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 15%;
+      height: 15%;
+      background-color: #00d4d6;
+      border-radius: 100%;
+
+      animation: fadingCicle 0.8s infinite ease-in-out both;
+    }
+  }
+
+  .circle-2 {
+    transform: rotate(45deg);
+  }
+  .circle-3 {
+    transform: rotate(90deg);
+  }
+  .circle-4 {
+    transform: rotate(135deg);
+  }
+  .circle-5 {
+    transform: rotate(180deg);
+  }
+  .circle-6 {
+    transform: rotate(225deg);
+  }
+  .circle-7 {
+    transform: rotate(270deg);
+  }
+  .circle-8 {
+    transform: rotate(315deg);
+  }
+
+  .circle-2:before {
+    animation-delay: -0.7s;
+  }
+  .circle-3:before {
+    animation-delay: -0.6s;
+  }
+  .circle-4:before {
+    animation-delay: -0.5s;
+  }
+  .circle-5:before {
+    animation-delay: -0.4s;
+  }
+  .circle-6:before {
+    animation-delay: -0.3s;
+  }
+  .circle-7:before {
+    animation-delay: -0.2s;
+  }
+  .circle-8:before {
+    animation-delay: -0.1s;
+  }
+}
+
+.loading-spinner {
+  position: relative;
+  display: block;
+  pointer-events: none;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+
+  border-width: 8px;
+  border-style: solid;
+
+  border-top-color: rgba(0, 204, 187, 0.1);
+  border-right-color: rgba(0, 204, 187, 0.1);
+  border-bottom-color: rgba(0, 204, 187, 0.1);
+  border-left-color: rgba(0, 204, 187, 1);
+
+  border-radius: 50%;
+
+  @include keyframes(rotatingCircle) {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  animation: rotatingCircle 0.8s infinite linear;
+}
+
+.state-loading-spinner {
+  position: fixed;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.75);
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  border-left: 1px solid palette(cyan, base);
+  border-right: 1px solid palette(cyan, base);
+  border-bottom: 2px solid palette(cyan, dark);
+  padding: 10px;
+
+
+  .loading-spinner {
+    width: 48px;
+    height: 48px;
+    border-width: 6px;
+    position: absolute;
+    top: calc(50% - 48px); //the height fo the spinning icon
+    right: calc(50% - 48px); // the width of the spinning icon
+    left: calc(50% - 48px);
+  }
+}
+
+
+.c-btn .fading-circle-spinner {
+  width: 100% !important;
+  height: 60% !important;
+  @include animation ('fade-in .3s ease-in');
+
+  [class^="circle-"]:before {
+    background: $white;
+  }
+ }

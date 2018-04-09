@@ -1,0 +1,23 @@
+table.striped {
+  tr:nth-child(even) {
+    background: palette(grey, xxxx-light);
+  }
+}
+
+table.striped-odd {
+  tr:nth-child(odd) {
+    background: palette(grey, xxxx-light);
+  }
+}
+
+ul.striped {
+  li:nth-child(even) {
+    background: palette(grey, xxxx-light);
+  }
+}
+
+ul.striped-odd {
+  li:nth-child(odd) {
+    background: palette(grey, xxxx-light);
+  }
+}

@@ -1,0 +1,14 @@
+.currency-input {
+  input {
+    padding-left: 24px;
+  }
+}
+
+.currency-input:before {
+  content: '$';
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  top: 22%;
+
+}

@@ -1,0 +1,106 @@
+/* ==========================================================================
+   XL POSITION HELPERS
+  ========================================================================== */
+
+@include laptop {
+  //MED-RELATIVE////////////////
+  .xl-pos-rel { position: relative }
+  
+  //MED-ABSOLUTE///////////////
+  .xl-pos-abs { position: absolute }
+  
+  //MED-FIXED///////////////////
+  .xl-pos-fixed { position: fixed }
+}
+
+//MED -> THE WHERE YOU WANT THESE TO BE MOVED OR PLACED...
+@include laptop {
+
+  .xl-top-0 { top: 0 }
+  .xl-top-xs { top: 4px }
+  .xl-top-x { top: 8px }
+  .xl-top-small { top: 16px }
+  .xl-top-medium { top: 24px }
+  .xl-top-lrg { top: 32px }
+  .xl-top-xl { top: 40px }
+  .xl-top-xxl { top: 48px}
+  .xl-top-xxxl { top: 56px}
+  .xl-top-xxxxl { top: 64px}
+
+  .xl-bottom-0 { bottom: 0 }
+  .xl-bottom-xs { bottom: 4px }
+  .xl-bottom-x { bottom: 8px }
+  .xl-bottom-small { bottom: 16px }
+  .xl-bottom-medium { bottom: 24px }
+  .xl-bottom-lrg { bottom: 32px }
+  .xl-bottom-xl { bottom: 40px }
+  .xl-bottom-xxl { bottom: 48px}
+  .xl-bottom-xxxl { bottom: 56px}
+  .xl-bottom-xxxxl { bottom: 64px}
+
+
+  .xl-left-0 { left: 0 }
+  .xl-left-xs { left: 4px }
+  .xl-left-x { left: 8px }
+  .xl-left-small { left: 16px }
+  .xl-left-medium { left: 24px }
+  .xl-left-lrg { left: 32px }
+  .xl-left-xl { left: 40px }
+  .xl-left-xxl { left: 48px}
+  .xl-left-xxxl { left: 56px}
+  .xl-left-xxxl { left: 64px}
+
+  .xl-right-0 { right: 0 }
+  .xl-right-xs { right: 4px }
+  .xl-right-x { right: 8px }
+  .xl-right-small { right: 16px }
+  .xl-right-medium { right: 24px }
+  .xl-right-lrg { right: 32px }
+  .xl-right-xl { right: 40px }
+  .xl-right-xxl { right: 48px}
+  .xl-right-xxxl { right: 56px}
+  .xl-right-xxxxl { right: 64px}
+
+  //NEGATIVE POSITIONING/////////////////////////////////////
+
+  .xl-neg-top-xs { top: -4px }
+  .xl-neg-top-x { top: -8px }
+  .xl-neg-top-small { top: -16px }
+  .xl-neg-top-medium { top: -24px }
+  .xl-neg-top-lrg { top: -32px }
+  .xl-neg-top-xl { top: -40px }
+  .xl-neg-top-xxl { top: -48px}
+  .xl-neg-top-xxxl { top: -56px}
+  .xl-neg-top-xxxxl { top: -64px}
+
+  .xl-neg-bottom-xs { bottom: -4px }
+  .xl-neg-bottom-x { bottom: -8px }
+  .xl-neg-bottom-small { bottom: -16px }
+  .xl-neg-bottom-medium { bottom: -24px }
+  .xl-neg-bottom-lrg { bottom: -32px }
+  .xl-neg-bottom-xl { bottom: -40px }
+  .xl-neg-bottom-xxl { bottom: -48px}
+  .xl-neg-bottom-xxxl { bottom: -56px}
+  .xl-neg-bottom-xxxxl { bottom: -64px}
+
+  .xl-neg-left-xs { left: -4px }
+  .xl-neg-left-x { left: -8px }
+  .xl-neg-left-small { left: -16px }
+  .xl-neg-left-medium { left: -24px }
+  .xl-neg-left-lrg { left: -32px }
+  .xl-neg-left-xl { left: -40px }
+  .xl-neg-left-xxl { left: -48px}
+  .xl-neg-left-xxxl { left: -56px}
+  .xl-neg-left-xxxl { left: -64px}
+
+  .xl-neg-right-xs { right: -4px }
+  .xl-neg-right-x { right: -8px }
+  .xl-neg-right-small { right: -16px }
+  .xl-neg-right-medium { right: -24px }
+  .xl-neg-right-lrg { right: -32px }
+  .xl-neg-right-xl { right: -40px }
+  .xl-neg-right-xxl { right: -48px}
+  .xl-neg-right-xxxl { right: -56px}
+  .xl-neg-right-xxxxl { right: -64px}
+
+}

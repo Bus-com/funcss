@@ -1,0 +1,22 @@
+/* ==========================================================================
+   BOX-SIZING
+  ========================================================================== */
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+
+  &,
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+/*  box sizing this way will let us easily reset to content-box if for some reason, you'd would want to.
+    why you'd do this, I don't know...but hey, to each their own.
+
+    box-sizing: content-box;
+*/

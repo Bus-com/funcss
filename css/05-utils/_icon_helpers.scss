@@ -1,0 +1,80 @@
+/* ==========================================================================
+   INLINE ICON HELPERS
+  ========================================================================== */
+// for inline icons so the wrapping element does not inherit the default line-height
+.u-inline-icon-wrapper {
+  line-height: 0;
+}
+
+.icon {
+  width: 12px;
+}
+
+.icon-medium {
+  width: 24px;
+}
+
+//FIXED WIDTH ICONS
+
+
+.icon-fixed-72 {
+  width: 72px;
+}
+
+
+.icon-fixed-100 {
+  width: 100px;
+}
+
+.icon-fixed-120 {
+  width: 120px;
+}
+
+.icon-fixed-140 {
+  width: 140px;
+}
+
+
+.icon-fixed-160 {
+  width: 160px;
+}
+
+
+.icon-fixed-180 {
+  width: 180px;
+}
+
+
+@include tablet-portrait {
+ 
+ .tab-icon-fixed-72 {
+    width: 72px;
+  }
+
+  .tab-icon-fixed-100 {
+    width: 100px;
+  }
+  .tab-icon-fixed-120 {
+    width: 120px;
+  }
+
+  .tab-icon-fixed-140 {
+    width: 140px;
+  }
+
+
+  .tab-icon-fixed-160 {
+    width: 160px;
+  }
+
+
+  .tab-icon-fixed-180 {
+    width: 180px;
+  }
+
+    .tab-icon-fixed-200 {
+    width: 200px;
+  }
+
+
+}

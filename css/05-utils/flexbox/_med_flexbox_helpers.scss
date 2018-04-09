@@ -1,0 +1,104 @@
+/* ==========================================================================
+   TAB LANDSCAPE FLEXBOX HELPERS...
+   USE THESE WHEN YOU WANT TO USE A SPEICIFC CLASS A SPECIFIC BREAKPOINT
+  ========================================================================== */
+@include tablet-landscape {
+
+  .med-flex {
+    display: flex;
+  }
+
+  //target ie browser only
+  @media all and (-ms-high-contrast: none) {
+    .med-ie-no-flex {
+      display: block;
+    }
+    /* IE10 */
+    *::-ms-backdrop, .med-ie-no-flex {
+      display: block;
+    }
+    /* IE11 */
+  }
+  .med-flex-column {
+    flex-direction: column;
+  }
+
+  .med-flex-row {
+    flex-direction: row;
+  }
+
+  .med-flex-1 {
+    flex: 1;
+  }
+
+  .med-space-between {
+    justify-content: space-between;
+  }
+
+  .med-space-around {
+    justify-content: space-around;
+  }
+
+  .med-justify-center {
+    justify-content: center;
+  }
+
+  .med-flex-end {
+    justify-content: flex-end;
+  }
+
+  .med-flex-align-center {
+    align-items: center
+  }
+
+  .med-flex-align-baseline {
+    align-items: baseline
+  }
+
+  .med-flex-align-stretch {
+    align-items: stretch
+  }
+
+  .med-flex-align-start {
+    align-items: flex-start
+  }
+
+  .med-flex-align-end {
+    align-items: flex-end
+  }
+
+  .med-flex-1 {
+    flex: 1
+  }
+
+  .med-flex-auto {
+    flex: 1 1 auto;
+    min-width: 0; /* 1 */
+    min-height: 0; /* 1 */
+  }
+
+  .med-flex-grow {
+    flex: 1 0 auto
+  }
+
+  .med-flex-none {
+    flex: none
+  }
+
+  .med.flex-second {
+    order: 2
+  }
+
+  .med-flex-first {
+    order: -1
+  }
+
+  .med-flex-last {
+    order: 99999
+  }
+
+  .med-flex-shrink-0 {
+    flex-shrink: 0;
+  }
+
+}

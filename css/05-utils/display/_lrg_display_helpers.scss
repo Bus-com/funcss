@@ -1,0 +1,30 @@
+/* ==========================================================================
+  LRG DISPLAY HELPERS
+  ========================================================================== */
+@include small-laptop {
+  .lrg-f-left {
+    float: left
+  }
+  .lrg-f-right {
+    float: right
+  }
+  .lrg-hide {
+    display: none
+  }
+  .lrg-clear {
+    clear: both
+  }
+  .lrg-block {
+    display: block
+  }
+  .lrg-inline-block {
+    display: inline-block
+  }
+  .lrg-inline {
+    display: inline
+  }
+
+  .lrg-rotate-45 {
+    transform: rotate(45deg)
+  }
+}

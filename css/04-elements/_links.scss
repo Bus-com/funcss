@@ -1,0 +1,8 @@
+a {
+  text-decoration: none;
+  color: palette(cyan, base);
+  transition: color .3s ease-in;
+  &:hover {
+    color: palette(cyan, dark);
+  }
+}

@@ -1,0 +1,191 @@
+/* ==========================================================================
+   MIXINS
+  ========================================================================== */
+
+//BEM mixins
+
+/// Block Element
+/// @access public
+/// @param {String} $element - Element's name
+@mixin element($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+/// Block Modifier
+/// @access public
+/// @param {String} $modifier - Modifier's name
+@mixin modifier($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+/// @alias element
+@mixin e($element) {
+  @include element($element) {
+    @content;
+  }
+}
+
+/// @alias modifier
+@mixin m($modifier) {
+  @include modifier($modifier) {
+    @content;
+  }
+}
+
+@mixin flexbox {
+  display: flex;
+}
+
+//FONT SIZING
+
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}
+
+// PSEUDO ELEMENTS ::BEFORE   ::AFTER ///
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+/// KEYFRAME ANIMATION
+
+@mixin keyframes($animation-name) {
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  animation: #{$str};
+}
+
+/// MEDIA QUERIES ////////////////////////////////
+
+//pretab
+
+@mixin phone-portrait {
+  @media only screen and (min-width: 300px) {
+    @content;
+  }
+}
+
+@mixin phone-landscape {
+  @media only screen and (min-width: 640px) {
+    @content;
+  }
+}
+
+//tab
+@mixin tablet-portrait {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+//med
+@mixin tablet-landscape {
+  @media only screen and (min-width: 980px) {
+    @content;
+  }
+}
+
+//lrg
+@mixin small-laptop {
+  @media only screen and (min-width: 1180px) {
+    @content;
+  }
+}
+
+//xl
+@mixin laptop {
+  @media only screen and (min-width: 1400px) {
+    @content;
+  }
+}
+
+//xxl
+@mixin desktop {
+  @media only screen and (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin dudeWTF {
+  @media only screen and (min-width: 1700px) {
+    @content;
+  }
+}
+
+@mixin customScreen($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin margin-bottom($margin-bottom: 16px) {
+  margin-bottom: $margin-bottom;
+
+  @include tablet-landscape {
+    margin-bottom: 24px;
+  }
+
+}
+
+@mixin list-margin-bottom($list-margin-bottom: 8px) {
+  margin-bottom: $list-margin-bottom;
+
+  @include tablet-portrait {
+    margin-bottom: 24px;
+  }
+}
+
+/// RETINA IMAGES ///////////////////////////
+
+@mixin image-2x($image, $width, $height) {
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min--moz-device-pixel-ratio: 2),
+  (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image);
+    background-size: $width $height;
+  }
+}
+
+/// UTILS ///////////////////////////////////////////////
+
+@mixin gradient($gradient...) {
+  background: -moz-linear-gradient($gradient);
+  background: -webkit-linear-gradient($gradient);
+  background: -o-linear-gradient($gradient);
+  background: -ms-linear-gradient($gradient);
+  background: linear-gradient($gradient);
+}
+
+///Breakpoint function
+@mixin screen($breakpoint) {
+  @media (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin screen-down($breakpoint) {
+  @media (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin screen-between($breakpoint1, $breakpint2) {
+  @media (min-width: map-get($breakpoints, $breakpoint1)) and (max-width: map-get($breakpoints, $breakpoint2)) {
+    @content;
+  }
+}
+

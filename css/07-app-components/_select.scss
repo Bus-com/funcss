@@ -1,0 +1,58 @@
+.c-select-wrapper {
+  height: 48px;
+  background: #fff;
+
+  input, select, .select-match {
+    appearance: none;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    padding-left: $unit-x;
+    background: transparent;
+    background-image: image-url('v3/svg/icon_dropdown.svg');
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: 48px;
+    width: 100%;
+    border: 1px solid palette( grey, xxx-light);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 56px;
+    font-size: 14px;
+
+    &:hover {
+      background: transparent;
+      background-image: image-url('v3/svg/icon_dropdown.svg');
+      background-position: 100% 50%;
+      background-repeat: no-repeat;
+      background-size: 48px;
+      border-color: palette(grey, x-light);
+    }
+
+    &:focus {
+      border-color: palette(cyan, base);
+    }
+  }
+  &:after {
+    @include pseudo;
+    width: 1px;
+    height: 48px;
+    right: 47px;
+    top: 0;
+    bottom: 0;
+    background: palette(grey, xxx-light);
+  }
+
+}
+
+.c-select-small {
+  height: 32px;
+
+  select {
+    height: 32px;
+    line-height: 32px;
+    background-size: 32px;
+  }
+}

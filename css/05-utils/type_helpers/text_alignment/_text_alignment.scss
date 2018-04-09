@@ -1,0 +1,22 @@
+/* ==========================================================================
+   TYPE HELPERS ALIGNMENT
+  ========================================================================== */
+
+//COMMENT phil: the mnémonic for center and the underlying css rule is confusing.
+// text-left|center|right|justify
+
+.left-align {
+  text-align: left;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.justify {
+  text-align: justify;
+}

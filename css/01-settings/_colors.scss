@@ -1,0 +1,67 @@
+/* ==========================================================================
+   COLORS
+  ========================================================================== */
+
+// BUS.COM color palettes
+
+$palettes: (
+  cyan: (
+    xx-dark: #178889,
+    x-dark: #C3F3F3,
+    dark: #1DAFB0,
+    base: #23D5D6,
+    light: #4BDCDD,
+    x-light: #73E4E4,
+    xx-light: #9BEBEC,
+    xxx-light: #EBFBFB,
+  ),
+  yellow: (
+    xx-dark: #A26B37,
+    x-dark: #A38629,
+    dark: #D1AC34,
+    base: #FFD23F,
+    light: #FFDA61,
+    x-light: #FFE284,
+    xx-light: #FFEAA7
+  ),
+  orange: (
+    xx-dark: #D08946,
+    x-dark: #A36B37,
+    dark: #D18A47,
+    base: #FFA856,
+    light: #FFB774,
+    x-light: #FFC793,
+    xx-light: #FFE7D0,
+    xxx-light: #FFF7EF,
+    xxxx-light: #FAF9F8
+  ),
+  grey: (
+    base: #474A56,
+    light: #686A74,
+    x-light: #898B93,
+    xx-light: #ABACB2,
+    xxx-light: #CCCDD0,
+    xxxx-light: #ECEFF5
+  ),
+  white: (
+    x-dark: #ABACB2,
+    base: #FFFFFF,
+    light: #FAFAFA,
+  )
+);
+
+// Static Colors
+$bus-com-error: #DF513F;
+$bus-com-warning: #F6CB49;
+$bus-com-success: #54B96F;
+
+// // APP SPECIFIC COLORS ///////////////
+
+$app-bg: #f5f5f5;
+$whitey: $app-bg;
+$app-color-text: #474A56;
+$black: #0F0F10;
+$red: #E53B3B;
+$base-text-color: $app-color-text;
+$rb-grey: #F6F6EC;
+$white: #FFFFFF;

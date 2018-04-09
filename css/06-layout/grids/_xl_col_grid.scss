@@ -1,0 +1,53 @@
+/* ==========================================================================
+   12 COLUMN GRIDS @ laptop 1440px 15" Laptops BREAKPOINT
+       @media only screen and (min-resolution:;width: 1400px)
+  ========================================================================== */
+@include laptop {
+  .xl-col-1 {
+    width: calc(1 * 100%);
+  }
+
+  .xl-col-2 {
+    width: calc(2 / 12 * 100%);
+  }
+
+  .xl-col-3 {
+    width: calc(3 / 12 * 100%);
+  }
+
+  .xl-col-4 {
+    width: calc(4 / 12 * 100%);
+  }
+
+  .xl-col-5 {
+    width: calc(5 / 12 * 100%);
+  }
+
+  .xl-col-6 {
+    width: calc(6 / 12 * 100%);
+  }
+
+  .xl-col-7 {
+    width: calc(7 / 12 * 100%);
+  }
+
+  .xl-col-8 {
+    width: calc(8 / 12 * 100%);
+  }
+
+  .xl-col-9 {
+    width: calc(9 / 12 * 100%);
+  }
+
+  .xl-col-10 {
+    width: calc(10 / 12 * 100%);
+  }
+
+  .xl-col-11 {
+    width: calc(11 / 12 * 100%);
+  }
+
+  .xl-col-12 {
+    width: 100%;
+  }
+}

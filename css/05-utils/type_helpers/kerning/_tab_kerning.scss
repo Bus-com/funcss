@@ -1,0 +1,20 @@
+/* ==========================================================================
+   @TAB TYPE HELPERS LETTER-SPACING
+  ========================================================================== */
+@include tablet-portrait {
+  .tab-ls-reset {
+    letter-spacing: normal
+  }
+  .tab-ls {
+    letter-spacing: .5px
+  }
+  .tab-ls-tight {
+    letter-spacing: -1px;
+  }
+  .tab-ls-medium {
+    letter-spacing: 1px;
+  }
+  .tab-ls-loose {
+    letter-spacing: 2px;
+  }
+}

@@ -1,0 +1,20 @@
+/* ==========================================================================
+   @TAB TYPE HELPERS LINE-HEIGHT LEADING
+  ========================================================================== */
+
+@include tablet-portrait {
+  .tab-lh0 { line-height: 0 }
+  .tab-lh-1 { line-height: 1 }
+  .tab-lh-1-25 { line-height: 1.25 }
+  .tab-lh-1-5 { line-height: 1.5 }
+
+  .tab-lh-xs { line-height: $unit-xs }
+  .tab-lh-x { line-height: $unit-x }
+  .tab-lh-small { line-height: $unit-small }
+  .tab-lh-medium { line-height: $unit-medium }
+  .tab-lh-lrg { line-height: $unit-lrg }
+  .tab-lh-xl { line-height: $unit-xl }
+  .tab-lh-xxl { line-height: $unit-xxl }
+  .tab-lh-xxxl { line-height: $unit-xxxl }
+  .tab-lh-xxxxl { line-height: $unit-xxxxl }
+}

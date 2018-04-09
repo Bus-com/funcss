@@ -1,0 +1,30 @@
+/* ==========================================================================
+  MED DISPLAY HELPERS
+  ========================================================================== */
+@include tablet-portrait {
+  .tab-f-left {
+    float: left
+  }
+  .tab-f-right {
+    float: right
+  }
+  .tab-hide {
+    display: none
+  }
+  .tab-clear {
+    clear: both
+  }
+  .tab-block {
+    display: block
+  }
+  .tab-inline-block {
+    display: inline-block
+  }
+  .tab-inline {
+    display: inline
+  }
+
+  .tab-rotate-45 {
+    transform: rotate(45deg)
+  }
+}

@@ -1,0 +1,53 @@
+/* ==========================================================================
+ BORDER HELPERS
+========================================================================== */
+
+//transparent border
+
+.b-trans{ border: 1px solid transparent; }
+.bt-trans{ border-top: 1px solid transparent; }
+.bl-trans{ border-left: 1px solid transparent; }
+.bb-trans{ border-bottom: 1px solid transparent; }
+.br-trans{ border-right: 1px solid transparent; }
+
+
+//light grey borders
+.b-light { border: 1px solid palette(grey, xxxx-light); }
+.bt-light { border-top: 1px solid palette(grey, xxxx-light); }
+.bl-light { border-left: 1px solid palette(grey, xxxx-light); }
+.bb-light { border-bottom: 1px solid palette(grey, xxxx-light); }
+.br-light { border-right: 1px solid palette(grey, xxxx-light); }
+
+//grey borders
+.b-grey { border: 1px solid palette(grey, xxx-light); }
+.bt-grey { border-top: 1px solid palette(grey, xxx-light); }
+.bl-grey { border-left: 1px solid palette(grey, xxx-light); }
+.bb-grey { border-bottom: 1px solid palette(grey, xxx-light); }
+.br-grey { border-right: 1px solid palette(grey, xxx-light); }
+
+//orange borders
+.b-orange { border: 1px solid palette(orange, base); }
+.bt-orange { border-top: 1px solid palette(orange, base); }
+.bl-orange { border-left: 1px solid palette(orange, base); }
+.bb-orange { border-bottom: 1px solid palette(orange, base); }
+.br-orange { border-right: 1px solid palette(orange, base); }
+
+//CYAN borders
+.b-cyan { border: 1px solid palette(cyan, base); }
+.bt-cyan { border-top: 1px solid palette(cyan, base); }
+.bl-cyan { border-left: 1px solid palette(cyan, base); }
+.bb-cyan { border-bottom: 1px solid palette(cyan, base); }
+.br-cyan { border-right: 1px solid palette(cyan, base); }
+
+
+//border none
+.b-none { border: none; }
+.bt-none { border-top: none; }
+.bl-none { border-left: none; }
+.bb-none { border-bottom: none; }
+.br-none { border-right: none; }
+
+//shadowed style lines
+.b-light-shadow {
+  box-shadow: 0 0 0 1px palette(grey, xxxx-light) inset;
+}

@@ -1,0 +1,107 @@
+/* ==========================================================================
+   MED POSITION HELPERS
+  ========================================================================== */
+
+@include tablet-landscape {
+  //MED-RELATIVE////////////////
+  .med-pos-rel { position: relative }
+  
+  //MED-ABSOLUTE///////////////
+  .med-pos-abs { position: absolute }
+  
+  //MED-FIXED///////////////////
+  .med-pos-fixed { position: fixed }
+}
+
+//MED -> THE WHERE YOU WANT THESE TO BE MOVED OR PLACED...
+@include tablet-landscape {
+
+  .med-top-0 { top: 0 }
+  .med-top-xs { top: 4px }
+  .med-top-x { top: 8px }
+  .med-top-small { top: 16px }
+  .med-top-medium { top: 24px }
+  .med-top-lrg { top: 32px }
+  .med-top-xl { top: 40px }
+  .med-top-xxl { top: 48px}
+  .med-top-xxxl { top: 56px}
+  .med-top-xxxxl { top: 64px}
+
+  .med-bottom-0 { bottom: 0 }
+  .med-bottom-xs { bottom: 4px }
+  .med-bottom-x { bottom: 8px }
+  .med-bottom-small { bottom: 16px }
+  .med-bottom-medium { bottom: 24px }
+  .med-bottom-lrg { bottom: 32px }
+  .med-bottom-xl { bottom: 40px }
+  .med-bottom-xxl { bottom: 48px}
+  .med-bottom-xxxl { bottom: 56px}
+  .med-bottom-xxxxl { bottom: 64px}
+
+
+  .med-left-0 { left: 0 }
+  .med-left-xs { left: 4px }
+  .med-left-x { left: 8px }
+  .med-left-small { left: 16px }
+  .med-left-medium { left: 24px }
+  .med-left-lrg { left: 32px }
+  .med-left-xl { left: 40px }
+  .med-left-xxl { left: 48px}
+  .med-left-xxxl { left: 56px}
+  .med-left-xxxl { left: 64px}
+
+  .med-right-0 { right: 0 }
+  .med-right-xs { right: 4px }
+  .med-right-x { right: 8px }
+  .med-right-small { right: 16px }
+  .med-right-medium { right: 24px }
+  .med-right-lrg { right: 32px }
+  .med-right-xl { right: 40px }
+  .med-right-xxl { right: 48px}
+  .med-right-xxxl { right: 56px}
+  .med-right-xxxxl { right: 64px}
+
+
+  //NEGATIVE POSITIONING/////////////////////////////////////
+
+  .med-neg-top-xs { top: -4px }
+  .med-neg-top-x { top: -8px }
+  .med-neg-top-small { top: -16px }
+  .med-neg-top-medium { top: -24px }
+  .med-neg-top-lrg { top: -32px }
+  .med-neg-top-xl { top: -40px }
+  .med-neg-top-xxl { top: -48px}
+  .med-neg-top-xxxl { top: -56px}
+  .med-neg-top-xxxxl { top: -64px}
+
+  .med-neg-bottom-xs { bottom: -4px }
+  .med-neg-bottom-x { bottom: -8px }
+  .med-neg-bottom-small { bottom: -16px }
+  .med-neg-bottom-medium { bottom: -24px }
+  .med-neg-bottom-lrg { bottom: -32px }
+  .med-neg-bottom-xl { bottom: -40px }
+  .med-neg-bottom-xxl { bottom: -48px}
+  .med-neg-bottom-xxxl { bottom: -56px}
+  .med-neg-bottom-xxxxl { bottom: -64px}
+
+
+  .med-neg-left-xs { left: -4px }
+  .med-neg-left-x { left: -8px }
+  .med-neg-left-small { left: -16px }
+  .med-neg-left-medium { left: -24px }
+  .med-neg-left-lrg { left: -32px }
+  .med-neg-left-xl { left: -40px }
+  .med-neg-left-xxl { left: -48px}
+  .med-neg-left-xxxl { left: -56px}
+  .med-neg-left-xxxl { left: -64px}
+
+  .med-neg-right-xs { right: -4px }
+  .med-neg-right-x { right: -8px }
+  .med-neg-right-small { right: -16px }
+  .med-neg-right-medium { right: -24px }
+  .med-neg-right-lrg { right: -32px }
+  .med-neg-right-xl { right: -40px }
+  .med-neg-right-xxl { right: -48px}
+  .med-neg-right-xxxl { right: -56px}
+  .med-neg-right-xxxxl { right: -64px}
+}

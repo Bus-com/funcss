@@ -1,0 +1,54 @@
+/* ==========================================================================
+ BORDER HELPERS
+========================================================================== */
+
+@include laptop {
+
+//light grey borders
+.xl-b-light { border: 1px solid palette(grey, xxxx-light); }
+.xl-bt-light { border-top: 1px solid palette(grey, xxxx-light); }
+.xl-bl-light { border-left: 1px solid palette(grey, xxxx-light); }
+.xl-bb-light { border-bottom: 1px solid palette(grey, xxxx-light); }
+.xl-br-light { border-right: 1px solid palette(grey, xxxx-light); }
+
+//grey borders
+.xl-b-grey { border: 1px solid palette(grey, xxx-light); }
+.xl-bt-grey { border-top: 1px solid palette(grey, xxx-light); }
+.xl-bl-grey { border-left: 1px solid palette(grey, xxx-light); }
+.xl-bb-grey { border-bottom: 1px solid palette(grey, xxx-light); }
+.xl-br-grey { border-right: 1px solid palette(grey, xxx-light); }
+
+//orange borders
+.xl-b-orange { border: 1px solid palette(orange, base); }
+.xl-bt-orange { border-top: 1px solid palette(orange, base); }
+.xl-bl-orange { border-left: 1px solid palette(orange, base); }
+.xl-bb-orange { border-bottom: 1px solid palette(orange, base); }
+.xl-br-orange { border-right: 1px solid palette(orange, base); }
+
+//orange borders
+.xl-b-cyan { border: 1px solid palette(cyan, base); }
+.xl-bt-cyan { border-top: 1px solid palette(cyan, base); }
+.xl-bl-cyan { border-left: 1px solid palette(cyan, base); }
+.xl-bb-cyan { border-bottom: 1px solid palette(cyan, base); }
+.xl-br-cyan { border-right: 1px solid palette(cyan, base); }
+
+//orange borders
+.xl-b-cyan  {border: 1px solid palette(cyan, base);}
+.xl-bt-cyan {border-top:1px solid palette(cyan, base);}
+.xl-bl-cyan {border-left:1px solid palette(cyan, base);}
+.xl-bb-cyan {border-bottom:1px solid palette(cyan, base);}
+.xl-br-cyan {border-right:1px solid palette(cyan, base);}
+
+
+//border none
+.xl-b-none { border: none; }
+.xl-bt-none { border-top: none; }
+.xl-bl-none { border-left: none; }
+.xl-bb-none { border-bottom: none; }
+.xl-br-none { border-right: none; }
+
+//shadowed style lines
+.xl-b-light-shadow {
+  box-shadow: 0 0 0 1px palette(grey, xxxx-light) inset;
+}
+}

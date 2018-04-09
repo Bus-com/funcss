@@ -1,0 +1,28 @@
+/*
+  TABLES
+ */
+
+.table-base {
+  border-collapse: collapse;
+  text-align: left;
+
+  .actions {
+    .button {
+      padding: $unit-small
+    }
+
+    [dropdown-menu] {
+      vertical-align: text-top;
+    }
+
+    [dropdown-menu-content] {
+      transform: translateX(-100%);
+    }
+  }
+
+}
+
+.tight-table td {
+  padding: 0 16px;
+  border-top: none;
+}

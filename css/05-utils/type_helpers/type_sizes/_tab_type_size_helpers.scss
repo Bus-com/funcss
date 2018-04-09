@@ -1,0 +1,43 @@
+/* ==========================================================================
+   @TAB RESPONSIVE TYPE HELPERS
+  ========================================================================== */
+
+@include tablet-portrait {
+  .tab-h1 {
+    font-size: 24px;
+  }
+  .tab-h2 {
+    font-size: 22px;
+  }
+  .tab-h3 {
+    font-size: 18px;
+  }
+  .tab-h4 {
+    font-size: 16px;
+  }
+  .tab-h5 {
+    font-size: 14px;
+  }
+  .tab-h6 {
+    font-size: 12px;
+  }
+
+  .tab-fs-1 {
+    font-size: 24px;
+  }
+  .tab-fs-2 {
+    font-size: 22px;
+  }
+  .tab-fs-3 {
+    font-size: 18px;
+  }
+  .tab-fs-4 {
+    font-size: 16px;
+  }
+  .tab-fs-5 {
+    font-size: 14px;
+  }
+  .tab-fs-6 {
+    font-size: 12px;
+  }
+}

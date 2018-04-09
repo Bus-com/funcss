@@ -1,0 +1,20 @@
+/* ==========================================================================
+   @MED TYPE HELPERS LINE-HEIGHT LEADING
+  ========================================================================== */
+@include tablet-landscape {
+  .med-ls-reset {
+    letter-spacing: normal
+  }
+  .med-ls {
+    letter-spacing: .5px
+  }
+  .med-ls-tight {
+    letter-spacing: -1px;
+  }
+  .med-ls-medium {
+    letter-spacing: 1px;
+  }
+  .med-ls-loose {
+    letter-spacing: 2px;
+  }
+}

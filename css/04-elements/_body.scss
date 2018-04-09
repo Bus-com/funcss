@@ -1,0 +1,24 @@
+/* ==========================================================================
+   HTML BODY
+  ========================================================================== */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: $white;
+  color: $app-color-text;
+  font-size: 14px;
+  font-family: $base-font-family;
+  letter-spacing: .05px;
+  line-height: 24px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include animation('fadeIn .3s ease-in');
+
+  @include laptop {
+    font-size: 16px;
+  }
+}

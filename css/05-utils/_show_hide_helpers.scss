@@ -1,0 +1,63 @@
+/* ==========================================================================
+   SHOW HIDE HELPERS
+  ========================================================================== */
+
+//Helpers to show element depending on breakpoint
+
+.hide, .hidden {
+  display: none;
+}
+
+@include tablet-portrait {
+  .tab-hide {
+    display: none !important;
+  }
+}
+
+.show {
+  display: block
+}
+
+@include tablet-portrait {
+  .tab-show {
+    display: block;
+  }
+}
+
+.flex-show {
+  display: flex;
+}
+
+@include tablet-portrait {
+  .tab-flex-show {
+    display: flex !important;
+  }
+}
+
+@include tablet-landscape {
+  .med-show {
+    display: block !important;
+  }
+}
+
+@include small-laptop {
+  .lrg-show {
+    display: block !important;
+  }
+}
+
+@include laptop {
+  .xl-show {
+    display: block !important;
+  }
+}
+
+@include customScreen(1450px) {
+  .custom-size-show {
+    display: block !important;
+  }
+
+  .custom-size-hide {
+    display: none !important;
+  }
+}

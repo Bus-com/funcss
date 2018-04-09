@@ -1,0 +1,55 @@
+/* ==========================================================================
+   12 COLUMN GRIDS @ TABLET-PORTRAIT BREAKPOINT
+   @media only screen and (min-width: 768px)
+  ========================================================================== */
+
+@include tablet-portrait {
+
+  .tab-col-1 {
+    width: calc(1 * 100%);
+  }
+
+  .tab-col-2 {
+    width: calc(2 / 12 * 100%);
+  }
+
+  .tab-col-3 {
+    width: calc(3 / 12 * 100%);
+  }
+
+  .tab-col-4 {
+    width: calc(4 / 12 * 100%);
+  }
+
+  .tab-col-5 {
+    width: calc(5 / 12 * 100%);
+  }
+
+  .tab-col-6 {
+    width: calc(6 / 12 * 100%);
+  }
+
+  .tab-col-7 {
+    width: calc(7 / 12 * 100%);
+  }
+
+  .tab-col-8 {
+    width: calc(8 / 12 * 100%);
+  }
+
+  .tab-col-9 {
+    width: calc(9 / 12 * 100%);
+  }
+
+  .tab-col-10 {
+    width: calc(10 / 12 * 100%);
+  }
+
+  .tab-col-11 {
+    width: calc(11 / 12 * 100%);
+  }
+
+  .tab-col-12 {
+    width: 100%;
+  }
+}

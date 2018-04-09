@@ -1,0 +1,9 @@
+textarea {
+  width: 100%;
+  min-height: 160px;
+  border: 1px solid palette(grey, xxxl-light);
+  background: $white;
+  padding: $unit-small;
+  line-height: 1.8;
+  font-size: 14px;
+}

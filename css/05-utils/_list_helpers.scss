@@ -1,0 +1,16 @@
+/* ==========================================================================
+   LIST STYLE HELPERS
+  ========================================================================== */
+
+.disc {
+  list-style-type: disc;
+}
+
+.decimal-leading-zero {
+  list-style: decimal-leading-zero; // 01, 02, 03
+}
+
+.reset-list {
+  list-style: none;
+  padding-left: 0;
+}

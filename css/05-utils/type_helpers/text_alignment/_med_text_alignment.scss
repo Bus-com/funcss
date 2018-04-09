@@ -1,0 +1,18 @@
+/* ==========================================================================
+   @MED TYPE HELPERS ALIGNMENT
+  ========================================================================== */
+
+@include tablet-landscape {
+  .med-left-align {
+    text-align: left
+  }
+  .med-center-align {
+    text-align: center
+  }
+  .med-right-align {
+    text-align: right
+  }
+  .med-justify {
+    text-align: justify
+  }
+}

@@ -1,0 +1,15 @@
+.yellow-disc {
+  li {
+    &:before {
+      position: absolute;
+      left: 0;
+      top: $unit-x;
+      border-radius: $unit-x;
+      content: "";
+      width: $unit-x;
+      height: $unit-x;
+      background: palette(yellow, base);
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+/* ==========================================================================
+   @TAB TYPE HELPERS ALIGNMENT
+  ========================================================================== */
+@include tablet-portrait {
+  .tab-left-align {
+    text-align: left
+  }
+  .tab-center-align {
+    text-align: center
+  }
+  .tab-right-align {
+    text-align: right
+  }
+  .tab-justify {
+    text-align: justify
+  }
+}

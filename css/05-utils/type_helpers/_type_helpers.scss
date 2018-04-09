@@ -1,0 +1,92 @@
+/* ==========================================================================
+   TYPE HELPERS
+  ========================================================================== */
+
+.upper {
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+.text-deco-none {
+  text-decoration: none;
+}
+
+//font weight  helpers
+
+.fw-light {
+  font-weight: 200;
+}
+
+.fw-medium {
+  font-weight: 500
+}
+
+.fw-bold {
+  font-weight: 700
+}
+
+.fw-heavy {
+  font-weight: 900
+}
+
+// text nowrap truncate breakwords
+
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nowrap {
+  white-space: nowrap
+}
+
+.break-word {
+  word-wrap: break-word
+}
+
+.small-type {
+  font-size: 10px
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+//Vertical alignment
+.v-align-base {
+  vertical-align: baseline;
+}
+
+.v-align-mid {
+  vertical-align: middle;
+}
+
+.v-align-top {
+  vertical-align: top;
+}
+
+.v-align-btm {
+  vertical-align: bottom;
+}

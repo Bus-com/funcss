@@ -1,0 +1,20 @@
+/* ==========================================================================
+   @LRG TYPE HELPERS LINE-HEIGHT LEADING
+  ========================================================================== */
+@include small-laptop {
+  .lrg-ls-reset {
+    letter-spacing: normal
+  }
+  .lrg-ls {
+    letter-spacing: .5px
+  }
+  .lrg-ls-tight {
+    letter-spacing: -1px;
+  }
+  .lrg-ls-medium {
+    letter-spacing: 1px;
+  }
+  .lrg-ls-loose {
+    letter-spacing: 2px;
+  }
+}

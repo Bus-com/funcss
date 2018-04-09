@@ -1,0 +1,109 @@
+/* ==========================================================================
+   TABLET PORTRAIT FLEXBOX HELPERS...
+   USE THESE WHEN YOU WANT TO USE A SPEICIFC CLASS A SPECIFIC BREAKPOINT
+  ========================================================================== */
+@include tablet-portrait {
+
+  .tab-flex {
+    display: flex;
+  }
+
+  //target ie browser only
+  @media all and (-ms-high-contrast: none) {
+    .med-ie-no-flex {
+      display: block;
+    }
+    /* IE10 */
+    *::-ms-backdrop, .med-ie-no-flex {
+      display: block;
+    }
+    /* IE11 */
+  }
+
+  .tab-flex-column {
+    flex-direction: column;
+  }
+
+  .tab-flex-row {
+    flex-direction: row;
+  }
+
+  .tab-flex-1 {
+    flex: 1;
+  }
+
+  .tab-space-between {
+    justify-content: space-between;
+  }
+
+  .tab-space-around {
+    justify-content: space-around;
+  }
+
+  .tab-justify-center {
+    justify-content: center;
+  }
+
+  .tab-flex-end {
+    justify-content: flex-end;
+  }
+
+  .tab-flex-align-center {
+    align-items: center
+  }
+
+  .tab-flex-align-baseline {
+    align-items: baseline
+  }
+
+  .tab-flex-align-stretch {
+    align-items: stretch
+  }
+
+  .tab-flex-align-start {
+    align-items: flex-start
+  }
+
+  .tab-flex-align-end {
+    align-items: flex-end
+  }
+
+  .tab-flex-1 {
+    flex: 1
+  }
+
+  .tab-flex-auto {
+    flex: 1 1 auto;
+    min-width: 0; /* 1 */
+    min-height: 0; /* 1 */
+  }
+
+  .tab-flex-grow {
+    flex: 1 0 auto
+  }
+
+  .tab-flex-none {
+    flex: none
+  }
+
+  .tab-flex-first {
+    order: -1
+  }
+
+  .tab.flex-second {
+    order: 2
+  }
+
+  .tab-flex-last {
+    order: 99999
+  }
+
+  .tab-flex-shrink-0 {
+    flex-shrink: 0;
+  }
+
+  .tab-flex-wrap {
+    flex-wrap: wrap
+  }
+
+}

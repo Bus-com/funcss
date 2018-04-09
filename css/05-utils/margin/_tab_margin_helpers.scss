@@ -1,0 +1,299 @@
+/* ==========================================================================
+   PADDING HELPERS
+  ========================================================================== */
+@include tablet-portrait {
+
+  .tab-m-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+  }
+
+  .tab-m0 {
+    margin: 0
+  }
+  .tab-mt0 {
+    margin-top: 0
+  }
+  .tab-mr0 {
+    margin-right: 0
+  }
+  .tab-mb0 {
+    margin-bottom: 0
+  }
+  .tab-ml0 {
+    margin-left: 0
+  }
+  .tab-mx0 {
+    margin-left: 0;
+    margin-right: 0
+  }
+  .tab-my0 {
+    margin-top: 0;
+    margin-bottom: 0
+  }
+
+  .tab-m-xs {
+    margin: $unit-xs
+  }
+  .tab-mt-xs {
+    margin-top: $unit-xs
+  }
+  .tab-mr-xs {
+    margin-right: $unit-xs
+  }
+  .tab-mb-xs {
+    margin-bottom: $unit-xs
+  }
+  .tab-ml-xs {
+    margin-left: $unit-xs
+  }
+  .tab-mx-xs {
+    margin-left: $unit-xs;
+    margin-right: $unit-xs
+  }
+  .tab-my-xs {
+    margin-top: $unit-xs;
+    margin-bottom: $unit-xs
+  }
+
+  .tab-m-x {
+    margin: $unit-x
+  }
+  .tab-mt-x {
+    margin-top: $unit-x
+  }
+  .tab-mr-x {
+    margin-right: $unit-x
+  }
+  .tab-mb-x {
+    margin-bottom: $unit-x
+  }
+  .tab-ml-x {
+    margin-left: $unit-x
+  }
+  .tab-mx-x {
+    margin-left: $unit-x;
+    margin-right: $unit-x
+  }
+  .tab-my-x {
+    margin-top: $unit-x;
+    margin-bottom: $unit-x
+  }
+
+  .tab-m-xx {
+    margin: $unit-xx;
+  }
+  .tab-mt-xx {
+    margin-top: $unit-xx;
+  }
+  .tab-mr-xx {
+    margin-right: $unit-xx;
+  }
+  .tab-mb-xx {
+    margin-bottom: $unit-xx;
+  }
+  .tab-ml-xx {
+    margin-left: $unit-xx;
+  }
+  .tab-mx-xx {
+    margin-left: $unit-xx;
+    margin-right: $unit-xx;
+  }
+  .tab-my-xx {
+    margin-top: $unit-xx;
+    margin-bottom: $unit-xx;
+  }
+
+  .tab-m-small {
+    margin: $unit-small
+  }
+  .tab-mt-small {
+    margin-top: $unit-small
+  }
+  .tab-mr-small {
+    margin-right: $unit-small
+  }
+  .tab-mb-small {
+    margin-bottom: $unit-small
+  }
+  .tab-ml-small {
+    margin-left: $unit-small
+  }
+  .tab-mx-small {
+    margin-left: $unit-small;
+    margin-right: $unit-small
+  }
+  .tab-my-small {
+    margin-top: $unit-small;
+    margin-bottom: $unit-small
+  }
+
+  .tab-m-medium {
+    margin: $unit-medium
+  }
+  .tab-mt-medium {
+    margin-top: $unit-medium
+  }
+  .tab-mr-medium {
+    margin-right: $unit-medium
+  }
+  .tab-mb-medium {
+    margin-bottom: $unit-medium
+  }
+  .tab-ml-medium {
+    margin-left: $unit-medium
+  }
+  .tab-mx-medium {
+    margin-left: $unit-medium;
+    margin-right: $unit-medium
+  }
+  .tab-my-medium {
+    margin-top: $unit-medium;
+    margin-bottom: $unit-medium
+  }
+
+  .tab-m-lrg {
+    margin: $unit-lrg
+  }
+  .tab-mt-lrg {
+    margin-top: $unit-lrg
+  }
+  .tab-mr-lrg {
+    margin-right: $unit-lrg
+  }
+  .tab-mb-lrg {
+    margin-bottom: $unit-lrg
+  }
+  .tab-ml-lrg {
+    margin-left: $unit-lrg
+  }
+  .tab-mx-lrg {
+    margin-left: $unit-lrg;
+    margin-right: $unit-lrg
+  }
+  .tab-my-lrg {
+    margin-top: $unit-lrg;
+    margin-bottom: $unit-lrg
+  }
+
+  .tab-m-xl {
+    margin: $unit-xl
+  }
+  .tab-mt-xl {
+    margin-top: $unit-xl
+  }
+  .tab-mr-xl {
+    margin-right: $unit-xl
+  }
+  .tab-mb-xl {
+    margin-bottom: $unit-xl
+  }
+  .tab-ml-xl {
+    margin-left: $unit-xl
+  }
+  .tab-mx-xl {
+    margin-left: $unit-xl;
+    margin-right: $unit-xl
+  }
+  .tab-my-xl {
+    margin-top: $unit-xl;
+    margin-bottom: $unit-xl
+  }
+
+  .tab-m-xxl {
+    margin: $unit-xxl
+  }
+  .tab-mt-xxl {
+    margin-top: $unit-xxl
+  }
+  .tab-mr-xxl {
+    margin-right: $unit-xxl
+  }
+  .tab-mb-xxl {
+    margin-bottom: $unit-xxl
+  }
+  .tab-ml-xxl {
+    margin-left: $unit-xxl
+  }
+  .tab-mx-xxl {
+    margin-left: $unit-xxl;
+    margin-right: $unit-xxl
+  }
+  .tab-my-xxl {
+    margin-top: $unit-xxl;
+    margin-bottom: $unit-xxl
+  }
+
+  .tab-m-xxxl {
+    margin: $unit-xxxl
+  }
+  .tab-mt-xxxl {
+    margin-top: $unit-xxxl
+  }
+  .tab-mr-xxxl {
+    margin-right: $unit-xxxl
+  }
+  .tab-mb-xxxl {
+    margin-bottom: $unit-xxxl
+  }
+  .tab-ml-xxxl {
+    margin-left: $unit-xxxl
+  }
+  .tab-mx-xxxl {
+    margin-left: $unit-xxxl;
+    margin-right: $unit-xxxl
+  }
+  .tab-my-xxxl {
+    margin-top: $unit-xxxl;
+    margin-bottom: $unit-xxxl
+  }
+
+  .tab-m-xxxxl {
+    margin: $unit-xxxxl
+  }
+  .tab-mt-xxxxl {
+    margin-top: $unit-xxxxl
+  }
+  .tab-mr-xxxxl {
+    margin-right: $unit-xxxxl
+  }
+  .tab-mb-xxxxl {
+    margin-bottom: $unit-xxxxl
+  }
+  .tab-ml-xxxxl {
+    margin-left: $unit-xxxxl
+  }
+  .tab-mx-xxxxl {
+    margin-left: $unit-xxxxl;
+    margin-right: $unit-xxxxl
+  }
+  .tab-my-xxxxl {
+    margin-top: $unit-xxxxl;
+    margin-bottom: $unit-xxxxl
+  }
+
+  .tab-m-xxxxxl {
+    margin: $unit-xxxxxl;
+  }
+  .tab-mt-xxxxxl {
+    margin-top: $unit-xxxxxl;
+  }
+  .tab-mr-xxxxxl {
+    margin-right: $unit-xxxxxl;
+  }
+  .tab-mb-xxxxxl {
+    margin-bottom: $unit-xxxxxl;
+  }
+  .tab-ml-xxxxxl {
+    margin-left: $unit-xxxxxl;
+  }
+  .tab-mx-xxxxxl {
+    margin-left: $unit-xxxxxl;
+    margin-right: $unit-xxxxxl;
+  }
+  .tab-my-xxxxxl {
+    margin-top: $unit-xxxxxl;
+    margin-bottom: $unit-xxxxxl;
+  }
+}

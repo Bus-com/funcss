@@ -1,0 +1,104 @@
+/* ==========================================================================
+   SMALL LAPTOP FLEXBOX HELPERS...
+   USE THESE WHEN YOU WANT TO USE A SPEICIFC CLASS A SPECIFIC BREAKPOINT
+  ========================================================================== */
+
+@include small-laptop {
+  .lrg-flex {
+    display: flex;
+  }
+
+  //target ie browser only
+  @media all and (-ms-high-contrast: none) {
+    .lrg-ie-no-flex {
+      display: block;
+    }
+    /* IE10 */
+    *::-ms-backdrop, .lrg-ie-no-flex {
+      display: block;
+    }
+    /* IE11 */
+  }
+
+  .lrg-flex-column {
+    flex-direction: column;
+  }
+
+  .lrg-flex-row {
+    flex-direction: row;
+  }
+
+  .lrg-flex-1 {
+    flex: 1;
+  }
+
+  .lrg-space-between {
+    justify-content: space-between;
+  }
+
+  .lrg-space-around {
+    justify-content: space-around;
+  }
+
+  .lrg-justify-center {
+    justify-content: center;
+  }
+
+  .lrg-flex-end {
+    justify-content: flex-end;
+  }
+
+  .lrg-flex-align-center {
+    align-items: center
+  }
+
+  .lrg-flex-align-baseline {
+    align-items: baseline
+  }
+
+  .lrg-flex-align-stretch {
+    align-items: stretch
+  }
+
+  .lrg-flex-align-start {
+    align-items: flex-start
+  }
+
+  .lrg-flex-align-end {
+    align-items: flex-end
+  }
+
+  .lrg-flex-1 {
+    flex: 1
+  }
+
+  .lrg-flex-auto {
+    flex: 1 1 auto;
+    min-width: 0; /* 1 */
+    min-height: 0; /* 1 */
+  }
+
+  .lrg-flex-grow {
+    flex: 1 0 auto
+  }
+
+  .lrg-flex-none {
+    flex: none
+  }
+
+  .lrg-flex-first {
+    order: -1
+  }
+
+  .lrg.flex-second {
+    order: 2
+  }
+
+  .lrg-flex-last {
+    order: 99999
+  }
+
+  .lrg-flex-shrink-0 {
+    flex-shrink: 0;
+  }
+}

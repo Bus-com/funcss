@@ -1,0 +1,30 @@
+/* ==========================================================================
+  LRG DISPLAY HELPERS
+  ========================================================================== */
+@include tablet-landscape {
+  .med-f-left {
+    float: left
+  }
+  .med-f-right {
+    float: right
+  }
+  .med-hide {
+    display: none
+  }
+  .med-clear {
+    clear: both
+  }
+  .med-block {
+    display: block
+  }
+  .med-inline-block {
+    display: inline-block
+  }
+  .med-inline {
+    display: inline
+  }
+
+  .med-rotate-45 {
+    transform: rotate(45deg)
+  }
+}

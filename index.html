@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" async defer></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/google/code-prettify/master/loader/skins/sunburst.css">
+    <title>Functional CSS</title>
+  </head>
+  <body>
+    <div class="flex mt-lrg mb-xxxxxl">
+      <div class="w-70 my-lrg mx-small tab-mx-medium">
+        <h1>FUNCTIONAL CSS</h1>
+        <!--<div class="my-lrg">-->
+        <!--<p>-->
+        <!--Build Responsive Application ui with simple classnames that are easy to understand. Think of-->
+        <!--this as your Responsive Design System-->
+        <!--</p>-->
+        <!--</div>-->
+        <!--<h2 id="unit_size">Units Sizes</h2>-->
+        <!--<div class="my-lrg">-->
+        <!--<p>We use an <span class="fw-bold">8px</span> grid through out the app, all values are based on this-->
+        <!--<span class="fw-bold">8px</span> base with one exception the <span class="fw-bold">4px</span>-->
+        <!--measure for small ui adjustments-->
+        <!--</p>-->
+        <!--<div class="flex">-->
+        <!--<table class="table-base">-->
+        <!--<thead>-->
+        <!--<tr>-->
+        <!--<th class="fw-bold">Name</th>-->
+        <!--<th class="fw-bold">Value</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tbody>-->
+        <!--<tr>-->
+        <!--<td>xs</td>-->
+        <!--<td>4px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>x</td>-->
+        <!--<td>8px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>small</td>-->
+        <!--<td>16px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>medium</td>-->
+        <!--<td>24px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>lrg</td>-->
+        <!--<td>32px</td>-->
+        <!--</tr>-->
+        <!--</tbody>-->
+        <!--</table>-->
+        <!--<table class="table-base">-->
+        <!--<thead>-->
+        <!--<tr>-->
+        <!--<th class="fw-bold">Name</th>-->
+        <!--<th class="fw-bold">Value</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tbody>-->
+        <!--<tr>-->
+        <!--<td>xl</td>-->
+        <!--<td>40px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>xxl</td>-->
+        <!--<td>48px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>xxxl</td>-->
+        <!--<td>56px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>xxxxl</td>-->
+        <!--<td>64px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>xxxxxl</td>-->
+        <!--<td>72px</td>-->
+        <!--</tr>-->
+        <!--</tbody>-->
+        <!--</table>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<h2 id="margins_paddings">Margin & Padding</h2>-->
+        <!--<div class="flex my-lrg">-->
+        <!--<table class="table-base table-bordered">-->
+        <!--<thead>-->
+        <!--<tr>-->
+        <!--<th class="fw-bold">Name</th>-->
+        <!--<th class="fw-bold">Value</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tbody>-->
+        <!--<tr>-->
+        <!--<td>m</td>-->
+        <!--<td>all</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>ml</td>-->
+        <!--<td>left</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>mr</td>-->
+        <!--<td>right</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>mt</td>-->
+        <!--<td>top</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>mb</td>-->
+        <!--<td>bottom</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>mx</td>-->
+        <!--<td>left and right</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>my</td>-->
+        <!--<td>top and bottom</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>m0</td>-->
+        <!--<td>no margin <strong>Can be used with left, right, top or bottom</strong> ie: pt0</td>-->
+        <!--</tr>-->
+        <!--</tbody>-->
+        <!--</table>-->
+        <!--<table class="table-base">-->
+        <!--<thead>-->
+        <!--<tr>-->
+        <!--<th class="fw-bold">Name</th>-->
+        <!--<th class="fw-bold">Value</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tbody>-->
+        <!--<tr>-->
+        <!--<td>p</td>-->
+        <!--<td>all</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>pl</td>-->
+        <!--<td>left</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>pr</td>-->
+        <!--<td>right</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>pt</td>-->
+        <!--<td>top</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>pb</td>-->
+        <!--<td> bottom</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>px</td>-->
+        <!--<td>left and right</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>py</td>-->
+        <!--<td>top and bottom</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>p0</td>-->
+        <!--<td>no padding <strong>Can be used with left, right, top or bottom</strong> ie: pt0</td>-->
+        <!--</tr>-->
+        <!--</tbody>-->
+        <!--</table>-->
+        <!--</div>-->
+        <!--<h2 id="type_sizing">Type sizing</h2>-->
+        <!--<div class="flex space-between my-lrg">-->
+        <!--<div class="flex flex-column w-full"><p>Font-Size</p>-->
+        <!--<table class="table-base">-->
+        <!--<thead>-->
+        <!--<tr>-->
+        <!--<th class="fw-bold">Name</th>-->
+        <!--<th class="fw-bold">Value</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tbody>-->
+        <!--<tr>-->
+        <!--<td>fs-1</td>-->
+        <!--<td>24px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>fs-2</td>-->
+        <!--<td>22px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>fs-3</td>-->
+        <!--<td>18px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>fs-4</td>-->
+        <!--<td>16px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>fs-5</td>-->
+        <!--<td>14px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>fs-6</td>-->
+        <!--<td>12px</td>-->
+        <!--</tr>-->
+        <!--</tbody>-->
+        <!--</table>-->
+        <!--</div>-->
+        <!--<div class="flex flex-column w-full"><p>Headline</p>-->
+        <!--<table class="table-base">-->
+        <!--<thead>-->
+        <!--<tr>-->
+        <!--<th class="fw-bold">Name</th>-->
+        <!--<th class="fw-bold">Value</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tbody>-->
+        <!--<tr>-->
+        <!--<td>hl-1</td>-->
+        <!--<td>72px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>hl-2</td>-->
+        <!--<td>64px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>hl-3</td>-->
+        <!--<td>56px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>hl-4</td>-->
+        <!--<td>48px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>hl-5</td>-->
+        <!--<td>40px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>hl-6</td>-->
+        <!--<td>32px</td>-->
+        <!--</tr>-->
+        <!--</tbody>-->
+        <!--</table>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<h2 id="breakpoints">breakpoints</h2>-->
+        <!--<div class="my-lrg">-->
+        <!--<p>we use 4 breakpoints to deal with different browser sizes</p>-->
+        <!--<p>for more info see <em>assets/stylesheets/v3/02-tools/_mixins.scss</em></p>-->
+        <!--<table class="table-base">-->
+        <!--<thead>-->
+        <!--<tr>-->
+        <!--<td>Name</td>-->
+        <!--<td>Value</td>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tbody>-->
+        <!--<tr>-->
+        <!--<td>tab-*</td>-->
+        <!--<td>Tablet Size</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>med-*</td>-->
+        <!--<td>regular laptop 13’’ think 1280</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>lrg-*</td>-->
+        <!--<td>15inch laptops 1440px</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>xl-*</td>-->
+        <!--<td>1440+ bigger breakpoints</td>-->
+        <!--</tr>-->
+        <!--</tbody>-->
+        <!--</table>-->
+        <!--we want the horizontal padding to be-->
+        <!--16px when at phone size-->
+        <!--32px when at tablet size-->
+        <!--48px when at leg screen and up-->
+        <!--we also want to be responsive with type-->
+        <!--we want the type size to be smaller for small screen size and a bit bigger for tab and up-->
+        <!--</div>-->
+        <!--<h2 id="grids">% Grids</h2>-->
+        <!--<div class="my-lrg">-->
+        <!--<p>Flexbox is used to generate grids and Row / Cols</p>-->
+        <!--<div class="w-60 p-lrg bg-orange center-align">60%</div>-->
+        <!--<div class="w-40 p-lrg bg-cyan center-align">40%</div>-->
+        <!--<div class="w-50 p-lrg bg-orange center-align">50%</div>-->
+        <!--<div class="w-50 p-lrg bg-cyan center-align">50%</div>-->
+        <!--</div>-->
+        <p>Documentation example</p>
+        <!--GRIDS-->
+        <h1 id="flex_grid"> Flex grids </h1>
+        <p> Instead of writting a bunch of css and having zero flexibility</p>
+        <div class="flex-grid-row med-flex-row tab-flex-column space-between">
+          <div class="flex-column med-p-lrg p-small">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
+            necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
+            <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
+            est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+          </div>
+          <div class="flex-column med-p-lrg p-small">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
+            necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
+            <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
+            est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+          </div>
+          <div class="flex-column med-p-lrg p-small">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
+            necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
+            <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
+            est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+          </div>
+        </div>
+        <h2 id="three-columns">3 columns</h2>
+        <div class="flex-grid-row">
+          <div class="col-12 tab-col-6 med-col-4 flex-column lrg-p-med p-small">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
+            necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
+            <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
+            est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+          </div>
+          <div class="col-12 tab-col-6 med-col-8 flex-1 flex-column mr0 lrg-p-med p-small">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
+            necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
+            <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
+            est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+          </div>
+        </div>
+        <hr class="my-xxl clear"/>
+        <div class="flex-grid-row">
+          <div class="col-12 tab-col-4 flex-column mr0 med-p-med p-small">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
+            necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
+            <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
+            est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+          </div>
+          <div class="col-12 tab-col-4 flex-column mr0 med-p-med p-small">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
+            necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
+            <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
+            est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+          </div>
+          <div class="col-12 tab-col-4 flex-column mr0 med-p-med p-small">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
+            necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
+            <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
+            est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+          </div>
+        </div>
+        <h2 class="title mb-xxl letter-spacing-tight upper">Nesting grid columns</h2>
+        <p>Documentation example</p>
+        <h2>Nesting grids like Xzhibit</h2>
+        <p>Hey yo...I hear you like columns B! So we nested columns inside your nested columns</p>
+        <hr class="mt-xxl mb-xxl"/>
+        <div class="flex-grid-row mb-xl">
+          <div class="col-12 grid-box flex-grid-row ">
+            <div class="xl-col-4 med-col-6 grid-box p-med"></div>
+            <div class="xl-col-8 med-col-12 grid-box p-med flex-grid-row">
+              <div class="flex-column"></div>
+              <div class="xl-col-6  med-col-12 grid-box p-med"></div>
+              <div class="xl-col-6 med-col-12 grid-box p-med"></div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-grid-row">
+          <div class="col-12 grid-box flex-grid-row ">
+            <div class="xl-col-4 med-col-6 grid-box p-med">
+              <h1 class="fw-bold">Lorem ipsum Title</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea, similique! Sint fuga modi
+                quia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
+              magni.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea, similique! Sint fuga modi
+                quia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
+              magni.</p>
+            </div>
+            <div class="xl-col-8 med-col-12 grid-box p-med flex-column">
+              <h2>Title lorem ipsum</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea, similique! Sint fuga modi
+                quia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
+              magni.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea, similique! Sint fuga modi
+                quia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
+              magni.</p>
+              <div class="flex-grid-row flex-column med-flex-row">
+                <div class="xl-col-4  med-col-12  pr-med">
+                  <h3>Nested columns</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea, similique! Sint fuga modi
+                  quia, sed, expedita consequatur.</p>
+                </div>
+                <div class="xl-col-4 med-col-12  pr-med">
+                  <h3>Nested columns</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea, similique! Sint fuga modi
+                  quia, sed, expedita consequatur, enim doloremque odio autem aliquid.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-lx mb-xl"/>
+            <pre>
+                <code class="html monospaced border-radius">
+                  &lt;div class="flex-grid-row"&gt;
+                    &lt;div class="col-12 grid-box flex-grid-row "&gt;
+                      12 columns
+                      &lt;div class="col-4 grid-box p-med"&gt; 4 columns &lt;/div&gt;
+                      &lt;div class="col-8 grid-box p-med flex-grid-row"&gt;
+                        8 columns
+                        &lt;div class="col-6 grid-box p-med"&gt; 6 columns &lt;/div&gt;
+                        &lt; class="col-6 grid-box p-med"&gt; 6 columns &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                </code>
+        </pre>
+        <!-- end 3 columns -->
+        <hr class="mt-xxl mb-xxl"/>
+        <h2 id="regular-grids" class="fw-bold">Regular grid</h2>
+        <p>We're just using regular floats and setting our grid using padding on the column itselg</p>
+        <div class="grid-row">
+          <div class="col-1 med-col-6 f-left med-pr-xl pr0">
+            <p class="h2 fw-bold mb-xl line-height-1-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo
+            dolorum nihil, esse vitae hic</p>
+            <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
+              est,
+            minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+          </div>
+        </div>
+        <div>
+          <div class="col-1 med-col-3 f-left med-pr-xl pr0">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
+            necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
+            <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
+              est,
+            minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+          </div>
+          <div class="col-1 med-col-3 f-left med-pr-xl pr0">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
+            necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
+            <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
+              est,
+            minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+          </div>
+        </div>
+        <hr class="my-xxl clear"/>
+        <!--LISTS-->
+        <h2 id="lists"> Playing with list </h2>
+        <ul class="col-3 f-left p-med">
+          <li>Default ul li element no classes</li>
+          <li>Default ul li element no classes</li>
+          <li>Default ul li element no classes</li>
+          <li>Default ul li element no classes</li>
+        </ul>
+        <ul class="col-3 f-left p-med">
+          <li>nested ol in li element classes
+            <ol class="pl-lrg">
+              <li class="decimal-leading-zero">Default ul li element no classes</li>
+              <li class="decimal-leading-zero">Default ul li element no classes</li>
+              <li class="decimal-leading-zero">Default ul li element no classes</li>
+              <li class="decimal-leading-zero">Default ul li element no classes</li>
+            </ol>
+          </li>
+        </ul>
+        <ul class="col-3 f-left p-med">
+          <li class=" mb-x italic">Default ul li element with <code> mb-x italic</code> classes</li>
+          <li class=" mb-x upper">Default ul li element with <code> mb-x upper</code> classes</li>
+          <li class=" mb-x fw-light">Default ul li element no classes<code> mb-small fw-light</code></li>
+          <li class=" mb-x small-type">Default ul li element <code> mb-x small-type</code> classes</li>
+        </ul>
+        <ol class="col-3 f-left p-med">
+          <li>Lorem ipsum list item</li>
+          <li>Lorem ipsum list item</li>
+          <li>Lorem ipsum list item</li>
+          <li>Lorem ipsum list item</li>
+        </ol>
+        <hr class="mt-xxl mb-xxl clear"/>
+        <!--UI-->
+        <h1 id="card-ui" class="h1 upper">Simple <span class="italic">card</span> ui</h1>
+        <div>
+          <div class="flex-grid-row flex-row  space-between flex-column@small">
+            <div class="c-ui-card solid-border-light-white col-2-4 flex-column subtle-shadow mr-small">
+              <img src="https://picsum.photos/940/650"/>
+              <div class="c-ui-card__inner lrg-p-xl p-small">
+                <span class="c-ui-card__date block small-type upper line-height-0 mb-small">September 25 2017</span>
+                <h2 class="fw-med">Title of card</h2>
+                <p class="h3 fw-bold">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem
+                  sapiente similique est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium
+                ipsa! Beatae!</p>
+                <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
+                est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+              </div>
+            </div>
+            <div class="c-ui-card solid-border-light-white col-1-4 flex-column subtle-shadow mr-small">
+              <img src="https://picsum.photos/940/650"/>
+              <div class="c-ui-card__inner lrg-p-med p-small">
+                <span class="c-ui-card__date block small-type upper line-height-0 mb-small">September 25 2017</span>
+                <h2 class="fw-med">Title of card</h2>
+                <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
+                est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+              </div>
+            </div>
+            <div class="c-ui-card solid-border-light-white col-1-4 flex-column subtle-shadow">
+              <img src="https://picsum.photos/940/650"/>
+              <div class="c-ui-card__inner lrg-p-med p-small">
+                <span class="c-ui-card__date block small-type upper line-height-0 mb-small">September 25 2017</span>
+                <h2 class="fw-med">Title of card</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
+                  necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi
+                et!</p>
+                <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
+                est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+              </div>
+            </div>
+          </div>
+          <h2 id="buil-ui" class="title mb-xxl letter-spacing-tight upper my-xxxxxl">
+          Building ui with Functional CSS
+          </h2>
+          <p>In a component based world Like Vue.js &amp; React.js we can easily create components and pass props to them
+            and
+            not have to write any extra css for them, which is great when we talk about functional css, in our case, we
+            should
+          definitely extract some component and build specific ui items like butons inputs, calendars etc...</p>
+          <p class="mb-xxl"> we are using a few concepts here. the BEM naming convention comes in handy for the button or
+            any
+            brand specific
+          work</p>
+          <div class="flex-grid-row flex-column tab-flex-row space-between">
+            <div class="c-ui-card solid-border-light-white col-12 tab-col-6  mb-med flex-column subtle-shadow med-mr-xxl">
+              <img src="https://images.pexels.com/photos/396143/pexels-photo-396143.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/>
+              <div class="c-ui-card__inner py-med px-lrg">
+                <span class="c-ui-card__date block small-type upper line-height-0 mb-small">September 25 2017</span>
+                <h2 class="fw-med">Title of card</h2>
+                <p class="h5 tab-h4 lrg-h3 fw-bold lh-1-5">Tempora natus fugiat dolores debitis et eum nemo corporis vitae
+                  id
+                  fuga laborum at rem sapiente similique est, minus explicabo optio ullam, excepturi magnam veniam hic,
+                consequatur praesentium ipsa! Beatae!</p>
+                <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
+                est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+              </div>
+            </div>
+            <div class="col-12 tab-col-6 flex-column tab-p-med">
+              <form class="c-form">
+                <label class="label caps fw-med mb-x inline-block">your name</label>
+                <input type="text" placeholder="text input" class="mb-med block full p-small transparent-bg solid-border-light-white"/>
+                <label class="label caps fw-med mb-x inline-block">Your email</label>
+                <input type="email" placeholder="email input" class="mb-med block full p-small transparent-bg solid-border-light-white"/>
+                <label class="label caps fw-med mb-x inline-block">your phone number</label>
+                <input type="tel" placeholder="number input" class="mb-med block full p-small transparent-bg solid-border-light-white"/>
+                <label class="label caps fw-med mb-x inline-block">Add your message</label>
+                <textarea class="mb-med block w-full p-small transparent-bg solid-border-light-white" rows="8"></textarea>
+                <button class="c-btn"> Create and update</button>
+              </form>
+            </div>
+          </div>
+          <!--FORM-->
+          <h2 class="title my-xxxxxl letter-spacing-tight upper">
+          Forms and Form ELements
+          </h2>
+          <div class="flex flex-column">
+            <div class="col-1-4\@med f-left p-x">
+              <h3 class="line-height-1-6">Form elelements with no classes, default styles set in elements</h3>
+              <form class="c-form f-left mr-med">
+                <label>Type text Label element</label>
+                <input type="text" placeholder="text input" class="block"/>
+                <label>email Label element</label>
+                <input type="email" placeholder="email input" class="block"/>
+                <label>Number Label element</label>
+                <input type="number" placeholder="number input" class="block"/>
+                <label>textarea Label element</label>
+                <textarea class="textarea full" rows="4"></textarea>
+              </form>
+            </div>
+            <div class="col-1-4\@med f-left p-x">
+              <h3 class="line-height-1-6">Forms with classes, Building a ui, with just a few classes</h3>
+              <form class="c-form">
+                <label class="label mb-x inline-block">Type text Label element</label>
+                <input type="text" placeholder="text input" class="mb-small block full p-small transparent-bg solid-border-light-white"/>
+                <label class="label mb-x inline-block">email Label element</label>
+                <input type="email" placeholder="email input" class="mb-small block full p-small transparent-bg solid-border-light-white"/>
+                <label class="label mb-x inline-block">Number Label element</label>
+                <input type="number" placeholder="number input" class="mb-small block full p-small transparent-bg solid-border-light-white"/>
+                <label class="label mb-x inline-block">textarea Label element</label>
+                <textarea class="mb-small block full p-small transparent-bg solid-border-light-white" rows="4"></textarea>
+              </form>
+            </div>
+            <div class="col-1-4\@med f-left p-x">
+              <form class="">
+                <h3 class="line-height-1-6"> A simple way to Hide the search label with class="hide"</h3>
+                <label for="search" class="hide">Search</label>
+                <input id="search" type="search" placeholder="search..." class="mb-small block full p-small transparent-bg solid-border-light-white"/>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--TYPO-->
+        <h1 id="typography" class="title my-xxxxxl letter-spacing-tight upper">
+        Typography
+        </h1>
+        <div>
+          <div class="mb-xxl">
+            <h2>Heading with no classes</h2>
+            <p>Default styles for our Heading Elements, we set these in our elements folder in the heading files</p>
+            <h1>Heading H1, with no classes</h1>
+            <h2>Heading H2, with no classes</h2>
+            <h3>Heading H3, with no classes</h3>
+            <h4>Heading H4, with no classes</h4>
+            <h5>Heading H5, with no classes</h5>
+            <h6>Heading H6, with no classes</h6>
+          </div>
+          <div class="mb-xl">
+            <div class="flex flex-row flex-wrap">
+              <span class="h1 upper center fw-heavy b-light flex-1 p-xl center">a</span>
+              <span class="h2 upper center fw-heavy b-light flex-1 p-xl center">a</span>
+              <span class="h3 upper center fw-heavy b-light flex-1 p-xl center">a</span>
+              <span class="h3 upper center fw-heavy b-light flex-1 p-xl center">a</span>
+              <span class="h5 upper center fw-heavy b-light flex-1 p-xl center">a</span>
+              <span class="h6 upper center fw-heavy b-light flex-1 p-xl center">a</span>
+            </div>
+          </div>
+          <hr class="my-xl"/>
+          <h2 id="type-helpers">Type helpers</h2>
+          <p class="fw-bold">Bold Style</p>
+          <p class="fw-med">Regular Style</p>
+          <p class="italic">Italic</p>
+          <p class="caps">Caps</p>
+          <p class="upper">uppercase</p>
+          <p class="linethrough">Line through</p>
+          <hr class="my-xl"/>
+          <p class="justify">Justify, justify justify justify justify justify justify justify justify Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Maxime dignissimos, odio nihil sunt nostrum aut non aperiam ea quos
+            consequuntur ducimus sed minima illo cumque deserunt veniam dolor in, justify justify justify justify justify
+            justify justify justify Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dignissimosjustify
+            justify justify justify justify justify justify justify Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit.
+          Maxime dignissimos!</p>
+          <p class="left-align">Left align</p>
+          <p class="center">Center</p>
+          <p class="right-align">Right align</p>
+          <p class="nowrap">No wrap</p>
+          <p class="underline">Underline</p>
+          <p class="truncate">Truncate</p>
+          <p class="font-family-inherit">Font Family Inherit</p>
+          <p class="font-size-inherit">Font Size Inherit</p>
+          <a href="#" class="text-deco-none">Text Decoration None</a>
+          <hr class="my-xl"/>
+          <h1 class="my-xxxxxl"> Headlines </h1>
+          <h1 class="hl-xxxl upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
+          <h1 class="hl-xxl upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
+          <h1 class="hl-xl upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
+          <h1 class="hl-lrg upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
+          <h1 class="hl-med upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
+          <hr class="my-xl"/>
+          <h3> Blockquote no style</h3>
+          <blockquote>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dignissimos, odio nihil sunt nostrum aut non
+              aperiam ea quos consequuntur ducimus sed minima illo cumque deserunt veniam dolor in, perspiciatis!
+            </p>
+          </blockquote>
+          <h3> Blockquote with style</h3>
+          <blockquote class="p-xl">
+            <p class="italic h1 serif line-height-1-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+              dignissimos, odio nihil sunt nostrum aut non aperiam ea quos consequuntur ducimus sed minima illo cumque
+            deserunt veniam dolor in, perspiciatis</p>
+          </blockquote>
+          <h3>Reset list with inline-block class and margin-right class</h3>
+          <ul class="reset-list">
+            <li class="inline-block mr-small">List item</li>
+            <li class="inline-block mr-small">List item</li>
+            <li class="inline-block mr-small">List item</li>
+            <li class="inline-block mr-small">List item</li>
+          </ul>
+        </div>
+        <!--CODE PRINTING TEST-->
+        <div class="py-xxxxxl">
+                <pre class="prettyprint lang-js lang-ruby lang-coffee" style="">
+                    //RUBY
+                    @event = policy_scope(Event).forthcoming.listed.order(:begin_date, :id).with_location
+                    //
+                    //JS
+                    let steak = {'ble-dinde':'patate}'
+                    //
+                    //JSON
+                    <%== JSON.pretty_generate @event.as_json %>
+                    //
+          </pre>
+        </div>
+      </div>
+      <!--MENU-->
+      <div class="w-20 pos-fixed right-0">
+        <ul class="my-xxxxxl">
+          <li>
+            <h3><a href="#flex-grids">Grids</a></h3>
+            <ul class="ml-xx">
+              <li>
+                <h4><a href="#">Flex</a></h4>
+              </li>
+              <li>
+                <h4><a href="#">Regular</a></h4>
+              </li>
+              <li>
+                <h4><a href="#">3 columns</a></h4>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3><a href="#type_sizing">Type Sizing</a></h3>
+          </li>
+          <li>
+            <h3><a href="#margins_paddings">Margin & Paddings</a></h3>
+          </li>
+          <li>
+            <h3><a href="#breakpoints">Breakpoints</a></h3>
+          </li>
+          <li>
+            <h3><a href="#grids">Grids</a></h3>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

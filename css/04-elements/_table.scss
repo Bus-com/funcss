@@ -1,0 +1,17 @@
+table {
+  border-collapse: collapse;
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+
+  tr th {
+    padding: $unit-small $unit-x;
+    border-bottom: 1px solid palette(grey, light);
+  }
+
+  tr td {
+    padding: $unit-small $unit-x;
+    border-bottom: 1px solid palette(grey, xx-light);
+    vertical-align: middle;
+  }
+}

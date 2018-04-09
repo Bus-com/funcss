@@ -1,0 +1,54 @@
+/* ==========================================================================
+ BORDER HELPERS
+========================================================================== */
+
+@include tablet-landscape {
+
+//light grey borders
+.med-b-light { border: 1px solid palette(grey, xxxx-light); }
+.med-bt-light { border-top: 1px solid palette(grey, xxxx-light); }
+.med-bl-light { border-left: 1px solid palette(grey, xxxx-light); }
+.med-bb-light { border-bottom: 1px solid palette(grey, xxxx-light); }
+.med-br-light { border-right: 1px solid palette(grey, xxxx-light); }
+
+//grey borders
+.med-b-grey { border: 1px solid palette(grey, xxx-light); }
+.med-bt-grey { border-top: 1px solid palette(grey, xxx-light); }
+.med-bl-grey { border-left: 1px solid palette(grey, xxx-light); }
+.med-bb-grey { border-bottom: 1px solid palette(grey, xxx-light); }
+.med-br-grey { border-right: 1px solid palette(grey, xxx-light); }
+
+//orange borders
+.med-b-orange { border: 1px solid palette(orange, base); }
+.med-bt-orange { border-top: 1px solid palette(orange, base); }
+.med-bl-orange { border-left: 1px solid palette(orange, base); }
+.med-bb-orange { border-bottom: 1px solid palette(orange, base); }
+.med-br-orange { border-right: 1px solid palette(orange, base); }
+
+//orange borders
+.med-b-cyan { border: 1px solid palette(cyan, base); }
+.med-bt-cyan { border-top: 1px solid palette(cyan, base); }
+.med-bl-cyan { border-left: 1px solid palette(cyan, base); }
+.med-bb-cyan { border-bottom: 1px solid palette(cyan, base); }
+.med-br-cyan { border-right: 1px solid palette(cyan, base); }
+
+//orange borders
+.med-b-cyan  {border: 1px solid palette(cyan, base);}
+.med-bt-cyan {border-top:1px solid palette(cyan, base);}
+.med-bl-cyan {border-left:1px solid palette(cyan, base);}
+.med-bb-cyan {border-bottom:1px solid palette(cyan, base);}
+.med-br-cyan {border-right:1px solid palette(cyan, base);}
+
+
+//border none
+.med-b-none { border: none; }
+.med-bt-none { border-top: none; }
+.med-bl-none { border-left: none; }
+.med-bb-none { border-bottom: none; }
+.med-br-none { border-right: none; }
+
+//shadowed style lines
+.med-b-light-shadow {
+  box-shadow: 0 0 0 1px palette(grey, xxxx-light) inset;
+}
+}
