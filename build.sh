@@ -9,7 +9,7 @@ DEBUG=true
 DEPLOY=false
 TAG_NAME=""
 OUTPUT_STYLE="expanded"
-OUTPUT_PATH="./dist"
+OUTPUT_PATH=".\/dist"
 OUTPUT_NAME="funcss"
 
 function usage() {
@@ -64,42 +64,43 @@ while [ "$1" != "" ]; do
     shift
 done
 
-printf "\033[95;5m Feeling         \033[4mSassy\033[0m?\033[0m\n"
+printf "\033[95;5m Feeling         \033[4mSassy\033[0m?         \033[0m\n"
 printf "\033[106;30m        $OUTPUT_NAME is being compiled      \033[0m\n"
 
 if [ "$DEBUG" = true ]; then
+    OUTPUT_NAME="$OUTPUT_PATH\/$OUTPUT_NAME.css"
     # replace with the new tagged name in the index file.
     replace_style_import
     # open the demo page
-    printf "\033[166;5m             opening index.html           \033[0m\n"
+    printf "\033[166;5m             opening index.html          \033[0m\n"
     open index.html
     # Open a new terminal and launch sass --watch
     # open -a terminal -e $PWD ""
-    sass --scss --watch css/_all.scss:$OUTPUT_PATH/$OUTPUT_NAME.css --style $OUTPUT_STYLE
+    sass --scss --watch scss/_all.scss:$OUTPUT_NAME --style $OUTPUT_STYLE
 else
-    sass --scss css/_all.scss:$OUTPUT_PATH/$OUTPUT_NAME.css --style $OUTPUT_STYLE
+    sass --scss scss/_all.scss:./dist/$OUTPUT_NAME.css --style $OUTPUT_STYLE
 
-    printf "\033[166;5m          minifying $OUTPUT_NAME           \033[0m\n"
+    printf "\033[166;5m          minifying $OUTPUT_NAME         \033[0m\n"
         
-    MIN_OUTPUT_NAME="$PWD$OUTPUT_PATH/$OUTPUT_NAME.min.css"
+    MIN_OUTPUT_NAME="./dist/$OUTPUT_NAME.min.css"
         
-    curl -X POST -s --data-urlencode "input@$PWD$OUTPUT_PATH$OUTPUT_NAME.css" https://cssminifier.com/raw > $MIN_OUTPUT_NAME    
-    # replace with the new tagged name in the index file.
+    curl -X POST -s --data-urlencode "input@./dist/$OUTPUT_NAME.css" https://cssminifier.com/raw > $MIN_OUTPUT_NAME    
+
     OUTPUT_NAME=MIN_OUTPUT_NAME
     replace_style_import
 
-    if [ "$DEPLOY" = true ]; then
+    # if [ "$DEPLOY" = true ]; then
         
-        git add dist/*
-        git add css/*
-        read commitmessage
-        git commit dist/* -m "$commitmessage"
-        git push
+        # git add dist/*
+        # git add scss/*
+        # read commitmessage
+        # git commit dist/* -m "$commitmessage"
+        # git push
         # printf "\033[106;30m        tag $TAG_NAME has been tagged        \033[0m\n"
         # TODO: phil; find a way to auto inc. tag ?
         # git tag TAG_NAME
         # git push --all
-    fi
+    # fi
 fi
 
 printf "\033[106;30m                                          \033[0m\n"
@@ -109,5 +110,5 @@ printf "\033[106;30m ▐█▀▀█▄█▌▐█▌▄▀▀▀█▄   █�
 printf "\033[106;30m ██▄▪▐█▐█▄█▌▐█▄▪▐█   ▐███▌▐█▌.▐▌██ ██▌▐█▌ \033[0m\n"
 printf "\033[106;30m ·▀▀▀▀  ▀▀▀  ▀▀▀▀  ▀ ·▀▀▀  ▀█▄▀▪▀▀  █▪▀▀▀ \033[0m\n"
 printf "\033[106;30m                                          \033[0m\n"
-printf "\033[106;30m      $OUTPUT_NAME has been compiled        \033[0m\n"
+printf "\033[106;30m      $OUTPUT_NAME has been compiled      \033[0m\n"
 

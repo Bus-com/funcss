@@ -3,7 +3,7 @@
   "description": "func. css",
   "main": "",
   "authors": [
-    "Pablo Boerr && Philippe David"
+    "Pablo Boerr && Philippe David, Bus.com"
   ],
   "license": "MIT",
   "homepage": "https://github.com/Bus-com/funcss",
@@ -15,7 +15,9 @@
     "tests"
   ],
   "main": [
-    "dist/angular-ui-notification.css",
-    "dist/angular-ui-notification.js"
+    "dist/funcss.css",
+    "dist/funcss.css.map",
+    "dist/funcss.css.min",
+    "dist/funcss.css.min.map"
   ]
 }
