@@ -1,9 +1,17 @@
 {
-  "name": "funcss",
+  "name": "bus-funcss",
   "version": "0.0.1",
   "description": "func. css",
-  "main": "",
+  "main": "index.html",
   "repository": "git@github.com:Bus-com/funcss.git",
   "author": "Pablo Boerr && Philippe David",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "sass"
+  ],
+  "scripts": {
+    "build": "./build.sh --debug",
+    "release": "./build.sh --release"
+  }
 }
