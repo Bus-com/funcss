@@ -135,6 +135,18 @@
   background: palette(cyan, base);
 }
 
+.bg-x-light-cyan {
+  background: palette(cyan, x-light)
+}
+
+.bg-xx-light-cyan {
+  background: palette(cyan, xx-light)
+}
+
+.bg-xxx-light-cyan {
+  background: palette(cyan, xxx-light)
+}
+
 .bg-orange {
   background: palette(orange, base);
 }
@@ -159,9 +171,10 @@
   background: palette(orange, xxxx-light);
 }
 
+
 .bg-facebook {
   background: #4C68A7;
-  
+
   &:hover {
     background: #3E5F99 !important;
     color: $white;
