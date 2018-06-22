@@ -2,6 +2,27 @@
    BORDER RADIUS HELPERS
   ========================================================================== */
 
+.br-reset {
+  border-radius: 0px;
+}
+
+.br-top-left-reset {
+  border-top-left-radius: 0px;
+}
+
+.br-top-right-reset {
+  border-top-right-radius: 0px;
+}
+
+.br-bottom-left-reset {
+  border-bottom-left-radius: 0px;
+}
+
+.br-bottom-right-reset {
+  border-bottom-right-radius: 0px;
+}
+
+
 .br-xs {
   border-radius: 4px
 }

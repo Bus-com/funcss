@@ -131,20 +131,48 @@
   background: palette(grey, base);
 }
 
+.bg-x-light-grey {
+  background: palette(grey, x-light);
+}
+
+.bg-xx-light-grey {
+  background: palette(grey, xx-light);
+}
+
+.bg-xxx-light-grey {
+  background: palette(grey, xxx-light);
+}
+
+.bg-xxxx-light-grey {
+  background: palette(grey, xxxx-light);
+}
+
+.bg-dark-cyan {
+  background: palette(cyan, dark);
+}
+
 .bg-cyan {
   background: palette(cyan, base);
 }
 
+.bg-light-cyan {
+  background: palette(cyan, light);
+}
+
 .bg-x-light-cyan {
-  background: palette(cyan, x-light)
+  background: palette(cyan, x-light);
 }
 
 .bg-xx-light-cyan {
-  background: palette(cyan, xx-light)
+  background: palette(cyan, xx-light);
 }
 
 .bg-xxx-light-cyan {
-  background: palette(cyan, xxx-light)
+  background: palette(cyan, xxx-light);
+}
+
+.bg-xxxx-light-cyan {
+  background: palette(cyan, xxxx-light);
 }
 
 .bg-orange {

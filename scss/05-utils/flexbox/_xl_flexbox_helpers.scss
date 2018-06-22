@@ -102,4 +102,16 @@
     flex-shrink: 0;
   }
 
+  .xl-flex-self-start{
+    align-self: flex-start;
+  }
+
+  .xl-flex-self-end {
+    align-self: flex-end;
+  }
+
+  .xl-flex-self-center {
+    align-self: center;
+  }
+
 }
