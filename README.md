@@ -14,9 +14,9 @@ brew install --devel sass/sass/sass
 
 Build release package and release a new version
 ```
-./build.sh --deploy <release-type: (patch | minor | major]>
+./build.sh --release <release-type: (patch | minor | major]> --publish <optional, default:false>
 ```
-Default to patch
+Default to `patch`
 
 Patch will increase the semver by 0.0.1
 Minor will increase the semver by 0.1.0

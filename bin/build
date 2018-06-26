@@ -12,6 +12,7 @@ OUTPUT_STYLE="expanded"
 OUTPUT_PATH="dist"
 OUTPUT_NAME="funcss"
 OUTPUT_FORMAT="css"
+PUBLISH=true
 
 function usage() {
     echo "\033[38;5;87mFUNCSS build Script\033[0m"
@@ -23,7 +24,7 @@ function usage() {
     echo ""
 }
 
-# replace with the new tagged name in the index file.
+# replace with the new name in the index file.
 function replace_style_import() {
     sed -i .bak "s/.*<link rel='stylesheet' href='.*'>.*/<link rel='stylesheet' href='$OUTPUT_PATH\/$OUTPUT_NAME.$OUTPUT_FORMAT'>/g" index.html
     #not sure why; does not work without .bak syntax
@@ -48,6 +49,9 @@ while [ "$1" != "" ]; do
             DEBUG=false
             BUILD_TYPE=$VALUE
             OUTPUT_STYLE="compressed"
+            ;;
+        --publish)
+            PUBLISH=true
             ;;
         *)
             echo "ERROR: unknown parameter \"$PARAM\""
@@ -82,7 +86,6 @@ else
     OUTPUT_NAME=$MIN_OUTPUT_NAME
     replace_style_import
 
-    # if [ "$DEPLOY" = true ]; then
         
         #add folders, clean git
         git add bin/
@@ -101,8 +104,9 @@ else
         npm version $BUILD_TYPE
         printf "\033[106;30m        npm version $BUILD_TYPE done.         \033[0m\n"
 
-        # git push
-    # fi
+    if [ "$PUBLISH" = true ]; then
+        npm publish
+    fi
 fi
 
 printf "\033[106;30m                                          \033[0m\n"
