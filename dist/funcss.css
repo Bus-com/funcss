@@ -10809,7 +10809,7 @@ button[disabled]:hover {
   -webkit-appearance: none;
   padding-left: 8px;
   background: transparent;
-  background-image: image-url("v3/svg/icon_dropdown.svg");
+  background-image: url("../../images/dropdown.svg");
   background-position: 100% 50%;
   background-repeat: no-repeat;
   background-size: 48px;
@@ -10823,7 +10823,7 @@ button[disabled]:hover {
 }
 .c-select-wrapper input:hover, .c-select-wrapper select:hover, .c-select-wrapper .select-match:hover {
   background: transparent;
-  background-image: image-url("v3/svg/icon_dropdown.svg");
+  background-image: url("../../images/dropdown.svg");
   background-position: 100% 50%;
   background-repeat: no-repeat;
   background-size: 48px;
@@ -10948,7 +10948,7 @@ ul.pagination li.current a {
 }
 
 .search-events {
-  background-image: image-url("v3/svg/search.svg");
+  background-image: url("../../images/search.svg");
   background-repeat: no-repeat;
   background-position: 0 50% !important;
 }
@@ -10961,7 +10961,7 @@ ul.pagination li.current a {
   top: 0;
   width: 48px;
   height: 48px;
-  background: image-url("v3/svg/search.svg") no-repeat left;
+  background: url("../../images/search.svg") no-repeat left;
 }
 
 .stars {
@@ -11343,13 +11343,13 @@ input.input-file input.input-file + label:hover {
   width: 24px;
 }
 .header .navbar__menus__toggle-menu-button.open-menu {
-  background-image: image-url("v3/main-nav-open.svg");
+  background-image: url("../images/nav-open.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .header .navbar__menus__toggle-menu-button.close-menu {
-  background-image: image-url("v3/main-nav-close.svg");
+  background-image: url("../images/nav-close.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

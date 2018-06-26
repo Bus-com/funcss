@@ -16,7 +16,7 @@ OUTPUT_FORMAT="css"
 function usage() {
     echo "\033[38;5;87mFUNCSS build Script\033[0m"
     echo ""
-    echo "\033[0m./build.sh"
+    echo "\033[0mbin/build"
     echo "\033[38;5;13m\t-h --help"
     echo "\033[38;5;166m\t--debug [default=true]"
     echo "\033[38;5;196m\t--deploy [default=false]"
@@ -84,21 +84,25 @@ else
     replace_style_import
 
     # if [ "$DEPLOY" = true ]; then
-        git add dist/*
-        git add scss/*
+        # clean git dir state
+        git add bin/
+        git add dist/
+        git add scss/
+        git add images/
+        git add index.html
+
         read commitmessage
         git commit -m "$commitmessage"
-        git tag $TAG_NAME
+        
+        # git tag $TAG_NAME
         printf "\033[106;30m        pushed $TAG_NAME has been tagged        \033[0m\n"
-        git push
+        # git push
         
         #create a release on github
-        POST_DATA="{\"tag_name\": \"$TAG_NAME\", \"target_commitish\": \"master\", \"name\": \"v$TAG_NAME\", \"body\": \"Description of the release\", \"draft\": false, \"prerelease\": false}"
-        curl -H "Content-type: application/json" -X POST -d $POST_DATA -s "https://api.github.com/repos/bus-com/funcss/releases/$TAG_NAME"
+        # POST_DATA="{\"tag_name\": \"$TAG_NAME\", \"target_commitish\": \"master\", \"name\": \"v$TAG_NAME\", \"body\": \"Description of the release\", \"draft\": false, \"prerelease\": false}"
+        # curl -H "Content-type: application/json" -X POST -d $POST_DATA -s "https://api.github.com/repos/bus-com/funcss/releases/$TAG_NAME"
 
-        # TODO: phil; find a way to auto inc. tag ?
-        # git tag TAG_NAME
-        # git push --all
+        npm version patch -m "release version %s"
     # fi
 fi
 

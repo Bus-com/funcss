@@ -11,7 +11,7 @@
     "sass"
   ],
   "scripts": {
-    "build": "./build.sh --debug",
-    "release": "./build.sh --release"
+    "build": "bin/build --debug",
+    "release": "bin/build --deploy"
   }
 }
