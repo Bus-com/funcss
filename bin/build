@@ -7,7 +7,7 @@ set -eo pipefail
 
 DEBUG=true
 DEPLOY=false
-TAG_NAME=""
+BUILD_TYPE="patch"
 OUTPUT_STYLE="expanded"
 OUTPUT_PATH="dist"
 OUTPUT_NAME="funcss"
@@ -46,9 +46,8 @@ while [ "$1" != "" ]; do
         --deploy)
             DEPLOY=true
             DEBUG=false
-            TAG_NAME=$VALUE
+            BUILD_TYPE=$VALUE
             OUTPUT_STYLE="compressed"
-            OUTPUT_NAME="funcss-$TAG_NAME"
             ;;
         *)
             echo "ERROR: unknown parameter \"$PARAM\""
@@ -60,7 +59,7 @@ while [ "$1" != "" ]; do
 done
 
 printf "\033[95;5m Feeling         \033[4mSassy\033[0m?         \033[0m\n"
-printf "\033[106;30m        $OUTPUT_NAME is being compiled      \033[0m\n"
+printf "\033[106;30m            lib is being compiled           \033[0m\n"
 
 if [ "$DEBUG" = true ]; then
     # replace with the new tagged name in the index file.
@@ -72,37 +71,37 @@ if [ "$DEBUG" = true ]; then
     # open -a terminal -e $PWD ""
     sass --scss --watch scss/_all.scss:$OUTPUT_PATH/$OUTPUT_NAME.$OUTPUT_FORMAT --style $OUTPUT_STYLE
 else
-    sass --scss scss/_all.scss:$OUTPUT_PATH/$OUTPUT_NAME.$OUTPUT_FORMAT --style $OUTPUT_STYLE
+    sass --scss scss/_all.scss:$OUTPUT_PATH/funcss.$OUTPUT_FORMAT --style $OUTPUT_STYLE
 
-    printf "\033[166;5m          minifying $OUTPUT_NAME         \033[0m\n"
+    printf "\033[166;5m       minifying lib ($BUILD_TYPE)       \033[0m\n"
         
-    MIN_OUTPUT_NAME="$OUTPUT_PATH/$OUTPUT_NAME.min.css"
+    MIN_OUTPUT_NAME="$OUTPUT_PATH/funcss.min.css"
 
-    curl -X POST -s --data-urlencode "input@$OUTPUT_PATH/$OUTPUT_NAME.$OUTPUT_FORMAT" https://cssminifier.com/raw > $MIN_OUTPUT_NAME    
+    curl -X POST -s --data-urlencode "input@$OUTPUT_PATH/funcss.$OUTPUT_FORMAT" https://cssminifier.com/raw > $MIN_OUTPUT_NAME    
 
     OUTPUT_NAME=MIN_OUTPUT_NAME
     replace_style_import
 
     # if [ "$DEPLOY" = true ]; then
-        # clean git dir state
+        
+        #add folders, clean git
         git add bin/
         git add dist/
         git add scss/
         git add images/
         git add index.html
+        git add README.md
 
-        read commitmessage
-        git commit -m "$commitmessage"
+        git status
+        # update the version
+        npm version $BUILD_TYPE
+        printf "\033[106;30m        npm version $BUILD_TYPE done.         \033[0m\n"
         
-        # git tag $TAG_NAME
-        printf "\033[106;30m        pushed $TAG_NAME has been tagged        \033[0m\n"
+        #commit
+        # read commitmessage
+        # git commit -m "$commitmessage"
+
         # git push
-        
-        #create a release on github
-        # POST_DATA="{\"tag_name\": \"$TAG_NAME\", \"target_commitish\": \"master\", \"name\": \"v$TAG_NAME\", \"body\": \"Description of the release\", \"draft\": false, \"prerelease\": false}"
-        # curl -H "Content-type: application/json" -X POST -d $POST_DATA -s "https://api.github.com/repos/bus-com/funcss/releases/$TAG_NAME"
-
-        npm version patch -m "release version %s"
     # fi
 fi
 
