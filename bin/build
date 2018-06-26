@@ -58,7 +58,7 @@ while [ "$1" != "" ]; do
     shift
 done
 
-printf "\033[95;5m          Feeling  \033[4mSassy\033[0m?         \033[0m\n"
+printf "\033[95;5m              Feeling  \033[4mSassy\033[0m?         \033[0m\n"
 printf "\033[106;30m            lib is being compiled           \033[0m\n"
 
 if [ "$DEBUG" = true ]; then
@@ -79,7 +79,7 @@ else
 
     curl -X POST -s --data-urlencode "input@$OUTPUT_PATH/funcss.$OUTPUT_FORMAT" https://cssminifier.com/raw > $MIN_OUTPUT_NAME    
 
-    OUTPUT_NAME=MIN_OUTPUT_NAME
+    OUTPUT_NAME=$MIN_OUTPUT_NAME
     replace_style_import
 
     # if [ "$DEPLOY" = true ]; then
@@ -94,6 +94,7 @@ else
 
         #commit
         read commitmessage
+        say "enter your commit message: "
         git commit -m "$commitmessage"
 
         # update the version
