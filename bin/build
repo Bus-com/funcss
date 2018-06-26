@@ -58,7 +58,7 @@ while [ "$1" != "" ]; do
     shift
 done
 
-printf "\033[95;5m Feeling         \033[4mSassy\033[0m?         \033[0m\n"
+printf "\033[95;5m          Feeling  \033[4mSassy\033[0m?         \033[0m\n"
 printf "\033[106;30m            lib is being compiled           \033[0m\n"
 
 if [ "$DEBUG" = true ]; then
@@ -92,14 +92,13 @@ else
         git add index.html
         git add README.md
 
-        git status
+        #commit
+        read commitmessage
+        git commit -m "$commitmessage"
+
         # update the version
         npm version $BUILD_TYPE
         printf "\033[106;30m        npm version $BUILD_TYPE done.         \033[0m\n"
-        
-        #commit
-        # read commitmessage
-        # git commit -m "$commitmessage"
 
         # git push
     # fi
