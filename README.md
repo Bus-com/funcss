@@ -11,6 +11,8 @@ brew install --devel sass/sass/sass
 ```
 
 # Deploy
+
+Build release package and release a new version
 ```
-./build.sh --release
+./build.sh --deploy
 ```

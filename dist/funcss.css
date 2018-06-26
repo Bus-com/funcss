@@ -450,6 +450,10 @@ h5, h6 {
   width: 24px;
 }
 
+.icon-fixed-64 {
+  width: 64px;
+}
+
 .icon-fixed-72 {
   width: 72px;
 }
@@ -475,6 +479,10 @@ h5, h6 {
 }
 
 @media only screen and (min-width: 768px) {
+  .tab-icon-fixed-64 {
+    width: 64px;
+  }
+
   .tab-icon-fixed-72 {
     width: 72px;
   }
@@ -500,6 +508,39 @@ h5, h6 {
   }
 
   .tab-icon-fixed-200 {
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .med-icon-fixed-64 {
+    width: 64px;
+  }
+
+  .med-icon-fixed-72 {
+    width: 72px;
+  }
+
+  .med-icon-fixed-100 {
+    width: 100px;
+  }
+
+  .med-icon-fixed-120 {
+    width: 120px;
+  }
+
+  .med-icon-fixed-140 {
+    width: 140px;
+  }
+
+  .med-icon-fixed-160 {
+    width: 160px;
+  }
+
+  .med-icon-fixed-180 {
+    width: 180px;
+  }
+
+  .med-icon-fixed-200 {
     width: 200px;
   }
 }
@@ -661,6 +702,86 @@ h5, h6 {
   border-right: 1px solid #CCCDD0;
 }
 
+.b-xx-light-grey-xs {
+  border: 4px solid #ABACB2;
+}
+
+.bt-xx-light-grey-xs {
+  border-top: 4px solid #ABACB2;
+}
+
+.bl-xx-light-grey-xs {
+  border-left: 4px solid #ABACB2;
+}
+
+.bb-xx-light-grey-xs {
+  border-bottom: 4px solid #ABACB2;
+}
+
+.br-xx-light-grey-xs {
+  border-right: 4px solid #ABACB2;
+}
+
+.b-xx-light-grey-x {
+  border: 8px solid #ABACB2;
+}
+
+.bt-xx-light-grey-x {
+  border-top: 8px solid #ABACB2;
+}
+
+.bl-xx-light-grey-x {
+  border-left: 8px solid #ABACB2;
+}
+
+.bb-xx-light-grey-x {
+  border-bottom: 8px solid #ABACB2;
+}
+
+.br-xx-light-grey-x {
+  border-right: 8px solid #ABACB2;
+}
+
+.b-x-light-grey-xs {
+  border: 4px solid #898B93;
+}
+
+.bt-x-light-grey-xs {
+  border-top: 4px solid #898B93;
+}
+
+.bl-x-light-grey-xs {
+  border-left: 4px solid #898B93;
+}
+
+.bb-x-light-grey-xs {
+  border-bottom: 4px solid #898B93;
+}
+
+.br-x-light-grey-xs {
+  border-right: 4px solid #898B93;
+}
+
+.b-x-light-grey-x {
+  border: 8px solid #898B93;
+}
+
+.bt-x-light-grey-x {
+  border-top: 8px solid #898B93;
+}
+
+.bl-x-light-grey-x {
+  border-left: 8px solid #898B93;
+}
+
+.bb-x-light-grey-x {
+  border-bottom: 8px solid #898B93;
+}
+
+.br-x-light-grey-x {
+  border-right: 8px solid #898B93;
+}
+
 .b-orange {
   border: 1px solid #FFA856;
 }
@@ -699,6 +820,46 @@ h5, h6 {
 
 .br-cyan {
   border-right: 1px solid #23D5D6;
+}
+
+.b-cyan-xs {
+  border: 4px solid #23D5D6;
+}
+
+.bt-cyan-xs {
+  border-top: 4px solid #23D5D6;
+}
+
+.bl-cyan-xs {
+  border-left: 4px solid #23D5D6;
+}
+
+.bb-cyan-xs {
+  border-bottom: 4px solid #23D5D6;
+}
+
+.br-cyan-xs {
+  border-right: 4px solid #23D5D6;
+}
+
+.b-cyan-x {
+  border: 8px solid #23D5D6;
+}
+
+.bt-cyan-x {
+  border-top: 8px solid #23D5D6;
+}
+
+.bl-cyan-x {
+  border-left: 8px solid #23D5D6;
+}
+
+.bb-cyan-x {
+  border-bottom: 8px solid #23D5D6;
+}
+
+.br-cyan-x {
+  border-right: 8px solid #23D5D6;
 }
 
 .b-none {
@@ -1240,6 +1401,26 @@ h5, h6 {
 /* ==========================================================================
    BORDER RADIUS HELPERS
   ========================================================================== */
+.br-reset {
+  border-radius: 0px;
+}
+
+.br-top-left-reset {
+  border-top-left-radius: 0px;
+}
+
+.br-top-right-reset {
+  border-top-right-radius: 0px;
+}
+
+.br-bottom-left-reset {
+  border-bottom-left-radius: 0px;
+}
+
+.br-bottom-right-reset {
+  border-bottom-right-radius: 0px;
+}
+
 .br-xs {
   border-radius: 4px;
 }
@@ -1541,8 +1722,44 @@ h5, h6 {
   background: #474A56;
 }
 
+.bg-x-light-grey {
+  background: #898B93;
+}
+
+.bg-xx-light-grey {
+  background: #ABACB2;
+}
+
+.bg-xxx-light-grey {
+  background: #CCCDD0;
+}
+
+.bg-xxxx-light-grey {
+  background: #ECEFF5;
+}
+
+.bg-dark-cyan {
+  background: #1DAFB0;
+}
+
 .bg-cyan {
   background: #23D5D6;
+}
+
+.bg-light-cyan {
+  background: #4BDCDD;
+}
+
+.bg-x-light-cyan {
+  background: #73E4E4;
+}
+
+.bg-xx-light-cyan {
+  background: #9BEBEC;
+}
+
+.bg-xxx-light-cyan {
+  background: #EBFBFB;
 }
 
 .bg-orange {
@@ -1843,6 +2060,86 @@ ul.striped-odd li:nth-child(odd) {
   border-right: 1px solid #CCCDD0;
 }
 
+.b-xx-light-grey-xs {
+  border: 4px solid #ABACB2;
+}
+
+.bt-xx-light-grey-xs {
+  border-top: 4px solid #ABACB2;
+}
+
+.bl-xx-light-grey-xs {
+  border-left: 4px solid #ABACB2;
+}
+
+.bb-xx-light-grey-xs {
+  border-bottom: 4px solid #ABACB2;
+}
+
+.br-xx-light-grey-xs {
+  border-right: 4px solid #ABACB2;
+}
+
+.b-xx-light-grey-x {
+  border: 8px solid #ABACB2;
+}
+
+.bt-xx-light-grey-x {
+  border-top: 8px solid #ABACB2;
+}
+
+.bl-xx-light-grey-x {
+  border-left: 8px solid #ABACB2;
+}
+
+.bb-xx-light-grey-x {
+  border-bottom: 8px solid #ABACB2;
+}
+
+.br-xx-light-grey-x {
+  border-right: 8px solid #ABACB2;
+}
+
+.b-x-light-grey-xs {
+  border: 4px solid #898B93;
+}
+
+.bt-x-light-grey-xs {
+  border-top: 4px solid #898B93;
+}
+
+.bl-x-light-grey-xs {
+  border-left: 4px solid #898B93;
+}
+
+.bb-x-light-grey-xs {
+  border-bottom: 4px solid #898B93;
+}
+
+.br-x-light-grey-xs {
+  border-right: 4px solid #898B93;
+}
+
+.b-x-light-grey-x {
+  border: 8px solid #898B93;
+}
+
+.bt-x-light-grey-x {
+  border-top: 8px solid #898B93;
+}
+
+.bl-x-light-grey-x {
+  border-left: 8px solid #898B93;
+}
+
+.bb-x-light-grey-x {
+  border-bottom: 8px solid #898B93;
+}
+
+.br-x-light-grey-x {
+  border-right: 8px solid #898B93;
+}
+
 .b-orange {
   border: 1px solid #FFA856;
 }
@@ -1881,6 +2178,46 @@ ul.striped-odd li:nth-child(odd) {
 
 .br-cyan {
   border-right: 1px solid #23D5D6;
+}
+
+.b-cyan-xs {
+  border: 4px solid #23D5D6;
+}
+
+.bt-cyan-xs {
+  border-top: 4px solid #23D5D6;
+}
+
+.bl-cyan-xs {
+  border-left: 4px solid #23D5D6;
+}
+
+.bb-cyan-xs {
+  border-bottom: 4px solid #23D5D6;
+}
+
+.br-cyan-xs {
+  border-right: 4px solid #23D5D6;
+}
+
+.b-cyan-x {
+  border: 8px solid #23D5D6;
+}
+
+.bt-cyan-x {
+  border-top: 8px solid #23D5D6;
+}
+
+.bl-cyan-x {
+  border-left: 8px solid #23D5D6;
+}
+
+.bb-cyan-x {
+  border-bottom: 8px solid #23D5D6;
+}
+
+.br-cyan-x {
+  border-right: 8px solid #23D5D6;
 }
 
 .b-none {
@@ -9628,6 +9965,10 @@ ul.striped-odd li:nth-child(odd) {
   flex: 1;
 }
 
+.flex-self-start {
+  align-self: flex-start;
+}
+
 .flex-self-end {
   align-self: flex-end;
 }
@@ -9767,6 +10108,18 @@ ul.striped-odd li:nth-child(odd) {
   .tab-flex-wrap {
     flex-wrap: wrap;
   }
+
+  .tab-flex-self-start {
+    align-self: flex-start;
+  }
+
+  .tab-flex-self-end {
+    align-self: flex-end;
+  }
+
+  .tab-flex-self-center {
+    align-self: center;
+  }
 }
 /* ==========================================================================
    TAB LANDSCAPE FLEXBOX HELPERS...
@@ -9859,6 +10212,18 @@ ul.striped-odd li:nth-child(odd) {
 
   .med-flex-shrink-0 {
     flex-shrink: 0;
+  }
+
+  .med-flex-self-start {
+    align-self: flex-start;
+  }
+
+  .med-flex-self-end {
+    align-self: flex-end;
+  }
+
+  .med-flex-self-center {
+    align-self: center;
   }
 }
 /* ==========================================================================
@@ -9953,6 +10318,18 @@ ul.striped-odd li:nth-child(odd) {
   .lrg-flex-shrink-0 {
     flex-shrink: 0;
   }
+
+  .lrg-flex-self-start {
+    align-self: flex-start;
+  }
+
+  .lrg-flex-self-end {
+    align-self: flex-end;
+  }
+
+  .lrg-flex-self-center {
+    align-self: center;
+  }
 }
 /* ==========================================================================
    LAPTOP FLEXBOX HELPERS...
@@ -10045,6 +10422,18 @@ ul.striped-odd li:nth-child(odd) {
 
   .xl-flex-shrink-0 {
     flex-shrink: 0;
+  }
+
+  .xl-flex-self-start {
+    align-self: flex-start;
+  }
+
+  .xl-flex-self-end {
+    align-self: flex-end;
+  }
+
+  .xl-flex-self-center {
+    align-self: center;
   }
 }
 /* ==========================================================================
@@ -11343,13 +11732,13 @@ input.input-file input.input-file + label:hover {
   width: 24px;
 }
 .header .navbar__menus__toggle-menu-button.open-menu {
-  background-image: url("../images/nav-open.svg");
+  background-image: url("../../images/nav-open.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .header .navbar__menus__toggle-menu-button.close-menu {
-  background-image: url("../images/nav-close.svg");
+  background-image: url("../../images/nav-close.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
