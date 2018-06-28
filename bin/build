@@ -62,59 +62,60 @@ while [ "$1" != "" ]; do
     shift
 done
 
-printf "\033[95;5m              Feeling  \033[4mSassy\033[0m?         \033[0m\n"
+printf "\033[95;5m              Feeling  \033[4mSassy\033[0m?   \033[0m\n"
 printf "\033[106;30m            lib is being compiled           \033[0m\n"
+printf "\033[106;30m                copy images                 \033[0m\n"
+
+cp -R images/ dist/images
 
 if [ "$DEBUG" = true ]; then
     # replace with the new tagged name in the index file.
     replace_style_import
     # open the demo page
-    printf "\033[166;5m             opening index.html          \033[0m\n"
+    printf "\033[166;5m         opening index.html          \033[0m\n"
     open index.html
     # Open a new terminal and launch sass --watch
     # open -a terminal -e $PWD ""
     sass --scss --watch scss/_all.scss:$OUTPUT_PATH/$OUTPUT_NAME.$OUTPUT_FORMAT --style $OUTPUT_STYLE
 else
-    sass --scss scss/_all.scss:$OUTPUT_PATH/funcss.$OUTPUT_FORMAT --style $OUTPUT_STYLE
+    sass --scss scss/_all.scss:$OUTPUT_PATH/funcss.css --style $OUTPUT_STYLE
 
-    printf "\033[166;5m       minifying lib ($BUILD_TYPE)       \033[0m\n"
+    printf "\033[106;30m        minifying ($OUTPUT_PATH/funcss.min.css)     \033[0m\n"
+    printf "\033[106;43m         ~ this can take a while ~          \033[0m\n"
         
     MIN_OUTPUT_NAME="$OUTPUT_PATH/funcss.min.css"
 
-    curl -X POST -s --data-urlencode "input@$OUTPUT_PATH/funcss.$OUTPUT_FORMAT" https://cssminifier.com/raw > $MIN_OUTPUT_NAME    
+    curl -X POST -s --data-urlencode "input@$OUTPUT_PATH/funcss.$OUTPUT_FORMAT" https://cssminifier.com/raw > $MIN_OUTPUT_NAME
 
-    OUTPUT_NAME=$MIN_OUTPUT_NAME
+    OUTPUT_NAME=MIN_OUTPUT_NAME
+
     replace_style_import
+    #add folders, clean git
+    git add bin/
+    git add dist/
+    git add scss/
+    git add images/
+    git add index.html
+    git add README.md
 
-        
-        #add folders, clean git
-        git add bin/
-        git add dist/
-        git add scss/
-        git add images/
-        git add index.html
-        git add README.md
-
-        #commit
-        read commitmessage
-        say "enter your commit message: "
-        git commit -m "$commitmessage"
-
-        # update the version
-        npm version $BUILD_TYPE
-        printf "\033[106;30m        npm version $BUILD_TYPE done.         \033[0m\n"
+    #commit
+    printf "\033[106;30m enter your commit message: \033[0m"
+    read commitmessage
+    git commit -m "$commitmessage"
 
     if [ "$PUBLISH" = true ]; then
+        # update the version
+        npm version $BUILD_TYPE
+        printf "\033[106;30m        npm version $BUILD_TYPE done.   \033[0m\n"
         npm publish
     fi
 fi
-
-printf "\033[106;30m                                          \033[0m\n"
-printf "\033[106;30m ▄▄▄▄· ▄• ▄▌.▄▄ ·     ▄▄·       • ▌ ▄ ·.  \033[0m\n"
-printf "\033[106;30m ▐█ ▀█ █ ██▌▐█ ▀.    ▐█ ▌       ·██ ▐███▪ \033[0m\n"
-printf "\033[106;30m ▐█▀▀█▄█▌▐█▌▄▀▀▀█▄   ██ ▄▄ ▄█▀▄ ▐█ ▌▐▌▐█· \033[0m\n"
-printf "\033[106;30m ██▄▪▐█▐█▄█▌▐█▄▪▐█   ▐███▌▐█▌.▐▌██ ██▌▐█▌ \033[0m\n"
-printf "\033[106;30m ·▀▀▀▀  ▀▀▀  ▀▀▀▀  ▀ ·▀▀▀  ▀█▄▀▪▀▀  █▪▀▀▀ \033[0m\n"
-printf "\033[106;30m                                          \033[0m\n"
-printf "\033[106;30m      $OUTPUT_NAME has been compiled      \033[0m\n"
-
+printf "\n"
+printf "\033[106;30m                                            \033[0m\n"
+printf "\033[106;30m ▄▄▄▄· ▄• ▄▌.▄▄ ·     ▄▄·       • ▌ ▄ ·.    \033[0m\n"
+printf "\033[106;30m ▐█ ▀█ █ ██▌▐█ ▀.    ▐█ ▌       ·██ ▐███▪   \033[0m\n"
+printf "\033[106;30m ▐█▀▀█▄█▌▐█▌▄▀▀▀█▄   ██ ▄▄ ▄█▀▄ ▐█ ▌▐▌▐█·   \033[0m\n"
+printf "\033[106;30m ██▄▪▐█▐█▄█▌▐█▄▪▐█   ▐███▌▐█▌.▐▌██ ██▌▐█▌   \033[0m\n"
+printf "\033[106;30m ·▀▀▀▀  ▀▀▀  ▀▀▀▀  ▀ ·▀▀▀  ▀█▄▀▪▀▀  █▪▀▀▀   \033[0m\n"
+printf "\033[106;30m                                            \033[0m\n"
+printf "\033[106;30m      $OUTPUT_NAME has been compiled              \033[0m\n"
