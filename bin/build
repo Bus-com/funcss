@@ -87,7 +87,7 @@ else
 
     curl -X POST -s --data-urlencode "input@$OUTPUT_PATH/funcss.$OUTPUT_FORMAT" https://cssminifier.com/raw > $MIN_OUTPUT_NAME
 
-    OUTPUT_NAME=MIN_OUTPUT_NAME
+    OUTPUT_NAME=$MIN_OUTPUT_NAME
 
     replace_style_import
     #add folders, clean git
