@@ -26,7 +26,6 @@ function usage() {
 
 # replace with the new name in the index file.
 function replace_style_import() {
-    echo " sed -i .bak \"s/.*<link rel='stylesheet' href='.*'>.*/<link rel='stylesheet' href='$OUTPUT_PATH\/$OUTPUT_NAME.$OUTPUT_FORMAT'>/g\" index.html "
     sed -i .bak "s/.*<link rel='stylesheet' href='.*'>.*/<link rel='stylesheet' href='$OUTPUT_PATH\/$OUTPUT_NAME.$OUTPUT_FORMAT'>/g" index.html
     #not sure why; does not work without .bak syntax
     rm index.html.bak
