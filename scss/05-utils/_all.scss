@@ -1,7 +1,7 @@
 @import "helpers";
 @import "icon_helpers";
 @import "viewport_helpers";
-@import "borders/all"; 
+@import "borders/all";
 @import "border_radius_helpers";
 @import "list_helpers";
 @import "show_hide_helpers";
@@ -102,6 +102,13 @@
 @import "display/med_display_helpers";
 @import "display/lrg_display_helpers";
 @import "display/xl_display_helpers";
+
+//DISPLAY
+@import "viewport_helpers/viewport_helpers";
+@import "viewport_helpers/tab_viewport_helpers";
+@import "viewport_helpers/med_viewport_helpers";
+@import "viewport_helpers/lrg_viewport_helpers";
+@import "viewport_helpers/xl_viewport_helpers";
 
 //ANIMATIONS
 @import "animations/animations";
