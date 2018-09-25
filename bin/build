@@ -21,6 +21,7 @@ function usage() {
     echo "\033[38;5;13m\t-h --help"
     echo "\033[38;5;166m\t--debug [default=true]"
     echo "\033[38;5;196m\t--deploy [default=false]"
+    echo "\033[38;5;196m\t--publish [default=false]"
     echo ""
 }
 
