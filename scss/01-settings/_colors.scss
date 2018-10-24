@@ -47,7 +47,15 @@ $palettes: (
     x-dark: #ABACB2,
     base: #FFFFFF,
     light: #FAFAFA,
-  )
+  ),
+  blue: {
+    x-dark: #0095A0,
+    dark: #15959F,
+    base: #22D5D6,
+    light: #DFF2F2,
+    x-light: #EFF8F8,
+
+  }
 );
 
 // Static Colors
