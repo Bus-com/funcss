@@ -66,6 +66,22 @@
   color: $white;
 }
 
+.dark-blue {
+  background: palette(blue, dark);
+}
+
+.x-dark-blue {
+  background: palette(blue, x-dark);
+}
+
+.light-blue {
+  background: palette(blue, light);
+}
+
+.x-light-blue {
+  background: palette(blue, x-light);
+}
+
 //SVG HELPERS////////////////////////
 .fill-white {
   fill: $white;
@@ -199,6 +215,21 @@
   background: palette(orange, xxxx-light);
 }
 
+.bg-light-blue {
+  background: palette(blue, light);
+}
+
+.bg-x-light-blue {
+  background: palette(blue, x-light);
+}
+
+.bg-dark-blue {
+  background: palette(blue, dark);
+}
+
+.bg-x-dark-blue {
+  background: palette(blue, x-dark);
+}
 
 .bg-facebook {
   background: #4C68A7;
@@ -335,3 +366,5 @@ button, .c-btn {
     color: grey;
   }
 }
+
+// Blue Helper

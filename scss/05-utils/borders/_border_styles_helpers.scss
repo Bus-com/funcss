@@ -81,6 +81,13 @@
 .bb-cyan-x { border-bottom: 8px solid palette(cyan, base); }
 .br-cyan-x { border-right: 8px solid palette(cyan, base); }
 
+// DARK BLUE 2PX BORDER
+.b-dark-blue-xxs { border: 2px solid palette(blue, x-dark); }
+.bt-dark-blue-xxs { border-top: 2px solid palette(blue, x-dark); }
+.bl-dark-blue-xxs { border-left: 2px solid palette(blue, x-dark); }
+.bb-dark-blue-xxs { border-bottom: 2px solid palette(blue, x-dark); }
+.br-dark-blue-xxs { border-right: 2px solid palette(blue, x-dark); }
+
 //border none
 .b-none { border: none; }
 .bt-none { border-top: none; }

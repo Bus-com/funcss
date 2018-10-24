@@ -23,8 +23,33 @@
 }
 
 
+.br-xxs {
+  border-radius: 2px
+}
+
+.br-left-xxs {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.br-right-xxs {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+
+.br-top-xxs {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.br-bottom-xxs {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
 .br-xs {
-  border-radius: 4px
+  border-radius: 4px;
 }
 
 .br-left-xs {
