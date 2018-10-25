@@ -39,6 +39,12 @@
 .tab-bb-cyan {border-bottom:1px solid palette(cyan, base);}
 .tab-br-cyan {border-right:1px solid palette(cyan, base);}
 
+// DARK BLUE 2PX BORDER
+.tab-b-dark-blue-xxs { border: 2px solid palette(blue, x-dark); }
+.tab-bt-dark-blue-xxs { border-top: 2px solid palette(blue, x-dark); }
+.tab-bl-dark-blue-xxs { border-left: 2px solid palette(blue, x-dark); }
+.tab-bb-dark-blue-xxs { border-bottom: 2px solid palette(blue, x-dark); }
+.tab-br-dark-blue-xxs { border-right: 2px solid palette(blue, x-dark); }
 
 //border none
 .tab-b-none { border: none; }

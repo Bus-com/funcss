@@ -39,6 +39,13 @@
 .xl-bb-cyan {border-bottom:1px solid palette(cyan, base);}
 .xl-br-cyan {border-right:1px solid palette(cyan, base);}
 
+// DARK BLUE 2PX BORDER
+.xl-b-dark-blue-xxs { border: 2px solid palette(blue, x-dark); }
+.xl-bt-dark-blue-xxs { border-top: 2px solid palette(blue, x-dark); }
+.xl-bl-dark-blue-xxs { border-left: 2px solid palette(blue, x-dark); }
+.xl-bb-dark-blue-xxs { border-bottom: 2px solid palette(blue, x-dark); }
+.xl-br-dark-blue-xxs { border-right: 2px solid palette(blue, x-dark); }
+
 
 //border none
 .xl-b-none { border: none; }

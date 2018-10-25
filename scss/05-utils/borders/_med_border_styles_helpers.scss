@@ -39,6 +39,13 @@
 .med-bb-cyan {border-bottom:1px solid palette(cyan, base);}
 .med-br-cyan {border-right:1px solid palette(cyan, base);}
 
+// DARK BLUE 2PX BORDER
+.med-b-dark-blue-xxs { border: 2px solid palette(blue, x-dark); }
+.med-bt-dark-blue-xxs { border-top: 2px solid palette(blue, x-dark); }
+.med-bl-dark-blue-xxs { border-left: 2px solid palette(blue, x-dark); }
+.med-bb-dark-blue-xxs { border-bottom: 2px solid palette(blue, x-dark); }
+.med-br-dark-blue-xxs { border-right: 2px solid palette(blue, x-dark); }
+
 
 //border none
 .med-b-none { border: none; }
