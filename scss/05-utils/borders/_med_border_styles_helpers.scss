@@ -25,26 +25,20 @@
 .med-bb-orange { border-bottom: 1px solid palette(orange, base); }
 .med-br-orange { border-right: 1px solid palette(orange, base); }
 
-//orange borders
+//cyan borders
 .med-b-cyan { border: 1px solid palette(cyan, base); }
 .med-bt-cyan { border-top: 1px solid palette(cyan, base); }
 .med-bl-cyan { border-left: 1px solid palette(cyan, base); }
 .med-bb-cyan { border-bottom: 1px solid palette(cyan, base); }
 .med-br-cyan { border-right: 1px solid palette(cyan, base); }
 
-//orange borders
-.med-b-cyan  {border: 1px solid palette(cyan, base);}
-.med-bt-cyan {border-top:1px solid palette(cyan, base);}
-.med-bl-cyan {border-left:1px solid palette(cyan, base);}
-.med-bb-cyan {border-bottom:1px solid palette(cyan, base);}
-.med-br-cyan {border-right:1px solid palette(cyan, base);}
+// dark cyan
+.med-b-x-dark-cyan-xxs { border: 2px solid palette(cyan, x-dark); }
+.med-bt-x-dark-cyan-xxs { border-top: 2px solid palette(cyan, x-dark); }
+.med-bl-x-dark-cyan-xxs { border-left: 2px solid palette(cyan, x-dark); }
+.med-bb-x-dark-cyan-xxs { border-bottom: 2px solid palette(cyan, x-dark); }
+.med-br-x-dark-cyan-xxs { border-right: 2px solid palette(cyan, x-dark); }
 
-// DARK BLUE 2PX BORDER
-.med-b-dark-blue-xxs { border: 2px solid palette(blue, x-dark); }
-.med-bt-dark-blue-xxs { border-top: 2px solid palette(blue, x-dark); }
-.med-bl-dark-blue-xxs { border-left: 2px solid palette(blue, x-dark); }
-.med-bb-dark-blue-xxs { border-bottom: 2px solid palette(blue, x-dark); }
-.med-br-dark-blue-xxs { border-right: 2px solid palette(blue, x-dark); }
 
 
 //border none

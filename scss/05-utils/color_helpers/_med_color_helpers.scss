@@ -1,0 +1,125 @@
+@include tablet-landscape {
+  .med-greyscale { -webkit-filter: grayscale(1); filter: grayscale(1); }
+  .med-greyscale-75 { -webkit-filter: grayscale(75%); filter: grayscale(75%); }
+  .med-greyscale-50 { -webkit-filter: grayscale(50%); filter: grayscale(50%); }
+  .med-greyscale-25 { -webkit-filter: grayscale(25%); filter: grayscale(25%); }
+  .med-grey { color: palette(grey, base); }
+  .med-light-grey { color: palette(grey, light); }
+  .med-x-light-grey { color: palette(grey, x-light); }
+  .med-xx-light-grey { color: palette(grey, xx-light); }
+  .med-xxx-light-grey { color: palette(grey, xxx-light); }
+
+
+  .med-yellow{ color: palette(yellow, base); }
+  .med-x-light-yellow { color: palette(yellow, x-light); }
+  .med-xx-light-yellow { color: palette(yellow, xx-light); }
+
+  .med-orange { color: palette(orange, base); }
+  .med-xxx-light-orange { color: palette(orange, xxx-light); }
+
+  .med-cyan { color: palette(cyan, base); }
+
+  .med-white { color: $white; }
+
+  //SVG HELPERS////////////////////////
+  .med-fill-white { fill: $white; }
+
+  .med-stroke-white { stroke: $white; }
+
+  .med-fill-grey { fill: palette(grey, base); }
+
+  .med-stroke-grey { stroke: palette(grey, base); }
+
+  .med-fill-light-grey { fill: palette(grey, xxx-light); }
+
+  .med-stroke-light-grey { stroke: palette(grey, xxx-light); }
+
+  .med-fill-cyan { fill: palette(cyan, base); }
+
+  .med-stroke-cyan { stroke: palette(cyan, base); }
+
+  .med-fill-orange { fill: palette(orange, base); }
+
+  .med-stroke-orange {  stroke: palette(orange, base); }
+
+  .med-fill-trans { fill: transparent; }
+
+  .med-stroke-trans { stroke: transparent; }
+
+  //BG HELPERS
+
+  .med-bg-white { background: $white; }
+
+  .med-bg-grey { background: palette(grey, base); }
+  .med-bg-x-light-grey { background: palette(grey, x-light); }
+  .med-bg-xx-light-grey { background: palette(grey, xx-light); }
+  .med-bg-xxx-light-grey { background: palette(grey, xxx-light); }
+  .med-bg-xxxx-light-grey { background: palette(grey, xxxx-light); }
+
+  .med-bg-x-dark-cyan { background: palette(cyan, x-dark); }
+  .med-bg-dark-cyan { background: palette(cyan, dark); }
+  .med-bg-cyan { background: palette(cyan, base); }
+  .med-bg-light-cyan { background: palette(cyan, light); }
+  .med-bg-x-light-cyan { background: palette(cyan, x-light); }
+  .med-bg-xx-light-cyan { background: palette(cyan, xx-light); }
+  .med-bg-xxx-light-cyan { background: palette(cyan, xxx-light); }
+  .med-bg-xxxx-light-cyan { background: palette(cyan, xxxx-light); }
+  .med-bg-xxxxx-light-cyan { background: palette(cyan, xxxxx-light); }
+
+  .med-bg-orange { background: palette(orange, base); }
+  .med-bg-light-orange { background: palette(orange, light); }
+  .med-bg-x-light-orange { background: palette(orange, x-light); }
+  .med-bg-xx-light-orange { background: palette(orange, xx-light); }
+  .med-bg-xxx-light-orange { background: palette(orange, xxx-light); }
+  .med-bg-xxxx-light-orange { background: palette(orange, xxxx-light); }
+
+  .med-bg-facebook {
+    background: #4C68A7;
+
+    &:hover {
+      background: #3E5F99 !important;
+      color: $white;
+    }
+  }
+
+  .med-bg-light-grey { background: palette(grey, light); }
+  .med-bg-x-light-grey { background: palette(grey, x-light); }
+  .med-bg-xx-light-grey { background: palette(grey, xx-light); }
+  .med-bg-xxx-light-grey { background: palette(grey, xxx-light); }
+  .med-bg-xxxx-light-grey { background: palette(grey, xxxx-light); }
+
+  .med-bg-trans { background: transparent; }
+
+  //RGBA HELPERS//////////
+
+  .med-bg-white-50 { background: rgba($white, .50); }
+  .med-bg-white-60 { background: rgba($white, .60); }
+  .med-bg-white-70 { background: rgba($white, .70); }
+  .med-bg-white-80 { background: rgba($white, .80); }
+  .med-bg-white-90 { background: rgba($white, .90); }
+
+  .med-bg-grey-50 { background: rgba(palette(grey, base), .50); }
+  .med-bg-grey-60 { background: rgba(palette(grey, base), .60); }
+  .med-bg-grey-70 { background: rgba(palette(grey, base), .70); }
+  .med-bg-grey-80 { background: rgba(palette(grey, base), .80); }
+  .med-bg-grey-90 { background: rgba(palette(grey, base), .90); }
+
+  //SITE GRADIENTS
+
+  .med-site-gradient {
+    @include gradient (135deg, palette(orange, xxx-light) 0%, palette(orange, xxxx-light) 49.86%, palette(cyan, xxx-light) 100%);
+  }
+
+  .med-white-beige-gradient {
+    @include gradient (-180deg, $white 0%, palette(orange, xxx-light) 100%);
+  }
+
+  .med-cyan-beige-gradient {
+    @include gradient(184deg, palette(orange, xxx-light) 0%, palette(cyan, x-dark) 100%);
+  }
+
+  .med-orange-grey-gradient {
+    @include gradient(184deg, palette(orange, x-light) 0%, palette(grey, xxxx-light) 50%);
+  }
+
+}

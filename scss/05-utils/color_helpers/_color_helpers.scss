@@ -1,0 +1,151 @@
+.greyscale { -webkit-filter: grayscale(1); filter: grayscale(1); }
+.greyscale-75 { -webkit-filter: grayscale(75%); filter: grayscale(75%); }
+.greyscale-50 { -webkit-filter: grayscale(50%); filter: grayscale(50%); }
+.greyscale-25 { -webkit-filter: grayscale(25%); filter: grayscale(25%); }
+.grey { color: palette(grey, base); }
+.light-grey { color: palette(grey, light); }
+.x-light-grey { color: palette(grey, x-light); }
+.xx-light-grey { color: palette(grey, xx-light); }
+.xxx-light-grey { color: palette(grey, xxx-light); }
+
+
+.yellow{ color: palette(yellow, base); }
+.x-light-yellow { color: palette(yellow, x-light); }
+.xx-light-yellow { color: palette(yellow, xx-light); }
+
+.orange { color: palette(orange, base); }
+.xxx-light-orange { color: palette(orange, xxx-light); }
+
+.cyan { color: palette(cyan, base); }
+
+.white { color: $white; }
+
+//SVG HELPERS////////////////////////
+.fill-white { fill: $white; }
+
+.stroke-white { stroke: $white; }
+
+.fill-grey { fill: palette(grey, base); }
+
+.stroke-grey { stroke: palette(grey, base); }
+
+.fill-light-grey { fill: palette(grey, xxx-light); }
+
+.stroke-light-grey { stroke: palette(grey, xxx-light); }
+
+.fill-cyan { fill: palette(cyan, base); }
+
+.stroke-cyan { stroke: palette(cyan, base); }
+
+.fill-orange { fill: palette(orange, base); }
+
+.stroke-orange {  stroke: palette(orange, base); }
+
+.fill-trans { fill: transparent; }
+
+.stroke-trans { stroke: transparent; }
+
+//BG HELPERS
+
+.bg-white { background: $white; }
+
+.bg-grey { background: palette(grey, base); }
+.bg-x-light-grey { background: palette(grey, x-light); }
+.bg-xx-light-grey { background: palette(grey, xx-light); }
+.bg-xxx-light-grey { background: palette(grey, xxx-light); }
+.bg-xxxx-light-grey { background: palette(grey, xxxx-light); }
+
+.bg-x-dark-cyan { background: palette(cyan, x-dark); }
+.bg-dark-cyan { background: palette(cyan, dark); }
+.bg-cyan { background: palette(cyan, base); }
+.bg-light-cyan { background: palette(cyan, light); }
+.bg-x-light-cyan { background: palette(cyan, x-light); }
+.bg-xx-light-cyan { background: palette(cyan, xx-light); }
+.bg-xxx-light-cyan { background: palette(cyan, xxx-light); }
+.bg-xxxx-light-cyan { background: palette(cyan, xxxx-light); }
+.bg-xxxxx-light-cyan { background: palette(cyan, xxxxx-light); }
+
+.bg-orange { background: palette(orange, base); }
+.bg-light-orange { background: palette(orange, light); }
+.bg-x-light-orange { background: palette(orange, x-light); }
+.bg-xx-light-orange { background: palette(orange, xx-light); }
+.bg-xxx-light-orange { background: palette(orange, xxx-light); }
+.bg-xxxx-light-orange { background: palette(orange, xxxx-light); }
+
+.bg-facebook {
+  background: #4C68A7;
+
+  &:hover {
+    background: #3E5F99 !important;
+    color: $white;
+  }
+}
+
+.bg-light-grey { background: palette(grey, light); }
+.bg-x-light-grey { background: palette(grey, x-light); }
+.bg-xx-light-grey { background: palette(grey, xx-light); }
+.bg-xxx-light-grey { background: palette(grey, xxx-light); }
+.bg-xxxx-light-grey { background: palette(grey, xxxx-light); }
+
+.bg-trans { background: transparent; }
+
+//RGBA HELPERS//////////
+
+.bg-white-50 { background: rgba($white, .50); }
+.bg-white-60 { background: rgba($white, .60); }
+.bg-white-70 { background: rgba($white, .70); }
+.bg-white-80 { background: rgba($white, .80); }
+.bg-white-90 { background: rgba($white, .90); }
+
+
+.bg-grey-50 { background: rgba(palette(grey, base), .50); }
+.bg-grey-60 { background: rgba(palette(grey, base), .60); }
+.bg-grey-70 { background: rgba(palette(grey, base), .70); }
+.bg-grey-80 { background: rgba(palette(grey, base), .80); }
+.bg-grey-90 { background: rgba(palette(grey, base), .90); }
+
+//SITE GRADIENTS
+
+.site-gradient {
+  @include gradient (135deg, palette(orange, xxx-light) 0%, palette(orange, xxxx-light) 49.86%, palette(cyan, xxx-light) 100%);
+}
+
+.white-beige-gradient {
+  @include gradient (-180deg, $white 0%, palette(orange, xxx-light) 100%);
+}
+
+.cyan-beige-gradient {
+  @include gradient(184deg, palette(orange, xxx-light) 0%, palette(cyan, x-dark) 100%);
+}
+
+.orange-grey-gradient {
+  @include gradient(184deg, palette(orange, x-light) 0%, palette(grey, xxxx-light) 50%);
+}
+
+button, .c-btn {
+
+  &:hover.bg-hover-cyan {
+    background: palette(cyan, base);
+    color: white;
+  }
+
+  &:hover.bg-hover-orange {
+    background: palette(orange, base);
+    color: white;
+  }
+
+  &:hover.bg-hover-grey {
+    background: palette(grey, base);
+    color: white;
+  }
+
+  &:hover.bg-hover-b-orange {
+    border-color: palette(orange, base);
+    color: grey;
+  }
+
+  &:hover.bg-hover-b-grey {
+    border-color: palette(grey, base);
+    color: grey;
+  }
+}

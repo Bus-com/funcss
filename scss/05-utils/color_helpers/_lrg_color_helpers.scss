@@ -1,0 +1,124 @@
+@include small-laptop {
+  .lrg-greyscale { -webkit-filter: grayscale(1); filter: grayscale(1); }
+  .lrg-greyscale-75 { -webkit-filter: grayscale(75%); filter: grayscale(75%); }
+  .lrg-greyscale-50 { -webkit-filter: grayscale(50%); filter: grayscale(50%); }
+  .lrg-greyscale-25 { -webkit-filter: grayscale(25%); filter: grayscale(25%); }
+  .lrg-grey { color: palette(grey, base); }
+  .lrg-light-grey { color: palette(grey, light); }
+  .lrg-x-light-grey { color: palette(grey, x-light); }
+  .lrg-xx-light-grey { color: palette(grey, xx-light); }
+  .lrg-xxx-light-grey { color: palette(grey, xxx-light); }
+
+
+  .lrg-yellow{ color: palette(yellow, base); }
+  .lrg-x-light-yellow { color: palette(yellow, x-light); }
+  .lrg-xx-light-yellow { color: palette(yellow, xx-light); }
+
+  .lrg-orange { color: palette(orange, base); }
+  .lrg-xxx-light-orange { color: palette(orange, xxx-light); }
+
+  .lrg-cyan { color: palette(cyan, base); }
+
+  .lrg-white { color: $white; }
+
+  //SVG HELPERS////////////////////////
+  .lrg-fill-white { fill: $white; }
+
+  .lrg-stroke-white { stroke: $white; }
+
+  .lrg-fill-grey { fill: palette(grey, base); }
+
+  .lrg-stroke-grey { stroke: palette(grey, base); }
+
+  .lrg-fill-light-grey { fill: palette(grey, xxx-light); }
+
+  .lrg-stroke-light-grey { stroke: palette(grey, xxx-light); }
+
+  .lrg-fill-cyan { fill: palette(cyan, base); }
+
+  .lrg-stroke-cyan { stroke: palette(cyan, base); }
+
+  .lrg-fill-orange { fill: palette(orange, base); }
+
+  .lrg-stroke-orange {  stroke: palette(orange, base); }
+
+  .lrg-fill-trans { fill: transparent; }
+
+  .lrg-stroke-trans { stroke: transparent; }
+
+  //BG HELPERS
+
+  .lrg-bg-white { background: $white; }
+
+  .lrg-bg-grey { background: palette(grey, base); }
+  .lrg-bg-x-light-grey { background: palette(grey, x-light); }
+  .lrg-bg-xx-light-grey { background: palette(grey, xx-light); }
+  .lrg-bg-xxx-light-grey { background: palette(grey, xxx-light); }
+  .lrg-bg-xxxx-light-grey { background: palette(grey, xxxx-light); }
+
+  .lrg-bg-x-dark-cyan { background: palette(cyan, x-dark); }
+  .lrg-bg-dark-cyan { background: palette(cyan, dark); }
+  .lrg-bg-cyan { background: palette(cyan, base); }
+  .lrg-bg-light-cyan { background: palette(cyan, light); }
+  .lrg-bg-x-light-cyan { background: palette(cyan, x-light); }
+  .lrg-bg-xx-light-cyan { background: palette(cyan, xx-light); }
+  .lrg-bg-xxx-light-cyan { background: palette(cyan, xxx-light); }
+  .lrg-bg-xxxx-light-cyan { background: palette(cyan, xxxx-light); }
+  .lrg-bg-xxxxx-light-cyan { background: palette(cyan, xxxxx-light); }
+
+  .lrg-bg-orange { background: palette(orange, base); }
+  .lrg-bg-light-orange { background: palette(orange, light); }
+  .lrg-bg-x-light-orange { background: palette(orange, x-light); }
+  .lrg-bg-xx-light-orange { background: palette(orange, xx-light); }
+  .lrg-bg-xxx-light-orange { background: palette(orange, xxx-light); }
+  .lrg-bg-xxxx-light-orange { background: palette(orange, xxxx-light); }
+
+  .lrg-bg-facebook {
+    background: #4C68A7;
+
+    &:hover {
+      background: #3E5F99 !important;
+      color: $white;
+    }
+  }
+
+  .lrg-bg-light-grey { background: palette(grey, light); }
+  .lrg-bg-x-light-grey { background: palette(grey, x-light); }
+  .lrg-bg-xx-light-grey { background: palette(grey, xx-light); }
+  .lrg-bg-xxx-light-grey { background: palette(grey, xxx-light); }
+  .lrg-bg-xxxx-light-grey { background: palette(grey, xxxx-light); }
+
+  .lrg-bg-trans { background: transparent; }
+
+  //RGBA HELPERS//////////
+
+  .lrg-bg-white-50 { background: rgba($white, .50); }
+  .lrg-bg-white-60 { background: rgba($white, .60); }
+  .lrg-bg-white-70 { background: rgba($white, .70); }
+  .lrg-bg-white-80 { background: rgba($white, .80); }
+  .lrg-bg-white-90 { background: rgba($white, .90); }
+
+  .lrg-bg-grey-50 { background: rgba(palette(grey, base), .50); }
+  .lrg-bg-grey-60 { background: rgba(palette(grey, base), .60); }
+  .lrg-bg-grey-70 { background: rgba(palette(grey, base), .70); }
+  .lrg-bg-grey-80 { background: rgba(palette(grey, base), .80); }
+  .lrg-bg-grey-90 { background: rgba(palette(grey, base), .90); }
+
+  //SITE GRADIENTS
+
+  .lrg-site-gradient {
+    @include gradient (135deg, palette(orange, xxx-light) 0%, palette(orange, xxxx-light) 49.86%, palette(cyan, xxx-light) 100%);
+  }
+
+  .lrg-white-beige-gradient {
+    @include gradient (-180deg, $white 0%, palette(orange, xxx-light) 100%);
+  }
+
+  .lrg-cyan-beige-gradient {
+    @include gradient(184deg, palette(orange, xxx-light) 0%, palette(cyan, x-dark) 100%);
+  }
+
+  .lrg-orange-grey-gradient {
+    @include gradient(184deg, palette(orange, x-light) 0%, palette(grey, xxxx-light) 50%);
+  }
+}
