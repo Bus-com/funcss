@@ -122,10 +122,16 @@
   @include gradient(184deg, palette(orange, x-light) 0%, palette(grey, xxxx-light) 50%);
 }
 
-button, .c-btn {
+// hover
+button, .c-btn, .c-btn-site {
 
   &:hover.bg-hover-cyan {
     background: palette(cyan, base);
+    color: white;
+  }
+
+  &:hover.bg-hover-x-dark-cyan {
+    background: palette(cyan, x-dark);
     color: white;
   }
 
