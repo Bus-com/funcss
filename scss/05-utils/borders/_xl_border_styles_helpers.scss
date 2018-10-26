@@ -32,15 +32,13 @@
 .xl-bb-cyan { border-bottom: 1px solid palette(cyan, base); }
 .xl-br-cyan { border-right: 1px solid palette(cyan, base); }
 
-//orange borders
-.xl-b-cyan  {border: 1px solid palette(cyan, base);}
-.xl-bt-cyan {border-top:1px solid palette(cyan, base);}
-.xl-bl-cyan {border-left:1px solid palette(cyan, base);}
-.xl-bb-cyan {border-bottom:1px solid palette(cyan, base);}
-.xl-br-cyan {border-right:1px solid palette(cyan, base);}
+//dark cyan borders
+.xl-b-x-dark-cyan-xxs { border: 2px solid palette(cyan, x-dark); }
+.xl-bt-x-dark-cyan-xxs { border-top: 2px solid palette(cyan, x-dark); }
+.xl-bl-x-dark-cyan-xxs { border-left: 2px solid palette(cyan, x-dark); }
+.xl-bb-x-dark-cyan-xxs { border-bottom: 2px solid palette(cyan, x-dark); }
+.xl-br-x-dark-cyan-xxs { border-right: 2px solid palette(cyan, x-dark); }
 
-
-//border none
 .xl-b-none { border: none; }
 .xl-bt-none { border-top: none; }
 .xl-bl-none { border-left: none; }
