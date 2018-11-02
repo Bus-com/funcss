@@ -1,17 +1,8 @@
 .header {
-  height: 60px;
-  
-  @include tablet-portrait {
-    height: 80px;
-  }
+  height: $header-height;
 
   .navbar {
-    height: 60px;
-    
-    @include tablet-portrait {
-      height: 80px;
-    }
-
+    height: $header-height;
 
     @include e(menus) {
       //TODO Pablo SITE MOBILE NAV Overlay to eventually REDO to match the OT
