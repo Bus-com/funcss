@@ -17,6 +17,7 @@
 .xxx-light-orange { color: palette(orange, xxx-light); }
 
 .cyan { color: palette(cyan, base); }
+.x-dark-cyan { color: palette(cyan, x-dark); }
 
 .white { color: $white; }
 
@@ -36,6 +37,10 @@
 .fill-cyan { fill: palette(cyan, base); }
 
 .stroke-cyan { stroke: palette(cyan, base); }
+
+.fill-x-dark-cyan { fill: palette(cyan, x-dark); }
+
+.stroke-x-dark-cyan { stroke: palette(cyan, x-dark); }
 
 .fill-orange { fill: palette(orange, base); }
 
