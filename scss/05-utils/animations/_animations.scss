@@ -10,4 +10,10 @@
   @include animation("fadeIn .3s ease-in")
 }
 
+.anim-fade-in-slow {
+  @include animation("fadeIn .6s ease-in")
+}
 
+.ani-fade-out {
+  @include animation("fadeOut .3s ease-in")
+}

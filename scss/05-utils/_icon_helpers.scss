@@ -7,7 +7,11 @@
 }
 
 .icon {
-  width: 12px;
+  width: 14px;
+}
+
+.icon-small {
+  width: 16px;
 }
 
 .icon-medium {
@@ -52,7 +56,20 @@
 
 @include tablet-portrait {
 
-  .tab-icon-fixed-64 {
+
+  .tab-icon {
+    width: 14px;
+  }
+
+  .tab-icon-small {
+    width: 16px;
+  }
+
+  .tab-icon-medium {
+    width: 24px;
+  }
+
+.tab-icon-fixed-64 {
   width: 64px;
 }
 

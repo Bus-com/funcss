@@ -4,6 +4,23 @@
 
 @include tablet-landscape {
 
+
+// TRANS BORDER HELPERS
+
+//transparent border
+
+.med-b-trans{ border: 1px solid transparent; }
+.med-bt-trans{ border-top: 1px solid transparent; }
+.med-bl-trans{ border-left: 1px solid transparent; }
+.med-bb-trans{ border-bottom: 1px solid transparent; }
+.med-br-trans{ border-right: 1px solid transparent; }
+
+.med-b-trans-xxs { border: 2px solid transparent; }
+.med-bt-trans-xxs { border-top: 2px solid transparent; }
+.med-bl-trans-xxs { border-left: 2px solid transparent; }
+.med-bb-trans-xxs { border-bottom: 2px solid transparent; }
+.med-br-trans-xxs { border-right: 2px solid transparent; }
+
 //light grey borders
 .med-b-light { border: 1px solid palette(grey, xxxx-light); }
 .med-bt-light { border-top: 1px solid palette(grey, xxxx-light); }
@@ -25,12 +42,25 @@
 .med-bb-orange { border-bottom: 1px solid palette(orange, base); }
 .med-br-orange { border-right: 1px solid palette(orange, base); }
 
-//cyan borders
+//orange borders
 .med-b-cyan { border: 1px solid palette(cyan, base); }
 .med-bt-cyan { border-top: 1px solid palette(cyan, base); }
 .med-bl-cyan { border-left: 1px solid palette(cyan, base); }
 .med-bb-cyan { border-bottom: 1px solid palette(cyan, base); }
 .med-br-cyan { border-right: 1px solid palette(cyan, base); }
+
+//Cyan borders
+.med-b-cyan  {border: 1px solid palette(cyan, base);}
+.med-bt-cyan {border-top:1px solid palette(cyan, base);}
+.med-bl-cyan {border-left:1px solid palette(cyan, base);}
+.med-bb-cyan {border-bottom:1px solid palette(cyan, base);}
+.med-br-cyan {border-right:1px solid palette(cyan, base);}
+
+.med-b-cyan-xxs { border: 2px solid palette(cyan, base); }
+.med-bt-cyan-xxs { border-top: 2px solid palette(cyan, base); }
+.med-bl-cyan-xxs { border-left: 2px solid palette(cyan, base); }
+.med-bb-cyan-xxs { border-bottom: 2px solid palette(cyan, base); }
+.med-br-cyan-xxs { border-right: 2px solid palette(cyan, base); }
 
 // dark cyan
 .med-b-x-dark-cyan-xxs { border: 2px solid palette(cyan, x-dark); }
@@ -38,7 +68,6 @@
 .med-bl-x-dark-cyan-xxs { border-left: 2px solid palette(cyan, x-dark); }
 .med-bb-x-dark-cyan-xxs { border-bottom: 2px solid palette(cyan, x-dark); }
 .med-br-x-dark-cyan-xxs { border-right: 2px solid palette(cyan, x-dark); }
-
 
 
 //border none

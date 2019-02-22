@@ -24,18 +24,6 @@
   .med-w-90 { width: 90% }
   .med-w-100 { width: 100% }
 
-  .med-h-5 { height: 5%; }
-  .med-h-10 { height: 10%; }
-  .med-h-20 { height: 20%; }
-  .med-h-30 { height: 30%; }
-  .med-h-40 { height: 40%; }
-  .med-h-50 { height: 50%; }
-  .med-h-60 { height: 60%; }
-  .med-h-70 { height: 70%; }
-  .med-h-80 { height: 80%; }
-  .med-h-90 { height: 90%; }
-  .med-h-100 { height: 100%;  }
-
   //INPUT WRAP
   .med-input-wrap { width: 100% }
   .med-input-wrap-full { width: 100% }
@@ -66,4 +54,19 @@
   .med-min-w-80 { min-width: 80% }
   .med-min-w-90 { min-width: 90% }
   .med-min-w-100 { min-width: 100% }
+
+  //FIXED SIZES
+  .med-h-fixed-10 { height: 10px; }
+  .med-h-fixed-20 { height: 20px; }
+  .med-h-fixed-30 { height: 30px; }
+  .med-h-fixed-40 { height: 40px; }
+  .med-h-fixed-50 { height: 50px; }
+  .med-h-fixed-60 { height: 60px; }
+  .med-h-fixed-70 { height: 70px; }
+  .med-h-fixed-80 { height: 80px; }
+  .med-h-fixed-90 { height: 90px; }
+  .med-h-fixed-100 { height: 100px;}
+
+  .med-h-fixed-xxxxl { height: $unit-xxxxl; }
+
 }

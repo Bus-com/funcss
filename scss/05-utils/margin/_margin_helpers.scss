@@ -13,6 +13,14 @@
   margin: 0 auto;
 }
 
+.mr-auto {
+  margin-right: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
 .m0 {
   margin: 0;
 }
@@ -41,6 +49,26 @@
 .my0 {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.m-xxs {
+  margin: $unit-xxs;
+}
+
+.mt-xxs {
+  margin: $unit-xxs;
+}
+
+.mb-xxs {
+  margin: $unit-xxs;
+}
+
+.mx-xxs {
+  margin: $unit-xxs;
+}
+
+.my-xxs {
+  margin: $unit-xxs;
 }
 
 .m-xs {
@@ -371,4 +399,40 @@
 .my-xxxxxl {
   margin-top: $unit-xxxxxl;
   margin-bottom: $unit-xxxxxl;
+}
+
+.mb-xxxxxxl {
+  margin-bottom: $unit-xxxxxxl;
+}
+
+.ml-xxxxxxl {
+  margin-left: $unit-xxxxxxl;
+}
+
+.mx-xxxxxxl {
+  margin-left: $unit-xxxxxxl;
+  margin-right: $unit-xxxxxxl;
+}
+
+.my-xxxxxxl {
+  margin-top: $unit-xxxxxxl;
+  margin-bottom: $unit-xxxxxxl;
+}
+
+.mb-xxxxxxxl {
+  margin-bottom: $unit-xxxxxxxl;
+}
+
+.ml-xxxxxxxl {
+  margin-left: $unit-xxxxxxxl;
+}
+
+.mx-xxxxxxxl {
+  margin-left: $unit-xxxxxxxl;
+  margin-right: $unit-xxxxxxxl;
+}
+
+.my-xxxxxxxl {
+  margin-top: $unit-xxxxxxxl;
+  margin-bottom: $unit-xxxxxxxl;
 }

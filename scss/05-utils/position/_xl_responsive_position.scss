@@ -3,17 +3,17 @@
   ========================================================================== */
 
 @include laptop {
-  //MED-RELATIVE////////////////
+  //XL-RELATIVE////////////////
   .xl-pos-rel { position: relative }
-  
-  //MED-ABSOLUTE///////////////
+
+  //XL-ABSOLUTE///////////////
   .xl-pos-abs { position: absolute }
-  
-  //MED-FIXED///////////////////
+
+  //XL-FIXED///////////////////
   .xl-pos-fixed { position: fixed }
 }
 
-//MED -> THE WHERE YOU WANT THESE TO BE MOVED OR PLACED...
+//XL -> THE WHERE YOU WANT THESE TO BE MOVED OR PLACED...
 @include laptop {
 
   .xl-top-0 { top: 0 }
@@ -26,6 +26,9 @@
   .xl-top-xxl { top: 48px}
   .xl-top-xxxl { top: 56px}
   .xl-top-xxxxl { top: 64px}
+  .xl-top-xxxxxl { top: 72px}
+  .xl-top-xxxxxxl { top: 80px}
+  .xl-top-xxxxxxxl { top: 88px}
 
   .xl-bottom-0 { bottom: 0 }
   .xl-bottom-xs { bottom: 4px }
@@ -37,7 +40,9 @@
   .xl-bottom-xxl { bottom: 48px}
   .xl-bottom-xxxl { bottom: 56px}
   .xl-bottom-xxxxl { bottom: 64px}
-
+  .xl-bottom-xxxxxl { bottom: 72px}
+  .xl-bottom-xxxxxxl { bottom: 80px}
+  .xl-bottom-xxxxxxxl { bottom: 88px}
 
   .xl-left-0 { left: 0 }
   .xl-left-xs { left: 4px }
@@ -48,7 +53,10 @@
   .xl-left-xl { left: 40px }
   .xl-left-xxl { left: 48px}
   .xl-left-xxxl { left: 56px}
-  .xl-left-xxxl { left: 64px}
+  .xl-left-xxxxl { left: 64px}
+  .xl-left-xxxxxl { left: 72px}
+  .xl-left-xxxxxxl { left: 80px}
+  .xl-left-xxxxxxxl { left: 88px}
 
   .xl-right-0 { right: 0 }
   .xl-right-xs { right: 4px }
@@ -60,6 +68,51 @@
   .xl-right-xxl { right: 48px}
   .xl-right-xxxl { right: 56px}
   .xl-right-xxxxl { right: 64px}
+  .xl-right-xxxxxl { right: 72px}
+  .xl-right-xxxxxxl { right: 80px}
+  .xl-right-xxxxxxxl { right: 88px}
+
+  //PERCENTAGE BASED/////////////////////////////////////////
+
+  .xl-left-10 { left: 10%; }
+  .xl-left-20 { left: 20%; }
+  .xl-left-30 { left: 30%; }
+  .xl-left-40 { left: 40%; }
+  .xl-left-50 { left: 50%; }
+  .xl-left-60 { left: 60%; }
+  .xl-left-70 { left: 70%; }
+  .xl-left-80 { left: 80%; }
+  .xl-left-90 { left: 90%; }
+
+  .xl-right-10 { right: 10%; }
+  .xl-right-20 { right: 20%; }
+  .xl-right-30 { right: 30%; }
+  .xl-right-40 { right: 40%; }
+  .xl-right-50 { right: 50%; }
+  .xl-right-60 { right: 60%; }
+  .xl-right-70 { right: 70%; }
+  .xl-right-80 { right: 80%; }
+  .xl-right-90 { right: 90%; }
+
+  .xl-top-10 { top: 10%; }
+  .xl-top-20 { top: 20%; }
+  .xl-top-30 { top: 30%; }
+  .xl-top-40 { top: 40%; }
+  .xl-top-50 { top: 50%; }
+  .xl-top-60 { top: 60%; }
+  .xl-top-70 { top: 70%; }
+  .xl-top-80 { top: 80%; }
+  .xl-top-90 { top: 90%; }
+
+  .xl-bottom-10 { bottom: 10%; }
+  .xl-bottom-20 { bottom: 20%; }
+  .xl-bottom-30 { bottom: 30%; }
+  .xl-bottom-40 { bottom: 40%; }
+  .xl-bottom-50 { bottom: 50%; }
+  .xl-bottom-60 { bottom: 60%; }
+  .xl-bottom-70 { bottom: 70%; }
+  .xl-bottom-80 { bottom: 80%; }
+  .xl-bottom-90 { bottom: 90%; }
 
   //NEGATIVE POSITIONING/////////////////////////////////////
 
@@ -72,6 +125,9 @@
   .xl-neg-top-xxl { top: -48px}
   .xl-neg-top-xxxl { top: -56px}
   .xl-neg-top-xxxxl { top: -64px}
+  .xl-neg-top-xxxxxl { top: -72px}
+  .xl-neg-top-xxxxxxl { top: -80px}
+  .xl-neg-top-xxxxxxxl { top: -88px}
 
   .xl-neg-bottom-xs { bottom: -4px }
   .xl-neg-bottom-x { bottom: -8px }
@@ -82,6 +138,9 @@
   .xl-neg-bottom-xxl { bottom: -48px}
   .xl-neg-bottom-xxxl { bottom: -56px}
   .xl-neg-bottom-xxxxl { bottom: -64px}
+  .xl-neg-bottom-xxxxxl { bottom: -72px}
+  .xl-neg-bottom-xxxxxxl { bottom: -80px}
+  .xl-neg-bottom-xxxxxxxl { bottom: -88px}
 
   .xl-neg-left-xs { left: -4px }
   .xl-neg-left-x { left: -8px }
@@ -92,6 +151,9 @@
   .xl-neg-left-xxl { left: -48px}
   .xl-neg-left-xxxl { left: -56px}
   .xl-neg-left-xxxl { left: -64px}
+  .xl-neg-left-xxxxxl { left: -72px}
+  .xl-neg-left-xxxxxxl { left: -80px}
+  .xl-neg-left-xxxxxxxl { left: -88px}
 
   .xl-neg-right-xs { right: -4px }
   .xl-neg-right-x { right: -8px }
@@ -102,5 +164,8 @@
   .xl-neg-right-xxl { right: -48px}
   .xl-neg-right-xxxl { right: -56px}
   .xl-neg-right-xxxxl { right: -64px}
+  .xl-neg-right-xxxxxl { right: -72px}
+  .xl-neg-right-xxxxxxl { right: -80px}
+  .xl-neg-right-xxxxxxxxl { right: -88px}
 
 }
