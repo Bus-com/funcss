@@ -29,16 +29,30 @@
   font-weight: 200;
 }
 
+.fw-regular {
+  font-weight: 400;
+  font-family: "AvenirNextRegular";
+}
+
 .fw-medium {
-  font-weight: 500
+  font-weight: 500;
+  font-family: "AvenirNextMedium";
+}
+
+.fw-demi-bold {
+  font-weight: 700;
+  font-family: "AvenirNextDemi";
+
 }
 
 .fw-bold {
-  font-weight: 700
+  font-weight: 800;
+  font-family: "AvenirNextBold";
 }
 
 .fw-heavy {
-  font-weight: 900
+  font-weight: 900;
+  font-family: "AvenirNextHeavy";
 }
 
 // text nowrap truncate breakwords
@@ -63,6 +77,7 @@
 }
 
 .italic {
+  font-family: "AvenirNextMediumItalic";
   font-style: italic;
 }
 
@@ -89,4 +104,8 @@
 
 .v-align-btm {
   vertical-align: bottom;
+}
+
+.ts-basic {
+  text-shadow: 0 1px 1px rgba(0,0,0,.35);
 }

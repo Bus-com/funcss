@@ -32,13 +32,19 @@
 .tab-bb-cyan { border-bottom: 1px solid palette(cyan, base); }
 .tab-br-cyan { border-right: 1px solid palette(cyan, base); }
 
+//orange borders
+.tab-b-cyan  {border: 1px solid palette(cyan, base);}
+.tab-bt-cyan {border-top:1px solid palette(cyan, base);}
+.tab-bl-cyan {border-left:1px solid palette(cyan, base);}
+.tab-bb-cyan {border-bottom:1px solid palette(cyan, base);}
+.tab-br-cyan {border-right:1px solid palette(cyan, base);}
+
 //dark cyan border
 .tab-b-x-dark-cyan-xxs { border: 2px solid palette(cyan, x-dark); }
 .tab-bt-x-dark-cyan-xxs { border-top: 2px solid palette(cyan, x-dark); }
 .tab-bl-x-dark-cyan-xxs { border-left: 2px solid palette(cyan, x-dark); }
 .tab-bb-x-dark-cyan-xxs { border-bottom: 2px solid palette(cyan, x-dark); }
 .tab-br-x-dark-cyan-xxs { border-right: 2px solid palette(cyan, x-dark); }
-
 
 //border none
 .tab-b-none { border: none; }

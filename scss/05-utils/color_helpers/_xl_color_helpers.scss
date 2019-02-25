@@ -18,10 +18,14 @@
   .xl-xxx-light-orange { color: palette(orange, xxx-light); }
 
   .xl-cyan { color: palette(cyan, base); }
+  .xl-x-dark-cyan { color: palette(cyan, x-dark); }
 
   .xl-white { color: $white; }
 
-  //SVG HELPERS////////////////////////
+  .xl-red { color: $red; }
+
+  // SVG HELPERS ////////////////////////
+
   .xl-fill-white { fill: $white; }
 
   .xl-stroke-white { stroke: $white; }
@@ -38,6 +42,10 @@
 
   .xl-stroke-cyan { stroke: palette(cyan, base); }
 
+  .xl-fill-x-dark-cyan { fill: palette(cyan, x-dark); }
+
+  .xl-stroke-x-dark-cyan { stroke: palette(cyan, x-dark); }
+
   .xl-fill-orange { fill: palette(orange, base); }
 
   .xl-stroke-orange {  stroke: palette(orange, base); }
@@ -46,15 +54,26 @@
 
   .xl-stroke-trans { stroke: transparent; }
 
-  //BG HELPERS
+  // BG HELPERS ////////////////////////
 
   .xl-bg-white { background: $white; }
 
+  // BG YELLOW ////////////////////////
+
+  .xl-bg-yellow{ background: palette(yellow, base); }
+  .xl-bg-x-light-yellow { background: palette(yellow, x-light); }
+  .xl-bg-xx-light-yellow { background: palette(yellow, xx-light); }
+
+  // BG GREY ////////////////////////
+
   .xl-bg-grey { background: palette(grey, base); }
+  .xl-bg-light-grey { background: palette(grey, light); }
   .xl-bg-x-light-grey { background: palette(grey, x-light); }
   .xl-bg-xx-light-grey { background: palette(grey, xx-light); }
   .xl-bg-xxx-light-grey { background: palette(grey, xxx-light); }
   .xl-bg-xxxx-light-grey { background: palette(grey, xxxx-light); }
+
+  //BG DARK CYAN ////////////////////////
 
   .xl-bg-x-dark-cyan { background: palette(cyan, x-dark); }
   .xl-bg-dark-cyan { background: palette(cyan, dark); }
@@ -66,6 +85,8 @@
   .xl-bg-xxxx-light-cyan { background: palette(cyan, xxxx-light); }
   .xl-bg-xxxxx-light-cyan { background: palette(cyan, xxxxx-light); }
 
+  //BG ORANGE ////////////////////////
+
   .xl-bg-orange { background: palette(orange, base); }
   .xl-bg-light-orange { background: palette(orange, light); }
   .xl-bg-x-light-orange { background: palette(orange, x-light); }
@@ -75,22 +96,15 @@
 
   .xl-bg-facebook {
     background: #4C68A7;
-
     &:hover {
       background: #3E5F99 !important;
       color: $white;
     }
   }
 
-  .xl-bg-light-grey { background: palette(grey, light); }
-  .xl-bg-x-light-grey { background: palette(grey, x-light); }
-  .xl-bg-xx-light-grey { background: palette(grey, xx-light); }
-  .xl-bg-xxx-light-grey { background: palette(grey, xxx-light); }
-  .xl-bg-xxxx-light-grey { background: palette(grey, xxxx-light); }
-
   .xl-bg-trans { background: transparent; }
 
-  //RGBA HELPERS//////////
+  // RGBA HELPERS ////////////////////////
 
   .xl-bg-white-50 { background: rgba($white, .50); }
   .xl-bg-white-60 { background: rgba($white, .60); }
@@ -104,7 +118,7 @@
   .xl-bg-grey-80 { background: rgba(palette(grey, base), .80); }
   .xl-bg-grey-90 { background: rgba(palette(grey, base), .90); }
 
-  //SITE GRADIENTS
+  // SITE GRADIENTS ////////////////////////
 
   .xl-site-gradient {
     @include gradient (135deg, palette(orange, xxx-light) 0%, palette(orange, xxxx-light) 49.86%, palette(cyan, xxx-light) 100%);

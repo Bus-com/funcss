@@ -2,34 +2,6 @@
    HELPERS
   ========================================================================== */
 
-.f-left {
-  @include tablet-portrait {
-    float: left
-  }
-}
-
-.f-right {
-  @include tablet-portrait {
-    float: right
-  }
-}
-
-.clear {
-  clear: both;
-}
-
-.block {
-  display: block;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.rotate-45 {
-  transform: rotate(45deg);
-}
-
 .over-visible {
   overflow: visible;
 }
@@ -79,9 +51,20 @@
 }
 
 .hover-pointer {
-
   &:hover {
     cursor: pointer;
+  }
+}
+
+.hover-copy {
+  &:hover {
+    cursor: copy;
+  }
+}
+
+.hover-not-allowed {
+  &:hover {
+    cursor: not-allowed;
   }
 }
 
@@ -103,4 +86,16 @@
 
 .neg-text-indent {
   text-indent: -9999px;
+}
+
+// DISSABLED STATES
+.disabled {
+  color: palette(grey, xxx-light) !important;
+}
+
+// INPUT DISSABLED STATES
+.disabled-state {
+  border-color: palette(grey, xxx-light) !important;
+  background: rgba( palette(grey, xxx-light), .75) !important;
+  cursor: not-allowed;
 }

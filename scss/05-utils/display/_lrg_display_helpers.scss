@@ -3,28 +3,28 @@
   ========================================================================== */
 @include small-laptop {
   .lrg-f-left {
-    float: left
+    float: left;
   }
   .lrg-f-right {
-    float: right
+    float: right;
   }
   .lrg-hide {
-    display: none
+    display: none;
   }
   .lrg-clear {
-    clear: both
+    clear: both;
   }
   .lrg-block {
-    display: block
+    display: block;
   }
   .lrg-inline-block {
-    display: inline-block
+    display: inline-block;
   }
   .lrg-inline {
-    display: inline
+    display: inline;
   }
 
   .lrg-rotate-45 {
-    transform: rotate(45deg)
+    transform: rotate(45deg);
   }
 }

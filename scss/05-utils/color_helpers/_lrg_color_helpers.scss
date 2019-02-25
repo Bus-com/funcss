@@ -18,10 +18,14 @@
   .lrg-xxx-light-orange { color: palette(orange, xxx-light); }
 
   .lrg-cyan { color: palette(cyan, base); }
+  .lrg-x-dark-cyan { color: palette(cyan, x-dark); }
 
   .lrg-white { color: $white; }
 
-  //SVG HELPERS////////////////////////
+  .lrg-red { color: $red; }
+
+  // SVG HELPERS ////////////////////////
+
   .lrg-fill-white { fill: $white; }
 
   .lrg-stroke-white { stroke: $white; }
@@ -38,6 +42,10 @@
 
   .lrg-stroke-cyan { stroke: palette(cyan, base); }
 
+  .lrg-fill-x-dark-cyan { fill: palette(cyan, x-dark); }
+
+  .lrg-stroke-x-dark-cyan { stroke: palette(cyan, x-dark); }
+
   .lrg-fill-orange { fill: palette(orange, base); }
 
   .lrg-stroke-orange {  stroke: palette(orange, base); }
@@ -46,15 +54,26 @@
 
   .lrg-stroke-trans { stroke: transparent; }
 
-  //BG HELPERS
+  // BG HELPERS ////////////////////////
 
   .lrg-bg-white { background: $white; }
 
+  // BG YELLOW ////////////////////////
+
+  .lrg-bg-yellow{ background: palette(yellow, base); }
+  .lrg-bg-x-light-yellow { background: palette(yellow, x-light); }
+  .lrg-bg-xx-light-yellow { background: palette(yellow, xx-light); }
+
+  // BG GREY ////////////////////////
+
   .lrg-bg-grey { background: palette(grey, base); }
+  .lrg-bg-light-grey { background: palette(grey, light); }
   .lrg-bg-x-light-grey { background: palette(grey, x-light); }
   .lrg-bg-xx-light-grey { background: palette(grey, xx-light); }
   .lrg-bg-xxx-light-grey { background: palette(grey, xxx-light); }
   .lrg-bg-xxxx-light-grey { background: palette(grey, xxxx-light); }
+
+  //BG DARK CYAN ////////////////////////
 
   .lrg-bg-x-dark-cyan { background: palette(cyan, x-dark); }
   .lrg-bg-dark-cyan { background: palette(cyan, dark); }
@@ -66,6 +85,8 @@
   .lrg-bg-xxxx-light-cyan { background: palette(cyan, xxxx-light); }
   .lrg-bg-xxxxx-light-cyan { background: palette(cyan, xxxxx-light); }
 
+  //BG ORANGE ////////////////////////
+
   .lrg-bg-orange { background: palette(orange, base); }
   .lrg-bg-light-orange { background: palette(orange, light); }
   .lrg-bg-x-light-orange { background: palette(orange, x-light); }
@@ -75,22 +96,15 @@
 
   .lrg-bg-facebook {
     background: #4C68A7;
-
     &:hover {
       background: #3E5F99 !important;
       color: $white;
     }
   }
 
-  .lrg-bg-light-grey { background: palette(grey, light); }
-  .lrg-bg-x-light-grey { background: palette(grey, x-light); }
-  .lrg-bg-xx-light-grey { background: palette(grey, xx-light); }
-  .lrg-bg-xxx-light-grey { background: palette(grey, xxx-light); }
-  .lrg-bg-xxxx-light-grey { background: palette(grey, xxxx-light); }
-
   .lrg-bg-trans { background: transparent; }
 
-  //RGBA HELPERS//////////
+  // RGBA HELPERS ////////////////////////
 
   .lrg-bg-white-50 { background: rgba($white, .50); }
   .lrg-bg-white-60 { background: rgba($white, .60); }
@@ -104,7 +118,7 @@
   .lrg-bg-grey-80 { background: rgba(palette(grey, base), .80); }
   .lrg-bg-grey-90 { background: rgba(palette(grey, base), .90); }
 
-  //SITE GRADIENTS
+  // SITE GRADIENTS ////////////////////////
 
   .lrg-site-gradient {
     @include gradient (135deg, palette(orange, xxx-light) 0%, palette(orange, xxxx-light) 49.86%, palette(cyan, xxx-light) 100%);

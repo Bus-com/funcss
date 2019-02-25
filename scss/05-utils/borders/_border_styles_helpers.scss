@@ -10,6 +10,20 @@
 .bb-trans{ border-bottom: 1px solid transparent; }
 .br-trans{ border-right: 1px solid transparent; }
 
+.b-trans-xxs{ border: 2px solid transparent; }
+.bt-trans-xxs{ border-top: 2px solid transparent; }
+.bl-trans-xxs{ border-left: 2px solid transparent; }
+.bb-trans-xxs{ border-bottom: 2px solid transparent; }
+.br-trans-xxs{ border-right: 2px solid transparent; }
+
+
+//light grey borders
+.b-white { border: 1px solid $white; }
+.bt-white { border-top: 1px solid $white; }
+.bl-white { border-left: 1px solid $white; }
+.bb-white { border-bottom: 1px solid $white; }
+.br-white { border-right: 1px solid $white; }
+
 
 //light grey borders
 .b-light { border: 1px solid palette(grey, xxxx-light); }
@@ -25,33 +39,18 @@
 .bb-grey { border-bottom: 1px solid palette(grey, xxx-light); }
 .br-grey { border-right: 1px solid palette(grey, xxx-light); }
 
-//grey xx-light 4PX BORDER
-.b-xx-light-grey-xs { border: 4px solid palette(grey, xx-light); }
-.bt-xx-light-grey-xs { border-top: 4px solid palette(grey, xx-light); }
-.bl-xx-light-grey-xs { border-left: 4px solid palette(grey, xx-light); }
-.bb-xx-light-grey-xs { border-bottom: 4px solid palette(grey, xx-light); }
-.br-xx-light-grey-xs { border-right: 4px solid palette(grey, xx-light); }
+.b-grey-xxs { border: 2px solid palette(grey, base); }
+.bt-grey-xxs { border-top: 2px solid palette(grey, base); }
+.bl-grey-xxs { border-left: 2px solid palette(grey, base); }
+.bb-grey-xxs { border-bottom: 2px solid palette(grey, base); }
+.br-grey-xxs { border-right: 2px solid palette(grey, base); }
 
-//grey xx-light 8PX BORDER
-.b-xx-light-grey-x { border: 8px solid palette(grey, xx-light); }
-.bt-xx-light-grey-x { border-top: 8px solid palette(grey, xx-light); }
-.bl-xx-light-grey-x { border-left: 8px solid palette(grey, xx-light); }
-.bb-xx-light-grey-x { border-bottom: 8px solid palette(grey, xx-light); }
-.br-xx-light-grey-x { border-right: 8px solid palette(grey, xx-light); }
-
-//grey x-light 4PX BORDER
-.b-x-light-grey-xs { border: 4px solid palette(grey, x-light); }
-.bt-x-light-grey-xs { border-top: 4px solid palette(grey, x-light); }
-.bl-x-light-grey-xs { border-left: 4px solid palette(grey, x-light); }
-.bb-x-light-grey-xs { border-bottom: 4px solid palette(grey, x-light); }
-.br-x-light-grey-xs { border-right: 4px solid palette(grey, x-light); }
-
-//grey x-light 8PX BORDER
-.b-x-light-grey-x { border: 8px solid palette(grey, x-light); }
-.bt-x-light-grey-x { border-top: 8px solid palette(grey, x-light); }
-.bl-x-light-grey-x { border-left: 8px solid palette(grey, x-light); }
-.bb-x-light-grey-x { border-bottom: 8px solid palette(grey, x-light); }
-.br-x-light-grey-x { border-right: 8px solid palette(grey, x-light); }
+// Red Border
+.b-red{ border: 1px solid $red; }
+.bt-red{ border-top: 1px solid $red; }
+.bl-red{ border-left: 1px solid $red; }
+.bb-red{ border-bottom: 1px solid $red; }
+.br-red{ border-right: 1px solid $red; }
 
 //orange borders
 .b-orange { border: 1px solid palette(orange, base); }
@@ -67,19 +66,11 @@
 .bb-cyan { border-bottom: 1px solid palette(cyan, base); }
 .br-cyan { border-right: 1px solid palette(cyan, base); }
 
-//CYAN 4PX BORDER
-.b-cyan-xs { border: 4px solid palette(cyan, base); }
-.bt-cyan-xs { border-top: 4px solid palette(cyan, base); }
-.bl-cyan-xs { border-left: 4px solid palette(cyan, base); }
-.bb-cyan-xs { border-bottom: 4px solid palette(cyan, base); }
-.br-cyan-xs { border-right: 4px solid palette(cyan, base); }
-
-//CYAN 8PX BORDER
-.b-cyan-x { border: 8px solid palette(cyan, base); }
-.bt-cyan-x { border-top: 8px solid palette(cyan, base); }
-.bl-cyan-x { border-left: 8px solid palette(cyan, base); }
-.bb-cyan-x { border-bottom: 8px solid palette(cyan, base); }
-.br-cyan-x { border-right: 8px solid palette(cyan, base); }
+.b-cyan-xxs { border: 2px solid palette(cyan, base); }
+.bt-cyan-xxs { border-top: 2px solid palette(cyan, base); }
+.bl-cyan-xxs { border-left: 2px solid palette(cyan, base); }
+.bb-cyan-xxs { border-bottom: 2px solid palette(cyan, base); }
+.br-cyan-xxs { border-right: 2px solid palette(cyan, base); }
 
 // DARK BLUE 2PX BORDER
 .b-x-dark-cyan-xxs { border: 2px solid palette(cyan, x-dark); }
@@ -87,6 +78,13 @@
 .bl-x-dark-cyan-xxs { border-left: 2px solid palette(cyan, x-dark); }
 .bb-x-dark-cyan-xxs { border-bottom: 2px solid palette(cyan, x-dark); }
 .br-x-dark-cyan-xxs { border-right: 2px solid palette(cyan, x-dark); }
+
+//RED borders
+.b-red-xs { border: $unit-xs solid $red; }
+.bt-red-xs { border-top: $unit-xs solid $red; }
+.bl-red-xs { border-left: $unit-xs solid $red; }
+.bb-red-xs { border-bottom: $unit-xs solid $red; }
+.br-red-xs { border-right: $unit-xs solid $red; }
 
 //border none
 .b-none { border: none; }

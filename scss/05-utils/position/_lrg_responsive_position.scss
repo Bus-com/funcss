@@ -3,105 +3,169 @@
   ========================================================================== */
 
 @include small-laptop {
-  //MED-RELATIVE////////////////
-  .lrg-pos-rel { position: relative }
-  
-  //MED-ABSOLUTE///////////////
-  .lrg-pos-abs { position: absolute }
-  
-  //MED-FIXED///////////////////
-  .lrg-pos-fixed { position: fixed }
+  //LRG-RELATIVE////////////////
+  .lrg-pos-rel { position: relative; }
+
+  //LRG-ABSOLUTE///////////////
+  .lrg-pos-abs { position: absolute; }
+
+  //LRG-FIXED///////////////////
+  .lrg-pos-fixed { position: fixed; }
 }
 
-//MED -> THE WHERE YOU WANT THESE TO BE MOVED OR PLACED...
+//LRG -> THE WHERE YOU WANT THESE TO BE MOVED OR PLACED...
 @include small-laptop {
 
-  .med-top-0 { top: 0 }
-  .med-top-xs { top: 4px }
-  .med-top-x { top: 8px }
-  .med-top-small { top: 16px }
-  .med-top-lrgium { top: 24px }
-  .med-top-lrg { top: 32px }
-  .med-top-xl { top: 40px }
-  .med-top-xxl { top: 48px}
-  .med-top-xxxl { top: 56px}
-  .med-top-xxxxl { top: 64px}
+  .lrg-top-0 { top: 0; }
+  .lrg-top-xs { top: 4px; }
+  .lrg-top-x { top: 8px; }
+  .lrg-top-small { top: 16px; }
+  .lrg-top-medium { top: 24px; }
+  .lrg-top-lrg { top: 32px; }
+  .lrg-top-xl { top: 40px; }
+  .lrg-top-xxl { top: 48px; }
+  .lrg-top-xxxl { top: 56px; }
+  .lrg-top-xxxxl { top: 64px; }
+  .lrg-top-xxxxxl { top: 72px; }
+  .lrg-top-xxxxxxl { top: 80px; }
+  .lrg-top-xxxxxxxl { top: 88px; }
 
-  .med-bottom-0 { bottom: 0 }
-  .med-bottom-xs { bottom: 4px }
-  .med-bottom-x { bottom: 8px }
-  .med-bottom-small { bottom: 16px }
-  .med-bottom-medium { bottom: 24px }
-  .med-bottom-lrg { bottom: 32px }
-  .med-bottom-xl { bottom: 40px }
-  .med-bottom-xxl { bottom: 48px}
-  .med-bottom-xxxl { bottom: 56px}
-  .med-bottom-xxxxl { bottom: 64px}
+  .lrg-bottom-0 { bottom: 0; }
+  .lrg-bottom-xs { bottom: 4px; }
+  .lrg-bottom-x { bottom: 8px; }
+  .lrg-bottom-small { bottom: 16px; }
+  .lrg-bottom-medium { bottom: 24px; }
+  .lrg-bottom-lrg { bottom: 32px; }
+  .lrg-bottom-xl { bottom: 40px; }
+  .lrg-bottom-xxl { bottom: 48px; }
+  .lrg-bottom-xxxl { bottom: 56px; }
+  .lrg-bottom-xxxxl { bottom: 64px; }
+  .lrg-bottom-xxxxxl { bottom: 72px; }
+  .lrg-bottom-xxxxxxl { bottom: 80px; }
+  .lrg-bottom-xxxxxxxl { bottom: 88px; }
 
+  .lrg-left-0 { left: 0; }
+  .lrg-left-xs { left: 4px; }
+  .lrg-left-x { left: 8px; }
+  .lrg-left-small { left: 16px; }
+  .lrg-left-medium { left: 24px; }
+  .lrg-left-lrg { left: 32px; }
+  .lrg-left-xl { left: 40px; }
+  .lrg-left-xxl { left: 48px; }
+  .lrg-left-xxxl { left: 56px; }
+  .lrg-left-xxxxl { left: 64px; }
+  .lrg-left-xxxxxl { left: 72px; }
+  .lrg-left-xxxxxxl { left: 80px; }
+  .lrg-left-xxxxxxxl { left: 88px; }
 
-  .med-left-0 { left: 0 }
-  .med-left-xs { left: 4px }
-  .med-left-x { left: 8px }
-  .med-left-small { left: 16px }
-  .med-left-lrgium { left: 24px }
-  .med-left-lrg { left: 32px }
-  .med-left-xl { left: 40px }
-  .med-left-xxl { left: 48px}
-  .med-left-xxxl { left: 56px}
-  .med-left-xxxl { left: 64px}
+  .lrg-right-0 { right: 0; }
+  .lrg-right-xs { right: 4px; }
+  .lrg-right-x { right: 8px; }
+  .lrg-right-small { right: 16px; }
+  .lrg-right-medium { right: 24px; }
+  .lrg-right-lrg { right: 32px; }
+  .lrg-right-xl { right: 40px; }
+  .lrg-right-xxl { right: 48px; }
+  .lrg-right-xxxl { right: 56px; }
+  .lrg-right-xxxxl { right: 64px; }
+  .lrg-right-xxxxxl { right: 72px; }
+  .lrg-right-xxxxxxl { right: 80px; }
+  .lrg-right-xxxxxxxl { right: 88px; }
 
-  .med-right-0 { right: 0 }
-  .med-right-xs { right: 4px }
-  .med-right-x { right: 8px }
-  .med-right-small { right: 16px }
-  .med-right-lrgium { right: 24px }
-  .med-right-lrg { right: 32px }
-  .med-right-xl { right: 40px }
-  .med-right-xxl { right: 48px}
-  .med-right-xxxl { right: 56px}
-  .med-right-xxxxl { right: 64px}
+  //PERCENTAGE BASED/////////////////////////////////////////
 
+  .lrg-left-10 { left: 10%; }
+  .lrg-left-20 { left: 20%; }
+  .lrg-left-30 { left: 30%; }
+  .lrg-left-40 { left: 40%; }
+  .lrg-left-50 { left: 50%; }
+  .lrg-left-60 { left: 60%; }
+  .lrg-left-70 { left: 70%; }
+  .lrg-left-80 { left: 80%; }
+  .lrg-left-90 { left: 90%; }
+
+  .lrg-right-10 { right: 10%; }
+  .lrg-right-20 { right: 20%; }
+  .lrg-right-30 { right: 30%; }
+  .lrg-right-40 { right: 40%; }
+  .lrg-right-50 { right: 50%; }
+  .lrg-right-60 { right: 60%; }
+  .lrg-right-70 { right: 70%; }
+  .lrg-right-80 { right: 80%; }
+  .lrg-right-90 { right: 90%; }
+
+  .lrg-top-10 { top: 10%; }
+  .lrg-top-20 { top: 20%; }
+  .lrg-top-30 { top: 30%; }
+  .lrg-top-40 { top: 40%; }
+  .lrg-top-50 { top: 50%; }
+  .lrg-top-60 { top: 60%; }
+  .lrg-top-70 { top: 70%; }
+  .lrg-top-80 { top: 80%; }
+  .lrg-top-90 { top: 90%; }
+
+  .lrg-bottom-10 { bottom: 10%; }
+  .lrg-bottom-20 { bottom: 20%; }
+  .lrg-bottom-30 { bottom: 30%; }
+  .lrg-bottom-40 { bottom: 40%; }
+  .lrg-bottom-50 { bottom: 50%; }
+  .lrg-bottom-60 { bottom: 60%; }
+  .lrg-bottom-70 { bottom: 70%; }
+  .lrg-bottom-80 { bottom: 80%; }
+  .lrg-bottom-90 { bottom: 90%; }
 
   //NEGATIVE POSITIONING/////////////////////////////////////
 
-  .med-neg-top-xs { top: -4px }
-  .med-neg-top-x { top: -8px }
-  .med-neg-top-small { top: -16px }
-  .med-neg-top-medium { top: -24px }
-  .med-neg-top-lrg { top: -32px }
-  .med-neg-top-xl { top: -40px }
-  .med-neg-top-xxl { top: -48px}
-  .med-neg-top-xxxl { top: -56px}
-  .med-neg-top-xxxxl { top: -64px}
+  .lrg-neg-top-xs { top: -4px; }
+  .lrg-neg-top-x { top: -8px; }
+  .lrg-neg-top-small { top: -16px; }
+  .lrg-neg-top-medium { top: -24px; }
+  .lrg-neg-top-lrg { top: -32px; }
+  .lrg-neg-top-xl { top: -40px; }
+  .lrg-neg-top-xxl { top: -48px; }
+  .lrg-neg-top-xxxl { top: -56px; }
+  .lrg-neg-top-xxxxl { top: -64px; }
+  .lrg-neg-top-xxxxxl { top: -72px; }
+  .lrg-neg-top-xxxxxxl { top: -80px; }
+  .lrg-neg-top-xxxxxxxl { top: -88px; }
 
-  .med-neg-bottom-xs { bottom: -4px }
-  .med-neg-bottom-x { bottom: -8px }
-  .med-neg-bottom-small { bottom: -16px }
-  .med-neg-bottom-medium { bottom: -24px }
-  .med-neg-bottom-lrg { bottom: -32px }
-  .med-neg-bottom-xl { bottom: -40px }
-  .med-neg-bottom-xxl { bottom: -48px}
-  .med-neg-bottom-xxxl { bottom: -56px}
-  .med-neg-bottom-xxxxl { bottom: -64px}
+  .lrg-neg-bottom-xs { bottom: -4px; }
+  .lrg-neg-bottom-x { bottom: -8px; }
+  .lrg-neg-bottom-small { bottom: -16px; }
+  .lrg-neg-bottom-medium { bottom: -24px; }
+  .lrg-neg-bottom-lrg { bottom: -32px; }
+  .lrg-neg-bottom-xl { bottom: -40px; }
+  .lrg-neg-bottom-xxl { bottom: -48px; }
+  .lrg-neg-bottom-xxxl { bottom: -56px; }
+  .lrg-neg-bottom-xxxxl { bottom: -64px; }
+  .lrg-neg-bottom-xxxxxl { bottom: -72px; }
+  .lrg-neg-bottom-xxxxxxl { bottom: -80px; }
+  .lrg-neg-bottom-xxxxxxxl { bottom: -88px; }
 
+  .lrg-neg-left-xs { left: -4px; }
+  .lrg-neg-left-x { left: -8px; }
+  .lrg-neg-left-small { left: -16px; }
+  .lrg-neg-left-medium { left: -24px; }
+  .lrg-neg-left-lrg { left: -32px; }
+  .lrg-neg-left-xl { left: -40px; }
+  .lrg-neg-left-xxl { left: -48px; }
+  .lrg-neg-left-xxxl { left: -56px; }
+  .lrg-neg-left-xxxl { left: -64px; }
+  .lrg-neg-left-xxxxxl { left: -72px; }
+  .lrg-neg-left-xxxxxxl { left: -80px; }
+  .lrg-neg-left-xxxxxxxl { left: -88px; }
 
-  .med-neg-left-xs { left: -4px }
-  .med-neg-left-x { left: -8px }
-  .med-neg-left-small { left: -16px }
-  .med-neg-left-medium { left: -24px }
-  .med-neg-left-lrg { left: -32px }
-  .med-neg-left-xl { left: -40px }
-  .med-neg-left-xxl { left: -48px}
-  .med-neg-left-xxxl { left: -56px}
-  .med-neg-left-xxxl { left: -64px}
+  .lrg-neg-right-xs { right: -4px; }
+  .lrg-neg-right-x { right: -8px; }
+  .lrg-neg-right-small { right: -16px; }
+  .lrg-neg-right-medium { right: -24px; }
+  .lrg-neg-right-lrg { right: -32px; }
+  .lrg-neg-right-xl { right: -40px; }
+  .lrg-neg-right-xxl { right: -48px; }
+  .lrg-neg-right-xxxl { right: -56px; }
+  .lrg-neg-right-xxxxl { right: -64px; }
+  .lrg-neg-right-xxxxxl { right: -72px; }
+  .lrg-neg-right-xxxxxxl { right: -80px; }
+  .lrg-neg-right-xxxxxxxxl { right: -88px; }
 
-  .med-neg-right-xs { right: -4px }
-  .med-neg-right-x { right: -8px }
-  .med-neg-right-small { right: -16px }
-  .med-neg-right-medium { right: -24px }
-  .med-neg-right-lrg { right: -32px }
-  .med-neg-right-xl { right: -40px }
-  .med-neg-right-xxl { right: -48px}
-  .med-neg-right-xxxl { right: -56px}
-  .med-neg-right-xxxxl { right: -64px}
 }

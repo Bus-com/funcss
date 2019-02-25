@@ -18,10 +18,14 @@
   .tab-xxx-light-orange { color: palette(orange, xxx-light); }
 
   .tab-cyan { color: palette(cyan, base); }
+  .tab-x-dark-cyan { color: palette(cyan, x-dark); }
 
   .tab-white { color: $white; }
 
-  //SVG HELPERS////////////////////////
+  .tab-red { color: $red; }
+
+  // SVG HELPERS ////////////////////////
+
   .tab-fill-white { fill: $white; }
 
   .tab-stroke-white { stroke: $white; }
@@ -38,6 +42,10 @@
 
   .tab-stroke-cyan { stroke: palette(cyan, base); }
 
+  .tab-fill-x-dark-cyan { fill: palette(cyan, x-dark); }
+
+  .tab-stroke-x-dark-cyan { stroke: palette(cyan, x-dark); }
+
   .tab-fill-orange { fill: palette(orange, base); }
 
   .tab-stroke-orange {  stroke: palette(orange, base); }
@@ -46,15 +54,26 @@
 
   .tab-stroke-trans { stroke: transparent; }
 
-  //BG HELPERS
+  // BG HELPERS ////////////////////////
 
   .tab-bg-white { background: $white; }
 
+  // BG YELLOW ////////////////////////
+
+  .tab-bg-yellow{ background: palette(yellow, base); }
+  .tab-bg-x-light-yellow { background: palette(yellow, x-light); }
+  .tab-bg-xx-light-yellow { background: palette(yellow, xx-light); }
+
+  // BG GREY ////////////////////////
+
   .tab-bg-grey { background: palette(grey, base); }
+  .tab-bg-light-grey { background: palette(grey, light); }
   .tab-bg-x-light-grey { background: palette(grey, x-light); }
   .tab-bg-xx-light-grey { background: palette(grey, xx-light); }
   .tab-bg-xxx-light-grey { background: palette(grey, xxx-light); }
   .tab-bg-xxxx-light-grey { background: palette(grey, xxxx-light); }
+
+  //BG DARK CYAN ////////////////////////
 
   .tab-bg-x-dark-cyan { background: palette(cyan, x-dark); }
   .tab-bg-dark-cyan { background: palette(cyan, dark); }
@@ -66,6 +85,8 @@
   .tab-bg-xxxx-light-cyan { background: palette(cyan, xxxx-light); }
   .tab-bg-xxxxx-light-cyan { background: palette(cyan, xxxxx-light); }
 
+  //BG ORANGE ////////////////////////
+
   .tab-bg-orange { background: palette(orange, base); }
   .tab-bg-light-orange { background: palette(orange, light); }
   .tab-bg-x-light-orange { background: palette(orange, x-light); }
@@ -75,22 +96,15 @@
 
   .tab-bg-facebook {
     background: #4C68A7;
-
     &:hover {
       background: #3E5F99 !important;
       color: $white;
     }
   }
 
-  .tab-bg-light-grey { background: palette(grey, light); }
-  .tab-bg-x-light-grey { background: palette(grey, x-light); }
-  .tab-bg-xx-light-grey { background: palette(grey, xx-light); }
-  .tab-bg-xxx-light-grey { background: palette(grey, xxx-light); }
-  .tab-bg-xxxx-light-grey { background: palette(grey, xxxx-light); }
-
   .tab-bg-trans { background: transparent; }
 
-  //RGBA HELPERS//////////
+  // RGBA HELPERS ////////////////////////
 
   .tab-bg-white-50 { background: rgba($white, .50); }
   .tab-bg-white-60 { background: rgba($white, .60); }
@@ -104,7 +118,7 @@
   .tab-bg-grey-80 { background: rgba(palette(grey, base), .80); }
   .tab-bg-grey-90 { background: rgba(palette(grey, base), .90); }
 
-  //SITE GRADIENTS
+  // SITE GRADIENTS ////////////////////////
 
   .tab-site-gradient {
     @include gradient (135deg, palette(orange, xxx-light) 0%, palette(orange, xxxx-light) 49.86%, palette(cyan, xxx-light) 100%);

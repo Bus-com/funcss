@@ -21,7 +21,10 @@
 
 .white { color: $white; }
 
-//SVG HELPERS////////////////////////
+.red { color: $red; }
+
+// SVG HELPERS ////////////////////////
+
 .fill-white { fill: $white; }
 
 .stroke-white { stroke: $white; }
@@ -50,15 +53,26 @@
 
 .stroke-trans { stroke: transparent; }
 
-//BG HELPERS
+// BG HELPERS ////////////////////////
 
 .bg-white { background: $white; }
 
+// BG YELLOW ////////////////////////
+
+.bg-yellow{ background: palette(yellow, base); }
+.bg-x-light-yellow { background: palette(yellow, x-light); }
+.bg-xx-light-yellow { background: palette(yellow, xx-light); }
+
+// BG GREY ////////////////////////
+
 .bg-grey { background: palette(grey, base); }
+.bg-light-grey { background: palette(grey, light); }
 .bg-x-light-grey { background: palette(grey, x-light); }
 .bg-xx-light-grey { background: palette(grey, xx-light); }
 .bg-xxx-light-grey { background: palette(grey, xxx-light); }
 .bg-xxxx-light-grey { background: palette(grey, xxxx-light); }
+
+//BG DARK CYAN ////////////////////////
 
 .bg-x-dark-cyan { background: palette(cyan, x-dark); }
 .bg-dark-cyan { background: palette(cyan, dark); }
@@ -70,6 +84,8 @@
 .bg-xxxx-light-cyan { background: palette(cyan, xxxx-light); }
 .bg-xxxxx-light-cyan { background: palette(cyan, xxxxx-light); }
 
+//BG ORANGE ////////////////////////
+
 .bg-orange { background: palette(orange, base); }
 .bg-light-orange { background: palette(orange, light); }
 .bg-x-light-orange { background: palette(orange, x-light); }
@@ -79,22 +95,15 @@
 
 .bg-facebook {
   background: #4C68A7;
-
   &:hover {
     background: #3E5F99 !important;
     color: $white;
   }
 }
 
-.bg-light-grey { background: palette(grey, light); }
-.bg-x-light-grey { background: palette(grey, x-light); }
-.bg-xx-light-grey { background: palette(grey, xx-light); }
-.bg-xxx-light-grey { background: palette(grey, xxx-light); }
-.bg-xxxx-light-grey { background: palette(grey, xxxx-light); }
-
 .bg-trans { background: transparent; }
 
-//RGBA HELPERS//////////
+// RGBA HELPERS ////////////////////////
 
 .bg-white-50 { background: rgba($white, .50); }
 .bg-white-60 { background: rgba($white, .60); }
@@ -102,14 +111,13 @@
 .bg-white-80 { background: rgba($white, .80); }
 .bg-white-90 { background: rgba($white, .90); }
 
-
 .bg-grey-50 { background: rgba(palette(grey, base), .50); }
 .bg-grey-60 { background: rgba(palette(grey, base), .60); }
 .bg-grey-70 { background: rgba(palette(grey, base), .70); }
 .bg-grey-80 { background: rgba(palette(grey, base), .80); }
 .bg-grey-90 { background: rgba(palette(grey, base), .90); }
 
-//SITE GRADIENTS
+// SITE GRADIENTS ////////////////////////
 
 .site-gradient {
   @include gradient (135deg, palette(orange, xxx-light) 0%, palette(orange, xxxx-light) 49.86%, palette(cyan, xxx-light) 100%);
@@ -127,7 +135,8 @@
   @include gradient(184deg, palette(orange, x-light) 0%, palette(grey, xxxx-light) 50%);
 }
 
-// hover
+// HOVER STATES ////////////////////////
+
 button, .c-btn, .c-btn-site {
 
   &:hover.bg-hover-cyan {
@@ -158,5 +167,13 @@ button, .c-btn, .c-btn-site {
   &:hover.bg-hover-b-grey {
     border-color: palette(grey, base);
     color: grey;
+  }
+
+  &:hover.bg-hover-trans {
+    background: transparent;
+  }
+
+  &:hover.hover-orange {
+    color: palette(orange, base);
   }
 }

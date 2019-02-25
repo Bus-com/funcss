@@ -3,38 +3,43 @@
   ========================================================================== */
 
 .f-left {
-  float: left
+  float: left;
 }
 
 .f-right {
-  float: right
+  float: right;
 }
 
 .hide {
-  display: none
+  display: none;
 }
 
 .clear {
-  clear: both
+  clear: both;
 }
 
 .block {
-  display: block
+  display: block;
 }
 
 .inline-block {
-  display: inline-block
+  display: inline-block;
 }
 
 .inline {
-  display: inline
+  display: inline;
 }
 
 .rotate-45 {
-  transform: rotate(45deg)
+  transform: rotate(45deg);
 }
 
 
 .rotate-90 {
-  transform: rotate(90deg)
+  transform: rotate(90deg);
+}
+
+
+.rotate-180 {
+  transform: rotate(180deg);
 }

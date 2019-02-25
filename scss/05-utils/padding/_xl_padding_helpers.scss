@@ -4,71 +4,71 @@
 @include laptop {
 
   .xl-p0 {
-    padding: 0
+    padding: 0;
   }
   .xl-pt0 {
-    padding-top: 0
+    padding-top: 0;
   }
   .xl-pr0 {
-    padding-right: 0
+    padding-right: 0;
   }
   .xl-pb0 {
-    padding-bottom: 0
+    padding-bottom: 0;
   }
   .xl-pl0 {
-    padding-left: 0
+    padding-left: 0;
   }
   .xl-px0 {
     padding-left: 0;
-    padding-right: 0
+    padding-right: 0;
   }
   .xl-py0 {
     padding-top: 0;
-    padding-bottom: 0
+    padding-bottom: 0;
   }
 
   .xl-p-xs {
-    padding: $unit-xs
+    padding: $unit-xs;
   }
   .xl-pt-xs {
-    padding-top: $unit-xs
+    padding-top: $unit-xs;
   }
   .xl-pr-xs {
-    padding-right: $unit-xs
+    padding-right: $unit-xs;
   }
   .xl-pb-xs {
-    padding-bottom: $unit-xs
+    padding-bottom: $unit-xs;
   }
   .xl-pl-xs {
-    padding-left: $unit-xs
+    padding-left: $unit-xs;
   }
   .xl-px-xs {
     padding-left: $unit-xs;
-    padding-right: $unit-xs
+    padding-right: $unit-xs;
   }
   .xl-py-xs {
     padding-top: $unit-xs;
-    padding-bottom: $unit-xs
+    padding-bottom: $unit-xs;
   }
 
   .xl-p-x {
-    padding: $unit-x
+    padding: $unit-x;
   }
   .xl-pt-x {
-    padding-top: $unit-x
+    padding-top: $unit-x;
   }
   .xl-pr-x {
-    padding-right: $unit-x
+    padding-right: $unit-x;
   }
   .xl-pb-x {
-    padding-bottom: $unit-x
+    padding-bottom: $unit-x;
   }
   .xl-pl-x {
-    padding-left: $unit-x
+    padding-left: $unit-x;
   }
   .xl-px-x {
     padding-left: $unit-x;
-    padding-right: $unit-x
+    padding-right: $unit-x;
   }
   .xl-py-x {
     padding-top: $unit-x;
@@ -76,195 +76,230 @@
   }
 
   .xl-p-small {
-    padding: $unit-small
+    padding: $unit-small;
   }
   .xl-pt-small {
-    padding-top: $unit-small
+    padding-top: $unit-small;
   }
   .xl-pr-small {
-    padding-right: $unit-small
+    padding-right: $unit-small;
   }
   .xl-pb-small {
-    padding-bottom: $unit-small
+    padding-bottom: $unit-small;
   }
   .xl-pl-small {
-    padding-left: $unit-small
+    padding-left: $unit-small;
   }
   .xl-px-small {
     padding-left: $unit-small;
-    padding-right: $unit-small
+    padding-right: $unit-small;
   }
   .xl-py-small {
     padding-top: $unit-small;
-    padding-bottom: $unit-small
+    padding-bottom: $unit-small;
   }
 
   .xl-p-medium {
-    padding: $unit-medium
+    padding: $unit-medium;
   }
   .xl-pt-medium {
-    padding-top: $unit-medium
+    padding-top: $unit-medium;
   }
   .xl-pr-medium {
-    padding-right: $unit-medium
+    padding-right: $unit-medium;
   }
   .xl-pb-medium {
-    padding-bottom: $unit-medium
+    padding-bottom: $unit-medium;
   }
   .xl-pl-medium {
-    padding-left: $unit-medium
+    padding-left: $unit-medium;
   }
   .xl-px-medium {
     padding-left: $unit-medium;
-    padding-right: $unit-medium
+    padding-right: $unit-medium;
   }
   .xl-py-medium {
     padding-top: $unit-medium;
-    padding-bottom: $unit-medium
+    padding-bottom: $unit-medium;
   }
 
   .xl-p-lrg {
-    padding: $unit-lrg
+    padding: $unit-lrg;
   }
   .xl-pt-lrg {
-    padding-top: $unit-lrg
+    padding-top: $unit-lrg;
   }
   .xl-pr-lrg {
-    padding-right: $unit-lrg
+    padding-right: $unit-lrg;
   }
   .xl-pb-lrg {
-    padding-bottom: $unit-lrg
+    padding-bottom: $unit-lrg;
   }
   .xl-pl-lrg {
-    padding-left: $unit-lrg
+    padding-left: $unit-lrg;
   }
   .xl-px-lrg {
     padding-left: $unit-lrg;
-    padding-right: $unit-lrg
+    padding-right: $unit-lrg;
   }
   .xl-py-lrg {
     padding-top: $unit-lrg;
-    padding-bottom: $unit-lrg
+    padding-bottom: $unit-lrg;
   }
 
   .xl-p-xl {
-    padding: $unit-xl
+    padding: $unit-xl;
   }
   .xl-pt-xl {
-    padding-top: $unit-xl
+    padding-top: $unit-xl;
   }
   .xl-pr-xl {
-    padding-right: $unit-xl
+    padding-right: $unit-xl;
   }
   .xl-pb-xl {
-    padding-bottom: $unit-xl
+    padding-bottom: $unit-xl;
   }
   .xl-pl-xl {
-    padding-left: $unit-xl
+    padding-left: $unit-xl;
   }
   .xl-px-xl {
     padding-left: $unit-xl;
-    padding-right: $unit-xl
+    padding-right: $unit-xl;
   }
   .xl-py-xl {
     padding-top: $unit-xl;
-    padding-bottom: $unit-xl
+    padding-bottom: $unit-xl;
   }
 
   .xl-p-xxl {
-    padding: $unit-xxl
+    padding: $unit-xxl;
   }
   .xl-pt-xxl {
-    padding-top: $unit-xxl
+    padding-top: $unit-xxl;
   }
   .xl-pr-xxl {
-    padding-right: $unit-xxl
+    padding-right: $unit-xxl;
   }
   .xl-pb-xxl {
-    padding-bottom: $unit-xxl
+    padding-bottom: $unit-xxl;
   }
   .xl-pl-xxl {
-    padding-left: $unit-xxl
+    padding-left: $unit-xxl;
   }
   .xl-px-xxl {
     padding-left: $unit-xxl;
-    padding-right: $unit-xxl
+    padding-right: $unit-xxl;
   }
   .xl-py-xxl {
     padding-top: $unit-xxl;
-    padding-bottom: $unit-xxl
+    padding-bottom: $unit-xxl;
   }
 
   .xl-p-xxxl {
-    padding: $unit-xxxl
+    padding: $unit-xxxl;
   }
   .xl-pt-xxxl {
-    padding-top: $unit-xxxl
+    padding-top: $unit-xxxl;
   }
   .xl-pr-xxxl {
-    padding-right: $unit-xxxl
+    padding-right: $unit-xxxl;
   }
   .xl-pb-xxxl {
-    padding-bottom: $unit-xxxl
+    padding-bottom: $unit-xxxl;
   }
   .xl-pl-xxxl {
-    padding-left: $unit-xxxl
+    padding-left: $unit-xxxl;
   }
   .xl-px-xxxl {
     padding-left: $unit-xxxl;
-    padding-right: $unit-xxxl
+    padding-right: $unit-xxxl;
   }
   .xl-py-xxxl {
     padding-top: $unit-xxxl;
-    padding-bottom: $unit-xxxl
+    padding-bottom: $unit-xxxl;
   }
 
   .xl-p-xxxxl {
-    padding: $unit-xxxxl
+    padding: $unit-xxxxl;
   }
   .xl-pt-xxxxl {
-    padding-top: $unit-xxxxl
+    padding-top: $unit-xxxxl;
   }
   .xl-pr-xxxxl {
-    padding-right: $unit-xxxxl
+    padding-right: $unit-xxxxl;
   }
   .xl-pb-xxxxl {
-    padding-bottom: $unit-xxxxl
+    padding-bottom: $unit-xxxxl;
   }
   .xl-pl-xxxxl {
-    padding-left: $unit-xxxxl
+    padding-left: $unit-xxxxl;
   }
   .xl-px-xxxxl {
     padding-left: $unit-xxxxl;
-    padding-right: $unit-xxxxl
+    padding-right: $unit-xxxxl;
   }
   .xl-py-xxxxl {
     padding-top: $unit-xxxxl;
-    padding-bottom: $unit-xxxxl
+    padding-bottom: $unit-xxxxl;
   }
 
   .xl-p-xxxxxl {
-    padding: $unit-xxxxxl
+    padding: $unit-xxxxxl;
   }
   .xl-pt-xxxxxl {
-    padding-top: $unit-xxxxxl
+    padding-top: $unit-xxxxxl;
   }
   .xl-pr-xxxxxl {
-    padding-right: $unit-xxxxxl
+    padding-right: $unit-xxxxxl;
   }
   .xl-pb-xxxxxl {
-    padding-bottom: $unit-xxxxxl
+    padding-bottom: $unit-xxxxxl;
   }
   .xl-pl-xxxxxl {
-    padding-left: $unit-xxxxxl
+    padding-left: $unit-xxxxxl;
   }
   .xl-px-xxxxxl {
     padding-left: $unit-xxxxxl;
-    padding-right: $unit-xxxxxl
+    padding-right: $unit-xxxxxl;
   }
   .xl-py-xxxxxl {
     padding-top: $unit-xxxxxl;
-    padding-bottom: $unit-xxxxxl
+    padding-bottom: $unit-xxxxxl;
+  }
+  .xl-px-xxxxxxl {
+    padding-left: $unit-xxxxxxl;
+    padding-right: $unit-xxxxxxl;
+  }
+
+  .xl-py-xxxxxxl {
+    padding-top: $unit-xxxxxxl;
+    padding-bottom: $unit-xxxxxxl;
+  }
+
+  .xl-pt-xxxxxxxl {
+    padding-top: $unit-xxxxxxxl;
+  }
+
+  .xl-pb-xxxxxxxl {
+    padding-bottom: $unit-xxxxxxxl;
+  }
+
+  .xl-px-xxxxxxxl {
+    padding-left: $unit-xxxxxxxl;
+    padding-right: $unit-xxxxxxxl;
+  }
+
+  .xl-py-xxxxxxxl {
+    padding-top: $unit-xxxxxxxl;
+    padding-bottom: $unit-xxxxxxxl;
+  }
+
+  .xl-pt-xxxxxxxxl {
+    padding-top: $unit-xxxxxxxxl;
+  }
+
+  .xl-pb-xxxxxxxxl {
+    padding-bottom: $unit-xxxxxxxxl;
   }
 
 }

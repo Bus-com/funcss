@@ -1,7 +1,5 @@
 @import "helpers";
 @import "icon_helpers";
-@import "viewport_helpers";
-@import "borders/all";
 @import "border_radius_helpers";
 @import "list_helpers";
 @import "show_hide_helpers";
@@ -11,17 +9,10 @@
 @import "debug";
 @import "opacity_helpers";
 
-
 //BORDERS
 @import "borders/all";
 
-// @import "borders/border_styles_helpers";
-// @import "borders/tab_border_styles_helpers";
-// @import "borders/med-border_styles_helpers";
-// @import "borders/lrg-border_styles_helpers";
-// @import "borders/xl-border_styles_helpers";
-
-// COLORS
+// Colors
 @import  "color_helpers/all";
 
 //POSITION

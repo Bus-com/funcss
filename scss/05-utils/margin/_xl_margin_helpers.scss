@@ -2,7 +2,6 @@
    PADDING HELPERS
   ========================================================================== */
 @include laptop {
-
   .xl-m-auto {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -295,5 +294,41 @@
   .xl-my-xxxxxl {
     margin-top: $unit-xxxxxl;
     margin-bottom: $unit-xxxxxl;
+  }
+
+  .xl-mb-xxxxxxl {
+    margin-bottom: $unit-xxxxxxl;
+  }
+
+  .xl-ml-xxxxxxl {
+    margin-left: $unit-xxxxxxl;
+  }
+
+  .xl-mx-xxxxxxl {
+    margin-left: $unit-xxxxxxl;
+    margin-right: $unit-xxxxxxl;
+  }
+
+  .xl-my-xxxxxxl {
+    margin-top: $unit-xxxxxxl;
+    margin-bottom: $unit-xxxxxxl;
+  }
+
+  .xl-mb-xxxxxxxl {
+    margin-bottom: $unit-xxxxxxxl;
+  }
+
+  .xl-ml-xxxxxxxl {
+    margin-left: $unit-xxxxxxxl;
+  }
+
+  .xl-mx-xxxxxxxl {
+    margin-left: $unit-xxxxxxxl;
+    margin-right: $unit-xxxxxxxl;
+  }
+
+  .xl-my-xxxxxxxl {
+    margin-top: $unit-xxxxxxxl;
+    margin-bottom: $unit-xxxxxxxl;
   }
 }
