@@ -56,19 +56,21 @@
 }
 
 .mt-xxs {
-  margin: $unit-xxs;
+  margin-top: $unit-xxs;
 }
 
 .mb-xxs {
-  margin: $unit-xxs;
+  margin-bottom: $unit-xxs;
 }
 
 .mx-xxs {
-  margin: $unit-xxs;
+  margin-left: $unit-xxs;
+  margin-right: $unit-xxs;
 }
 
 .my-xxs {
-  margin: $unit-xxs;
+  margin-top: $unit-xxs;
+  margin-bottom: $unit-xxs;
 }
 
 .m-xs {
