@@ -1,19 +1,19 @@
 .anim-come-up {
-  @include animation("comeUp .3s ease-in")
+  @include animation("comeUp .3s ease-in");
 }
 
 .anim-fade-in-up {
-  @include animation("fadeInUp .3s ease-in")
+  @include animation("fadeInUp .3s ease-in");
 }
 
 .anim-fade-in {
-  @include animation("fadeIn .3s ease-in")
+  @include animation("fadeIn .3s ease-in");
 }
 
 .anim-fade-in-slow {
-  @include animation("fadeIn .6s ease-in")
+  @include animation("fadeIn .6s ease-in");
 }
 
 .ani-fade-out {
-  @include animation("fadeOut .3s ease-in")
+  @include animation("fadeOut .3s ease-in");
 }

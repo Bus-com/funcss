@@ -3,28 +3,28 @@
   ========================================================================== */
 @include tablet-portrait {
   .tab-f-left {
-    float: left
+    float: left;
   }
   .tab-f-right {
-    float: right
+    float: right;
   }
   .tab-hide {
-    display: none
+    display: none;
   }
   .tab-clear {
-    clear: both
+    clear: both;
   }
   .tab-block {
-    display: block
+    display: block;
   }
   .tab-inline-block {
-    display: inline-block
+    display: inline-block;
   }
   .tab-inline {
-    display: inline
+    display: inline;
   }
 
   .tab-rotate-45 {
-    transform: rotate(45deg)
+    transform: rotate(45deg);
   }
 }

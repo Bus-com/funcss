@@ -3,28 +3,28 @@
   ========================================================================== */
 @include laptop {
   .xl-f-left {
-    float: left
+    float: left;
   }
   .xl-f-right {
-    float: right
+    float: right;
   }
   .xl-hide {
-    display: none
+    display: none;
   }
   .xl-clear {
-    clear: both
+    clear: both;
   }
   .xl-block {
-    display: block
+    display: block;
   }
   .xl-inline-block {
-    display: inline-block
+    display: inline-block;
   }
   .xl-inline {
-    display: inline
+    display: inline;
   }
 
   .xl-rotate-45 {
-    transform: rotate(45deg)
+    transform: rotate(45deg);
   }
 }

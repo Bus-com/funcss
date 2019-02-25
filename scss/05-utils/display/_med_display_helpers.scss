@@ -3,28 +3,28 @@
   ========================================================================== */
 @include tablet-landscape {
   .med-f-left {
-    float: left
+    float: left;
   }
   .med-f-right {
-    float: right
+    float: right;
   }
   .med-hide {
-    display: none
+    display: none;
   }
   .med-clear {
-    clear: both
+    clear: both;
   }
   .med-block {
-    display: block
+    display: block;
   }
   .med-inline-block {
-    display: inline-block
+    display: inline-block;
   }
   .med-inline {
-    display: inline
+    display: inline;
   }
 
   .med-rotate-45 {
-    transform: rotate(45deg)
+    transform: rotate(45deg);
   }
 }

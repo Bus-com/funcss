@@ -4,71 +4,71 @@
 @include tablet-landscape {
 
   .med-p0 {
-    padding: 0
+    padding: 0;
   }
   .med-pt0 {
-    padding-top: 0
+    padding-top: 0;
   }
   .med-pr0 {
-    padding-right: 0
+    padding-right: 0;
   }
   .med-pb0 {
-    padding-bottom: 0
+    padding-bottom: 0;
   }
   .med-pl0 {
-    padding-left: 0
+    padding-left: 0;
   }
   .med-px0 {
     padding-left: 0;
-    padding-right: 0
+    padding-right: 0;
   }
   .med-py0 {
     padding-top: 0;
-    padding-bottom: 0
+    padding-bottom: 0;
   }
 
   .med-p-xs {
-    padding: $unit-xs
+    padding: $unit-xs;
   }
   .med-pt-xs {
-    padding-top: $unit-xs
+    padding-top: $unit-xs;
   }
   .med-pr-xs {
-    padding-right: $unit-xs
+    padding-right: $unit-xs;
   }
   .med-pb-xs {
-    padding-bottom: $unit-xs
+    padding-bottom: $unit-xs;
   }
   .med-pl-xs {
-    padding-left: $unit-xs
+    padding-left: $unit-xs;
   }
   .med-px-xs {
     padding-left: $unit-xs;
-    padding-right: $unit-xs
+    padding-right: $unit-xs;
   }
   .med-py-xs {
     padding-top: $unit-xs;
-    padding-bottom: $unit-xs
+    padding-bottom: $unit-xs;
   }
 
   .med-p-x {
-    padding: $unit-x
+    padding: $unit-x;
   }
   .med-pt-x {
-    padding-top: $unit-x
+    padding-top: $unit-x;
   }
   .med-pr-x {
-    padding-right: $unit-x
+    padding-right: $unit-x;
   }
   .med-pb-x {
-    padding-bottom: $unit-x
+    padding-bottom: $unit-x;
   }
   .med-pl-x {
-    padding-left: $unit-x
+    padding-left: $unit-x;
   }
   .med-px-x {
     padding-left: $unit-x;
-    padding-right: $unit-x
+    padding-right: $unit-x;
   }
   .med-py-x {
     padding-top: $unit-x;
@@ -76,196 +76,195 @@
   }
 
   .med-p-small {
-    padding: $unit-small
+    padding: $unit-small;
   }
   .med-pt-small {
-    padding-top: $unit-small
+    padding-top: $unit-small;
   }
   .med-pr-small {
-    padding-right: $unit-small
+    padding-right: $unit-small;
   }
   .med-pb-small {
-    padding-bottom: $unit-small
+    padding-bottom: $unit-small;
   }
   .med-pl-small {
-    padding-left: $unit-small
+    padding-left: $unit-small;
   }
   .med-px-small {
     padding-left: $unit-small;
-    padding-right: $unit-small
+    padding-right: $unit-small;
   }
   .med-py-small {
     padding-top: $unit-small;
-    padding-bottom: $unit-small
+    padding-bottom: $unit-small;
   }
 
   .med-p-medium {
-    padding: $unit-medium
+    padding: $unit-medium;
   }
   .med-pt-medium {
-    padding-top: $unit-medium
+    padding-top: $unit-medium;
   }
   .med-pr-medium {
-    padding-right: $unit-medium
+    padding-right: $unit-medium;
   }
   .med-pb-medium {
-    padding-bottom: $unit-medium
+    padding-bottom: $unit-medium;
   }
   .med-pl-medium {
-    padding-left: $unit-medium
+    padding-left: $unit-medium;
   }
   .med-px-medium {
     padding-left: $unit-medium;
-    padding-right: $unit-medium
+    padding-right: $unit-medium;
   }
   .med-py-medium {
     padding-top: $unit-medium;
-    padding-bottom: $unit-medium
+    padding-bottom: $unit-medium;
   }
 
   .med-p-lrg {
-    padding: $unit-lrg
+    padding: $unit-lrg;
   }
   .med-pt-lrg {
-    padding-top: $unit-lrg
+    padding-top: $unit-lrg;
   }
   .med-pr-lrg {
-    padding-right: $unit-lrg
+    padding-right: $unit-lrg;
   }
   .med-pb-lrg {
-    padding-bottom: $unit-lrg
+    padding-bottom: $unit-lrg;
   }
   .med-pl-lrg {
-    padding-left: $unit-lrg
+    padding-left: $unit-lrg;
   }
   .med-px-lrg {
     padding-left: $unit-lrg;
-    padding-right: $unit-lrg
+    padding-right: $unit-lrg;
   }
   .med-py-lrg {
     padding-top: $unit-lrg;
-    padding-bottom: $unit-lrg
+    padding-bottom: $unit-lrg;
   }
 
   .med-p-xl {
-    padding: $unit-xl
+    padding: $unit-xl;
   }
   .med-pt-xl {
-    padding-top: $unit-xl
+    padding-top: $unit-xl;
   }
   .med-pr-xl {
-    padding-right: $unit-xl
+    padding-right: $unit-xl;
   }
   .med-pb-xl {
-    padding-bottom: $unit-xl
+    padding-bottom: $unit-xl;
   }
   .med-pl-xl {
-    padding-left: $unit-xl
+    padding-left: $unit-xl;
   }
   .med-px-xl {
     padding-left: $unit-xl;
-    padding-right: $unit-xl
+    padding-right: $unit-xl;
   }
   .med-py-xl {
     padding-top: $unit-xl;
-    padding-bottom: $unit-xl
+    padding-bottom: $unit-xl;
   }
 
   .med-p-xxl {
-    padding: $unit-xxl
+    padding: $unit-xxl;
   }
   .med-pt-xxl {
-    padding-top: $unit-xxl
+    padding-top: $unit-xxl;
   }
   .med-pr-xxl {
-    padding-right: $unit-xxl
+    padding-right: $unit-xxl;
   }
   .med-pb-xxl {
-    padding-bottom: $unit-xxl
+    padding-bottom: $unit-xxl;
   }
   .med-pl-xxl {
-    padding-left: $unit-xxl
+    padding-left: $unit-xxl;
   }
   .med-px-xxl {
     padding-left: $unit-xxl;
-    padding-right: $unit-xxl
+    padding-right: $unit-xxl;
   }
   .med-py-xxl {
     padding-top: $unit-xxl;
-    padding-bottom: $unit-xxl
+    padding-bottom: $unit-xxl;
   }
 
   .med-p-xxxl {
-    padding: $unit-xxxl
+    padding: $unit-xxxl;
   }
   .med-pt-xxxl {
-    padding-top: $unit-xxxl
+    padding-top: $unit-xxxl;
   }
   .med-pr-xxxl {
-    padding-right: $unit-xxxl
+    padding-right: $unit-xxxl;
   }
   .med-pb-xxxl {
-    padding-bottom: $unit-xxxl
+    padding-bottom: $unit-xxxl;
   }
   .med-pl-xxxl {
-    padding-left: $unit-xxxl
+    padding-left: $unit-xxxl;
   }
   .med-px-xxxl {
     padding-left: $unit-xxxl;
-    padding-right: $unit-xxxl
+    padding-right: $unit-xxxl;
   }
   .med-py-xxxl {
     padding-top: $unit-xxxl;
-    padding-bottom: $unit-xxxl
+    padding-bottom: $unit-xxxl;
   }
 
   .med-p-xxxxl {
-    padding: $unit-xxxxl
+    padding: $unit-xxxxl;
   }
   .med-pt-xxxxl {
-    padding-top: $unit-xxxxl
+    padding-top: $unit-xxxxl;
   }
   .med-pr-xxxxl {
-    padding-right: $unit-xxxxl
+    padding-right: $unit-xxxxl;
   }
   .med-pb-xxxxl {
-    padding-bottom: $unit-xxxxl
+    padding-bottom: $unit-xxxxl;
   }
   .med-pl-xxxxl {
-    padding-left: $unit-xxxxl
+    padding-left: $unit-xxxxl;
   }
   .med-px-xxxxl {
     padding-left: $unit-xxxxl;
-    padding-right: $unit-xxxxl
+    padding-right: $unit-xxxxl;
   }
   .med-py-xxxxl {
     padding-top: $unit-xxxxl;
-    padding-bottom: $unit-xxxxl
+    padding-bottom: $unit-xxxxl;
   }
-
 
   .med-p-xxxxxl {
-    padding: $unit-xxxxxl
+    padding: $unit-xxxxxl;
   }
   .med-pt-xxxxxl {
-    padding-top: $unit-xxxxxl
+    padding-top: $unit-xxxxxl;
   }
   .med-pr-xxxxxl {
-    padding-right: $unit-xxxxxl
+    padding-right: $unit-xxxxxl;
   }
   .med-pb-xxxxxl {
-    padding-bottom: $unit-xxxxxl
+    padding-bottom: $unit-xxxxxl;
   }
   .med-pl-xxxxxl {
-    padding-left: $unit-xxxxxl
+    padding-left: $unit-xxxxxl;
   }
   .med-px-xxxxxl {
     padding-left: $unit-xxxxxl;
-    padding-right: $unit-xxxxxl
+    padding-right: $unit-xxxxxl;
   }
   .med-py-xxxxxl {
     padding-top: $unit-xxxxxl;
-    padding-bottom: $unit-xxxxxl
+    padding-bottom: $unit-xxxxxl;
   }
   .med-px-xxxxxxl {
     padding-left: $unit-xxxxxxl;
@@ -295,24 +294,6 @@
     padding-bottom: $unit-xxxxxxxl;
   }
 
-  .med-pt-xxxxxxxl {
-    padding-top: $unit-xxxxxxxl;
-  }
-
-  .med-pb-xxxxxxxl {
-    padding-bottom: $unit-xxxxxxxl;
-  }
-
-   .med-px-xxxxxxxxl {
-    padding-left: $unit-xxxxxxxxl;
-    padding-right: $unit-xxxxxxxxl;
-  }
-
-  .med-py-xxxxxxxxl {
-    padding-top: $unit-xxxxxxxxl;
-    padding-bottom: $unit-xxxxxxxxl;
-  }
-
   .med-pt-xxxxxxxxl {
     padding-top: $unit-xxxxxxxxl;
   }
@@ -320,6 +301,5 @@
   .med-pb-xxxxxxxxl {
     padding-bottom: $unit-xxxxxxxxl;
   }
-
 
 }
