@@ -60,6 +60,13 @@ while [ "$1" != "" ]; do
     shift
 done
 
+if [ "$DEPLOY" = true ]; then
+    if [ -z "$BUILD_TYPE" ]; then
+        echo "you need to specify the deploy type: [major | minor | patch | premajor | preminor | prepatch | prerelease]"
+        exit 0;
+    fi
+fi
+
 printf "\033[95;5m              Feeling  \033[4mSassy\033[0m?   \033[0m\n"
 printf "\033[106;30m            lib is being compiled           \033[0m\n"
 printf "\033[106;30m                copy images                 \033[0m\n"
@@ -102,11 +109,7 @@ else
     git commit -m "$commitmessage"
 
     if [ "$DEPLOY" = true ]; then
-        if [ -z "$BUILD_TYPE" ]; then
-            echo "you need to specify the deploy type: [major | minor | patch | premajor | preminor | prepatch | prerelease]"
-            exit 0;
-        fi
-        # update the version
+        # update the version number with the right type.
         npm version $BUILD_TYPE
         printf "\033[106;30m        npm version $BUILD_TYPE done.   \033[0m\n"
         npm publish
