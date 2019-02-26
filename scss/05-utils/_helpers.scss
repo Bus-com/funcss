@@ -1,6 +1,33 @@
 /* ==========================================================================
    HELPERS
   ========================================================================== */
+.f-left {
+  @include tablet-portrait {
+    float: left
+  }
+}
+
+.f-right {
+  @include tablet-portrait {
+    float: right
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.rotate-45 {
+  transform: rotate(45deg);
+}
 
 .over-visible {
   overflow: visible;
