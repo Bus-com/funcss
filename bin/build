@@ -102,6 +102,10 @@ else
     git commit -m "$commitmessage"
 
     if [ "$DEPLOY" = true ]; then
+        if [ -z "$BUILD_TYPE" ]; then
+            echo "you need to specify the deploy type: [major | minor | patch | premajor | preminor | prepatch | prerelease]"
+            exit 0;
+        fi
         # update the version
         npm version $BUILD_TYPE
         printf "\033[106;30m        npm version $BUILD_TYPE done.   \033[0m\n"
