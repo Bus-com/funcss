@@ -1,6 +1,6 @@
 {
   "name": "bus-funcss",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "func.css",
   "main": "index.html",
   "repository": "git@github.com:Bus-com/funcss.git",
@@ -11,7 +11,7 @@
     "sass"
   ],
   "scripts": {
-  	"test": "bin/build",
+    "test": "bin/build",
     "build": "bin/build --debug",
     "release": "bin/build --deploy"
   }
