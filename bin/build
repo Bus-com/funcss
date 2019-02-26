@@ -12,7 +12,6 @@ OUTPUT_STYLE="expanded"
 OUTPUT_PATH="dist"
 OUTPUT_NAME="funcss"
 OUTPUT_FORMAT="css"
-PUBLISH=true
 
 function usage() {
     echo "\033[38;5;87mFUNCSS build Script\033[0m"
@@ -21,7 +20,6 @@ function usage() {
     echo "\033[38;5;13m\t-h --help"
     echo "\033[38;5;166m\t--debug [default=true]"
     echo "\033[38;5;196m\t--deploy [default=false]"
-    echo "\033[38;5;196m\t--publish [default=false]"
     echo ""
 }
 
@@ -43,16 +41,15 @@ while [ "$1" != "" ]; do
         --debug)
             DEBUG=true
             DEPLOY=false
+            PUBLISH=false
             OUTPUT_STYLE="expanded"
             ;;
         --deploy)
             DEPLOY=true
             DEBUG=false
+            PUBLISH=true
             BUILD_TYPE=$VALUE
             OUTPUT_STYLE="compressed"
-            ;;
-        --publish)
-            PUBLISH=true
             ;;
         *)
             echo "ERROR: unknown parameter \"$PARAM\""
@@ -62,6 +59,13 @@ while [ "$1" != "" ]; do
     esac
     shift
 done
+
+if [ "$DEPLOY" = true ]; then
+    if [ -z "$BUILD_TYPE" ]; then
+        echo "you need to specify the deploy type: [major | minor | patch | premajor | preminor | prepatch | prerelease]"
+        exit 0;
+    fi
+fi
 
 printf "\033[95;5m              Feeling  \033[4mSassy\033[0m?   \033[0m\n"
 printf "\033[106;30m            lib is being compiled           \033[0m\n"
@@ -104,8 +108,8 @@ else
     read commitmessage
     git commit -m "$commitmessage"
 
-    if [ "$PUBLISH" = true ]; then
-        # update the version
+    if [ "$DEPLOY" = true ]; then
+        # update the version number with the right type.
         npm version $BUILD_TYPE
         printf "\033[106;30m        npm version $BUILD_TYPE done.   \033[0m\n"
         npm publish
