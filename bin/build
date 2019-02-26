@@ -12,7 +12,6 @@ OUTPUT_STYLE="expanded"
 OUTPUT_PATH="dist"
 OUTPUT_NAME="funcss"
 OUTPUT_FORMAT="css"
-PUBLISH=true
 
 function usage() {
     echo "\033[38;5;87mFUNCSS build Script\033[0m"
@@ -21,7 +20,6 @@ function usage() {
     echo "\033[38;5;13m\t-h --help"
     echo "\033[38;5;166m\t--debug [default=true]"
     echo "\033[38;5;196m\t--deploy [default=false]"
-    echo "\033[38;5;196m\t--publish [default=false]"
     echo ""
 }
 
@@ -43,16 +41,15 @@ while [ "$1" != "" ]; do
         --debug)
             DEBUG=true
             DEPLOY=false
+            PUBLISH=false
             OUTPUT_STYLE="expanded"
             ;;
         --deploy)
             DEPLOY=true
             DEBUG=false
+            PUBLISH=true
             BUILD_TYPE=$VALUE
             OUTPUT_STYLE="compressed"
-            ;;
-        --publish)
-            PUBLISH=true
             ;;
         *)
             echo "ERROR: unknown parameter \"$PARAM\""
@@ -104,7 +101,7 @@ else
     read commitmessage
     git commit -m "$commitmessage"
 
-    if [ "$PUBLISH" = true ]; then
+    if [ "$DEPLOY" = true ]; then
         # update the version
         npm version $BUILD_TYPE
         printf "\033[106;30m        npm version $BUILD_TYPE done.   \033[0m\n"
