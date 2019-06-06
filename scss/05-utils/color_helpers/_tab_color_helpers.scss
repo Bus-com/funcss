@@ -106,12 +106,20 @@
 
   // RGBA HELPERS ////////////////////////
 
+  .tab-bg-white-10 { background: rgba($white, .10); }
+  .tab-bg-white-20 { background: rgba($white, .20); }
+  .tab-bg-white-30 { background: rgba($white, .30); }
+  .tab-bg-white-40 { background: rgba($white, .40); }
   .tab-bg-white-50 { background: rgba($white, .50); }
   .tab-bg-white-60 { background: rgba($white, .60); }
   .tab-bg-white-70 { background: rgba($white, .70); }
   .tab-bg-white-80 { background: rgba($white, .80); }
   .tab-bg-white-90 { background: rgba($white, .90); }
 
+  .tab-bg-grey-10 { background: rgba(palette(grey, base), .10); }
+  .tab-bg-grey-20 { background: rgba(palette(grey, base), .20); }
+  .tab-bg-grey-30 { background: rgba(palette(grey, base), .30); }
+  .tab-bg-grey-40 { background: rgba(palette(grey, base), .40); }
   .tab-bg-grey-50 { background: rgba(palette(grey, base), .50); }
   .tab-bg-grey-60 { background: rgba(palette(grey, base), .60); }
   .tab-bg-grey-70 { background: rgba(palette(grey, base), .70); }
