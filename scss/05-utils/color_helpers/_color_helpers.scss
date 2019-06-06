@@ -105,12 +105,20 @@
 
 // RGBA HELPERS ////////////////////////
 
+.bg-white-10 { background: rgba($white, .10); }
+.bg-white-20 { background: rgba($white, .20); }
+.bg-white-30 { background: rgba($white, .30); }
+.bg-white-40 { background: rgba($white, .40); }
 .bg-white-50 { background: rgba($white, .50); }
 .bg-white-60 { background: rgba($white, .60); }
 .bg-white-70 { background: rgba($white, .70); }
 .bg-white-80 { background: rgba($white, .80); }
 .bg-white-90 { background: rgba($white, .90); }
 
+.bg-grey-10 { background: rgba(palette(grey, base), .10); }
+.bg-grey-20 { background: rgba(palette(grey, base), .20); }
+.bg-grey-30 { background: rgba(palette(grey, base), .30); }
+.bg-grey-40 { background: rgba(palette(grey, base), .40); }
 .bg-grey-50 { background: rgba(palette(grey, base), .50); }
 .bg-grey-60 { background: rgba(palette(grey, base), .60); }
 .bg-grey-70 { background: rgba(palette(grey, base), .70); }

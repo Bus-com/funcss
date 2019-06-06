@@ -106,12 +106,20 @@
 
   // RGBA HELPERS ////////////////////////
 
+  .med-bg-white-10 { background: rgba($white, .10); }
+  .med-bg-white-20 { background: rgba($white, .20); }
+  .med-bg-white-30 { background: rgba($white, .30); }
+  .med-bg-white-40 { background: rgba($white, .40); }
   .med-bg-white-50 { background: rgba($white, .50); }
   .med-bg-white-60 { background: rgba($white, .60); }
   .med-bg-white-70 { background: rgba($white, .70); }
   .med-bg-white-80 { background: rgba($white, .80); }
   .med-bg-white-90 { background: rgba($white, .90); }
 
+  .med-bg-grey-10 { background: rgba(palette(grey, base), .10); }
+  .med-bg-grey-20 { background: rgba(palette(grey, base), .20); }
+  .med-bg-grey-30 { background: rgba(palette(grey, base), .30); }
+  .med-bg-grey-40 { background: rgba(palette(grey, base), .40); }
   .med-bg-grey-50 { background: rgba(palette(grey, base), .50); }
   .med-bg-grey-60 { background: rgba(palette(grey, base), .60); }
   .med-bg-grey-70 { background: rgba(palette(grey, base), .70); }

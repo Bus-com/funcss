@@ -106,12 +106,20 @@
 
   // RGBA HELPERS ////////////////////////
 
+  .lrg-bg-white-10 { background: rgba($white, .10); }
+  .lrg-bg-white-20 { background: rgba($white, .20); }
+  .lrg-bg-white-30 { background: rgba($white, .30); }
+  .lrg-bg-white-40 { background: rgba($white, .40); }
   .lrg-bg-white-50 { background: rgba($white, .50); }
   .lrg-bg-white-60 { background: rgba($white, .60); }
   .lrg-bg-white-70 { background: rgba($white, .70); }
   .lrg-bg-white-80 { background: rgba($white, .80); }
   .lrg-bg-white-90 { background: rgba($white, .90); }
 
+  .lrg-bg-grey-10 { background: rgba(palette(grey, base), .10); }
+  .lrg-bg-grey-20 { background: rgba(palette(grey, base), .20); }
+  .lrg-bg-grey-30 { background: rgba(palette(grey, base), .30); }
+  .lrg-bg-grey-40 { background: rgba(palette(grey, base), .40); }
   .lrg-bg-grey-50 { background: rgba(palette(grey, base), .50); }
   .lrg-bg-grey-60 { background: rgba(palette(grey, base), .60); }
   .lrg-bg-grey-70 { background: rgba(palette(grey, base), .70); }
