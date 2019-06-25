@@ -1,7 +1,7 @@
 a {
   text-decoration: none;
   color: palette(cyan, base);
-  transition: color .3s ease-in;
+  transition: color .15s linear;
   &:hover {
     color: palette(cyan, dark);
   }

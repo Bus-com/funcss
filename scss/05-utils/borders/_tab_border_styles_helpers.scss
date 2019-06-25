@@ -25,6 +25,12 @@
 .tab-bb-orange { border-bottom: 1px solid palette(orange, base); }
 .tab-br-orange { border-right: 1px solid palette(orange, base); }
 
+.tab-b-white { border: 1px solid $white; }
+.tab-bt-white { border-top: 1px solid $white; }
+.tab-bl-white { border-left: 1px solid $white; }
+.tab-bb-white { border-bottom: 1px solid $white; }
+.tab-br-white { border-right: 1px solid $white; }
+
 //orange borders
 .tab-b-cyan { border: 1px solid palette(cyan, base); }
 .tab-bt-cyan { border-top: 1px solid palette(cyan, base); }

@@ -27,14 +27,15 @@ $palettes: (
     xx-light: #FFEAA7
   ),
   orange: (
+    hover: #EDA25B,
     xx-dark: #D08946,
     x-dark: #A36B37,
     dark: #D18A47,
-    base: #FFA856,
+    base: #FDA755,
     light: #FFB774,
     x-light: #FFC793,
     xx-light: #FFE7D0,
-    xxx-light: #FFF7EF,
+    xxx-light: #F3EFEB,
     xxxx-light: #FAF9F8
   ),
   grey: (
@@ -43,9 +44,11 @@ $palettes: (
     x-light: #898B93,
     xx-light: #ABACB2,
     xxx-light: #CCCDD0,
-    xxxx-light: #ECEFF5
+    xxxx-light: #F9F8EE
   ),
   white: (
+    hover: #FFFCF9,
+    link-hover: #D7D7D7,
     x-dark: #ABACB2,
     base: #FFFFFF,
     light: #FAFAFA,
@@ -62,7 +65,7 @@ $bus-com-success: #54B96F;
 $app-bg: #f5f5f5;
 $whitey: $app-bg;
 $app-color-text: #474A56;
-$black: #0F0F10;
+$black: #000000;
 $red: #E53B3B;
 $base-text-color: $app-color-text;
 $rb-grey: #F6F6EC;
