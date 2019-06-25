@@ -81,9 +81,9 @@ if [ "$DEBUG" = true ]; then
     open index.html
     # Open a new terminal and launch sass --watch
     # open -a terminal -e $PWD ""
-    sass --scss --watch scss/_all.scss:$OUTPUT_PATH/$OUTPUT_NAME.$OUTPUT_FORMAT --style $OUTPUT_STYLE
+    sass --watch scss/_all.scss:$OUTPUT_PATH/$OUTPUT_NAME.$OUTPUT_FORMAT --style $OUTPUT_STYLE
 else
-    sass --scss scss/_all.scss:$OUTPUT_PATH/funcss.css --style $OUTPUT_STYLE
+    sass scss/_all.scss:$OUTPUT_PATH/funcss.css --style $OUTPUT_STYLE
 
     printf "\033[106;30m        minifying ($OUTPUT_PATH/funcss.min.css)     \033[0m\n"
     printf "\033[106;43m         ~ this can take a while ~          \033[0m\n"
