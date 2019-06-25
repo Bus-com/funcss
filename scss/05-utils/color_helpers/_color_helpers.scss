@@ -144,6 +144,12 @@
 }
 
 // HOVER STATES ////////////////////////
+.white.hover-white:hover {
+  color: palette(white, link-hover);
+  path, polygon, rect {
+    fill: palette(white, link-hover);
+  }
+}
 
 button, .c-btn, .c-btn-site {
 

@@ -31,6 +31,21 @@ button[disabled]{
 }
 
 .c-btn-site {
-  font-weight: 600;
   display: inline-block;
+  line-height: 1;
+  letter-spacing: 0.59px;
+  transition: background 0.1s ease-out;
+
+  &:hover {
+    background: palette(orange, hover);
+    color: $white;
+    transition: background 0.15s ease-in;
+  }
+
+  &.c-btn-site-outline {
+    &:hover {
+      background-color: palette(white, hover);
+      color: palette(orange, base);
+    }
+  }
 }
