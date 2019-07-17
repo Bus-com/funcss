@@ -24,16 +24,6 @@
 				</svg>
 			</svg>
 		</a>
-		<section class="navbar__menus flex flex-column med-space-between flex-1 med-flex-row js-slide-out-menu">
-			<ul class="nav__list navbar__menus__main-nav flex flex-column med-flex-row space-between med-flex-align-center mb0 ml-small tab-ml-medium no-list-style">
-
-				<!-- <li class="nav__item py-x tab-py-small mr-small">
-					<a class="nav__link pos-rel inline-block pr0 fs-5 fw-medium grey" href="#">FUN Css</a>
-				</li> -->
-			</ul>
-		</section>
-		<button
-				class="navbar__menus__toggle-menu-button b-none pos-abs top-small tab-top-medium right-x bg-trans open-menu js-slide-out-button right-0 med-hide lrg-hide"></button>
 	</nav>
 </header>
 
@@ -90,26 +80,7 @@
 			</div>
 		</div>
 		<hr class="my-xxl clear" />
-		<!--      <div class="flex flex-column tab-flex-row mb-xl">-->
-		<!--        <div class="col-12 tab-col-4 flex-column mr0 med-p-med p-small">-->
-		<!--          <p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel-->
-		<!--          necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>-->
-		<!--          <p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique-->
-		<!--          est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>-->
-		<!--        </div>-->
-		<!--        <div class="col-12 tab-col-4 flex-column mr0 med-p-med p-small">-->
-		<!--          <p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel-->
-		<!--          necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>-->
-		<!--          <p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique-->
-		<!--          est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>-->
-		<!--        </div>-->
-		<!--        <div class="col-12 tab-col-4 flex-column mr0 med-p-med p-small">-->
-		<!--          <p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel-->
-		<!--          necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>-->
-		<!--          <p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique-->
-		<!--          est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>-->
-		<!--        </div>-->
-		<!--      </div>-->
+
 		<h2 class="title mb-xxl letter-spacing-tight upper">Nesting grid columns</h2>
 		<div class="flex mb-xl">
 			<div class="col-12 flex">
@@ -160,22 +131,58 @@
 			</div>
 		</div>
 		<hr class="mt-lx mb-xl" />
-		<pre>
-                                <code class="html monospaced border-radius">
-                                  &lt;div class="flex"&gt;
-                                    &lt;div class="col-12"&gt;
-                                      12 columns
-                                      &lt;div class="col-4 p-med"&gt; 4 columns &lt;/div&gt;
-                                      &lt;div class="col-8 p-med flex"&gt;
-                                        8 columns
-                                        &lt;div class="col-6 p-med"&gt; 6 columns &lt;/div&gt;
-                                        &lt; class="col-6 p-med"&gt; 6 columns &lt;/div&gt;
-                                      &lt;/div&gt;
-                                    &lt;/div&gt;
-                                  &lt;/div&gt;
-                                </code>
-      </pre>
-		<!-- end 3 columns -->
+		<h2 class="fw-bold mb-xl">Using FlexBox to build ui</h2>
+		<div class="flex flex-column tab-flex-row space-between">
+			<div class="col-4 flex flex-column space-between subtle-shadow mx-x b-light">
+				<img src="https://picsum.photos/940/650" />
+				<div class="lrg-p-med p-small flex flex-column flex-1">
+					<span class="block small-type upper line-height-0 mb-small">September 25 2017</span>
+					<h2 class="fw-med">Title of card</h2>
+					<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
+						nihil, esse vitae hic. Ea vel
+						necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi
+						et!</p>
+					<p class="mb-small tab-mb-medium">Temport, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+				</div>
+				<div class="py-xl flex-end">
+					<button class="block m-auto bg-cyan white bg-hover-orange">Button fixed at bottom</button>
+				</div>
+			</div>
+			<div class="col-4 flex flex-column space-between subtle-shadow mx-x b-light">
+				<img src="https://picsum.photos/940/650" />
+				<div class="lrg-p-med p-small flex flex-column flex-1">
+					<span class="block small-type upper line-height-0 mb-small">September 25 2017</span>
+					<h2 class="fw-med">Title of card</h2>
+					<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
+						nihil, esse vitae hic. Ea vel
+						necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi
+						et!</p>
+					<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit odit, reiciendis, nulla eligendi
+						Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
+						laborum at rem sapiente similique	est, minuturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+				</div>
+				<div class="py-xl flex-end">
+					<button class="block m-auto bg-cyan white bg-hover-orange">Button fixed at bottom</button>
+				</div>
+			</div>
+			<div class="col-4 flex flex-column space-between subtle-shadow mx-x b-light">
+				<img src="https://picsum.photos/940/650" />
+				<div class="lrg-p-med p-small flex flex-column flex-1">
+					<span class="block small-type upper line-height-0 mb-small">September 25 2017</span>
+					<h2 class="fw-med">Title of card</h2>
+					<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
+						nihil, esse vitae hic. Ea vel
+						necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi
+						et!</p>
+					<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
+						laborum at rem sapiente similique
+						est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+				</div>
+				<div class="py-xl flex-end">
+					<button class="block m-auto bg-cyan white bg-hover-orange">Button fixed at bottom</button>
+				</div>
+			</div>
+		</div>
 		<hr class="mt-xxl mb-xxl" />
 		<h2 id="regular-grids" class="fw-bold">Regular grid using floats</h2>
 		<p class="mb-xl tab-mb-medium">We're just using regular floats and setting our grid using padding on the column
@@ -256,8 +263,7 @@
 							sapiente similique est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium
 							ipsa! Beatae!</p>
 						<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
-							laborum at rem sapiente similique
-							est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+							laborum at rem sapiente similiqueest, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
 					</div>
 				</div>
 				<div class="col-3 solid-border-light-white col-1-4 flex-column subtle-shadow mr-small">
@@ -266,8 +272,7 @@
 						<span class="block small-type upper line-height-0 mb-small">September 25 2017</span>
 						<h2 class="fw-med">Title of card</h2>
 						<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
-							laborum at rem sapiente similique
-							est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+							laborum at rem sapiente similiqueest, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
 					</div>
 				</div>
 				<div class="col-3 solid-border-light-white col-1-4 flex-column subtle-shadow">
@@ -276,12 +281,10 @@
 						<span class="block small-type upper line-height-0 mb-small">September 25 2017</span>
 						<h2 class="fw-med">Title of card</h2>
 						<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
-							nihil, esse vitae hic. Ea vel
-							necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi
+							nihil, esse vitae hic. Ea necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi
 							et!</p>
 						<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
-							laborum at rem sapiente similique
-							est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+							laborum at rem sapiente similique est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
 					</div>
 				</div>
 			</div>
@@ -289,10 +292,7 @@
 				Building ui with Functional CSS
 			</h2>
 			<p class="mb-small tab-mb-medium">In a component based world Like Vue.js &amp; React.js we can easily create
-				components and pass props to them
-				and
-				not have to write any extra css for them, which is great when we talk about functional css, in our case, we
-				should
+				components and pass props to them	not have to write any extra css for them, which is great when we talk about functional css, in our case, we
 			</p>
 			<div class="flex flex-column tab-flex-row space-between">
 				<div class="solid-border-light-white col-12 tab-col-6  mb-med flex-column subtle-shadow med-mr-xxl">
@@ -304,12 +304,10 @@
 						<span class="block small-type upper line-height-0 mb-small">September 25 2017</span>
 						<h2 class="fw-med">Title of card</h2>
 						<p class="h5 tab-h4 lrg-h3 fw-bold lh-1-5">Tempora natus fugiat dolores debitis et eum nemo corporis vitae
-							id
-							fuga laborum at rem sapiente similique est, minus explicabo optio ullam, excepturi magnam veniam hic,
+							idfuga laborum at rem sapiente similique est, minus explicabo optio ullam, excepturi magnam veniam hic,
 							consequatur praesentium ipsa! Beatae!</p>
 						<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
-							laborum at rem sapiente similique
-							est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+							laborum at rem sapiente similiqueest, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
 					</div>
 				</div>
 				<div class="col-12 tab-col-6 flex-column tab-p-med">
@@ -441,8 +439,8 @@
 				consequuntur ducimus sed minima illo cumque deserunt veniam dolor in, justify justify justify justify justify
 				justify justify justify Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dignissimosjustify
 				justify justify justify justify justify justify justify Lorem ipsum dolor sit amet, consectetur adipisicing
-				elit.
-				Maxime dignissimos!</p>
+				elit.Maxime dignissimos!
+			</p>
 			<p class="left-align">Left align</p>
 			<p class="center-align">Center</p>
 			<p class="right-align">Right align</p>
@@ -453,88 +451,41 @@
 			<p class="font-size-inherit">Font Size Inherit</p>
 			<a href="#" class="text-deco-none">Text Decoration None</a>
 			<hr class="my-xl" />
-			<h1 class="my-xxxxxl"> Headlines </h1>
-			<h1 class="hl-1 upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
-			<h1 class="hl-2 upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
-			<h1 class="hl-3 upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
-			<h1 class="hl-4 upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
-			<h1 class="hl-5 upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
-			<hr class="my-xl" />
-			<h3> Blockquote no style</h3>
-			<blockquote>
-				<p class="mb-small tab-mb-medium">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dignissimos, odio nihil sunt nostrum aut non
-					aperiam ea quos consequuntur ducimus sed minima illo cumque deserunt veniam dolor in, perspiciatis!
-				</p>
-			</blockquote>
-			<h3> Blockquote with style</h3>
-			<blockquote class="p-xl">
-				<p class="italic h1 serif line-height-1-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
-					dignissimos, odio nihil sunt nostrum aut non aperiam ea quos consequuntur ducimus sed minima illo cumque
-					deserunt veniam dolor in, perspiciatis</p>
-			</blockquote>
+			<div class="bt-grey pt-xxl">
+				<h1 class="my-xxxxxl"> Headlines </h1>
+				<h1 class="hl-1 upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
+				<h1 class="hl-2 upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
+				<h1 class="hl-3 upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
+				<h1 class="hl-4 upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
+				<h1 class="hl-5 upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
+			</div>
+			<div class="bt-grey pt-xxl">
+				<h3> Blockquote no style</h3>
+				<blockquote>
+					<p class="mb-small tab-mb-medium">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dignissimos, odio nihil sunt nostrum aut non
+						aperiam ea quos consequuntur ducimus sed minima illo cumque deserunt veniam dolor in, perspiciatis!
+					</p>
+				</blockquote>
+				<h3> Blockquote with style</h3>
+				<blockquote class="p-xl">
+					<p class="italic h1 serif line-height-1-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+						dignissimos, odio nihil sunt nostrum aut non aperiam ea quos consequuntur ducimus sed minima illo cumque
+						deserunt veniam dolor in, perspiciatis</p>
+				</blockquote>
+			</div>
+			<div class="bt-grey pt-xxl">
 			<h3>Reset list with inline-block class and margin-right class</h3>
-			<ul class="reset-list">
-				<li class="inline-block mr-small">List item</li>
-				<li class="inline-block mr-small">List item</li>
-				<li class="inline-block mr-small">List item</li>
-				<li class="inline-block mr-small">List item</li>
-			</ul>
+				<ul class="reset-list">
+					<li class="inline-block mr-small">List item</li>
+					<li class="inline-block mr-small">List item</li>
+					<li class="inline-block mr-small">List item</li>
+					<li class="inline-block mr-small">List item</li>
+				</ul>
+			</div>
 		</div>
 
 		<hr class="my-xxl clear"/>
-		<h2 class="fw-bold mb-xl">Using FlexBox to build ui</h2>
-		<div class="flex flex-column tab-flex-row space-between">
-			<div class="col-4 flex flex-column space-between subtle-shadow mx-x b-light">
-				<img src="https://picsum.photos/940/650" />
-				<div class="lrg-p-med p-small flex flex-column flex-1">
-					<span class="block small-type upper line-height-0 mb-small">September 25 2017</span>
-					<h2 class="fw-med">Title of card</h2>
-					<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
-						nihil, esse vitae hic. Ea vel
-						necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi
-						et!</p>
-					<p class="mb-small tab-mb-medium">Temport, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
-				</div>
-				<div class="py-xl flex-end">
-					<button class="block m-auto bg-cyan white bg-hover-orange">Button fixed at bottom</button>
-				</div>
-			</div>
-			<div class="col-4 flex flex-column space-between subtle-shadow mx-x b-light">
-				<img src="https://picsum.photos/940/650" />
-				<div class="lrg-p-med p-small flex flex-column flex-1">
-					<span class="block small-type upper line-height-0 mb-small">September 25 2017</span>
-					<h2 class="fw-med">Title of card</h2>
-					<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
-						nihil, esse vitae hic. Ea vel
-						necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi
-						et!</p>
-					<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit odit, reiciendis, nulla eligendi
-					Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
-						laborum at rem sapiente similique	est, minuturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
-				</div>
-				<div class="py-xl flex-end">
-					<button class="block m-auto bg-cyan white bg-hover-orange">Button fixed at bottom</button>
-				</div>
-			</div>
-			<div class="col-4 flex flex-column space-between subtle-shadow mx-x b-light">
-				<img src="https://picsum.photos/940/650" />
-				<div class="lrg-p-med p-small flex flex-column flex-1">
-					<span class="block small-type upper line-height-0 mb-small">September 25 2017</span>
-					<h2 class="fw-med">Title of card</h2>
-					<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
-						nihil, esse vitae hic. Ea vel
-						necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi
-						et!</p>
-					<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
-						laborum at rem sapiente similique
-						est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
-				</div>
-				<div class="py-xl flex-end">
-					<button class="block m-auto bg-cyan white bg-hover-orange">Button fixed at bottom</button>
-				</div>
-			</div>
-		</div>
 		<!--CODE PRINTING TEST-->
 		<div class="py-xxxxxl">
       <pre class="prettyprint lang-js lang-ruby lang-coffee" style="">
