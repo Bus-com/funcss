@@ -9,32 +9,32 @@
 
 //default padding for columns
 
-.grid-box {
-  border: 1px solid $white;
-}
-
-.grid-row {
-  @include tablet-portrait {
-    padding: 20px 0;
-  }
-}
-
-.flex-grid-row {
-  display: flex;
-  //flex-direction: column;
-  //@include tablet-portrait {
-  //  flex-direction: row;
-  //}
-}
-
-.col {
-  padding: 16px 24px;
-
-  @include tablet-portrait {
-    padding: 32px;
-  }
-
-  @include tablet-landscape {
-    padding: 32px 40px;
-  }
-}
+//.grid-box {
+//  border: 1px solid $white;
+//}
+//
+//.grid-row {
+//  @include tablet-portrait {
+//    padding: 20px 0;
+//  }
+//}
+//
+//.flex-grid-row {
+//  display: flex;
+//  //flex-direction: column;
+//  //@include tablet-portrait {
+//  //  flex-direction: row;
+//  //}
+//}
+//
+//.col {
+//  padding: 16px 24px;
+//
+//  @include tablet-portrait {
+//    padding: 32px;
+//  }
+//
+//  @include tablet-landscape {
+//    padding: 32px 40px;
+//  }
+//}
