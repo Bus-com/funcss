@@ -1,562 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> <!-- <link rel="stylesheet" href="$ASDASD"> -->
-  <meta charset="UTF-8">
-  
-  <!-- [FUNCSS] -->
+<head> <!-- <link rel="stylesheet" href="$ASDASD"> -->
+	<meta charset="UTF-8">
+
+	<!-- [FUNCSS] -->
 <link rel='stylesheet' href='dist/funcss.css'>
-  <!-- [END] -->
-  <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous" ></script>
-  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" async defer></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/google/code-prettify/master/loader/skins/sunburst.css">
-  <title>Functional CSS</title>
+	<!-- [END] -->
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js"
+	        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" async defer></script>
+	<link rel="stylesheet" type="text/css"
+	      href="https://cdn.rawgit.com/google/code-prettify/master/loader/skins/sunburst.css">
+	<title>Functional CSS</title>
 </head>
 <body>
-  <header class="header pos-fixed top-0 left-0 right-0 w-full z-99999 bg-white">
-    <nav class="nav navbar tab-flex tab-flex-1 tab-flex-align-center">
-      <a class="mx-small tab-ml-medium" href="#">
-        <svg viewBox="0 0 100 40" class="fill-cyan bus-logo pos-rel top-small tab-top-0">
-          <svg id="bus-logo" viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg"><path
-            d="M130.66 25.39a4.26 4.26 0 0 0-1.62-1.24 5 5 0 0 0-2.09-.47 4.43 4.43 0 0 0-2 .45 4.88 4.88 0 0 0-1.54 1.2 5.62 5.62 0 0 0-1 1.73 6 6 0 0 0-.36 2.09 6.31 6.31 0 0 0 .33 2.09 5.08 5.08 0 0 0 1 1.73 4.76 4.76 0 0 0 1.58 1.17 4.85 4.85 0 0 0 2.07.43 5.81 5.81 0 0 0 2.12-.41 4.06 4.06 0 0 0 1.69-1.18l3.89 4.74a9.14 9.14 0 0 1-3.42 2 13.48 13.48 0 0 1-4.44.73 14.07 14.07 0 0 1-4.71-.77 10.93 10.93 0 0 1-3.8-2.24 10.54 10.54 0 0 1-2.54-3.57 12.52 12.52 0 0 1 0-9.44 10.54 10.54 0 0 1 2.54-3.57 11.21 11.21 0 0 1 3.8-2.26 13.62 13.62 0 0 1 4.66-.79 12.34 12.34 0 0 1 2.29.21 15.5 15.5 0 0 1 2.18.58 10 10 0 0 1 1.92.9 8.1 8.1 0 0 1 1.52 1.17zm26.86-1.04a10.43 10.43 0 0 0-2.56-3.55 11.36 11.36 0 0 0-3.76-2.22 13.91 13.91 0 0 0-9.12 0 11.08 11.08 0 0 0-3.76 2.22 10.56 10.56 0 0 0-2.54 3.55 11.36 11.36 0 0 0-.94 4.7 11.51 11.51 0 0 0 .94 4.72 10.72 10.72 0 0 0 2.54 3.59 11.43 11.43 0 0 0 3.76 2.29 13.22 13.22 0 0 0 9.12 0 11.73 11.73 0 0 0 3.76-2.29 10.58 10.58 0 0 0 2.56-3.59 11.51 11.51 0 0 0 .94-4.72 11.33 11.33 0 0 0-.94-4.7zm-6.14 6.54a4.93 4.93 0 0 1-1 1.63 4.69 4.69 0 0 1-1.58 1.16 5.71 5.71 0 0 1-4.36 0 4.67 4.67 0 0 1-1.58-1.16 4.93 4.93 0 0 1-1-1.63 5.47 5.47 0 0 1 0-3.69 4.57 4.57 0 0 1 2.5-2.71 5.72 5.72 0 0 1 4.36 0 5 5 0 0 1 1.58 1.12 4.81 4.81 0 0 1 1 1.59 5.18 5.18 0 0 1 .34 1.85 5.48 5.48 0 0 1-.32 1.85zM58.71 10.62v14a9.41 9.41 0 0 1-.42 2.7 7.79 7.79 0 0 1-1.27 2.47 6.33 6.33 0 0 1-2.09 1.76 6.67 6.67 0 0 1-5.77 0 6.31 6.31 0 0 1-2.09-1.76 7.79 7.79 0 0 1-1.27-2.47 9.41 9.41 0 0 1-.42-2.72v-14h-9v14a16.79 16.79 0 0 0 1.24 6.49 14.69 14.69 0 0 0 8.34 8.19 16.66 16.66 0 0 0 12.07 0 15.4 15.4 0 0 0 5-3.19 13.75 13.75 0 0 0 1.36-1.55 15 15 0 0 0 1.43-2.2c.21-.41.41-.82.59-1.25a16.43 16.43 0 0 0 1.19-5.6V10.62h-8.93zM167.1 21.43h.08a7.56 7.56 0 0 1 .94-1.34 6 6 0 0 1 1.36-1.15 7.47 7.47 0 0 1 1.77-.8 8 8 0 0 1 6 .65 6.46 6.46 0 0 1 2.46 2.73 6.8 6.8 0 0 1 6.46-3.68 7.29 7.29 0 0 1 3.58.8c1.44.8 4 1.7 4 8v13.35h-6.55v-10.5a11.58 11.58 0 0 0-.13-1.76 4.21 4.21 0 0 0-.48-1.45 2.75 2.75 0 0 0-.93-1 2.87 2.87 0 0 0-1.54-.37 3.1 3.1 0 0 0-1.58.39 3.52 3.52 0 0 0-1.13 1 4.54 4.54 0 0 0-.67 1.5 7 7 0 0 0-.22 1.76v10.4h-6.55v-11a5.17 5.17 0 0 0-.74-2.95 2.62 2.62 0 0 0-2.34-1.08 3 3 0 0 0-2.62 1.34 5.64 5.64 0 0 0-.93 3.29V40h-6.82V18.44h6.56v3M96.7 26.56a8.7 8.7 0 0 0-2.47-2.64 13.83 13.83 0 0 0-3.41-1.73 27 27 0 0 0-3.7-1 33.83 33.83 0 0 1-4.48-1.16 1.58 1.58 0 0 1-1.23-1.52 1.61 1.61 0 0 1 .29-1l.11-.13a1.78 1.78 0 0 1 .21-.2l.21-.15a4.33 4.33 0 0 1 1.84-.57 8.53 8.53 0 0 1 7.84 2.64l5.56-6.27-.21-.16a16.53 16.53 0 0 0-5.33-2.64 23.29 23.29 0 0 0-12-.47 15.3 15.3 0 0 0-4.39 1.75 10.2 10.2 0 0 0-3.16 3.13 8 8 0 0 0-1.28 4.59 7.15 7.15 0 0 0 .88 3.62 8.29 8.29 0 0 0 2.24 2.53 11.32 11.32 0 0 0 3.09 1.61 27.81 27.81 0 0 0 2.78.79c.41.09.8.17 1.26.25a27.11 27.11 0 0 1 4.34.92l.2.08.3.16h.05l.14.25a2.33 2.33 0 0 1-.49 3.87c-.86.56-2.52.65-5.78-.47l-.24-.09-.6-.23a15.25 15.25 0 0 1-7.09-5.59V27a16.18 16.18 0 0 1-1.17 5.33c-.18.43-.38.84-.59 1.24a14.86 14.86 0 0 1-1.34 2.23l.19.17a17 17 0 0 0 6.42 3.41 27.24 27.24 0 0 0 7.84 1.15 24.05 24.05 0 0 0 5-.53 15.07 15.07 0 0 0 4.53-1.72 9.88 9.88 0 0 0 3.3-3.15 8.61 8.61 0 0 0 1.27-4.77 7.18 7.18 0 0 0-.93-3.8zm-64.74-7.88a15.51 15.51 0 0 0-2.8-5 13 13 0 0 0-10.22-4.66 11.31 11.31 0 0 0-5.56 1.22 12.22 12.22 0 0 0-3.52 2.75h-.12v-13H-.03v40.45h9.85v-.14c-.78-.52-.85-2.59-.86-3.19v-1.4h.12a9.26 9.26 0 0 0 4.08 3.49 13.27 13.27 0 0 0 5.63 1.23 13.11 13.11 0 0 0 6-1.31 13.66 13.66 0 0 0 4.44-3.5 15.37 15.37 0 0 0 2.77-5 18.78 18.78 0 0 0 1-6 18 18 0 0 0-1.04-5.94zm-8.08 8.63a6.78 6.78 0 0 1-1.37 2.35 6.9 6.9 0 0 1-2.26 1.64 7.35 7.35 0 0 1-3.12.62 7.11 7.11 0 0 1-5.35-2.26 7.4 7.4 0 0 1-1.47-2.32 7.07 7.07 0 0 1 0-5.32 7.41 7.41 0 0 1 1.47-2.32 7.11 7.11 0 0 1 5.35-2.26 7.37 7.37 0 0 1 3.12.62 7.14 7.14 0 0 1 2.26 1.61 6.55 6.55 0 0 1 1.37 2.29 8 8 0 0 1 .46 2.66 8.2 8.2 0 0 1-.46 2.69zm78.75 11.13a4.67 4.67 0 0 0 1.58 1.16 5.71 5.71 0 0 0 4.36 0 4.69 4.69 0 0 0 1.58-1.16 4.93 4.93 0 0 0 1-1.63 5.48 5.48 0 0 0 .32-1.84 5.18 5.18 0 0 0-.34-1.85 4.81 4.81 0 0 0-1-1.59 5 5 0 0 0-1.58-1.12 5.72 5.72 0 0 0-4.36 0 4.57 4.57 0 0 0-2.5 2.71 5.47 5.47 0 0 0 0 3.69 4.93 4.93 0 0 0 .94 1.63zm93.8-27.41h-.83v2.21h-.53v-2.23h-.84v-.47h2.21v.47zm3.57 2.23h-.55v-2l-.78 2h-.36l-.79-2v2h-.53v-2.7h.77l.74 1.91.74-1.91h.78v2.68z"/>
-          </svg>
-        </svg>
-      </a>
-      <section class="navbar__menus flex flex-column med-space-between flex-1 med-flex-row js-slide-out-menu" >
-        <ul class="nav__list navbar__menus__main-nav flex flex-column med-flex-row space-between med-flex-align-center mb0 ml-small tab-ml-medium no-list-style">
-          
-          <!-- <li class="nav__item py-x tab-py-small mr-small">
-            <a class="nav__link pos-rel inline-block pr0 fs-5 fw-medium grey" href="#">FUN Css</a>
-          </li> -->
-        </ul>
-      </section>
-      <button class="navbar__menus__toggle-menu-button b-none pos-abs top-small tab-top-medium right-x bg-trans open-menu js-slide-out-button right-0 med-hide lrg-hide"></button>
-    </nav>
-  </header>
+<header class="header pos-fixed top-0 left-0 right-0 w-full z-99999 bg-white">
+	<nav class="nav navbar tab-flex tab-flex-1 tab-flex-align-center">
+		<a class="mx-small tab-ml-medium" href="#">
+			<svg viewBox="0 0 100 40" class="fill-cyan bus-logo pos-rel top-small tab-top-0">
+				<svg id="bus-logo" viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg">
+					<path
+							d="M130.66 25.39a4.26 4.26 0 0 0-1.62-1.24 5 5 0 0 0-2.09-.47 4.43 4.43 0 0 0-2 .45 4.88 4.88 0 0 0-1.54 1.2 5.62 5.62 0 0 0-1 1.73 6 6 0 0 0-.36 2.09 6.31 6.31 0 0 0 .33 2.09 5.08 5.08 0 0 0 1 1.73 4.76 4.76 0 0 0 1.58 1.17 4.85 4.85 0 0 0 2.07.43 5.81 5.81 0 0 0 2.12-.41 4.06 4.06 0 0 0 1.69-1.18l3.89 4.74a9.14 9.14 0 0 1-3.42 2 13.48 13.48 0 0 1-4.44.73 14.07 14.07 0 0 1-4.71-.77 10.93 10.93 0 0 1-3.8-2.24 10.54 10.54 0 0 1-2.54-3.57 12.52 12.52 0 0 1 0-9.44 10.54 10.54 0 0 1 2.54-3.57 11.21 11.21 0 0 1 3.8-2.26 13.62 13.62 0 0 1 4.66-.79 12.34 12.34 0 0 1 2.29.21 15.5 15.5 0 0 1 2.18.58 10 10 0 0 1 1.92.9 8.1 8.1 0 0 1 1.52 1.17zm26.86-1.04a10.43 10.43 0 0 0-2.56-3.55 11.36 11.36 0 0 0-3.76-2.22 13.91 13.91 0 0 0-9.12 0 11.08 11.08 0 0 0-3.76 2.22 10.56 10.56 0 0 0-2.54 3.55 11.36 11.36 0 0 0-.94 4.7 11.51 11.51 0 0 0 .94 4.72 10.72 10.72 0 0 0 2.54 3.59 11.43 11.43 0 0 0 3.76 2.29 13.22 13.22 0 0 0 9.12 0 11.73 11.73 0 0 0 3.76-2.29 10.58 10.58 0 0 0 2.56-3.59 11.51 11.51 0 0 0 .94-4.72 11.33 11.33 0 0 0-.94-4.7zm-6.14 6.54a4.93 4.93 0 0 1-1 1.63 4.69 4.69 0 0 1-1.58 1.16 5.71 5.71 0 0 1-4.36 0 4.67 4.67 0 0 1-1.58-1.16 4.93 4.93 0 0 1-1-1.63 5.47 5.47 0 0 1 0-3.69 4.57 4.57 0 0 1 2.5-2.71 5.72 5.72 0 0 1 4.36 0 5 5 0 0 1 1.58 1.12 4.81 4.81 0 0 1 1 1.59 5.18 5.18 0 0 1 .34 1.85 5.48 5.48 0 0 1-.32 1.85zM58.71 10.62v14a9.41 9.41 0 0 1-.42 2.7 7.79 7.79 0 0 1-1.27 2.47 6.33 6.33 0 0 1-2.09 1.76 6.67 6.67 0 0 1-5.77 0 6.31 6.31 0 0 1-2.09-1.76 7.79 7.79 0 0 1-1.27-2.47 9.41 9.41 0 0 1-.42-2.72v-14h-9v14a16.79 16.79 0 0 0 1.24 6.49 14.69 14.69 0 0 0 8.34 8.19 16.66 16.66 0 0 0 12.07 0 15.4 15.4 0 0 0 5-3.19 13.75 13.75 0 0 0 1.36-1.55 15 15 0 0 0 1.43-2.2c.21-.41.41-.82.59-1.25a16.43 16.43 0 0 0 1.19-5.6V10.62h-8.93zM167.1 21.43h.08a7.56 7.56 0 0 1 .94-1.34 6 6 0 0 1 1.36-1.15 7.47 7.47 0 0 1 1.77-.8 8 8 0 0 1 6 .65 6.46 6.46 0 0 1 2.46 2.73 6.8 6.8 0 0 1 6.46-3.68 7.29 7.29 0 0 1 3.58.8c1.44.8 4 1.7 4 8v13.35h-6.55v-10.5a11.58 11.58 0 0 0-.13-1.76 4.21 4.21 0 0 0-.48-1.45 2.75 2.75 0 0 0-.93-1 2.87 2.87 0 0 0-1.54-.37 3.1 3.1 0 0 0-1.58.39 3.52 3.52 0 0 0-1.13 1 4.54 4.54 0 0 0-.67 1.5 7 7 0 0 0-.22 1.76v10.4h-6.55v-11a5.17 5.17 0 0 0-.74-2.95 2.62 2.62 0 0 0-2.34-1.08 3 3 0 0 0-2.62 1.34 5.64 5.64 0 0 0-.93 3.29V40h-6.82V18.44h6.56v3M96.7 26.56a8.7 8.7 0 0 0-2.47-2.64 13.83 13.83 0 0 0-3.41-1.73 27 27 0 0 0-3.7-1 33.83 33.83 0 0 1-4.48-1.16 1.58 1.58 0 0 1-1.23-1.52 1.61 1.61 0 0 1 .29-1l.11-.13a1.78 1.78 0 0 1 .21-.2l.21-.15a4.33 4.33 0 0 1 1.84-.57 8.53 8.53 0 0 1 7.84 2.64l5.56-6.27-.21-.16a16.53 16.53 0 0 0-5.33-2.64 23.29 23.29 0 0 0-12-.47 15.3 15.3 0 0 0-4.39 1.75 10.2 10.2 0 0 0-3.16 3.13 8 8 0 0 0-1.28 4.59 7.15 7.15 0 0 0 .88 3.62 8.29 8.29 0 0 0 2.24 2.53 11.32 11.32 0 0 0 3.09 1.61 27.81 27.81 0 0 0 2.78.79c.41.09.8.17 1.26.25a27.11 27.11 0 0 1 4.34.92l.2.08.3.16h.05l.14.25a2.33 2.33 0 0 1-.49 3.87c-.86.56-2.52.65-5.78-.47l-.24-.09-.6-.23a15.25 15.25 0 0 1-7.09-5.59V27a16.18 16.18 0 0 1-1.17 5.33c-.18.43-.38.84-.59 1.24a14.86 14.86 0 0 1-1.34 2.23l.19.17a17 17 0 0 0 6.42 3.41 27.24 27.24 0 0 0 7.84 1.15 24.05 24.05 0 0 0 5-.53 15.07 15.07 0 0 0 4.53-1.72 9.88 9.88 0 0 0 3.3-3.15 8.61 8.61 0 0 0 1.27-4.77 7.18 7.18 0 0 0-.93-3.8zm-64.74-7.88a15.51 15.51 0 0 0-2.8-5 13 13 0 0 0-10.22-4.66 11.31 11.31 0 0 0-5.56 1.22 12.22 12.22 0 0 0-3.52 2.75h-.12v-13H-.03v40.45h9.85v-.14c-.78-.52-.85-2.59-.86-3.19v-1.4h.12a9.26 9.26 0 0 0 4.08 3.49 13.27 13.27 0 0 0 5.63 1.23 13.11 13.11 0 0 0 6-1.31 13.66 13.66 0 0 0 4.44-3.5 15.37 15.37 0 0 0 2.77-5 18.78 18.78 0 0 0 1-6 18 18 0 0 0-1.04-5.94zm-8.08 8.63a6.78 6.78 0 0 1-1.37 2.35 6.9 6.9 0 0 1-2.26 1.64 7.35 7.35 0 0 1-3.12.62 7.11 7.11 0 0 1-5.35-2.26 7.4 7.4 0 0 1-1.47-2.32 7.07 7.07 0 0 1 0-5.32 7.41 7.41 0 0 1 1.47-2.32 7.11 7.11 0 0 1 5.35-2.26 7.37 7.37 0 0 1 3.12.62 7.14 7.14 0 0 1 2.26 1.61 6.55 6.55 0 0 1 1.37 2.29 8 8 0 0 1 .46 2.66 8.2 8.2 0 0 1-.46 2.69zm78.75 11.13a4.67 4.67 0 0 0 1.58 1.16 5.71 5.71 0 0 0 4.36 0 4.69 4.69 0 0 0 1.58-1.16 4.93 4.93 0 0 0 1-1.63 5.48 5.48 0 0 0 .32-1.84 5.18 5.18 0 0 0-.34-1.85 4.81 4.81 0 0 0-1-1.59 5 5 0 0 0-1.58-1.12 5.72 5.72 0 0 0-4.36 0 4.57 4.57 0 0 0-2.5 2.71 5.47 5.47 0 0 0 0 3.69 4.93 4.93 0 0 0 .94 1.63zm93.8-27.41h-.83v2.21h-.53v-2.23h-.84v-.47h2.21v.47zm3.57 2.23h-.55v-2l-.78 2h-.36l-.79-2v2h-.53v-2.7h.77l.74 1.91.74-1.91h.78v2.68z" />
+				</svg>
+			</svg>
+		</a>
+	</nav>
+</header>
 
-  <div class="wrapper flex top-xxxxl mb-xxxxxl">
-    <div class="tab-w-100 med-w-70 my-lrg mx-small tab-mx-medium">
-      <h1>FUNCTIONAL CSS</h1>
-      <p>Documentation example</p>
-      <!--GRIDS-->
-      <h1 id="flex_grid"> Flex grids </h1>
-      <p> Instead of writting a bunch of css and having zero flexibility</p>
-      <div class="flex-grid-row med-flex-row tab-flex-column space-between">
-        <div class="flex-column med-p-lrg p-small">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
-          necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
-          <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
-          est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
-        </div>
-        <div class="flex-column med-p-lrg p-small">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
-          necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
-          <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
-          est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
-        </div>
-        <div class="flex-column med-p-lrg p-small">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
-          necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
-          <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
-          est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
-        </div>
-      </div>
-      <h2 id="three-columns">3 columns</h2>
-      <div class="flex-grid-row">
-        <div class="col-12 tab-col-6 med-col-4 flex-column lrg-p-med p-small">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
-          necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
-          <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
-          est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
-        </div>
-        <div class="col-12 tab-col-6 med-col-8 flex-1 flex-column mr0 lrg-p-med p-small">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
-          necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
-          <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
-          est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
-        </div>
-      </div>
-      <hr class="my-xxl clear"/>
-      <div class="flex-grid-row">
-        <div class="col-12 tab-col-4 flex-column mr0 med-p-med p-small">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
-          necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
-          <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
-          est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
-        </div>
-        <div class="col-12 tab-col-4 flex-column mr0 med-p-med p-small">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
-          necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
-          <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
-          est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
-        </div>
-        <div class="col-12 tab-col-4 flex-column mr0 med-p-med p-small">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
-          necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
-          <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
-          est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
-        </div>
-      </div>
-      <h2 class="title mb-xxl letter-spacing-tight upper">Nesting grid columns</h2>
-      <p>Documentation example</p>
-      <h2>Nesting grids like Xzhibit</h2>
-      <p>Hey yo...I hear you like columns B! So we nested columns inside your nested columns</p>
-      <hr class="mt-xxl mb-xxl"/>
-      <div class="flex-grid-row mb-xl">
-        <div class="col-12 grid-box flex-grid-row ">
-          <div class="xl-col-4 med-col-6 grid-box p-med"></div>
-          <div class="xl-col-8 med-col-12 grid-box p-med flex-grid-row">
-            <div class="flex-column"></div>
-            <div class="xl-col-6  med-col-12 grid-box p-med"></div>
-            <div class="xl-col-6 med-col-12 grid-box p-med"></div>
-          </div>
-        </div>
-      </div>
-      <div class="flex-grid-row">
-        <div class="col-12 grid-box flex-grid-row ">
-          <div class="xl-col-4 med-col-6 grid-box p-med">
-            <h1 class="fw-bold">Lorem ipsum Title</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea, similique! Sint fuga modi
-              quia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
-            magni.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea, similique! Sint fuga modi
-              quia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
-            magni.</p>
-          </div>
-          <div class="xl-col-8 med-col-12 grid-box p-med flex-column">
-            <h2>Title lorem ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea, similique! Sint fuga modi
-              quia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
-            magni.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea, similique! Sint fuga modi
-              quia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
-            magni.</p>
-            <div class="flex-grid-row flex-column med-flex-row">
-              <div class="xl-col-4  med-col-12  pr-med">
-                <h3>Nested columns</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea, similique! Sint fuga modi
-                quia, sed, expedita consequatur.</p>
-              </div>
-              <div class="xl-col-4 med-col-12  pr-med">
-                <h3>Nested columns</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea, similique! Sint fuga modi
-                quia, sed, expedita consequatur, enim doloremque odio autem aliquid.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr class="mt-lx mb-xl"/>
-                        <pre>
-                                <code class="html monospaced border-radius">
-                                  &lt;div class="flex-grid-row"&gt;
-                                    &lt;div class="col-12 grid-box flex-grid-row "&gt;
-                                      12 columns
-                                      &lt;div class="col-4 grid-box p-med"&gt; 4 columns &lt;/div&gt;
-                                      &lt;div class="col-8 grid-box p-med flex-grid-row"&gt;
-                                        8 columns
-                                        &lt;div class="col-6 grid-box p-med"&gt; 6 columns &lt;/div&gt;
-                                        &lt; class="col-6 grid-box p-med"&gt; 6 columns &lt;/div&gt;
-                                      &lt;/div&gt;
-                                    &lt;/div&gt;
-                                  &lt;/div&gt;
-                                </code>
-      </pre>
-      <!-- end 3 columns -->
-      <hr class="mt-xxl mb-xxl"/>
-      <h2 id="regular-grids" class="fw-bold">Regular grid</h2>
-      <p>We're just using regular floats and setting our grid using padding on the column itselg</p>
-      <div class="grid-row">
-        <div class="col-1 med-col-6 f-left med-pr-xl pr0">
-          <p class="h2 fw-bold mb-xl line-height-1-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo
-          dolorum nihil, esse vitae hic</p>
-          <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
-            est,
-          minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
-        </div>
-      </div>
-      <div>
-        <div class="col-1 med-col-3 f-left med-pr-xl pr0">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
-          necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
-          <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
-            est,
-          minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
-        </div>
-        <div class="col-1 med-col-3 f-left med-pr-xl pr0">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
-          necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
-          <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
-            est,
-          minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
-        </div>
-      </div>
-      <hr class="my-xxl clear"/>
-      <!--LISTS-->
-      <h2 id="lists"> Playing with list </h2>
-      <ul class="col-3 f-left p-med">
-        <li>Default ul li element no classes</li>
-        <li>Default ul li element no classes</li>
-        <li>Default ul li element no classes</li>
-        <li>Default ul li element no classes</li>
-      </ul>
-      <ul class="col-3 f-left p-med">
-        <li>nested ol in li element classes
-          <ol class="pl-lrg">
-            <li class="decimal-leading-zero">Default ul li element no classes</li>
-            <li class="decimal-leading-zero">Default ul li element no classes</li>
-            <li class="decimal-leading-zero">Default ul li element no classes</li>
-            <li class="decimal-leading-zero">Default ul li element no classes</li>
-          </ol>
-        </li>
-      </ul>
-      <ul class="col-3 f-left p-med">
-        <li class=" mb-x italic">Default ul li element with <code> mb-x italic</code> classes</li>
-        <li class=" mb-x upper">Default ul li element with <code> mb-x upper</code> classes</li>
-        <li class=" mb-x fw-light">Default ul li element no classes<code> mb-small fw-light</code></li>
-        <li class=" mb-x small-type">Default ul li element <code> mb-x small-type</code> classes</li>
-      </ul>
-      <ol class="col-3 f-left p-med">
-        <li>Lorem ipsum list item</li>
-        <li>Lorem ipsum list item</li>
-        <li>Lorem ipsum list item</li>
-        <li>Lorem ipsum list item</li>
-      </ol>
-      <hr class="mt-xxl mb-xxl clear"/>
-      <!--UI-->
-      <h1 id="card-ui" class="h1 upper">Simple <span class="italic">card</span> ui</h1>
-      <div>
-        <div class="flex-grid-row flex-row  space-between flex-column@small">
-          <div class="c-ui-card solid-border-light-white col-2-4 flex-column subtle-shadow mr-small">
-            <img src="https://picsum.photos/940/650"/>
-            <div class="c-ui-card__inner lrg-p-xl p-small">
-              <span class="c-ui-card__date block small-type upper line-height-0 mb-small">September 25 2017</span>
-              <h2 class="fw-med">Title of card</h2>
-              <p class="h3 fw-bold">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem
-                sapiente similique est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium
-              ipsa! Beatae!</p>
-              <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
-              est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
-            </div>
-          </div>
-          <div class="c-ui-card solid-border-light-white col-1-4 flex-column subtle-shadow mr-small">
-            <img src="https://picsum.photos/940/650"/>
-            <div class="c-ui-card__inner lrg-p-med p-small">
-              <span class="c-ui-card__date block small-type upper line-height-0 mb-small">September 25 2017</span>
-              <h2 class="fw-med">Title of card</h2>
-              <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
-              est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
-            </div>
-          </div>
-          <div class="c-ui-card solid-border-light-white col-1-4 flex-column subtle-shadow">
-            <img src="https://picsum.photos/940/650"/>
-            <div class="c-ui-card__inner lrg-p-med p-small">
-              <span class="c-ui-card__date block small-type upper line-height-0 mb-small">September 25 2017</span>
-              <h2 class="fw-med">Title of card</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum nihil, esse vitae hic. Ea vel
-                necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi
-              et!</p>
-              <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
-              est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
-            </div>
-          </div>
-        </div>
-        <h2 id="buil-ui" class="title mb-xxl letter-spacing-tight upper my-xxxxxl">
-        Building ui with Functional CSS
-        </h2>
-        <p>In a component based world Like Vue.js &amp; React.js we can easily create components and pass props to them
-          and
-          not have to write any extra css for them, which is great when we talk about functional css, in our case, we
-          should
-        definitely extract some component and build specific ui items like butons inputs, calendars etc...</p>
-        <p class="mb-xxl"> we are using a few concepts here. the BEM naming convention comes in handy for the button or
-          any
-          brand specific
-        work</p>
-        <div class="flex-grid-row flex-column tab-flex-row space-between">
-          <div class="c-ui-card solid-border-light-white col-12 tab-col-6  mb-med flex-column subtle-shadow med-mr-xxl">
-            <img src="https://images.pexels.com/photos/396143/pexels-photo-396143.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/>
-            <div class="c-ui-card__inner py-med px-lrg">
-              <span class="c-ui-card__date block small-type upper line-height-0 mb-small">September 25 2017</span>
-              <h2 class="fw-med">Title of card</h2>
-              <p class="h5 tab-h4 lrg-h3 fw-bold lh-1-5">Tempora natus fugiat dolores debitis et eum nemo corporis vitae
-                id
-                fuga laborum at rem sapiente similique est, minus explicabo optio ullam, excepturi magnam veniam hic,
-              consequatur praesentium ipsa! Beatae!</p>
-              <p>Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem sapiente similique
-              est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
-            </div>
-          </div>
-          <div class="col-12 tab-col-6 flex-column tab-p-med">
-            <form class="c-form">
-              <label class="label caps fw-med mb-x inline-block">your name</label>
-              <input type="text" placeholder="text input" class="mb-med block full p-small transparent-bg solid-border-light-white"/>
-              <label class="label caps fw-med mb-x inline-block">Your email</label>
-              <input type="email" placeholder="email input" class="mb-med block full p-small transparent-bg solid-border-light-white"/>
-              <label class="label caps fw-med mb-x inline-block">your phone number</label>
-              <input type="tel" placeholder="number input" class="mb-med block full p-small transparent-bg solid-border-light-white"/>
-              <label class="label caps fw-med mb-x inline-block">Add your message</label>
-              <textarea class="mb-med block w-full p-small transparent-bg solid-border-light-white" rows="8"></textarea>
-              <button class="c-btn"> Create and update</button>
-            </form>
-          </div>
-        </div>
-        <!--FORM-->
-        <h2 class="title my-xxxxxl letter-spacing-tight upper">
-        Forms and Form ELements
-        </h2>
-        <div class="flex flex-column">
-          <div class="col-1-4\@med f-left p-x">
-            <h3 class="line-height-1-6">Form elelements with no classes, default styles set in elements</h3>
-            <form class="c-form f-left mr-med">
-              <label>Type text Label element</label>
-              <input type="text" placeholder="text input" class="block"/>
-              <label>email Label element</label>
-              <input type="email" placeholder="email input" class="block"/>
-              <label>Number Label element</label>
-              <input type="number" placeholder="number input" class="block"/>
-              <label>textarea Label element</label>
-              <textarea class="textarea full" rows="4"></textarea>
-            </form>
-          </div>
-          <div class="col-1-4\@med f-left p-x">
-            <h3 class="line-height-1-6">Forms with classes, Building a ui, with just a few classes</h3>
-            <form class="c-form">
-              <label class="label mb-x inline-block">Type text Label element</label>
-              <input type="text" placeholder="text input" class="mb-small block full p-small transparent-bg solid-border-light-white"/>
-              <label class="label mb-x inline-block">email Label element</label>
-              <input type="email" placeholder="email input" class="mb-small block full p-small transparent-bg solid-border-light-white"/>
-              <label class="label mb-x inline-block">Number Label element</label>
-              <input type="number" placeholder="number input" class="mb-small block full p-small transparent-bg solid-border-light-white"/>
-              <label class="label mb-x inline-block">textarea Label element</label>
-              <textarea class="mb-small block full p-small transparent-bg solid-border-light-white" rows="4"></textarea>
-            </form>
-          </div>
-          <div class="col-1-4\@med f-left p-x">
-            <form class="">
-              <h3 class="line-height-1-6"> A simple way to Hide the search label with class="hide"</h3>
-              <label for="search" class="hide">Search</label>
-              <input id="search" type="search" placeholder="search..." class="mb-small block full p-small transparent-bg solid-border-light-white"/>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!--TYPO-->
-      <h1 id="typography" class="title my-xxxxxl letter-spacing-tight upper">
-      Typography
-      </h1>
-      <div>
-        <div class="mb-xxl">
-          <h2>Heading with no classes</h2>
-          <p>Default styles for our Heading Elements, we set these in our elements folder in the heading files</p>
-          <h1>Heading H1, with no classes</h1>
-          <h2>Heading H2, with no classes</h2>
-          <h3>Heading H3, with no classes</h3>
-          <h4>Heading H4, with no classes</h4>
-          <h5>Heading H5, with no classes</h5>
-          <h6>Heading H6, with no classes</h6>
-        </div>
-        <div class="mb-xl">
-          <div class="flex flex-row flex-wrap">
-            <span class="h1 upper center fw-heavy b-light flex-1 p-xl center">a</span>
-            <span class="h2 upper center fw-heavy b-light flex-1 p-xl center">a</span>
-            <span class="h3 upper center fw-heavy b-light flex-1 p-xl center">a</span>
-            <span class="h3 upper center fw-heavy b-light flex-1 p-xl center">a</span>
-            <span class="h5 upper center fw-heavy b-light flex-1 p-xl center">a</span>
-            <span class="h6 upper center fw-heavy b-light flex-1 p-xl center">a</span>
-          </div>
-        </div>
-        <hr class="my-xl"/>
-        <h2 id="type-helpers">Type helpers</h2>
-        <p class="fw-bold">Bold Style</p>
-        <p class="fw-med">Regular Style</p>
-        <p class="italic">Italic</p>
-        <p class="caps">Caps</p>
-        <p class="upper">uppercase</p>
-        <p class="linethrough">Line through</p>
-        <hr class="my-xl"/>
-        <p class="justify">Justify, justify justify justify justify justify justify justify justify Lorem ipsum dolor sit
-          amet, consectetur adipisicing elit. Maxime dignissimos, odio nihil sunt nostrum aut non aperiam ea quos
-          consequuntur ducimus sed minima illo cumque deserunt veniam dolor in, justify justify justify justify justify
-          justify justify justify Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dignissimosjustify
-          justify justify justify justify justify justify justify Lorem ipsum dolor sit amet, consectetur adipisicing
-          elit.
-        Maxime dignissimos!</p>
-        <p class="left-align">Left align</p>
-        <p class="center">Center</p>
-        <p class="right-align">Right align</p>
-        <p class="nowrap">No wrap</p>
-        <p class="underline">Underline</p>
-        <p class="truncate">Truncate</p>
-        <p class="font-family-inherit">Font Family Inherit</p>
-        <p class="font-size-inherit">Font Size Inherit</p>
-        <a href="#" class="text-deco-none">Text Decoration None</a>
-        <hr class="my-xl"/>
-        <h1 class="my-xxxxxl"> Headlines </h1>
-        <h1 class="hl-xxxl upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
-        <h1 class="hl-xxl upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
-        <h1 class="hl-xl upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
-        <h1 class="hl-lrg upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
-        <h1 class="hl-med upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
-        <hr class="my-xl"/>
-        <h3> Blockquote no style</h3>
-        <blockquote>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dignissimos, odio nihil sunt nostrum aut non
-            aperiam ea quos consequuntur ducimus sed minima illo cumque deserunt veniam dolor in, perspiciatis!
-          </p>
-        </blockquote>
-        <h3> Blockquote with style</h3>
-        <blockquote class="p-xl">
-          <p class="italic h1 serif line-height-1-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
-            dignissimos, odio nihil sunt nostrum aut non aperiam ea quos consequuntur ducimus sed minima illo cumque
-          deserunt veniam dolor in, perspiciatis</p>
-        </blockquote>
-        <h3>Reset list with inline-block class and margin-right class</h3>
-        <ul class="reset-list">
-          <li class="inline-block mr-small">List item</li>
-          <li class="inline-block mr-small">List item</li>
-          <li class="inline-block mr-small">List item</li>
-          <li class="inline-block mr-small">List item</li>
-        </ul>
-      </div>
-      <!--CODE PRINTING TEST-->
-      <div class="py-xxxxxl">
-                                <pre class="prettyprint lang-js lang-ruby lang-coffee" style="">
-                                        //RUBY
-                                        @event = policy_scope(Event).forthcoming.listed.order(:begin_date, :id).with_location
-                                        //
-                                        //JS
-                                        let steak = {'ble-dinde':'patate}'
-                                        //
-                                        //JSON
-                                        <%== JSON.pretty_generate @event.as_json %>
-                                        //
+<div class="wrapper flex top-xxxxl mb-xxxxxl">
+	<div class="tab-w-100 med-w-80 my-lrg mx-small tab-mx-medium">
+		<h1 class="hl-5 fw-bold">FUNCTIONAL CSS</h1>
+		<p class="mb-small tab-mb-medium">Documentation example</p>
+		<!--GRIDS-->
+		<h1 id="flex_grid"> Flex grids </h1>
+		<p class="mb-xl tab-mb-medium"> Instead of writting a bunch of css and having zero flexibility</p>
+		<h2 class="bt-grey pt-xl" id="three-columns">3 columns</h2>
+		<div class="flex tab-flex-row flex-column space-between mb-xl">
+			<div class="flex-column med-p-lrg p-small">
+				<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
+					nihil, esse vitae hic. Ea vel
+					necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
+				<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
+					laborum at rem sapiente similique
+					est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+			</div>
+			<div class="flex-column med-p-lrg p-small">
+				<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
+					nihil, esse vitae hic. Ea vel
+					necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
+				<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
+					laborum at rem sapiente similique
+					est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+			</div>
+			<div class="flex-column med-p-lrg p-small">
+				<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
+					nihil, esse vitae hic. Ea vel
+					necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
+				<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
+					laborum at rem sapiente similique
+					est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+			</div>
+		</div>
+		<h2 class="bt-grey pt-xl">Different Layout</h2>
+		<div class="flex mb-xl">
+			<div class="col-12 tab-col-6 med-col-4 flex-column lrg-p-med p-small">
+				<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
+					nihil, esse vitae hic. Ea vel
+					necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
+				<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
+					laborum at rem sapiente similique
+					est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+			</div>
+			<div class="col-12 tab-col-6 med-col-8 flex-1 flex-column mr0 lrg-p-med p-small">
+				<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
+					nihil, esse vitae hic. Ea vel
+					necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
+				<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
+					laborum at rem sapiente similique
+					est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+			</div>
+		</div>
+
+		<h2 class="bt-grey pt-xl mb-xl letter-spacing-tight upper">Nesting grid columns</h2>
+
+		<div class="flex space-between p-small tab-p-medium lrg-p-medium">
+			<div class="xl-col-4 med-col-6 grid-box">
+				<h1 class="fw-bold">Lorem ipsum Title</h1>
+				<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea,
+					similique! Sint fuga modiquia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
+					magni.
+				</p>
+				<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea,
+					similique! Sint fuga modi quia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
+					magni.
+				</p>
+			</div>
+			<div class="xl-col-8 med-col-6 flex ml-lrg flex-column">
+				<h2>Title lorem ipsum</h2>
+				<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea,
+					similique! Sint fuga modi  quia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
+					magni.
+				</p>
+				<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea,
+					similique! Sint fuga modi quia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
+					magni.
+				</p>
+				<div class="flex flex-column med-flex-row space-between">
+					<div class="mr-small col-6">
+						<h3>Nested columns</h3>
+						<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam
+							ea, similique! Sint fuga modi
+							quia, sed, expedita consequatur.</p>
+					</div>
+					<div class="ml-small col-6">
+						<h3>Nested columns</h3>
+						<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam
+							ea, similique! Sint fuga modi
+							quia, sed, expedita consequatur, enim doloremque odio autem aliquid.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h2 class="bt-grey pt-xl fw-bold mb-xl">Using FlexBox to build ui</h2>
+		<div class="flex flex-column tab-flex-row space-between mb-xxl">
+			<div class="col-4 flex flex-column space-between subtle-shadow mx-x b-light">
+				<img src="https://picsum.photos/940/650" />
+				<div class="lrg-p-med p-small flex flex-column flex-1">
+					<span class="block small-type upper line-height-0 mb-small">September 25 2017</span>
+					<h2 class="fw-med">Title of card</h2>
+					<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
+						nihil, esse vitae hic. Ea vel
+						necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi
+						et!</p>
+					<p class="mb-small tab-mb-medium">Temport, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+				</div>
+				<div class="py-medium flex-end">
+					<button class="block m-auto bg-cyan white bg-hover-x-dark-cyane">Button fixed at bottom</button>
+				</div>
+			</div>
+			<div class="col-4 flex flex-column space-between subtle-shadow mx-x b-light">
+				<img src="https://picsum.photos/940/650" />
+				<div class="lrg-p-med p-small flex flex-column flex-1">
+					<span class="block small-type upper line-height-0 mb-small">September 25 2017</span>
+					<h2 class="fw-med">Title of card</h2>
+					<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
+						nihil, esse vitae hic. Ea vel
+						necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi
+						et!</p>
+					<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit odit, reiciendis, nulla eligendi
+						Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
+						laborum at rem sapiente similique	est, minuturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+				</div>
+				<div class="py-medium flex-end">
+					<button class="block m-auto bg-cyan white bg-hover-x-dark-cyane">Button fixed at bottom</button>
+				</div>
+			</div>
+			<div class="col-4 flex flex-column space-between subtle-shadow mx-x b-light">
+				<img src="https://picsum.photos/940/650" />
+				<div class="lrg-p-med p-small flex flex-column flex-1">
+					<span class="block small-type upper line-height-0 mb-small">September 25 2017</span>
+					<h2 class="fw-med">Title of card</h2>
+					<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
+						nihil, esse vitae hic. Ea vel
+						necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi
+						et!</p>
+					<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
+						laborum at rem sapiente similique
+						est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+				</div>
+				<div class="py-medium flex-end">
+					<button class="block m-auto bg-cyan white bg-hover-x-dark-cyane">Button fixed at bottom</button>
+				</div>
+			</div>
+		</div>
+
+		<h2 id="regular-grids" class="bt-grey pt-xl fw-bold">Regular grid using floats</h2>
+		<p class="mb-xl tab-mb-medium">We're just using regular floats and setting our grid using padding on the column
+			itselg</p>
+		<div class="bt-grey pt-xl mb-xl">
+			<div class="col-1 med-col-6 f-left med-pr-xl pr0">
+				<p class="h2 fw-bold mb-xl line-height-1-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo
+					dolorum nihil, esse vitae hic</p>
+				<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
+					laborum at rem sapiente similique
+					est,
+					minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+			</div>
+		</div>
+		<div>
+			<div class="col-1 med-col-3 f-left med-pr-xl pr0">
+				<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
+					nihil, esse vitae hic. Ea vel
+					necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
+				<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
+					laborum at rem sapiente similique
+					est,
+					minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+			</div>
+			<div class="col-1 med-col-3 f-left med-pr-xl pr0">
+				<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
+					nihil, esse vitae hic. Ea vel
+					necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi et!</p>
+				<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
+					laborum at rem sapiente similique
+					est,
+					minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+			</div>
+		</div>
+		<!--LISTS-->
+		<h2 id="lists"> Playing with list </h2>
+		<div class="flex space-between bt-grey pt-xl">
+			<ul class="col-3 ml-xl mb-xl">
+				<li class="mb-small">Default ul li element no classes</li>
+				<li class="mb-small">Default ul li element no classes</li>
+				<li class="mb-small">Default ul li element no classes</li>
+				<li class="mb-small">Default ul li element no classes</li>
+			</ul>
+			<ul class="col-3 ml-xl mb-xl">
+				<li class="mb-small">nested ol in li element classes
+					<ol class="pl-lrg">
+						<li class="decimal-leading-zero mb-small">Default ul li element no classes</li>
+						<li class="decimal-leading-zero mb-small">Default ul li element no classes</li>
+						<li class="decimal-leading-zero mb-small">Default ul li element no classes</li>
+						<li class="decimal-leading-zero mb-small">Default ul li element no classes</li>
+					</ol>
+				</li>
+			</ul>
+			<ul class="col-3 ml-xl mb-xl">
+				<li class="mb-x italic">Default ul li element with <code> mb-x italic</code> classes</li>
+				<li class="mb-x upper">Default ul li element with <code> mb-x upper</code> classes</li>
+				<li class="mb-x fw-light">Default ul li element no classes<code> mb-small fw-light</code></li>
+				<li class="mb-x small-type">Default ul li element <code> mb-x small-type</code> classes</li>
+			</ul>
+			<ol class="col-3 ml-xl">
+				<li>Lorem ipsum list item</li>
+				<li>Lorem ipsum list item</li>
+				<li>Lorem ipsum list item</li>
+				<li>Lorem ipsum list item</li>
+			</ol>
+		</div>
+
+		<!--UI-->
+		<h1 id="card-ui" class="h1 upper">Simple <span class="italic">card</span> ui</h1>
+		<div>
+			<div class="flex flex-column tab-flex-row space-between">
+				<div class="col-6 solid-border-light-white col-2-4 flex-column subtle-shadow mr-small">
+					<img src="https://picsum.photos/940/650" />
+					<div class="lrg-py-med py-small">
+						<span class="block small-type upper line-height-0 mb-small">September 25 2017</span>
+						<h2 class="fw-med">Title of card</h2>
+						<p class="h3 fw-bold">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga laborum at rem
+							sapiente similique est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium
+							ipsa! Beatae!</p>
+						<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
+							laborum at rem sapiente similiqueest, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+					</div>
+				</div>
+				<div class="col-3 solid-border-light-white col-1-4 flex-column subtle-shadow mr-small">
+					<img src="https://picsum.photos/940/650" />
+					<div class="lrg-p-med p-small">
+						<span class="block small-type upper line-height-0 mb-small">September 25 2017</span>
+						<h2 class="fw-med">Title of card</h2>
+						<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
+							laborum at rem sapiente similiqueest, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+					</div>
+				</div>
+				<div class="col-3 solid-border-light-white col-1-4 flex-column subtle-shadow">
+					<img src="https://picsum.photos/940/650" />
+					<div class="lrg-p-med p-small">
+						<span class="block small-type upper line-height-0 mb-small">September 25 2017</span>
+						<h2 class="fw-med">Title of card</h2>
+						<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
+							nihil, esse vitae hic. Ea necessitatibus laboriosam cupiditate atque cum nam fugit, quisquam odit, reiciendis, nulla eligendi
+							et!</p>
+						<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
+							laborum at rem sapiente similique est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+					</div>
+				</div>
+			</div>
+			<h2 id="buil-ui" class="bt-grey pt-xl mb-xl letter-spacing-tight upper">
+				Building ui with Functional CSS
+			</h2>
+			<p class="mb-small tab-mb-medium">In a component based world Like Vue.js &amp; React.js we can easily create
+				components and pass props to them	not have to write any extra css for them, which is great when we talk about functional css, in our case, we
+			</p>
+			<div class="flex flex-column tab-flex-row space-between">
+				<div class="solid-border-light-white col-12 tab-col-6  mb-med flex-column subtle-shadow med-mr-xxl">
+					<img
+						class="mb-lrg"
+						src="https://images.pexels.com/photos/396143/pexels-photo-396143.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"
+					/>
+					<div class="py-med">
+						<span class="block small-type upper line-height-0 mb-small">September 25 2017</span>
+						<h2 class="fw-med">Title of card</h2>
+						<p class="h5 tab-h4 lrg-h3 fw-bold lh-1-5">Tempora natus fugiat dolores debitis et eum nemo corporis vitae
+							idfuga laborum at rem sapiente similique est, minus explicabo optio ullam, excepturi magnam veniam hic,
+							consequatur praesentium ipsa! Beatae!</p>
+						<p class="mb-small tab-mb-medium">Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
+							laborum at rem sapiente similiqueest, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
+					</div>
+				</div>
+				<div class="col-12 tab-col-6 flex-column tab-p-med mb-xxl">
+					<form class="c-form">
+						<div class="mb-small">
+							<label class="label caps fw-med mb-x inline-block">your name</label>
+							<input
+								type="text" placeholder="text input"
+						    class="mb-med block full p-small transparent-bg solid-border-light-white"
+							/>
+						</div>
+						<div class="mb-small">
+							<label class="label caps fw-med mb-x inline-block">Your email</label>
+							<input
+								type="email" placeholder="email input"
+						    class="mb-med block full p-small transparent-bg solid-border-light-white"
+							/>
+						</div>
+						<div  class="flex space-between">
+							<div class="tab-input-wrap-half mb-small">
+								<label class="label caps fw-med mb-x inline-block">your phone number</label>
+								<input
+										type="tel" placeholder="number input"
+										class="mb-med block full p-small transparent-bg solid-border-light-white"
+								/>
+							</div>
+
+							<div class="tab-input-wrap-half mb-small">
+								<label class="label caps fw-med mb-x inline-block">your phone number</label>
+								<input
+										type="tel" placeholder="number input"
+										class="mb-med block full p-small transparent-bg solid-border-light-white"
+								/>
+							</div>
+						</div>
+						<div class="mb-small">
+							<label class="label caps fw-med mb-x inline-block">your phone number</label>
+							<input
+								type="tel" placeholder="number input"
+								class="mb-med block full p-small transparent-bg solid-border-light-white"
+							/>
+						</div>
+						<div class="mb-small">
+							<label class="label caps fw-med mb-x inline-block">Add your message</label>
+							<textarea class="mb-med block w-full p-small transparent-bg solid-border-light-white" rows="8"></textarea>
+						</div>
+						<button class="c-btn"> Create and update</button>
+					</form>
+				</div>
+			</div>
+			<!--FORM-->
+			<h2 class="fw-bold bt-grey py-xl letter-spacing-tight upper">
+				Forms and Form Elements
+			</h2>
+			<div class="flex flex-row space-between">
+				<div class="col-6 p-small">
+					<h3 class="line-height-1-6">Forms with classes, Building a ui, with just a few classes</h3>
+					<form class="c-form">
+						<label class="label mb-x inline-block">Type text Label element</label>
+						<input type="text" placeholder="text input"
+						       class="mb-small block full p-small transparent-bg solid-border-light-white" />
+						<label class="label mb-x inline-block">email Label element</label>
+						<input type="email" placeholder="email input"
+						       class="mb-small block full p-small transparent-bg solid-border-light-white" />
+						<label class="label mb-x inline-block">Number Label element</label>
+						<input type="number" placeholder="number input"
+						       class="mb-small block full p-small transparent-bg solid-border-light-white" />
+						<label class="label mb-x inline-block">textarea Label element</label>
+						<textarea class="mb-small block full p-small transparent-bg solid-border-light-white" rows="4"></textarea>
+					</form>
+
+					<form class="">
+						<h3 class="line-height-1-6"> A simple way to Hide the search label with class="hide"</h3>
+						<label for="search" class="hide">Search</label>
+						<input id="search" type="search" placeholder="search..."
+						       class="mb-small block full p-small transparent-bg solid-border-light-white" />
+					</form>
+				</div>
+				<div class="col-6 p-small">
+					<h3>Button Styles</h3>
+					<p class="mb-xl">Few classes to create various button styles</p>
+					<div class="flex mb-xl flex-wrap">
+						<button class="btn mb-small b-none bg-cyan white bg-hover-x-dark-cyan mr-small">Button Cyan</button>
+						<button class="btn mb-small b-none bg-orange white bg-hover-x-dark-orange mr-small">Button orange</button>
+						<button class="btn mb-small b-none bg-grey white bg-hover-orange mr-small">Button Grey</button>
+						<button class="btn mb-small bg-trans b-cyan cyan bg-hover-cyan mr-small">Button Cyan border</button>
+						<button class="btn mb-small bg-trans b-orange orange bg-hover-orange mr-small">Button Orange border</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--TYPO-->
+		<h2 id="typography" class="bt-grey pt-xl mb-xl letter-spacing-tight upper">
+			Typography
+		</h2>
+		<div>
+			<div class="mb-xxl">
+				<h2>Heading with no classes</h2>
+				<p class="mb-small tab-mb-medium">Default styles for our Heading Elements, we set these in our elements folder
+					in the heading files</p>
+				<h1>Heading H1, with no classes</h1>
+				<h2>Heading H2, with no classes</h2>
+				<h3>Heading H3, with no classes</h3>
+				<h4>Heading H4, with no classes</h4>
+				<h5>Heading H5, with no classes</h5>
+				<h6>Heading H6, with no classes</h6>
+			</div>
+			<div class="mb-xl">
+				<div class="flex flex-row flex-wrap">
+					<span class="fs-1 upper center-align fw-heavy b-light flex-1 p-xl">a</span>
+					<span class="fs-2 upper center-align fw-heavy b-light flex-1 p-xl">a</span>
+					<span class="fs-3 upper center-align fw-heavy b-light flex-1 p-xl">a</span>
+					<span class="fs-3 upper center-align fw-heavy b-light flex-1 p-xl">a</span>
+					<span class="fs-5 upper center-align fw-heavy b-light flex-1 p-xl">a</span>
+					<span class="fs-6 upper center-align fw-heavy b-light flex-1 p-xl">a</span>
+				</div>
+			</div>
+
+			<h2 id="type-helpers">Type helpers</h2>
+			<p class="fw-bold">Bold Style</p>
+			<p class="fw-med">Regular Style</p>
+			<p class="italic">Italic</p>
+			<p class="caps">Caps</p>
+			<p class="upper">uppercase</p>
+			<p class="linethrough">Line through</p>
+
+			<p class="justify mb-xl">Justify, justify justify justify justify justify justify justify justify Lorem ipsum dolor sit
+				amet, consectetur adipisicing elit. Maxime dignissimos, odio nihil sunt nostrum aut non aperiam ea quos
+				consequuntur ducimus sed minima illo cumque deserunt veniam dolor in, justify justify justify justify justify
+				justify justify justify Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dignissimosjustify
+				justify justify justify justify justify justify justify Lorem ipsum dolor sit amet, consectetur adipisicing
+				elit.Maxime dignissimos!
+			</p>
+			<p class="left-align">Left align</p>
+			<p class="center-align">Center</p>
+			<p class="right-align">Right align</p>
+			<p class="nowrap">No wrap</p>
+			<p class="underline">Underline</p>
+			<p class="truncate">Truncate</p>
+			<p class="font-family-inherit">Font Family Inherit</p>
+			<p class="font-size-inherit">Font Size Inherit</p>
+			<a href="#" class="text-deco-none">Text Decoration None</a>
+
+			<div class="bt-grey pt-xxl">
+				<h1 class="my-xxxxxl"> Headlines </h1>
+				<h1 class="hl-1 upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
+				<h1 class="hl-2 upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
+				<h1 class="hl-3 upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
+				<h1 class="hl-4 upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
+				<h1 class="hl-5 upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
+			</div>
+			<div class="bt-grey pt-xxl">
+				<h3>Blockquote no style</h3>
+				<blockquote>
+					<p class="mb-small tab-mb-medium">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dignissimos, odio nihil sunt nostrum aut non
+						aperiam ea quos consequuntur ducimus sed minima illo cumque deserunt veniam dolor in, perspiciatis!
+					</p>
+				</blockquote>
+				<h3> Blockquote with style</h3>
+				<blockquote class="fs-2 px-xl mb-xl lh-xl">
+					<p class="italic h1 serif-georgia line-height-1-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+						dignissimos, odio nihil sunt nostrum aut non aperiam ea quos consequuntur ducimus sed minima illo cumque
+						deserunt veniam dolor in, perspiciatis</p>
+				</blockquote>
+			</div>
+			<div class="bt-grey pt-xxl">
+			<h3>Reset list with inline-block class and margin-right class</h3>
+				<ul class="reset-list">
+					<li class="inline-block mr-small">List item</li>
+					<li class="inline-block mr-small">List item</li>
+					<li class="inline-block mr-small">List item</li>
+					<li class="inline-block mr-small">List item</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<!--CODE PRINTING TEST-->
+		<div class="py-xxxxxl">
+      <pre class="prettyprint lang-js lang-ruby lang-coffee" style="">
+              //RUBY
+              @event = policy_scope(Event).forthcoming.listed.order(:begin_date, :id).with_location
+              //
+              //JS
+              let steak = {'ble-dinde':'patate}'
+              //
+              //JSON
+              <%== JSON.pretty_generate @event.as_json %>
+              //
         </pre>
-      </div>
-    </div>
+		</div>
+	</div>
 
-    <!--MENU-->
-    <div class="w-20 pos-fixed right-0 hide med-show">
-      <ul class="my-xxxxxl">
-        <li>
-          <h3><a href="#flex-grids">Grids</a></h3>
-          <ul class="ml-xx">
-            <li>
-              <h4><a href="#">Flex</a></h4>
-            </li>
-            <li>
-              <h4><a href="#">Regular</a></h4>
-            </li>
-            <li>
-              <h4><a href="#">3 columns</a></h4>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h3><a href="#type_sizing">Type Sizing</a></h3>
-        </li>
-        <li>
-          <h3><a href="#margins_paddings">Margin & Paddings</a></h3>
-        </li>
-        <li>
-          <h3><a href="#breakpoints">Breakpoints</a></h3>
-        </li>
-        <li>
-          <h3><a href="#grids">Grids</a></h3>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <script type="text/javascript">
-    // (function($, root) {
-      $(function() {
-
-        'use strict';
-
-        var menu = $('.js-slide-out-menu');
-        var menuButton = $('.navbar__menus__toggle-menu-button');
-        var closed = '200vw';
-        var open = '0px';
-        var headerBreakpoint = 992;
-        var footerBreakpoint = 570;
-        var state = 'close';
-        var animateSpeed = 500;
-
-        $('.js-accordion-head').click(function() {
-          var head = $(this);
-
-          if ($(window).width() <= footerBreakpoint) {
-            if (head.data('open')) {
-              closeFooterMenu(head, animateSpeed);
-            } else {
-              openFooterMenu(head, animateSpeed);
-            }
-          }
-        });
-
-        $('.js-slide-out-button').click(function() {
-          if ($(window).width() <= headerBreakpoint) {
-            if (state === 'open') {
-              closeHeaderMenu();
-            } else {
-              openHeaderMenu();
-            }
-          } else {
-            state = 'desktop'
-          }
-        });
-
-        $(window).resize(function() {
-          if ($(window).width() <= (footerBreakpoint - 1)) {
-            $.each($('.js-accordion-head'), function() {
-              closeFooterMenu($(this), 0);
-            });
-          } else {
-            $.each($('.js-accordion-head'), function() {
-              openFooterMenu($(this), 0);
-            });
-          }
-
-          if ($(window).width() < headerBreakpoint) {
-            closeHeaderMenu();
-          } else {
-            openHeaderMenu();
-          }
-        });
-
-        function openFooterMenu(head, speed) {
-          head.data('open', true);
-          head.find('.js-accordion-head-button').css('transform', 'rotate(45deg)');
-          head.parent().parent().find('.menu-list').show(speed, function() {
-            head.parent().parent().find('.menu-list').css({
-              display: 'flex'
-            });
-          });
-        }
-
-        function closeFooterMenu(head, speed) {
-          head.data('open', false);
-          head.find('.js-accordion-head-button').css('transform', 'rotate(0deg)');
-          head.parent().parent().find('.menu-list').hide(speed);
-        }
-
-        function closeHeaderMenu() {
-          menu.css('margin-left', '200vw');
-          menuButton.removeClass('close-menu');
-          menuButton.addClass('open-menu');
-          state = 'close';
-        }
-
-        function openHeaderMenu() {
-          menu.css('margin-left', '0px');
-          menuButton.addClass('close-menu');
-          menuButton.removeClass('open-menu');
-          state = 'open';
-        }
-
-      });
-
-    // })(jQuery, this); 
-  </script>
+	<!--MENU-->
+	<div class="w-10 pos-fixed right-0 hide med-show">
+		<ul class="my-xxxxxl">
+			<li>
+				<h3><a class="fs-5" href="#flex-grids">Grids</a></h3>
+				<ul class="ml-xx">
+					<li>
+						<h4><a class="fs-5" href="#">Flex</a></h4>
+					</li>
+					<li>
+						<h4><a class="fs-5" href="#">Regular</a></h4>
+					</li>
+					<li>
+						<h4><a class="fs-5" href="#">3 columns</a></h4>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h3><a class="fs-5" href="#type_sizing">Type Sizing</a></h3>
+			</li>
+			<li>
+				<h3><a class="fs-5" href="#margins_paddings">Margin & Paddings</a></h3>
+			</li>
+			<li>
+				<h3><a class="fs-5" href="#breakpoints">Breakpoints</a></h3>
+			</li>
+			<li>
+				<h3><a class="fs-5" href="#grids">Grids</a></h3>
+			</li>
+		</ul>
+	</div>
+</div>
 </body>
 </html>

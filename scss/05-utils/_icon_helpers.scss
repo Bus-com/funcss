@@ -20,16 +20,13 @@
 
 //FIXED WIDTH ICONS
 
-
 .icon-fixed-64 {
   width: 64px;
 }
 
-
 .icon-fixed-72 {
   width: 72px;
 }
-
 
 .icon-fixed-100 {
   width: 100px;
@@ -43,11 +40,9 @@
   width: 140px;
 }
 
-
 .icon-fixed-160 {
   width: 160px;
 }
-
 
 .icon-fixed-180 {
   width: 180px;
@@ -55,8 +50,6 @@
 
 
 @include tablet-portrait {
-
-
   .tab-icon {
     width: 14px;
   }
@@ -73,7 +66,7 @@
     width: 64px;
   }
 
- .tab-icon-fixed-72 {
+  .tab-icon-fixed-72 {
     width: 72px;
   }
 
@@ -88,7 +81,6 @@
     width: 140px;
   }
 
-
   .tab-icon-fixed-160 {
     width: 160px;
   }
@@ -98,21 +90,17 @@
     width: 180px;
   }
 
-    .tab-icon-fixed-200 {
+  .tab-icon-fixed-200 {
     width: 200px;
   }
-
-
 }
 
-
 @include tablet-landscape {
-
   .med-icon-fixed-64 {
     width: 64px;
   }
 
- .med-icon-fixed-72 {
+  .med-icon-fixed-72 {
     width: 72px;
   }
 
@@ -137,9 +125,7 @@
     width: 180px;
   }
 
-    .med-icon-fixed-200 {
+  .med-icon-fixed-200 {
     width: 200px;
   }
-
-
 }

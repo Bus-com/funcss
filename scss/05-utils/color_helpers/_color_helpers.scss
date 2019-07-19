@@ -168,6 +168,11 @@ button, .c-btn, .c-btn-site {
     color: white;
   }
 
+  &:hover.bg-hover-x-dark-orange {
+    background: palette(orange, x-dark);
+    color: white;
+  }
+
   &:hover.bg-hover-grey {
     background: palette(grey, base);
     color: white;

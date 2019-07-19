@@ -2116,6 +2116,22 @@ ul.striped-odd li:nth-child(odd) {
   background: transparent;
 }
 
+.bg-white-10 {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.bg-white-20 {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.bg-white-30 {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.bg-white-40 {
+  background: rgba(255, 255, 255, 0.4);
+}
+
 .bg-white-50 {
   background: rgba(255, 255, 255, 0.5);
 }
@@ -2134,6 +2150,22 @@ ul.striped-odd li:nth-child(odd) {
 
 .bg-white-90 {
   background: rgba(255, 255, 255, 0.9);
+}
+
+.bg-grey-10 {
+  background: rgba(71, 74, 86, 0.1);
+}
+
+.bg-grey-20 {
+  background: rgba(71, 74, 86, 0.2);
+}
+
+.bg-grey-30 {
+  background: rgba(71, 74, 86, 0.3);
+}
+
+.bg-grey-40 {
+  background: rgba(71, 74, 86, 0.4);
 }
 
 .bg-grey-50 {
@@ -2205,6 +2237,10 @@ button:hover.bg-hover-x-dark-cyan, .c-btn:hover.bg-hover-x-dark-cyan, .c-btn-sit
 }
 button:hover.bg-hover-orange, .c-btn:hover.bg-hover-orange, .c-btn-site:hover.bg-hover-orange {
   background: #FDA755;
+  color: white;
+}
+button:hover.bg-hover-x-dark-orange, .c-btn:hover.bg-hover-x-dark-orange, .c-btn-site:hover.bg-hover-x-dark-orange {
+  background: #A36B37;
   color: white;
 }
 button:hover.bg-hover-grey, .c-btn:hover.bg-hover-grey, .c-btn-site:hover.bg-hover-grey {
@@ -2471,6 +2507,22 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
     background: transparent;
   }
 
+  .tab-bg-white-10 {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .tab-bg-white-20 {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .tab-bg-white-30 {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .tab-bg-white-40 {
+    background: rgba(255, 255, 255, 0.4);
+  }
+
   .tab-bg-white-50 {
     background: rgba(255, 255, 255, 0.5);
   }
@@ -2489,6 +2541,22 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
 
   .tab-bg-white-90 {
     background: rgba(255, 255, 255, 0.9);
+  }
+
+  .tab-bg-grey-10 {
+    background: rgba(71, 74, 86, 0.1);
+  }
+
+  .tab-bg-grey-20 {
+    background: rgba(71, 74, 86, 0.2);
+  }
+
+  .tab-bg-grey-30 {
+    background: rgba(71, 74, 86, 0.3);
+  }
+
+  .tab-bg-grey-40 {
+    background: rgba(71, 74, 86, 0.4);
   }
 
   .tab-bg-grey-50 {
@@ -2788,6 +2856,22 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
     background: transparent;
   }
 
+  .med-bg-white-10 {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .med-bg-white-20 {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .med-bg-white-30 {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .med-bg-white-40 {
+    background: rgba(255, 255, 255, 0.4);
+  }
+
   .med-bg-white-50 {
     background: rgba(255, 255, 255, 0.5);
   }
@@ -2806,6 +2890,22 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
 
   .med-bg-white-90 {
     background: rgba(255, 255, 255, 0.9);
+  }
+
+  .med-bg-grey-10 {
+    background: rgba(71, 74, 86, 0.1);
+  }
+
+  .med-bg-grey-20 {
+    background: rgba(71, 74, 86, 0.2);
+  }
+
+  .med-bg-grey-30 {
+    background: rgba(71, 74, 86, 0.3);
+  }
+
+  .med-bg-grey-40 {
+    background: rgba(71, 74, 86, 0.4);
   }
 
   .med-bg-grey-50 {
@@ -3105,6 +3205,22 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
     background: transparent;
   }
 
+  .lrg-bg-white-10 {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .lrg-bg-white-20 {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .lrg-bg-white-30 {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .lrg-bg-white-40 {
+    background: rgba(255, 255, 255, 0.4);
+  }
+
   .lrg-bg-white-50 {
     background: rgba(255, 255, 255, 0.5);
   }
@@ -3123,6 +3239,22 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
 
   .lrg-bg-white-90 {
     background: rgba(255, 255, 255, 0.9);
+  }
+
+  .lrg-bg-grey-10 {
+    background: rgba(71, 74, 86, 0.1);
+  }
+
+  .lrg-bg-grey-20 {
+    background: rgba(71, 74, 86, 0.2);
+  }
+
+  .lrg-bg-grey-30 {
+    background: rgba(71, 74, 86, 0.3);
+  }
+
+  .lrg-bg-grey-40 {
+    background: rgba(71, 74, 86, 0.4);
   }
 
   .lrg-bg-grey-50 {
@@ -3422,6 +3554,22 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
     background: transparent;
   }
 
+  .xl-bg-white-10 {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .xl-bg-white-20 {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .xl-bg-white-30 {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .xl-bg-white-40 {
+    background: rgba(255, 255, 255, 0.4);
+  }
+
   .xl-bg-white-50 {
     background: rgba(255, 255, 255, 0.5);
   }
@@ -3440,6 +3588,22 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
 
   .xl-bg-white-90 {
     background: rgba(255, 255, 255, 0.9);
+  }
+
+  .xl-bg-grey-10 {
+    background: rgba(71, 74, 86, 0.1);
+  }
+
+  .xl-bg-grey-20 {
+    background: rgba(71, 74, 86, 0.2);
+  }
+
+  .xl-bg-grey-30 {
+    background: rgba(71, 74, 86, 0.3);
+  }
+
+  .xl-bg-grey-40 {
+    background: rgba(71, 74, 86, 0.4);
   }
 
   .xl-bg-grey-50 {
@@ -10322,6 +10486,14 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
   vertical-align: bottom;
 }
 
+.serif-georgia {
+  font-family: georgia, Cambria, serif;
+}
+
+.serif-cambria {
+  font-family: Cambria, georgia, serif;
+}
+
 .ts-basic {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
 }
@@ -10329,34 +10501,6 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
 /* ==========================================================================
    TYPE HELPERS
   ========================================================================== */
-.h1 {
-  font-size: 24px;
-}
-
-.h2 {
-  font-size: 22px;
-}
-
-.h3 {
-  font-size: 18px;
-}
-
-.h4 {
-  font-size: 16px;
-}
-
-.h5 {
-  font-size: 14px;
-}
-
-.h6 {
-  font-size: 12px;
-}
-
-.h7 {
-  font-size: 11px;
-}
-
 .fs-1 {
   font-size: 24px;
 }
@@ -10385,38 +10529,10 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
   font-size: 12px;
 }
 
-.fs-7 {
-  font-size: 11px;
-}
-
 /* ==========================================================================
    @TAB RESPONSIVE TYPE HELPERS
   ========================================================================== */
 @media only screen and (min-width: 768px) {
-  .tab-h1 {
-    font-size: 24px;
-  }
-
-  .tab-h2 {
-    font-size: 22px;
-  }
-
-  .tab-h3 {
-    font-size: 18px;
-  }
-
-  .tab-h4 {
-    font-size: 16px;
-  }
-
-  .tab-h5 {
-    font-size: 14px;
-  }
-
-  .tab-h6 {
-    font-size: 12px;
-  }
-
   .tab-fs-1 {
     font-size: 24px;
   }
@@ -10449,30 +10565,6 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
    @MED RESPONSIVE TYPE HELPERS
   ========================================================================== */
 @media only screen and (min-width: 980px) {
-  .med-h1 {
-    font-size: 24px;
-  }
-
-  .med-h2 {
-    font-size: 22px;
-  }
-
-  .med-h3 {
-    font-size: 18px;
-  }
-
-  .med-h4 {
-    font-size: 16px;
-  }
-
-  .med-h5 {
-    font-size: 14px;
-  }
-
-  .med-h6 {
-    font-size: 12px;
-  }
-
   .med-fs-1 {
     font-size: 24px;
   }
@@ -10505,30 +10597,6 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
    @LRG RESPONSIVE TYPE HELPERS
   ========================================================================== */
 @media only screen and (min-width: 1180px) {
-  .lrg-h1 {
-    font-size: 24px;
-  }
-
-  .lrg-h2 {
-    font-size: 22px;
-  }
-
-  .lrg-h3 {
-    font-size: 18px;
-  }
-
-  .lrg-h4 {
-    font-size: 16px;
-  }
-
-  .lrg-h5 {
-    font-size: 14px;
-  }
-
-  .lrg-h6 {
-    font-size: 12px;
-  }
-
   .lrg-fs-1 {
     font-size: 24px;
   }
@@ -10561,30 +10629,6 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
    @XL RESPONSIVE TYPE HELPERS
   ========================================================================== */
 @media only screen and (min-width: 1400px) {
-  .xl-h1 {
-    font-size: 24px;
-  }
-
-  .xl-h2 {
-    font-size: 22px;
-  }
-
-  .xl-h3 {
-    font-size: 18px;
-  }
-
-  .xl-h4 {
-    font-size: 16px;
-  }
-
-  .xl-h5 {
-    font-size: 14px;
-  }
-
-  .xl-h6 {
-    font-size: 12px;
-  }
-
   .xl-fs-1 {
     font-size: 24px;
   }
@@ -11600,6 +11644,46 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
   height: 100px;
 }
 
+.h-fixed-110 {
+  height: 110px;
+}
+
+.h-fixed-120 {
+  height: 120px;
+}
+
+.h-fixed-130 {
+  height: 130px;
+}
+
+.h-fixed-140 {
+  height: 140px;
+}
+
+.h-fixed-150 {
+  height: 150px;
+}
+
+.h-fixed-160 {
+  height: 160px;
+}
+
+.h-fixed-170 {
+  height: 170px;
+}
+
+.h-fixed-180 {
+  height: 180px;
+}
+
+.h-fixed-190 {
+  height: 190px;
+}
+
+.h-fixed-200 {
+  height: 200px;
+}
+
 /* ==========================================================================
    TAB PORTRAIT SIZE HELPERS
   ========================================================================== */
@@ -11778,6 +11862,46 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
 
   .tab-min-w-100 {
     min-width: 100%;
+  }
+
+  .tab-h-fixed-110 {
+    height: 110px;
+  }
+
+  .tab-h-fixed-120 {
+    height: 120px;
+  }
+
+  .tab-h-fixed-130 {
+    height: 130px;
+  }
+
+  .tab-h-fixed-140 {
+    height: 140px;
+  }
+
+  .tab-h-fixed-150 {
+    height: 150px;
+  }
+
+  .tab-h-fixed-160 {
+    height: 160px;
+  }
+
+  .tab-h-fixed-170 {
+    height: 170px;
+  }
+
+  .tab-h-fixed-180 {
+    height: 180px;
+  }
+
+  .tab-h-fixed-190 {
+    height: 190px;
+  }
+
+  .tab-h-fixed-200 {
+    height: 200px;
   }
 }
 /* ==========================================================================
@@ -11998,6 +12122,46 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
 
   .med-h-fixed-100 {
     height: 100px;
+  }
+
+  .med-h-fixed-110 {
+    height: 110px;
+  }
+
+  .med-h-fixed-120 {
+    height: 120px;
+  }
+
+  .med-h-fixed-130 {
+    height: 130px;
+  }
+
+  .med-h-fixed-140 {
+    height: 140px;
+  }
+
+  .med-h-fixed-150 {
+    height: 150px;
+  }
+
+  .med-h-fixed-160 {
+    height: 160px;
+  }
+
+  .med-h-fixed-170 {
+    height: 170px;
+  }
+
+  .med-h-fixed-180 {
+    height: 180px;
+  }
+
+  .med-h-fixed-190 {
+    height: 190px;
+  }
+
+  .med-h-fixed-200 {
+    height: 200px;
   }
 
   .med-h-fixed-xxxxl {
@@ -12223,6 +12387,46 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
   .lrg-h-fixed-100 {
     height: 100px;
   }
+
+  .lrg-h-fixed-110 {
+    height: 110px;
+  }
+
+  .lrg-h-fixed-120 {
+    height: 120px;
+  }
+
+  .lrg-h-fixed-130 {
+    height: 130px;
+  }
+
+  .lrg-h-fixed-140 {
+    height: 140px;
+  }
+
+  .lrg-h-fixed-150 {
+    height: 150px;
+  }
+
+  .lrg-h-fixed-160 {
+    height: 160px;
+  }
+
+  .lrg-h-fixed-170 {
+    height: 170px;
+  }
+
+  .lrg-h-fixed-180 {
+    height: 180px;
+  }
+
+  .lrg-h-fixed-190 {
+    height: 190px;
+  }
+
+  .lrg-h-fixed-200 {
+    height: 200px;
+  }
 }
 /* ==========================================================================
    LAPTOP SIZE HELPERS
@@ -12402,6 +12606,46 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
 
   .xl-min-w-100 {
     min-width: 100%;
+  }
+
+  .xl-h-fixed-110 {
+    height: 110px;
+  }
+
+  .xl-h-fixed-120 {
+    height: 120px;
+  }
+
+  .xl-h-fixed-130 {
+    height: 130px;
+  }
+
+  .xl-h-fixed-140 {
+    height: 140px;
+  }
+
+  .xl-h-fixed-150 {
+    height: 150px;
+  }
+
+  .xl-h-fixed-160 {
+    height: 160px;
+  }
+
+  .xl-h-fixed-170 {
+    height: 170px;
+  }
+
+  .xl-h-fixed-180 {
+    height: 180px;
+  }
+
+  .xl-h-fixed-190 {
+    height: 190px;
+  }
+
+  .xl-h-fixed-200 {
+    height: 200px;
   }
 }
 /* ==========================================================================
@@ -14394,37 +14638,6 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
 .l-zone {
   width: 100%;
   max-width: 100%;
-}
-
-/* ==========================================================================
-   GRIDS + COLUMN
-  ========================================================================== */
-.grid-box {
-  border: 1px solid #FFFFFF;
-}
-
-@media only screen and (min-width: 768px) {
-  .grid-row {
-    padding: 20px 0;
-  }
-}
-
-.flex-grid-row {
-  display: flex;
-}
-
-.col {
-  padding: 16px 24px;
-}
-@media only screen and (min-width: 768px) {
-  .col {
-    padding: 32px;
-  }
-}
-@media only screen and (min-width: 980px) {
-  .col {
-    padding: 32px 40px;
-  }
 }
 
 /* ==========================================================================
