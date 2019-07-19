@@ -2187,6 +2187,10 @@ button:hover.bg-hover-orange, .c-btn:hover.bg-hover-orange, .c-btn-site:hover.bg
   background: #FFA856;
   color: white;
 }
+button:hover.bg-hover-x-dark-orange, .c-btn:hover.bg-hover-x-dark-orange, .c-btn-site:hover.bg-hover-x-dark-orange {
+  background: #A36B37;
+  color: white;
+}
 button:hover.bg-hover-grey, .c-btn:hover.bg-hover-grey, .c-btn-site:hover.bg-hover-grey {
   background: #474A56;
   color: white;
