@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 
 	<!-- [FUNCSS] -->
-	<link rel='stylesheet' href='dist/funcss.css'>
+<link rel='stylesheet' href='dist/funcss.css'>
 	<!-- [END] -->
 	<script src="http://code.jquery.com/jquery-2.2.4.min.js"
 	        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -29,11 +29,12 @@
 
 <div class="wrapper flex top-xxxxl mb-xxxxxl">
 	<div class="tab-w-100 med-w-80 my-lrg mx-small tab-mx-medium">
-		<h1>FUNCTIONAL CSS</h1>
+		<h1 class="hl-5 fw-bold">FUNCTIONAL CSS</h1>
 		<p class="mb-small tab-mb-medium">Documentation example</p>
 		<!--GRIDS-->
 		<h1 id="flex_grid"> Flex grids </h1>
-		<p class="mb-small tab-mb-medium"> Instead of writting a bunch of css and having zero flexibility</p>
+		<p class="mb-xl tab-mb-medium"> Instead of writting a bunch of css and having zero flexibility</p>
+		<h2 class="bt-grey pt-xl" id="three-columns">3 columns</h2>
 		<div class="flex tab-flex-row flex-column space-between mb-xl">
 			<div class="flex-column med-p-lrg p-small">
 				<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
@@ -60,7 +61,7 @@
 					est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
 			</div>
 		</div>
-		<h2 id="three-columns">3 columns</h2>
+		<h2 class="bt-grey pt-xl">Different Layout</h2>
 		<div class="flex mb-xl">
 			<div class="col-12 tab-col-6 med-col-4 flex-column lrg-p-med p-small">
 				<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo dolorum
@@ -79,41 +80,31 @@
 					est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
 			</div>
 		</div>
-		<hr class="my-xxl clear" />
 
-		<h2 class="title mb-xxl letter-spacing-tight upper">Nesting grid columns</h2>
-		<div class="flex mb-xl">
-			<div class="col-12 flex">
-				<div class="xl-col-4 med-col-6 flex p-med"></div>
-				<div class="xl-col-8 med-col-12 flex p-med flex">
-					<div class="flex-column"></div>
-					<div class="xl-col-6  med-col-12 flex p-med"></div>
-					<div class="xl-col-6 med-col-12 flex p-med"></div>
-				</div>
-			</div>
-		</div>
-		<div class="flex space-between p-small tab-p-medium lrg-p-lrg">
+		<h2 class="bt-grey pt-xl mb-xl letter-spacing-tight upper">Nesting grid columns</h2>
+
+		<div class="flex space-between p-small tab-p-medium lrg-p-medium">
 			<div class="xl-col-4 med-col-6 grid-box">
 				<h1 class="fw-bold">Lorem ipsum Title</h1>
 				<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea,
-					similique! Sint fuga modi
-					quia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
-					magni.</p>
+					similique! Sint fuga modiquia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
+					magni.
+				</p>
 				<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea,
-					similique! Sint fuga modi
-					quia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
-					magni.</p>
+					similique! Sint fuga modi quia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
+					magni.
+				</p>
 			</div>
 			<div class="xl-col-8 med-col-6 flex ml-lrg flex-column">
 				<h2>Title lorem ipsum</h2>
 				<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea,
-					similique! Sint fuga modi
-					quia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
-					magni.</p>
+					similique! Sint fuga modi  quia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
+					magni.
+				</p>
 				<p class="mb-small tab-mb-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ea,
-					similique! Sint fuga modi
-					quia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
-					magni.</p>
+					similique! Sint fuga modi quia, sed, expedita consequatur, enim doloremque odio autem aliquid, consequuntur omnis iure nesciunt. Modi,
+					magni.
+				</p>
 				<div class="flex flex-column med-flex-row space-between">
 					<div class="mr-small col-6">
 						<h3>Nested columns</h3>
@@ -130,9 +121,9 @@
 				</div>
 			</div>
 		</div>
-		<hr class="mt-lx mb-xl" />
-		<h2 class="fw-bold mb-xl">Using FlexBox to build ui</h2>
-		<div class="flex flex-column tab-flex-row space-between">
+
+		<h2 class="bt-grey pt-xl fw-bold mb-xl">Using FlexBox to build ui</h2>
+		<div class="flex flex-column tab-flex-row space-between mb-xxl">
 			<div class="col-4 flex flex-column space-between subtle-shadow mx-x b-light">
 				<img src="https://picsum.photos/940/650" />
 				<div class="lrg-p-med p-small flex flex-column flex-1">
@@ -144,7 +135,7 @@
 						et!</p>
 					<p class="mb-small tab-mb-medium">Temport, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
 				</div>
-				<div class="py-xl flex-end">
+				<div class="py-medium flex-end">
 					<button class="block m-auto bg-cyan white bg-hover-orange">Button fixed at bottom</button>
 				</div>
 			</div>
@@ -161,7 +152,7 @@
 						Tempora natus fugiat dolores debitis et eum nemo corporis vitae id fuga
 						laborum at rem sapiente similique	est, minuturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
 				</div>
-				<div class="py-xl flex-end">
+				<div class="py-medium flex-end">
 					<button class="block m-auto bg-cyan white bg-hover-orange">Button fixed at bottom</button>
 				</div>
 			</div>
@@ -178,13 +169,13 @@
 						laborum at rem sapiente similique
 						est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
 				</div>
-				<div class="py-xl flex-end">
+				<div class="py-medium flex-end">
 					<button class="block m-auto bg-cyan white bg-hover-orange">Button fixed at bottom</button>
 				</div>
 			</div>
 		</div>
-		<hr class="mt-xxl mb-xxl" />
-		<h2 id="regular-grids" class="fw-bold">Regular grid using floats</h2>
+
+		<h2 id="regular-grids" class="bt-grey pt-xl fw-bold">Regular grid using floats</h2>
 		<p class="mb-xl tab-mb-medium">We're just using regular floats and setting our grid using padding on the column
 			itselg</p>
 		<div class="bt-grey pt-xl mb-xl">
@@ -249,7 +240,7 @@
 				<li>Lorem ipsum list item</li>
 			</ol>
 		</div>
-		<hr class="mt-xxl mb-xxl clear" />
+
 		<!--UI-->
 		<h1 id="card-ui" class="h1 upper">Simple <span class="italic">card</span> ui</h1>
 		<div>
@@ -288,7 +279,7 @@
 					</div>
 				</div>
 			</div>
-			<h2 id="buil-ui" class="title mb-xxl letter-spacing-tight upper my-xxxxxl">
+			<h2 id="buil-ui" class="bt-grey pt-xl mb-xl letter-spacing-tight upper">
 				Building ui with Functional CSS
 			</h2>
 			<p class="mb-small tab-mb-medium">In a component based world Like Vue.js &amp; React.js we can easily create
@@ -310,7 +301,7 @@
 							laborum at rem sapiente similiqueest, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
 					</div>
 				</div>
-				<div class="col-12 tab-col-6 flex-column tab-p-med">
+				<div class="col-12 tab-col-6 flex-column tab-p-med mb-xxl">
 					<form class="c-form">
 						<div class="mb-small">
 							<label class="label caps fw-med mb-x inline-block">your name</label>
@@ -359,11 +350,11 @@
 				</div>
 			</div>
 			<!--FORM-->
-			<h2 class="title my-xxxxxl letter-spacing-tight upper">
+			<h2 class="fw-bold bt-grey py-xl letter-spacing-tight upper">
 				Forms and Form Elements
 			</h2>
-			<div class="flex flex-column">
-				<div class="col-6 f-left p-x">
+			<div class="flex flex-row space-between">
+				<div class="col-6 p-small">
 					<h3 class="line-height-1-6">Forms with classes, Building a ui, with just a few classes</h3>
 					<form class="c-form">
 						<label class="label mb-x inline-block">Type text Label element</label>
@@ -378,8 +369,7 @@
 						<label class="label mb-x inline-block">textarea Label element</label>
 						<textarea class="mb-small block full p-small transparent-bg solid-border-light-white" rows="4"></textarea>
 					</form>
-				</div>
-				<div class="col-6 f-left p-x">
+
 					<form class="">
 						<h3 class="line-height-1-6"> A simple way to Hide the search label with class="hide"</h3>
 						<label for="search" class="hide">Search</label>
@@ -387,22 +377,24 @@
 						       class="mb-small block full p-small transparent-bg solid-border-light-white" />
 					</form>
 				</div>
-				<h3>Button Styles</h3>
-				<p class="mb-xl">Few classes to create various button styles</p>
-				<div class="flex mb-xl ">
-					<button class="btn bg-cyan white bg-hover-orange mr-small">Button Cyan</button>
-					<button class="btn bg-orange white bg-hover-cyan mr-small">Button orange</button>
-					<button class="btn bg-grey white bg-hover-orange mr-small">Button Grey</button>
-					<button class="btn bg-trans b-cyan cyan bg-hover-cyan mr-small">Button Cyan border</button>
-					<button class="btn bg-trans b-orange orange bg-hover-orange mr-small">Button Orange border</button>
+				<div class="col-6 p-small">
+					<h3>Button Styles</h3>
+					<p class="mb-xl">Few classes to create various button styles</p>
+					<div class="flex mb-xl flex-wrap">
+						<button class="btn mb-small bg-cyan white bg-hover-orange mr-small">Button Cyan</button>
+						<button class="btn mb-small bg-orange white bg-hover-cyan mr-small">Button orange</button>
+						<button class="btn mb-small bg-grey white bg-hover-orange mr-small">Button Grey</button>
+						<button class="btn mb-small bg-trans b-cyan cyan bg-hover-cyan mr-small">Button Cyan border</button>
+						<button class="btn mb-small bg-trans b-orange orange bg-hover-orange mr-small">Button Orange border</button>
+					</div>
 				</div>
 			</div>
 		</div>
-		<hr class="my-xl" />
+
 		<!--TYPO-->
-		<h1 id="typography" class="title my-xxxxxl letter-spacing-tight upper">
+		<h2 id="typography" class="bt-grey pt-xl mb-xl letter-spacing-tight upper">
 			Typography
-		</h1>
+		</h2>
 		<div>
 			<div class="mb-xxl">
 				<h2>Heading with no classes</h2>
@@ -425,7 +417,7 @@
 					<span class="fs-6 upper center-align fw-heavy b-light flex-1 p-xl">a</span>
 				</div>
 			</div>
-			<hr class="my-xl" />
+
 			<h2 id="type-helpers">Type helpers</h2>
 			<p class="fw-bold">Bold Style</p>
 			<p class="fw-med">Regular Style</p>
@@ -433,8 +425,8 @@
 			<p class="caps">Caps</p>
 			<p class="upper">uppercase</p>
 			<p class="linethrough">Line through</p>
-			<hr class="my-xl" />
-			<p class="justify">Justify, justify justify justify justify justify justify justify justify Lorem ipsum dolor sit
+
+			<p class="justify mb-xl">Justify, justify justify justify justify justify justify justify justify Lorem ipsum dolor sit
 				amet, consectetur adipisicing elit. Maxime dignissimos, odio nihil sunt nostrum aut non aperiam ea quos
 				consequuntur ducimus sed minima illo cumque deserunt veniam dolor in, justify justify justify justify justify
 				justify justify justify Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dignissimosjustify
@@ -450,7 +442,7 @@
 			<p class="font-family-inherit">Font Family Inherit</p>
 			<p class="font-size-inherit">Font Size Inherit</p>
 			<a href="#" class="text-deco-none">Text Decoration None</a>
-			<hr class="my-xl" />
+
 			<div class="bt-grey pt-xxl">
 				<h1 class="my-xxxxxl"> Headlines </h1>
 				<h1 class="hl-1 upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
@@ -468,8 +460,8 @@
 					</p>
 				</blockquote>
 				<h3> Blockquote with style</h3>
-				<blockquote class="p-xl">
-					<p class="italic h1 serif line-height-1-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+				<blockquote class="fs-2 px-xl mb-xl lh-xl">
+					<p class="italic h1 serif-georgia line-height-1-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
 						dignissimos, odio nihil sunt nostrum aut non aperiam ea quos consequuntur ducimus sed minima illo cumque
 						deserunt veniam dolor in, perspiciatis</p>
 				</blockquote>
@@ -485,7 +477,7 @@
 			</div>
 		</div>
 
-		<hr class="my-xxl clear"/>
+
 		<!--CODE PRINTING TEST-->
 		<div class="py-xxxxxl">
       <pre class="prettyprint lang-js lang-ruby lang-coffee" style="">

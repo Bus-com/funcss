@@ -5,7 +5,7 @@
 
 set -eo pipefail
 
-DEBUG=true
+DEBUG=false
 DEPLOY=false
 BUILD_TYPE="patch"
 OUTPUT_STYLE="expanded"
@@ -87,7 +87,7 @@ else
 
     printf "\033[106;30m        minifying ($OUTPUT_PATH/funcss.min.css)     \033[0m\n"
     printf "\033[106;43m         ~ this can take a while ~          \033[0m\n"
-        
+
     MIN_OUTPUT_NAME="funcss.min.css"
 
     curl -X POST -s --data-urlencode "input@$OUTPUT_PATH/funcss.$OUTPUT_FORMAT" https://cssminifier.com/raw > $OUTPUT_PATH/$MIN_OUTPUT_NAME
