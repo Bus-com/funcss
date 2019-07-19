@@ -5,7 +5,7 @@
 
 set -eo pipefail
 
-DEBUG=false
+DEBUG=true
 DEPLOY=false
 BUILD_TYPE="patch"
 OUTPUT_STYLE="expanded"
@@ -39,7 +39,7 @@ while [ "$1" != "" ]; do
             exit
             ;;
         --debug)
-            DEBUG=false
+            DEBUG=true
             DEPLOY=false
             PUBLISH=false
             OUTPUT_STYLE="expanded"

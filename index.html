@@ -136,7 +136,7 @@
 					<p class="mb-small tab-mb-medium">Temport, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
 				</div>
 				<div class="py-medium flex-end">
-					<button class="block m-auto bg-cyan white bg-hover-orange">Button fixed at bottom</button>
+					<button class="block m-auto bg-cyan white bg-hover-x-dark-cyane">Button fixed at bottom</button>
 				</div>
 			</div>
 			<div class="col-4 flex flex-column space-between subtle-shadow mx-x b-light">
@@ -153,7 +153,7 @@
 						laborum at rem sapiente similique	est, minuturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
 				</div>
 				<div class="py-medium flex-end">
-					<button class="block m-auto bg-cyan white bg-hover-orange">Button fixed at bottom</button>
+					<button class="block m-auto bg-cyan white bg-hover-x-dark-cyane">Button fixed at bottom</button>
 				</div>
 			</div>
 			<div class="col-4 flex flex-column space-between subtle-shadow mx-x b-light">
@@ -170,7 +170,7 @@
 						est, minus explicabo optio ullam, excepturi magnam veniam hic, consequatur praesentium ipsa! Beatae!</p>
 				</div>
 				<div class="py-medium flex-end">
-					<button class="block m-auto bg-cyan white bg-hover-orange">Button fixed at bottom</button>
+					<button class="block m-auto bg-cyan white bg-hover-x-dark-cyane">Button fixed at bottom</button>
 				</div>
 			</div>
 		</div>
@@ -381,8 +381,8 @@
 					<h3>Button Styles</h3>
 					<p class="mb-xl">Few classes to create various button styles</p>
 					<div class="flex mb-xl flex-wrap">
-						<button class="btn mb-small bg-cyan white bg-hover-orange mr-small">Button Cyan</button>
-						<button class="btn mb-small bg-orange white bg-hover-cyan mr-small">Button orange</button>
+						<button class="btn mb-small bg-cyan white bg-hover-x-dark-cyan mr-small">Button Cyan</button>
+						<button class="btn mb-small bg-orange white bg-hover-x-dark-orange mr-small">Button orange</button>
 						<button class="btn mb-small bg-grey white bg-hover-orange mr-small">Button Grey</button>
 						<button class="btn mb-small bg-trans b-cyan cyan bg-hover-cyan mr-small">Button Cyan border</button>
 						<button class="btn mb-small bg-trans b-orange orange bg-hover-orange mr-small">Button Orange border</button>
@@ -452,7 +452,7 @@
 				<h1 class="hl-5 upper fw-heavy mb-xxl">Big Headline perfect for hero sections &amp; call to actions</h1>
 			</div>
 			<div class="bt-grey pt-xxl">
-				<h3> Blockquote no style</h3>
+				<h3>Blockquote no style</h3>
 				<blockquote>
 					<p class="mb-small tab-mb-medium">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dignissimos, odio nihil sunt nostrum aut non
@@ -526,96 +526,5 @@
 		</ul>
 	</div>
 </div>
-<script type="text/javascript">
-	// (function($, root) {
-	$(function () {
-
-		'use strict';
-
-		var menu = $('.js-slide-out-menu');
-		var menuButton = $('.navbar__menus__toggle-menu-button');
-		var closed = '200vw';
-		var open = '0px';
-		var headerBreakpoint = 992;
-		var footerBreakpoint = 570;
-		var state = 'close';
-		var animateSpeed = 500;
-
-		$('.js-accordion-head').click(function () {
-			var head = $(this);
-
-			if ($(window).width() <= footerBreakpoint) {
-				if (head.data('open')) {
-					closeFooterMenu(head, animateSpeed);
-				} else {
-					openFooterMenu(head, animateSpeed);
-				}
-			}
-		});
-
-		$('.js-slide-out-button').click(function () {
-			if ($(window).width() <= headerBreakpoint) {
-				if (state === 'open') {
-					closeHeaderMenu();
-				} else {
-					openHeaderMenu();
-				}
-			} else {
-				state = 'desktop'
-			}
-		});
-
-		$(window).resize(function () {
-			if ($(window).width() <= (footerBreakpoint - 1)) {
-				$.each($('.js-accordion-head'), function () {
-					closeFooterMenu($(this), 0);
-				});
-			} else {
-				$.each($('.js-accordion-head'), function () {
-					openFooterMenu($(this), 0);
-				});
-			}
-
-			if ($(window).width() < headerBreakpoint) {
-				closeHeaderMenu();
-			} else {
-				openHeaderMenu();
-			}
-		});
-
-		function openFooterMenu(head, speed) {
-			head.data('open', true);
-			head.find('.js-accordion-head-button').css('transform', 'rotate(45deg)');
-			head.parent().parent().find('.menu-list').show(speed, function () {
-				head.parent().parent().find('.menu-list').css({
-					display: 'flex'
-				});
-			});
-		}
-
-		function closeFooterMenu(head, speed) {
-			head.data('open', false);
-			head.find('.js-accordion-head-button').css('transform', 'rotate(0deg)');
-			head.parent().parent().find('.menu-list').hide(speed);
-		}
-
-		function closeHeaderMenu() {
-			menu.css('margin-left', '200vw');
-			menuButton.removeClass('close-menu');
-			menuButton.addClass('open-menu');
-			state = 'close';
-		}
-
-		function openHeaderMenu() {
-			menu.css('margin-left', '0px');
-			menuButton.addClass('close-menu');
-			menuButton.removeClass('open-menu');
-			state = 'open';
-		}
-
-	});
-
-	// })(jQuery, this);
-</script>
 </body>
 </html>
