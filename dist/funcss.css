@@ -10295,6 +10295,14 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
   vertical-align: bottom;
 }
 
+.serif-georgia {
+  font-family: georgia, Cambria, serif;
+}
+
+.serif-cambria {
+  font-family: Cambria, georgia, serif;
+}
+
 .ts-basic {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
 }
