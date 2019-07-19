@@ -39,7 +39,7 @@ while [ "$1" != "" ]; do
             exit
             ;;
         --debug)
-            DEBUG=true
+            DEBUG=false
             DEPLOY=false
             PUBLISH=false
             OUTPUT_STYLE="expanded"
