@@ -3,129 +3,129 @@
   ========================================================================== */
 // for inline icons so the wrapping element does not inherit the default line-height
 .u-inline-icon-wrapper {
-	line-height: 0;
+  line-height: 0;
 }
 
 .icon {
-	width: 14px;
+  width: 14px;
 }
 
 .icon-small {
-	width: 16px;
+  width: 16px;
 }
 
 .icon-medium {
-	width: 24px;
+  width: 24px;
 }
 
 //FIXED WIDTH ICONS
 
 .icon-fixed-64 {
-	width: 64px;
+  width: 64px;
 }
 
 .icon-fixed-72 {
-	width: 72px;
+  width: 72px;
 }
 
 .icon-fixed-100 {
-	width: 100px;
+  width: 100px;
 }
 
 .icon-fixed-120 {
-	width: 120px;
+  width: 120px;
 }
 
 .icon-fixed-140 {
-	width: 140px;
+  width: 140px;
 }
 
 .icon-fixed-160 {
-	width: 160px;
+  width: 160px;
 }
 
 .icon-fixed-180 {
-	width: 180px;
+  width: 180px;
 }
 
 
 @include tablet-portrait {
-	.tab-icon {
-		width: 14px;
-	}
+  .tab-icon {
+    width: 14px;
+  }
 
-	.tab-icon-small {
-		width: 16px;
-	}
+  .tab-icon-small {
+    width: 16px;
+  }
 
-	.tab-icon-medium {
-		width: 24px;
-	}
+  .tab-icon-medium {
+    width: 24px;
+  }
 
-	.tab-icon-fixed-64 {
-		width: 64px;
-	}
+  .tab-icon-fixed-64 {
+    width: 64px;
+  }
 
-	.tab-icon-fixed-72 {
-		width: 72px;
-	}
+  .tab-icon-fixed-72 {
+    width: 72px;
+  }
 
-	.tab-icon-fixed-100 {
-		width: 100px;
-	}
-	.tab-icon-fixed-120 {
-		width: 120px;
-	}
+  .tab-icon-fixed-100 {
+    width: 100px;
+  }
+  .tab-icon-fixed-120 {
+    width: 120px;
+  }
 
-	.tab-icon-fixed-140 {
-		width: 140px;
-	}
+  .tab-icon-fixed-140 {
+    width: 140px;
+  }
 
-	.tab-icon-fixed-160 {
-		width: 160px;
-	}
+  .tab-icon-fixed-160 {
+    width: 160px;
+  }
 
 
-	.tab-icon-fixed-180 {
-		width: 180px;
-	}
+  .tab-icon-fixed-180 {
+    width: 180px;
+  }
 
-	.tab-icon-fixed-200 {
-		width: 200px;
-	}
+  .tab-icon-fixed-200 {
+    width: 200px;
+  }
 }
 
 @include tablet-landscape {
-	.med-icon-fixed-64 {
-		width: 64px;
-	}
+  .med-icon-fixed-64 {
+    width: 64px;
+  }
 
-	.med-icon-fixed-72 {
-		width: 72px;
-	}
+  .med-icon-fixed-72 {
+    width: 72px;
+  }
 
-	.med-icon-fixed-100 {
-		width: 100px;
-	}
-	.med-icon-fixed-120 {
-		width: 120px;
-	}
+  .med-icon-fixed-100 {
+    width: 100px;
+  }
+  .med-icon-fixed-120 {
+    width: 120px;
+  }
 
-	.med-icon-fixed-140 {
-		width: 140px;
-	}
-
-
-	.med-icon-fixed-160 {
-		width: 160px;
-	}
+  .med-icon-fixed-140 {
+    width: 140px;
+  }
 
 
-	.med-icon-fixed-180 {
-		width: 180px;
-	}
+  .med-icon-fixed-160 {
+    width: 160px;
+  }
 
-	.med-icon-fixed-200 {
-		width: 200px;
-	}
+
+  .med-icon-fixed-180 {
+    width: 180px;
+  }
+
+  .med-icon-fixed-200 {
+    width: 200px;
+  }
 }
