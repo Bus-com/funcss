@@ -4,11 +4,13 @@
   .tab-greyscale-50 { -webkit-filter: grayscale(50%); filter: grayscale(50%); }
   .tab-greyscale-25 { -webkit-filter: grayscale(25%); filter: grayscale(25%); }
   .tab-grey { color: palette(grey, base); }
+
   .tab-light-grey { color: palette(grey, light); }
   .tab-x-light-grey { color: palette(grey, x-light); }
   .tab-xx-light-grey { color: palette(grey, xx-light); }
   .tab-xxx-light-grey { color: palette(grey, xxx-light); }
 
+  .tab-dark-grey { color: palette(grey, dark); }
 
   .tab-yellow{ color: palette(yellow, base); }
   .tab-x-light-yellow { color: palette(yellow, x-light); }
