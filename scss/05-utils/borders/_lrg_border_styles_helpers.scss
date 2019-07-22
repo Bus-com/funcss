@@ -58,4 +58,10 @@
 .lrg-b-light-shadow {
   box-shadow: 0 0 0 1px palette(grey, xxxx-light) inset;
 }
+
+// border-width
+.lrg-bw-2 { border-width: 2px }
+.lrg-bw-3 { border-width: 3px }
+.lrg-bw-4 { border-width: 4px }
+.lrg-bw-5 { border-width: 5px }
 }

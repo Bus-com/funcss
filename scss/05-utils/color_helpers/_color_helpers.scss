@@ -8,6 +8,7 @@
 .xx-light-grey { color: palette(grey, xx-light); }
 .xxx-light-grey { color: palette(grey, xxx-light); }
 
+.dark-grey { color: palette(grey, dark); }
 
 .yellow{ color: palette(yellow, base); }
 .x-light-yellow { color: palette(yellow, x-light); }
@@ -71,6 +72,9 @@
 .bg-xx-light-grey { background: palette(grey, xx-light); }
 .bg-xxx-light-grey { background: palette(grey, xxx-light); }
 .bg-xxxx-light-grey { background: palette(grey, xxxx-light); }
+
+.bg-dark-grey { background-color: palette(grey, x-dark) }
+.bg-dark-grey-90 { background-color: rgba(palette(grey, x-dark), 0.9) }
 
 //BG DARK CYAN ////////////////////////
 
