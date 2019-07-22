@@ -31,6 +31,8 @@
 .tab-bb-white { border-bottom: 1px solid $white; }
 .tab-br-white { border-right: 1px solid $white; }
 
+.tab-bl-white-2 { border-left: 2px solid $white; }
+
 //orange borders
 .tab-b-cyan { border: 1px solid palette(cyan, base); }
 .tab-bt-cyan { border-top: 1px solid palette(cyan, base); }
@@ -60,13 +62,7 @@
 .tab-br-none { border-right: none; }
 
 //shadowed style lines
-.tab-b-light-shadow {
+.tab-b-xxxx-light-grey-shadow {
   box-shadow: 0 0 0 1px palette(grey, xxxx-light) inset;
 }
-
-// border-width
-.tab-bw-2 { border-width: 2px }
-.tab-bw-3 { border-width: 3px }
-.tab-bw-4 { border-width: 4px }
-.tab-bw-5 { border-width: 5px }
 }
