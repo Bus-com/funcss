@@ -865,13 +865,13 @@ body {
   box-shadow: 0 -1px 5px 0 rgba(63, 63, 68, 0.2);
 }
 
-.bs-card {
+.bs-light {
   box-shadow: 0 1px 1px 0 rgba(63, 63, 68, 0.15), 0 0 5px 0 rgba(63, 63, 68, 0.05);
 }
-.bs-card:hover {
+.bs-light:hover {
   box-shadow: 0 1px 6px 0 rgba(63, 63, 68, 0.15), 0 0 5px 0 rgba(63, 63, 68, 0.05);
 }
-.bs-card.no-bs-hover:hover {
+.bs-light.no-bs-hover:hover {
   box-shadow: 0 1px 1px 0 rgba(63, 63, 68, 0.15), 0 0 5px 0 rgba(63, 63, 68, 0.05);
 }
 
@@ -1018,6 +1018,10 @@ ul.striped-odd li:nth-child(odd) {
   border-right: 1px solid #FFFFFF;
 }
 
+.bl-white-2 {
+  border-left: 2px solid #FFFFFF;
+}
+
 .b-light {
   border: 1px solid #F9F8EE;
 }
@@ -1118,12 +1122,48 @@ ul.striped-odd li:nth-child(odd) {
   border-right: 1px solid #FDA755;
 }
 
-.b-light-orange {
-  border-color: #F3EFEB;
+.b-xxx-light-orange {
+  border: 1px solid #F3EFEB;
 }
 
-.b-light-orange-2 {
-  border-color: #EAE6E2;
+.bt-xxx-light-orange {
+  border-top: 1px solid #F3EFEB;
+}
+
+.bl-xxx-light-orange {
+  border-left: 1px solid #F3EFEB;
+}
+
+.bb-xxx-light-orange {
+  border-bottom: 1px solid #F3EFEB;
+}
+
+.br-xxx-light-orange {
+  border-right: 1px solid #F3EFEB;
+}
+
+.bl-xxx-light-orange-2 {
+  border-left: 2px solid #F3EFEB;
+}
+
+.b-xxxx-light-orange {
+  border: 1px solid #EAE6E2;
+}
+
+.bt-xxxx-light-orange {
+  border-top: 1px solid #EAE6E2;
+}
+
+.bl-xxxx-light-orange {
+  border-left: 1px solid #EAE6E2;
+}
+
+.bb-xxxx-light-orange {
+  border-bottom: 1px solid #EAE6E2;
+}
+
+.br-xxxx-light-orange {
+  border-right: 1px solid #EAE6E2;
 }
 
 .b-cyan {
@@ -1226,24 +1266,8 @@ ul.striped-odd li:nth-child(odd) {
   border-right: none;
 }
 
-.b-light-shadow {
+.b-xxxx-light-grey-shadow {
   box-shadow: 0 0 0 1px #F9F8EE inset;
-}
-
-.bw-2 {
-  border-width: 2px;
-}
-
-.bw-3 {
-  border-width: 3px;
-}
-
-.bw-4 {
-  border-width: 4px;
-}
-
-.bw-5 {
-  border-width: 5px;
 }
 
 /* ==========================================================================
@@ -1330,6 +1354,10 @@ ul.striped-odd li:nth-child(odd) {
     border-right: 1px solid #FFFFFF;
   }
 
+  .tab-bl-white-2 {
+    border-left: 2px solid #FFFFFF;
+  }
+
   .tab-b-cyan {
     border: 1px solid #23D5D6;
   }
@@ -1410,24 +1438,8 @@ ul.striped-odd li:nth-child(odd) {
     border-right: none;
   }
 
-  .tab-b-light-shadow {
+  .tab-b-xxxx-light-grey-shadow {
     box-shadow: 0 0 0 1px #F9F8EE inset;
-  }
-
-  .tab-bw-2 {
-    border-width: 2px;
-  }
-
-  .tab-bw-3 {
-    border-width: 3px;
-  }
-
-  .tab-bw-4 {
-    border-width: 4px;
-  }
-
-  .tab-bw-5 {
-    border-width: 5px;
   }
 }
 /* ==========================================================================
@@ -1634,24 +1646,8 @@ ul.striped-odd li:nth-child(odd) {
     border-right: none;
   }
 
-  .med-b-light-shadow {
+  .med-b-xxxx-light-grey-shadow {
     box-shadow: 0 0 0 1px #F9F8EE inset;
-  }
-
-  .med-bw-2 {
-    border-width: 2px;
-  }
-
-  .med-bw-3 {
-    border-width: 3px;
-  }
-
-  .med-bw-4 {
-    border-width: 4px;
-  }
-
-  .med-bw-5 {
-    border-width: 5px;
   }
 }
 /* ==========================================================================
@@ -1798,24 +1794,8 @@ ul.striped-odd li:nth-child(odd) {
     border-right: none;
   }
 
-  .lrg-b-light-shadow {
+  .lrg-b-xxxx-light-grey-shadow {
     box-shadow: 0 0 0 1px #F9F8EE inset;
-  }
-
-  .lrg-bw-2 {
-    border-width: 2px;
-  }
-
-  .lrg-bw-3 {
-    border-width: 3px;
-  }
-
-  .lrg-bw-4 {
-    border-width: 4px;
-  }
-
-  .lrg-bw-5 {
-    border-width: 5px;
   }
 }
 /* ==========================================================================
@@ -1962,24 +1942,8 @@ ul.striped-odd li:nth-child(odd) {
     border-right: none;
   }
 
-  .xl-b-light-shadow {
+  .xl-b-xxxx-light-grey-shadow {
     box-shadow: 0 0 0 1px #F9F8EE inset;
-  }
-
-  .xl-bw-2 {
-    border-width: 2px;
-  }
-
-  .xl-bw-3 {
-    border-width: 3px;
-  }
-
-  .xl-bw-4 {
-    border-width: 4px;
-  }
-
-  .xl-bw-5 {
-    border-width: 5px;
   }
 }
 .greyscale {
@@ -15452,7 +15416,7 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
 }
 
 .l-cntnt-lrg {
-  width: 1500px;
+  width: 1440px;
   max-width: 90%;
 }
 

@@ -24,6 +24,7 @@
 .bb-white { border-bottom: 1px solid $white; }
 .br-white { border-right: 1px solid $white; }
 
+.bl-white-2 { border-left: 2px solid $white; }
 
 //light grey borders
 .b-light { border: 1px solid palette(grey, xxxx-light); }
@@ -59,8 +60,19 @@
 .bb-orange { border-bottom: 1px solid palette(orange, base); }
 .br-orange { border-right: 1px solid palette(orange, base); }
 
-.b-light-orange { border-color: palette(orange, xxx-light) }
-.b-light-orange-2 { border-color: palette(orange, xxxx-light) }
+.b-xxx-light-orange { border: 1px solid palette(orange, xxx-light) }
+.bt-xxx-light-orange { border-top: 1px solid palette(orange, xxx-light) }
+.bl-xxx-light-orange { border-left: 1px solid palette(orange, xxx-light) }
+.bb-xxx-light-orange { border-bottom: 1px solid palette(orange, xxx-light) }
+.br-xxx-light-orange { border-right: 1px solid palette(orange, xxx-light) }
+
+.bl-xxx-light-orange-2 { border-left: 2px solid palette(orange, xxx-light) }
+
+.b-xxxx-light-orange { border: 1px solid palette(orange, xxxx-light) }
+.bt-xxxx-light-orange { border-top: 1px solid palette(orange, xxxx-light) }
+.bl-xxxx-light-orange { border-left: 1px solid palette(orange, xxxx-light) }
+.bb-xxxx-light-orange { border-bottom: 1px solid palette(orange, xxxx-light) }
+.br-xxxx-light-orange { border-right: 1px solid palette(orange, xxxx-light) }
 
 //CYAN borders
 .b-cyan { border: 1px solid palette(cyan, base); }
@@ -97,12 +109,6 @@
 .br-none { border-right: none; }
 
 //shadowed style lines
-.b-light-shadow {
+.b-xxxx-light-grey-shadow {
   box-shadow: 0 0 0 1px palette(grey, xxxx-light) inset;
 }
-
-// border-width
-.bw-2 { border-width: 2px }
-.bw-3 { border-width: 3px }
-.bw-4 { border-width: 4px }
-.bw-5 { border-width: 5px }
