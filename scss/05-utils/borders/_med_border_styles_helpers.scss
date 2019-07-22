@@ -81,4 +81,10 @@
 .med-b-light-shadow {
   box-shadow: 0 0 0 1px palette(grey, xxxx-light) inset;
 }
+
+// border-width
+.med-bw-2 { border-width: 2px }
+.med-bw-3 { border-width: 3px }
+.med-bw-4 { border-width: 4px }
+.med-bw-5 { border-width: 5px }
 }
