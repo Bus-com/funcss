@@ -80,23 +80,29 @@
   font-style: italic;
 }
 
-// We need to add the different weights for the italic
-.italic-medium {
+.italic-regular {
+  font-family: "AvenirNextRegularItalic";
+  font-style: italic;
+}
 
+.italic-medium {
+  font-family: "AvenirNextMediumItalic";
+  font-style: italic;
 }
 
 .italic-demi-bold{
-
+  font-family: "AvenirNextDemiItalic";
+  font-style: italic;
 }
 .italic-bold {
-
+  font-family: "AvenirNextBoldItalic";
+  font-style: italic;
 }
 
 .italic-heavy {
-
+  font-family: "AvenirNextHeavyItalic";
+  font-style: italic;
 }
-
-.fs-italic { font-style: italic }
 
 .underline {
   text-decoration: underline;
