@@ -86,7 +86,7 @@
 .h-fixed-70 { height: 70px; }
 .h-fixed-80 { height: 80px; }
 .h-fixed-90 { height: 90px; }
-.h-fixed-100 { height: 100px;}
+.h-fixed-100 { height: 100px; }
 .h-fixed-110 { height: 110px; }
 .h-fixed-120 { height: 120px; }
 .h-fixed-130 { height: 130px; }
@@ -96,4 +96,38 @@
 .h-fixed-170 { height: 170px; }
 .h-fixed-180 { height: 180px; }
 .h-fixed-190 { height: 190px; }
-.h-fixed-200 { height: 200px;}
+.h-fixed-200 { height: 200px; }
+
+// FIXED PX WIDTH
+.w-fixed-100 { width: 100px }
+.w-fixed-110 { width: 110px }
+.w-fixed-120 { width: 120px }
+.w-fixed-130 { width: 130px }
+.w-fixed-140 { width: 140px }
+.w-fixed-150 { width: 150px }
+.w-fixed-160 { width: 160px }
+.w-fixed-170 { width: 170px }
+.w-fixed-180 { width: 180px }
+.w-fixed-190 { width: 190px }
+.w-fixed-200 { width: 200px }
+.w-fixed-300 { width: 300px }
+.w-fixed-400 { width: 400px }
+.w-fixed-500 { width: 500px }
+.w-fixed-600 { width: 600px }
+.w-fixed-700 { width: 700px }
+.w-fixed-800 { width: 800px }
+.w-fixed-900 { width: 900px }
+
+// MAX FIXED PX HEIGHT
+.max-h-fixed-50 { max-height: 50px }
+.max-h-fixed-60 { max-height: 60px }
+.max-h-fixed-70 { max-height: 70px }
+.max-h-fixed-80 { max-height: 80px }
+.max-h-fixed-90 { max-height: 90px }
+.max-h-fixed-100 { max-height: 100px }
+.max-h-fixed-200 { max-height: 200px }
+
+// MIN FIXED PX HEIGHT
+.min-h-fixed-400 { min-height: 400px }
+.min-h-fixed-520 { min-height: 520px }
+.min-h-fixed-600 { min-height: 600px }

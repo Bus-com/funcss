@@ -25,6 +25,20 @@
 .lrg-bb-orange { border-bottom: 1px solid palette(orange, base); }
 .lrg-br-orange { border-right: 1px solid palette(orange, base); }
 
+.lrg-b-xxx-light-orange { border: 1px solid palette(orange, xxx-light) }
+.lrg-bt-xxx-light-orange { border-top: 1px solid palette(orange, xxx-light) }
+.lrg-bl-xxx-light-orange { border-left: 1px solid palette(orange, xxx-light) }
+.lrg-bb-xxx-light-orange { border-bottom: 1px solid palette(orange, xxx-light) }
+.lrg-br-xxx-light-orange { border-right: 1px solid palette(orange, xxx-light) }
+
+.lrg-bl-xxx-light-orange-2 { border-left: 2px solid palette(orange, xxx-light) }
+
+.lrg-b-xxxx-light-orange { border: 1px solid palette(orange, xxxx-light) }
+.lrg-bt-xxxx-light-orange { border-top: 1px solid palette(orange, xxxx-light) }
+.lrg-bl-xxxx-light-orange { border-left: 1px solid palette(orange, xxxx-light) }
+.lrg-bb-xxxx-light-orange { border-bottom: 1px solid palette(orange, xxxx-light) }
+.lrg-br-xxxx-light-orange { border-right: 1px solid palette(orange, xxxx-light) }
+
 //orange borders
 .lrg-b-cyan { border: 1px solid palette(cyan, base); }
 .lrg-bt-cyan { border-top: 1px solid palette(cyan, base); }
@@ -55,7 +69,7 @@
 .lrg-br-none { border-right: none; }
 
 //shadowed style lines
-.lrg-b-light-shadow {
+.lrg-b-xxxx-light-grey-shadow {
   box-shadow: 0 0 0 1px palette(grey, xxxx-light) inset;
 }
 }
