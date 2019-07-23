@@ -2302,10 +2302,6 @@ ul.striped-odd li:nth-child(odd) {
   background-color: #28292A;
 }
 
-.bg-dark-grey-90 {
-  background-color: rgba(40, 41, 42, 0.9);
-}
-
 .bg-x-dark-cyan {
   background: #0095A0;
 }
@@ -2448,6 +2444,42 @@ ul.striped-odd li:nth-child(odd) {
 
 .bg-grey-90 {
   background: rgba(71, 74, 86, 0.9);
+}
+
+.bg-dark-grey-10 {
+  background: rgba(40, 41, 42, 0.1);
+}
+
+.bg-dark-grey-20 {
+  background: rgba(40, 41, 42, 0.2);
+}
+
+.bg-dark-grey-30 {
+  background: rgba(40, 41, 42, 0.3);
+}
+
+.bg-dark-grey-40 {
+  background: rgba(40, 41, 42, 0.4);
+}
+
+.bg-dark-grey-50 {
+  background: rgba(40, 41, 42, 0.5);
+}
+
+.bg-dark-grey-60 {
+  background: rgba(40, 41, 42, 0.6);
+}
+
+.bg-dark-grey-70 {
+  background: rgba(40, 41, 42, 0.7);
+}
+
+.bg-dark-grey-80 {
+  background: rgba(40, 41, 42, 0.8);
+}
+
+.bg-dark-grey-90 {
+  background: rgba(40, 41, 42, 0.9);
 }
 
 .site-gradient {
@@ -10844,7 +10876,28 @@ button:hover.hover-orange, .c-btn:hover.hover-orange, .c-btn-site:hover.hover-or
   font-style: italic;
 }
 
-.fs-italic {
+.italic-regular {
+  font-family: "AvenirNextRegularItalic";
+  font-style: italic;
+}
+
+.italic-medium {
+  font-family: "AvenirNextMediumItalic";
+  font-style: italic;
+}
+
+.italic-demi-bold {
+  font-family: "AvenirNextDemiItalic";
+  font-style: italic;
+}
+
+.italic-bold {
+  font-family: "AvenirNextBoldItalic";
+  font-style: italic;
+}
+
+.italic-heavy {
+  font-family: "AvenirNextHeavyItalic";
   font-style: italic;
 }
 
