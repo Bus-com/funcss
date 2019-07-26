@@ -1,0 +1,15 @@
+// LRG size icon helpers
+@include laptop {
+  .xl-ico-x { width: $unit-x}
+  .xl-ico-small { width: $unit-small}
+  .xl-ico-medium { width: $unit-medium}
+  .xl-ico-lrg { width: $unit-lrg}
+  .xl-ico-xl { width: $unit-xl}
+  .xl-ico-xxl { width: $unit-xxl}
+  .xl-ico-xxxl { width: $unit-xxxl}
+  .xl-ico-xxxxl { width: $unit-xxxxl}
+  .xl-ico-xxxxxl { width: $unit-xxxxxl}
+  .xl-ico-xxxxxxl { width: $unit-xxxxxxl}
+  .xl-ico-xxxxxxxl { width: $unit-xxxxxxxl}
+  .xl-ico-xxxxxxxxl { width: $unit-xxxxxxxxl}
+}

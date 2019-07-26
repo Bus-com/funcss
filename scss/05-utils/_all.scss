@@ -103,5 +103,13 @@
 @import "viewport_helpers/lrg_viewport_helpers";
 @import "viewport_helpers/xl_viewport_helpers";
 
+//ICON SIZING
+@import "icon_sizing/icon_sizing_helper";
+@import "icon_sizing/tab_icon_sizing_helper";
+@import "icon_sizing/med_icon_sizing_helper";
+@import "icon_sizing/lrg_icon_sizing_helper";
+@import "icon_sizing/xl_icon_sizing_helper";
+
+
 //ANIMATIONS
 @import "animations/animations";
