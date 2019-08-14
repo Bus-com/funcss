@@ -1,23 +1,35 @@
 .greyscale { -webkit-filter: grayscale(1); filter: grayscale(1); }
+
 .greyscale-75 { -webkit-filter: grayscale(75%); filter: grayscale(75%); }
+
 .greyscale-50 { -webkit-filter: grayscale(50%); filter: grayscale(50%); }
+
 .greyscale-25 { -webkit-filter: grayscale(25%); filter: grayscale(25%); }
+
 .grey { color: palette(grey, base); }
+
 .light-grey { color: palette(grey, light); }
+
 .x-light-grey { color: palette(grey, x-light); }
+
 .xx-light-grey { color: palette(grey, xx-light); }
+
 .xxx-light-grey { color: palette(grey, xxx-light); }
 
 .dark-grey { color: palette(grey, dark); }
 
-.yellow{ color: palette(yellow, base); }
+.yellow { color: palette(yellow, base); }
+
 .x-light-yellow { color: palette(yellow, x-light); }
+
 .xx-light-yellow { color: palette(yellow, xx-light); }
 
 .orange { color: palette(orange, base); }
+
 .xxx-light-orange { color: palette(orange, xxx-light); }
 
 .cyan { color: palette(cyan, base); }
+
 .x-dark-cyan { color: palette(cyan, x-dark); }
 
 .white { color: $white; }
@@ -48,7 +60,7 @@
 
 .fill-orange { fill: palette(orange, base); }
 
-.stroke-orange {  stroke: palette(orange, base); }
+.stroke-orange { stroke: palette(orange, base); }
 
 .fill-trans { fill: transparent; }
 
@@ -60,17 +72,24 @@
 
 // BG YELLOW ////////////////////////
 
-.bg-yellow{ background: palette(yellow, base); }
+.bg-yellow { background: palette(yellow, base); }
+
 .bg-x-light-yellow { background: palette(yellow, x-light); }
+
 .bg-xx-light-yellow { background: palette(yellow, xx-light); }
 
 // BG GREY ////////////////////////
 
 .bg-grey { background: palette(grey, base); }
+
 .bg-light-grey { background: palette(grey, light); }
+
 .bg-x-light-grey { background: palette(grey, x-light); }
+
 .bg-xx-light-grey { background: palette(grey, xx-light); }
+
 .bg-xxx-light-grey { background: palette(grey, xxx-light); }
+
 .bg-xxxx-light-grey { background: palette(grey, xxxx-light); }
 
 .bg-dark-grey { background-color: palette(grey, x-dark) }
@@ -78,26 +97,40 @@
 //BG DARK CYAN ////////////////////////
 
 .bg-x-dark-cyan { background: palette(cyan, x-dark); }
+
 .bg-dark-cyan { background: palette(cyan, dark); }
+
 .bg-cyan { background: palette(cyan, base); }
+
 .bg-light-cyan { background: palette(cyan, light); }
+
 .bg-x-light-cyan { background: palette(cyan, x-light); }
+
 .bg-xx-light-cyan { background: palette(cyan, xx-light); }
+
 .bg-xxx-light-cyan { background: palette(cyan, xxx-light); }
+
 .bg-xxxx-light-cyan { background: palette(cyan, xxxx-light); }
+
 .bg-xxxxx-light-cyan { background: palette(cyan, xxxxx-light); }
 
 //BG ORANGE ////////////////////////
 
 .bg-orange { background: palette(orange, base); }
+
 .bg-light-orange { background: palette(orange, light); }
+
 .bg-x-light-orange { background: palette(orange, x-light); }
+
 .bg-xx-light-orange { background: palette(orange, xx-light); }
+
 .bg-xxx-light-orange { background: palette(orange, xxx-light); }
+
 .bg-xxxx-light-orange { background: palette(orange, xxxx-light); }
 
 .bg-facebook {
   background: #4C68A7;
+
   &:hover {
     background: #3E5F99 !important;
     color: $white;
@@ -109,33 +142,57 @@
 // RGBA HELPERS ////////////////////////
 
 .bg-white-10 { background: rgba($white, .10); }
+
 .bg-white-20 { background: rgba($white, .20); }
+
 .bg-white-30 { background: rgba($white, .30); }
+
 .bg-white-40 { background: rgba($white, .40); }
+
 .bg-white-50 { background: rgba($white, .50); }
+
 .bg-white-60 { background: rgba($white, .60); }
+
 .bg-white-70 { background: rgba($white, .70); }
+
 .bg-white-80 { background: rgba($white, .80); }
+
 .bg-white-90 { background: rgba($white, .90); }
 
 .bg-grey-10 { background: rgba(palette(grey, base), .10); }
+
 .bg-grey-20 { background: rgba(palette(grey, base), .20); }
+
 .bg-grey-30 { background: rgba(palette(grey, base), .30); }
+
 .bg-grey-40 { background: rgba(palette(grey, base), .40); }
+
 .bg-grey-50 { background: rgba(palette(grey, base), .50); }
+
 .bg-grey-60 { background: rgba(palette(grey, base), .60); }
+
 .bg-grey-70 { background: rgba(palette(grey, base), .70); }
+
 .bg-grey-80 { background: rgba(palette(grey, base), .80); }
+
 .bg-grey-90 { background: rgba(palette(grey, base), .90); }
 
 .bg-dark-grey-10 { background: rgba(palette(grey, x-dark), .10); }
+
 .bg-dark-grey-20 { background: rgba(palette(grey, x-dark), .20); }
+
 .bg-dark-grey-30 { background: rgba(palette(grey, x-dark), .30); }
+
 .bg-dark-grey-40 { background: rgba(palette(grey, x-dark), .40); }
+
 .bg-dark-grey-50 { background: rgba(palette(grey, x-dark), .50); }
+
 .bg-dark-grey-60 { background: rgba(palette(grey, x-dark), .60); }
+
 .bg-dark-grey-70 { background: rgba(palette(grey, x-dark), .70); }
+
 .bg-dark-grey-80 { background: rgba(palette(grey, x-dark), .80); }
+
 .bg-dark-grey-90 { background: rgba(palette(grey, x-dark), .90); }
 
 // SITE GRADIENTS ////////////////////////
@@ -159,6 +216,7 @@
 // HOVER STATES ////////////////////////
 .white.hover-white:hover {
   color: palette(white, link-hover);
+
   path, polygon, rect {
     fill: palette(white, link-hover);
   }
@@ -208,4 +266,36 @@ button, .c-btn, .c-btn-site {
   &:hover.hover-orange {
     color: palette(orange, base);
   }
+}
+
+.hover-cyan {
+  &:hover { color: palette(cyan, base); }
+}
+
+.hover-dark-cyan {
+  &:hover { color: palette(cyan, dark); }
+}
+
+.hover-x-dark-cyan {
+  &:hover { color: palette(cyan, x-dark); }
+}
+
+.hover-xx-dark-cyan {
+  &:hover { color: palette(cyan, xx-dark); }
+}
+
+.hover-orange {
+  &:hover { color: palette(orange, base); }
+}
+
+.hover-dark-orange {
+  &:hover { color: palette(orange, dark); }
+}
+
+.hover-x-dark-orange {
+  &:hover { color: palette(orange, x-dark); }
+}
+
+.hover-xx-dark-cyan {
+  &:hover { color: palette(orange, xx-dark); }
 }

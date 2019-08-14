@@ -7,7 +7,7 @@ brew install sass/sass/sass
 
 # Build
 ```bash
-bun/build
+bin/build
 ```
 
 # Deploy
