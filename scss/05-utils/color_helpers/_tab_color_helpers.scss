@@ -146,3 +146,35 @@
     @include gradient(184deg, palette(orange, x-light) 0%, palette(grey, xxxx-light) 50%);
   }
 }
+
+.tab-hover-cyan {
+  &:hover { color: palette(cyan, base)}
+}
+
+.tab-hover-dark-cyan {
+  &:hover { color: palette(cyan, dark)}
+}
+
+.tab-hover-x-dark-cyan {
+  &:hover { color: palette(cyan, x-dark)}
+}
+
+.tab-hover-xx-dark-cyan {
+  &:hover { color: palette(cyan, xx-dark)}
+}
+
+.tab-hover-orange {
+  &:hover { color: palette(orange, base)}
+}
+
+.tab-hover-dark-orange {
+  &:hover { color: palette(orange, dark)}
+}
+
+.tab-hover-x-dark-orange {
+  &:hover { color: palette(orange, x-dark)}
+}
+
+.tab-hover-xx-dark-cyan {
+  &:hover { color: palette(orange, xx-dark)}
+}
