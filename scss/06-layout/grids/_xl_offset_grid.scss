@@ -1,0 +1,32 @@
+/* ==========================================================================
+   UTILITY CLASSES TO OFFSET YOUR GRIDS @ laptop 1440px 15" Laptops BREAKPOINT
+   @ laptop 1440px 15" Laptops BREAKPOINT
+   COMBINE THEM WITH YOUR GRID CLASSES TO MOVE YOUR COLUMN A SPECIFIC DISTANCE
+  ========================================================================== */
+
+@include laptop {
+
+  .xl-col-1-offset {
+    margin-left: calc(1 / 12 * 100%);
+  }
+
+  .xl-col-2-offset {
+    margin-left: calc(2 / 12 * 100%);
+  }
+
+  .xl-col-3-offset {
+    margin-left: calc(3 / 12 * 100%);
+  }
+
+  .xl-col-4-offset {
+    margin-left: calc(4 / 12 * 100%);
+  }
+
+  .xl-col-5-offset {
+    margin-left: calc(5 / 12 * 100%);
+  }
+
+  .xl-col-6-offset {
+    margin-left: calc(6 / 12 * 100%);
+  }
+}
