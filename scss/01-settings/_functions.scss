@@ -1,27 +1,21 @@
-/* ==========================================================================
-   FUNCTIONS
-  ========================================================================== */
-
+/// FUNCTIONS
 $rem-base: 16px !default;
 
-///Rem calculation via pixel value
+/// Rem calculation via pixel value
 @function calculateRem($size) {
   $remSize: $size / 16px;
   @return #{$remSize}rem;
 }
 
-///Color function
-@function palette($palette, $tone: 'base') {
+/// Color function
+@function palette($palette, $tone: "base") {
   @return map-get(map-get($palettes, $palette), $tone);
 }
 
-//OLD MIXINS
-/*
-  Base Mixins
-*/
+/// OLD MIXINS
+/// Base Mixins
 
-// RANGES
-// We use these functions to define ranges for various things, like media queries.
+/// We use these functions to define ranges for various things, like media queries.
 @function lower-bound($range) {
   @if length($range) <= 0 {
     @return 0;
@@ -29,6 +23,7 @@ $rem-base: 16px !default;
   @return nth($range, 1);
 }
 
+/// We use these functions to define ranges for various things, like media queries.
 @function upper-bound($range) {
   @if length($range) < 2 {
     @return 999999999999;
@@ -36,19 +31,19 @@ $rem-base: 16px !default;
   @return nth($range, 2);
 }
 
-// STRIP UNIT
-// It strips the unit of measure and returns it
+/// STRIP UNIT
+/// It strips the unit of measure and returns it
 @function strip-unit($num) {
   @return $num / ($num * 0 + 1);
 }
 
-// CONVERT TO REM
+/// CONVERT TO REM
 @function convert-to-rem($value, $base-value: $rem-base) {
   $value: strip-unit($value) / strip-unit($base-value) * 1rem;
   @if ($value == 0rem) {
     $value: 0;
   }
-  // Turn 0rem into 0
+  /// Turn 0rem into 0
   @return $value;
 }
 
@@ -61,7 +56,10 @@ $rem-base: 16px !default;
 
   $remValues: ();
   @for $i from 1 through $max {
-    $remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
+    $remValues: append(
+      $remValues,
+      convert-to-rem(nth($values, $i), $base-value)
+    );
   }
   @return $remValues;
 }
@@ -184,16 +182,16 @@ $rem-base: 16px !default;
 
 @mixin placeholder {
   &::-webkit-input-placeholder {
-    @content
+    @content;
   }
   &::-moz-placeholder {
-    @content
+    @content;
   }
   &:-moz-placeholder {
-    @content
+    @content;
   }
   &:-ms-input-placeholder {
-    @content
+    @content;
   }
 }
 
@@ -206,11 +204,11 @@ $rem-base: 16px !default;
 
 /* https://gist.github.com/johnferrie/3836468#file-_filter-scss */
 @mixin filter($filter-type, $filter-amount) {
-  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
-  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
-  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
-  -o-filter: $filter-type+unquote('(#{$filter-amount})');
-  filter: $filter-type+unquote('(#{$filter-amount})');
+  -webkit-filter: $filter-type + unquote("(#{$filter-amount})");
+  -moz-filter: $filter-type + unquote("(#{$filter-amount})");
+  -ms-filter: $filter-type + unquote("(#{$filter-amount})");
+  -o-filter: $filter-type + unquote("(#{$filter-amount})");
+  filter: $filter-type + unquote("(#{$filter-amount})");
 }
 
 @mixin zoom($value) {
@@ -237,8 +235,8 @@ $rem-base: 16px !default;
   display: flex;
 }
 
-// Values: flex-start | flex-end | center | baseline | stretch
-// Default: stretch
+/// Values: flex-start | flex-end | center | baseline | stretch
+/// Default: stretch
 @mixin align-items($position) {
   -webkit-box-align: $position;
   -ms-flex-align: $position;
@@ -247,8 +245,8 @@ $rem-base: 16px !default;
   align-items: $position;
 }
 
-// Values: flex-start | flex-end | center | space-between | space-around
-// Default: flex-start
+/// Values: flex-start | flex-end | center | space-between | space-around
+/// Default: flex-start
 @mixin justify-content($position) {
   -webkit-box-pack: $position;
   -ms-flex-pack: $position;
@@ -257,8 +255,8 @@ $rem-base: 16px !default;
   justify-content: $position;
 }
 
-// Values: flex-start | flex-end | center | baseline | stretch
-// Default: stretch
+/// Values: flex-start | flex-end | center | baseline | stretch
+/// Default: stretch
 @mixin flex-direction($value: row) {
   @if $value == row-reverse {
     -webkit-box-direction: reverse;
@@ -279,8 +277,8 @@ $rem-base: 16px !default;
   -ms-flex-direction: $value;
 }
 
-// Values: auto | flex-start | flex-end | center | baseline | stretch
-// Default: auto
+/// Values: auto | flex-start | flex-end | center | baseline | stretch
+/// Default: auto
 @mixin align-self($value: auto) {
   // No Webkit Box Fallback.
   -webkit-align-self: $value;
@@ -296,8 +294,8 @@ $rem-base: 16px !default;
   align-self: $value;
 }
 
-// Values: nowrap | wrap | wrap-reverse
-// Default: nowrap
+/// Values: nowrap | wrap | wrap-reverse
+/// Default: nowrap
 @mixin flex-wrap($value: nowrap) {
   // No Webkit Box fallback.
   -webkit-flex-wrap: $value;
@@ -311,11 +309,11 @@ $rem-base: 16px !default;
 }
 
 @mixin filter($filter-type, $filter-amount) {
-  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
-  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
-  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
-  -o-filter: $filter-type+unquote('(#{$filter-amount})');
-  filter: $filter-type+unquote('(#{$filter-amount})');
+  -webkit-filter: $filter-type + unquote("(#{$filter-amount})");
+  -moz-filter: $filter-type + unquote("(#{$filter-amount})");
+  -ms-filter: $filter-type + unquote("(#{$filter-amount})");
+  -o-filter: $filter-type + unquote("(#{$filter-amount})");
+  filter: $filter-type + unquote("(#{$filter-amount})");
 }
 
 @mixin appearance($appearance) {

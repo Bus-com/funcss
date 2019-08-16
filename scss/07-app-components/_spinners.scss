@@ -6,7 +6,9 @@
   height: 18px;
 
   @include keyframes(fadingCicle) {
-    0%, 39%, 100% {
+    0%,
+    39%,
+    100% {
       opacity: 0;
     }
     40% {
@@ -22,7 +24,7 @@
     top: 0;
 
     &:before {
-      content: '';
+      content: "";
       display: block;
       margin: 0 auto;
       width: 15%;
@@ -127,7 +129,6 @@
   border-bottom: 2px solid palette(cyan, dark);
   padding: 10px;
 
-
   .loading-spinner {
     width: 48px;
     height: 48px;
@@ -139,13 +140,12 @@
   }
 }
 
-
 .c-btn .fading-circle-spinner {
   width: 100% !important;
   height: 60% !important;
-  @include animation ('fade-in .3s ease-in');
+  @include animation("fade-in .3s ease-in");
 
   [class^="circle-"]:before {
     background: $white;
   }
- }
+}

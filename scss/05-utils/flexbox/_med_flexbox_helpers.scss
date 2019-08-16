@@ -3,7 +3,6 @@
    USE THESE WHEN YOU WANT TO USE A SPEICIFC CLASS A SPECIFIC BREAKPOINT
   ========================================================================== */
 @include tablet-landscape {
-
   .med-flex {
     display: flex;
   }
@@ -14,7 +13,8 @@
       display: block;
     }
     /* IE10 */
-    *::-ms-backdrop, .med-ie-no-flex {
+    *::-ms-backdrop,
+    .med-ie-no-flex {
       display: block;
     }
     /* IE11 */
@@ -105,7 +105,7 @@
     flex-shrink: 0;
   }
 
-  .med-flex-self-start{
+  .med-flex-self-start {
     align-self: flex-start;
   }
 
@@ -116,5 +116,4 @@
   .med-flex-self-center {
     align-self: center;
   }
-
 }

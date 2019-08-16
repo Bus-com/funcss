@@ -1,5 +1,4 @@
-
-input[type=radio] {
+input[type="radio"] {
   display: flex;
   align-items: center;
 
@@ -36,7 +35,7 @@ input[type=radio] {
 
     cursor: pointer;
 
-    color: #72747D;
+    color: #72747d;
     font-size: 18px;
     line-height: 32px;
     font-weight: 500;
@@ -45,7 +44,7 @@ input[type=radio] {
     transition: color 0.2s ease;
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 5px;
@@ -57,7 +56,7 @@ input[type=radio] {
     }
 
     &:after {
-      content: '';
+      content: "";
       width: 12px;
       height: 12px;
       background: palette(cyan, base);
@@ -73,15 +72,15 @@ input[type=radio] {
 //SELECTED STATE IN TABS WITH RADIO BUTTONS
 .radio-tabs-container label {
   border-bottom: 3px solid transparent;
-  transititon: all .3s ease-in;
+  transititon: all 0.3s ease-in;
 
   &:hover {
     color: palette(cyan, base);
-    border-bottom: 3px solid  palette(cyan, base) !important; // overiding the transparent border
+    border-bottom: 3px solid palette(cyan, base) !important; // overiding the transparent border
   }
 }
 
 .radio-selected {
   color: palette(cyan, base);
-  border-bottom: 3px solid  palette(cyan, base) !important; // overiding the transparent border
+  border-bottom: 3px solid palette(cyan, base) !important; // overiding the transparent border
 }

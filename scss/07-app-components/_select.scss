@@ -2,7 +2,9 @@
   height: 48px;
   background: #fff;
 
-  input, select, .select-match {
+  input,
+  select,
+  .select-match {
     appearance: none;
     height: 48px;
     line-height: 48px;
@@ -10,12 +12,12 @@
     -webkit-appearance: none;
     padding-left: $unit-x;
     background: transparent;
-    background-image: url('images/dropdown.svg');
+    background-image: url("images/dropdown.svg");
     background-position: 100% 50%;
     background-repeat: no-repeat;
     background-size: 48px;
     width: 100%;
-    border: 1px solid palette( grey, xxx-light);
+    border: 1px solid palette(grey, xxx-light);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -24,7 +26,7 @@
 
     &:hover {
       background: transparent;
-      background-image: url('images/dropdown.svg');
+      background-image: url("images/dropdown.svg");
       background-position: 100% 50%;
       background-repeat: no-repeat;
       background-size: 48px;
@@ -44,7 +46,6 @@
     bottom: 0;
     background: palette(grey, xxx-light);
   }
-
 }
 
 .c-select-small {

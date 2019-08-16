@@ -8,7 +8,7 @@
 
   .actions {
     .button {
-      padding: $unit-small
+      padding: $unit-small;
     }
 
     [dropdown-menu] {
@@ -19,7 +19,6 @@
       transform: translateX(-100%);
     }
   }
-
 }
 
 .tight-table td {

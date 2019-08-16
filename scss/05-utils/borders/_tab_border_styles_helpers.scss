@@ -3,80 +3,183 @@
 ========================================================================== */
 
 @include tablet-portrait {
+  //light grey borders
+  .tab-b-light {
+    border: 1px solid palette(grey, xxxx-light);
+  }
+  .tab-bt-light {
+    border-top: 1px solid palette(grey, xxxx-light);
+  }
+  .tab-bl-light {
+    border-left: 1px solid palette(grey, xxxx-light);
+  }
+  .tab-bb-light {
+    border-bottom: 1px solid palette(grey, xxxx-light);
+  }
+  .tab-br-light {
+    border-right: 1px solid palette(grey, xxxx-light);
+  }
 
-//light grey borders
-.tab-b-light { border: 1px solid palette(grey, xxxx-light); }
-.tab-bt-light { border-top: 1px solid palette(grey, xxxx-light); }
-.tab-bl-light { border-left: 1px solid palette(grey, xxxx-light); }
-.tab-bb-light { border-bottom: 1px solid palette(grey, xxxx-light); }
-.tab-br-light { border-right: 1px solid palette(grey, xxxx-light); }
+  //grey borders
+  .tab-b-grey {
+    border: 1px solid palette(grey, xxx-light);
+  }
+  .tab-bt-grey {
+    border-top: 1px solid palette(grey, xxx-light);
+  }
+  .tab-bl-grey {
+    border-left: 1px solid palette(grey, xxx-light);
+  }
+  .tab-bb-grey {
+    border-bottom: 1px solid palette(grey, xxx-light);
+  }
+  .tab-br-grey {
+    border-right: 1px solid palette(grey, xxx-light);
+  }
 
-//grey borders
-.tab-b-grey { border: 1px solid palette(grey, xxx-light); }
-.tab-bt-grey { border-top: 1px solid palette(grey, xxx-light); }
-.tab-bl-grey { border-left: 1px solid palette(grey, xxx-light); }
-.tab-bb-grey { border-bottom: 1px solid palette(grey, xxx-light); }
-.tab-br-grey { border-right: 1px solid palette(grey, xxx-light); }
+  //orange borders
+  .tab-b-orange {
+    border: 1px solid palette(orange, base);
+  }
+  .tab-bt-orange {
+    border-top: 1px solid palette(orange, base);
+  }
+  .tab-bl-orange {
+    border-left: 1px solid palette(orange, base);
+  }
+  .tab-bb-orange {
+    border-bottom: 1px solid palette(orange, base);
+  }
+  .tab-br-orange {
+    border-right: 1px solid palette(orange, base);
+  }
 
-//orange borders
-.tab-b-orange { border: 1px solid palette(orange, base); }
-.tab-bt-orange { border-top: 1px solid palette(orange, base); }
-.tab-bl-orange { border-left: 1px solid palette(orange, base); }
-.tab-bb-orange { border-bottom: 1px solid palette(orange, base); }
-.tab-br-orange { border-right: 1px solid palette(orange, base); }
+  .tab-b-xxx-light-orange {
+    border: 1px solid palette(orange, xxx-light);
+  }
+  .tab-bt-xxx-light-orange {
+    border-top: 1px solid palette(orange, xxx-light);
+  }
+  .tab-bl-xxx-light-orange {
+    border-left: 1px solid palette(orange, xxx-light);
+  }
+  .tab-bb-xxx-light-orange {
+    border-bottom: 1px solid palette(orange, xxx-light);
+  }
+  .tab-br-xxx-light-orange {
+    border-right: 1px solid palette(orange, xxx-light);
+  }
 
-.tab-b-xxx-light-orange { border: 1px solid palette(orange, xxx-light) }
-.tab-bt-xxx-light-orange { border-top: 1px solid palette(orange, xxx-light) }
-.tab-bl-xxx-light-orange { border-left: 1px solid palette(orange, xxx-light) }
-.tab-bb-xxx-light-orange { border-bottom: 1px solid palette(orange, xxx-light) }
-.tab-br-xxx-light-orange { border-right: 1px solid palette(orange, xxx-light) }
+  .tab-bl-xxx-light-orange-2 {
+    border-left: 2px solid palette(orange, xxx-light);
+  }
 
-.tab-bl-xxx-light-orange-2 { border-left: 2px solid palette(orange, xxx-light) }
+  .tab-b-xxxx-light-orange {
+    border: 1px solid palette(orange, xxxx-light);
+  }
+  .tab-bt-xxxx-light-orange {
+    border-top: 1px solid palette(orange, xxxx-light);
+  }
+  .tab-bl-xxxx-light-orange {
+    border-left: 1px solid palette(orange, xxxx-light);
+  }
+  .tab-bb-xxxx-light-orange {
+    border-bottom: 1px solid palette(orange, xxxx-light);
+  }
+  .tab-br-xxxx-light-orange {
+    border-right: 1px solid palette(orange, xxxx-light);
+  }
 
-.tab-b-xxxx-light-orange { border: 1px solid palette(orange, xxxx-light) }
-.tab-bt-xxxx-light-orange { border-top: 1px solid palette(orange, xxxx-light) }
-.tab-bl-xxxx-light-orange { border-left: 1px solid palette(orange, xxxx-light) }
-.tab-bb-xxxx-light-orange { border-bottom: 1px solid palette(orange, xxxx-light) }
-.tab-br-xxxx-light-orange { border-right: 1px solid palette(orange, xxxx-light) }
+  .tab-b-white {
+    border: 1px solid $white;
+  }
+  .tab-bt-white {
+    border-top: 1px solid $white;
+  }
+  .tab-bl-white {
+    border-left: 1px solid $white;
+  }
+  .tab-bb-white {
+    border-bottom: 1px solid $white;
+  }
+  .tab-br-white {
+    border-right: 1px solid $white;
+  }
 
-.tab-b-white { border: 1px solid $white; }
-.tab-bt-white { border-top: 1px solid $white; }
-.tab-bl-white { border-left: 1px solid $white; }
-.tab-bb-white { border-bottom: 1px solid $white; }
-.tab-br-white { border-right: 1px solid $white; }
+  .tab-bl-white-2 {
+    border-left: 2px solid $white;
+  }
 
-.tab-bl-white-2 { border-left: 2px solid $white; }
+  //orange borders
+  .tab-b-cyan {
+    border: 1px solid palette(cyan, base);
+  }
+  .tab-bt-cyan {
+    border-top: 1px solid palette(cyan, base);
+  }
+  .tab-bl-cyan {
+    border-left: 1px solid palette(cyan, base);
+  }
+  .tab-bb-cyan {
+    border-bottom: 1px solid palette(cyan, base);
+  }
+  .tab-br-cyan {
+    border-right: 1px solid palette(cyan, base);
+  }
 
-//orange borders
-.tab-b-cyan { border: 1px solid palette(cyan, base); }
-.tab-bt-cyan { border-top: 1px solid palette(cyan, base); }
-.tab-bl-cyan { border-left: 1px solid palette(cyan, base); }
-.tab-bb-cyan { border-bottom: 1px solid palette(cyan, base); }
-.tab-br-cyan { border-right: 1px solid palette(cyan, base); }
+  //orange borders
+  .tab-b-cyan {
+    border: 1px solid palette(cyan, base);
+  }
+  .tab-bt-cyan {
+    border-top: 1px solid palette(cyan, base);
+  }
+  .tab-bl-cyan {
+    border-left: 1px solid palette(cyan, base);
+  }
+  .tab-bb-cyan {
+    border-bottom: 1px solid palette(cyan, base);
+  }
+  .tab-br-cyan {
+    border-right: 1px solid palette(cyan, base);
+  }
 
-//orange borders
-.tab-b-cyan  {border: 1px solid palette(cyan, base);}
-.tab-bt-cyan {border-top:1px solid palette(cyan, base);}
-.tab-bl-cyan {border-left:1px solid palette(cyan, base);}
-.tab-bb-cyan {border-bottom:1px solid palette(cyan, base);}
-.tab-br-cyan {border-right:1px solid palette(cyan, base);}
+  //dark cyan border
+  .tab-b-x-dark-cyan-xxs {
+    border: 2px solid palette(cyan, x-dark);
+  }
+  .tab-bt-x-dark-cyan-xxs {
+    border-top: 2px solid palette(cyan, x-dark);
+  }
+  .tab-bl-x-dark-cyan-xxs {
+    border-left: 2px solid palette(cyan, x-dark);
+  }
+  .tab-bb-x-dark-cyan-xxs {
+    border-bottom: 2px solid palette(cyan, x-dark);
+  }
+  .tab-br-x-dark-cyan-xxs {
+    border-right: 2px solid palette(cyan, x-dark);
+  }
 
-//dark cyan border
-.tab-b-x-dark-cyan-xxs { border: 2px solid palette(cyan, x-dark); }
-.tab-bt-x-dark-cyan-xxs { border-top: 2px solid palette(cyan, x-dark); }
-.tab-bl-x-dark-cyan-xxs { border-left: 2px solid palette(cyan, x-dark); }
-.tab-bb-x-dark-cyan-xxs { border-bottom: 2px solid palette(cyan, x-dark); }
-.tab-br-x-dark-cyan-xxs { border-right: 2px solid palette(cyan, x-dark); }
+  //border none
+  .tab-b-none {
+    border: none;
+  }
+  .tab-bt-none {
+    border-top: none;
+  }
+  .tab-bl-none {
+    border-left: none;
+  }
+  .tab-bb-none {
+    border-bottom: none;
+  }
+  .tab-br-none {
+    border-right: none;
+  }
 
-//border none
-.tab-b-none { border: none; }
-.tab-bt-none { border-top: none; }
-.tab-bl-none { border-left: none; }
-.tab-bb-none { border-bottom: none; }
-.tab-br-none { border-right: none; }
-
-//shadowed style lines
-.tab-b-xxxx-light-grey-shadow {
-  box-shadow: 0 0 0 1px palette(grey, xxxx-light) inset;
-}
+  //shadowed style lines
+  .tab-b-xxxx-light-grey-shadow {
+    box-shadow: 0 0 0 1px palette(grey, xxxx-light) inset;
+  }
 }

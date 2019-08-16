@@ -4,109 +4,262 @@
 
 //transparent border
 
-.b-trans{ border: 1px solid transparent; }
-.bt-trans{ border-top: 1px solid transparent; }
-.bl-trans{ border-left: 1px solid transparent; }
-.bb-trans{ border-bottom: 1px solid transparent; }
-.br-trans{ border-right: 1px solid transparent; }
+.b-trans {
+  border: 1px solid transparent;
+}
+.bt-trans {
+  border-top: 1px solid transparent;
+}
+.bl-trans {
+  border-left: 1px solid transparent;
+}
+.bb-trans {
+  border-bottom: 1px solid transparent;
+}
+.br-trans {
+  border-right: 1px solid transparent;
+}
 
-.b-trans-xxs{ border: 2px solid transparent; }
-.bt-trans-xxs{ border-top: 2px solid transparent; }
-.bl-trans-xxs{ border-left: 2px solid transparent; }
-.bb-trans-xxs{ border-bottom: 2px solid transparent; }
-.br-trans-xxs{ border-right: 2px solid transparent; }
-
+.b-trans-xxs {
+  border: 2px solid transparent;
+}
+.bt-trans-xxs {
+  border-top: 2px solid transparent;
+}
+.bl-trans-xxs {
+  border-left: 2px solid transparent;
+}
+.bb-trans-xxs {
+  border-bottom: 2px solid transparent;
+}
+.br-trans-xxs {
+  border-right: 2px solid transparent;
+}
 
 //light grey borders
-.b-white { border: 1px solid $white; }
-.bt-white { border-top: 1px solid $white; }
-.bl-white { border-left: 1px solid $white; }
-.bb-white { border-bottom: 1px solid $white; }
-.br-white { border-right: 1px solid $white; }
+.b-white {
+  border: 1px solid $white;
+}
+.bt-white {
+  border-top: 1px solid $white;
+}
+.bl-white {
+  border-left: 1px solid $white;
+}
+.bb-white {
+  border-bottom: 1px solid $white;
+}
+.br-white {
+  border-right: 1px solid $white;
+}
 
-.bl-white-2 { border-left: 2px solid $white; }
+.bl-white-2 {
+  border-left: 2px solid $white;
+}
 
 //light grey borders
-.b-light { border: 1px solid palette(grey, xxxx-light); }
-.bt-light { border-top: 1px solid palette(grey, xxxx-light); }
-.bl-light { border-left: 1px solid palette(grey, xxxx-light); }
-.bb-light { border-bottom: 1px solid palette(grey, xxxx-light); }
-.br-light { border-right: 1px solid palette(grey, xxxx-light); }
+.b-light {
+  border: 1px solid palette(grey, xxxx-light);
+}
+.bt-light {
+  border-top: 1px solid palette(grey, xxxx-light);
+}
+.bl-light {
+  border-left: 1px solid palette(grey, xxxx-light);
+}
+.bb-light {
+  border-bottom: 1px solid palette(grey, xxxx-light);
+}
+.br-light {
+  border-right: 1px solid palette(grey, xxxx-light);
+}
 
 //grey borders
-.b-grey { border: 1px solid palette(grey, xxx-light); }
-.bt-grey { border-top: 1px solid palette(grey, xxx-light); }
-.bl-grey { border-left: 1px solid palette(grey, xxx-light); }
-.bb-grey { border-bottom: 1px solid palette(grey, xxx-light); }
-.br-grey { border-right: 1px solid palette(grey, xxx-light); }
+.b-grey {
+  border: 1px solid palette(grey, xxx-light);
+}
+.bt-grey {
+  border-top: 1px solid palette(grey, xxx-light);
+}
+.bl-grey {
+  border-left: 1px solid palette(grey, xxx-light);
+}
+.bb-grey {
+  border-bottom: 1px solid palette(grey, xxx-light);
+}
+.br-grey {
+  border-right: 1px solid palette(grey, xxx-light);
+}
 
-.b-grey-xxs { border: 2px solid palette(grey, base); }
-.bt-grey-xxs { border-top: 2px solid palette(grey, base); }
-.bl-grey-xxs { border-left: 2px solid palette(grey, base); }
-.bb-grey-xxs { border-bottom: 2px solid palette(grey, base); }
-.br-grey-xxs { border-right: 2px solid palette(grey, base); }
+.b-grey-xxs {
+  border: 2px solid palette(grey, base);
+}
+.bt-grey-xxs {
+  border-top: 2px solid palette(grey, base);
+}
+.bl-grey-xxs {
+  border-left: 2px solid palette(grey, base);
+}
+.bb-grey-xxs {
+  border-bottom: 2px solid palette(grey, base);
+}
+.br-grey-xxs {
+  border-right: 2px solid palette(grey, base);
+}
 
 // Red Border
-.b-red{ border: 1px solid $red; }
-.bt-red{ border-top: 1px solid $red; }
-.bl-red{ border-left: 1px solid $red; }
-.bb-red{ border-bottom: 1px solid $red; }
-.br-red{ border-right: 1px solid $red; }
+.b-red {
+  border: 1px solid $red;
+}
+.bt-red {
+  border-top: 1px solid $red;
+}
+.bl-red {
+  border-left: 1px solid $red;
+}
+.bb-red {
+  border-bottom: 1px solid $red;
+}
+.br-red {
+  border-right: 1px solid $red;
+}
 
 //orange borders
-.b-orange { border: 1px solid palette(orange, base); }
-.bt-orange { border-top: 1px solid palette(orange, base); }
-.bl-orange { border-left: 1px solid palette(orange, base); }
-.bb-orange { border-bottom: 1px solid palette(orange, base); }
-.br-orange { border-right: 1px solid palette(orange, base); }
+.b-orange {
+  border: 1px solid palette(orange, base);
+}
+.bt-orange {
+  border-top: 1px solid palette(orange, base);
+}
+.bl-orange {
+  border-left: 1px solid palette(orange, base);
+}
+.bb-orange {
+  border-bottom: 1px solid palette(orange, base);
+}
+.br-orange {
+  border-right: 1px solid palette(orange, base);
+}
 
-.b-xxx-light-orange { border: 1px solid palette(orange, xxx-light) }
-.bt-xxx-light-orange { border-top: 1px solid palette(orange, xxx-light) }
-.bl-xxx-light-orange { border-left: 1px solid palette(orange, xxx-light) }
-.bb-xxx-light-orange { border-bottom: 1px solid palette(orange, xxx-light) }
-.br-xxx-light-orange { border-right: 1px solid palette(orange, xxx-light) }
+.b-xxx-light-orange {
+  border: 1px solid palette(orange, xxx-light);
+}
+.bt-xxx-light-orange {
+  border-top: 1px solid palette(orange, xxx-light);
+}
+.bl-xxx-light-orange {
+  border-left: 1px solid palette(orange, xxx-light);
+}
+.bb-xxx-light-orange {
+  border-bottom: 1px solid palette(orange, xxx-light);
+}
+.br-xxx-light-orange {
+  border-right: 1px solid palette(orange, xxx-light);
+}
 
-.bl-xxx-light-orange-2 { border-left: 2px solid palette(orange, xxx-light) }
+.bl-xxx-light-orange-2 {
+  border-left: 2px solid palette(orange, xxx-light);
+}
 
-.b-xxxx-light-orange { border: 1px solid palette(orange, xxxx-light) }
-.bt-xxxx-light-orange { border-top: 1px solid palette(orange, xxxx-light) }
-.bl-xxxx-light-orange { border-left: 1px solid palette(orange, xxxx-light) }
-.bb-xxxx-light-orange { border-bottom: 1px solid palette(orange, xxxx-light) }
-.br-xxxx-light-orange { border-right: 1px solid palette(orange, xxxx-light) }
+.b-xxxx-light-orange {
+  border: 1px solid palette(orange, xxxx-light);
+}
+.bt-xxxx-light-orange {
+  border-top: 1px solid palette(orange, xxxx-light);
+}
+.bl-xxxx-light-orange {
+  border-left: 1px solid palette(orange, xxxx-light);
+}
+.bb-xxxx-light-orange {
+  border-bottom: 1px solid palette(orange, xxxx-light);
+}
+.br-xxxx-light-orange {
+  border-right: 1px solid palette(orange, xxxx-light);
+}
 
 //CYAN borders
-.b-cyan { border: 1px solid palette(cyan, base); }
-.bt-cyan { border-top: 1px solid palette(cyan, base); }
-.bl-cyan { border-left: 1px solid palette(cyan, base); }
-.bb-cyan { border-bottom: 1px solid palette(cyan, base); }
-.br-cyan { border-right: 1px solid palette(cyan, base); }
+.b-cyan {
+  border: 1px solid palette(cyan, base);
+}
+.bt-cyan {
+  border-top: 1px solid palette(cyan, base);
+}
+.bl-cyan {
+  border-left: 1px solid palette(cyan, base);
+}
+.bb-cyan {
+  border-bottom: 1px solid palette(cyan, base);
+}
+.br-cyan {
+  border-right: 1px solid palette(cyan, base);
+}
 
-.b-cyan-xxs { border: 2px solid palette(cyan, base); }
-.bt-cyan-xxs { border-top: 2px solid palette(cyan, base); }
-.bl-cyan-xxs { border-left: 2px solid palette(cyan, base); }
-.bb-cyan-xxs { border-bottom: 2px solid palette(cyan, base); }
-.br-cyan-xxs { border-right: 2px solid palette(cyan, base); }
+.b-cyan-xxs {
+  border: 2px solid palette(cyan, base);
+}
+.bt-cyan-xxs {
+  border-top: 2px solid palette(cyan, base);
+}
+.bl-cyan-xxs {
+  border-left: 2px solid palette(cyan, base);
+}
+.bb-cyan-xxs {
+  border-bottom: 2px solid palette(cyan, base);
+}
+.br-cyan-xxs {
+  border-right: 2px solid palette(cyan, base);
+}
 
 // DARK BLUE 2PX BORDER
-.b-x-dark-cyan-xxs { border: 2px solid palette(cyan, x-dark); }
-.bt-x-dark-cyan-xxs { border-top: 2px solid palette(cyan, x-dark); }
-.bl-x-dark-cyan-xxs { border-left: 2px solid palette(cyan, x-dark); }
-.bb-x-dark-cyan-xxs { border-bottom: 2px solid palette(cyan, x-dark); }
-.br-x-dark-cyan-xxs { border-right: 2px solid palette(cyan, x-dark); }
+.b-x-dark-cyan-xxs {
+  border: 2px solid palette(cyan, x-dark);
+}
+.bt-x-dark-cyan-xxs {
+  border-top: 2px solid palette(cyan, x-dark);
+}
+.bl-x-dark-cyan-xxs {
+  border-left: 2px solid palette(cyan, x-dark);
+}
+.bb-x-dark-cyan-xxs {
+  border-bottom: 2px solid palette(cyan, x-dark);
+}
+.br-x-dark-cyan-xxs {
+  border-right: 2px solid palette(cyan, x-dark);
+}
 
 //RED borders
-.b-red-xs { border: $unit-xs solid $red; }
-.bt-red-xs { border-top: $unit-xs solid $red; }
-.bl-red-xs { border-left: $unit-xs solid $red; }
-.bb-red-xs { border-bottom: $unit-xs solid $red; }
-.br-red-xs { border-right: $unit-xs solid $red; }
+.b-red-xs {
+  border: $unit-xs solid $red;
+}
+.bt-red-xs {
+  border-top: $unit-xs solid $red;
+}
+.bl-red-xs {
+  border-left: $unit-xs solid $red;
+}
+.bb-red-xs {
+  border-bottom: $unit-xs solid $red;
+}
+.br-red-xs {
+  border-right: $unit-xs solid $red;
+}
 
 //border none
-.b-none { border: none; }
-.bt-none { border-top: none; }
-.bl-none { border-left: none; }
-.bb-none { border-bottom: none; }
-.br-none { border-right: none; }
+.b-none {
+  border: none;
+}
+.bt-none {
+  border-top: none;
+}
+.bl-none {
+  border-left: none;
+}
+.bb-none {
+  border-bottom: none;
+}
+.br-none {
+  border-right: none;
+}
 
 //shadowed style lines
 .b-xxxx-light-grey-shadow {

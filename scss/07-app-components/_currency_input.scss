@@ -5,10 +5,9 @@
 }
 
 .currency-input:before {
-  content: '$';
+  content: "$";
   display: inline-block;
   position: absolute;
   left: 8px;
   top: 22%;
-
 }

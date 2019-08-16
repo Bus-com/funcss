@@ -7,7 +7,7 @@ input.input-file {
   overflow: hidden;
   position: absolute;
   z-index: -1;
-  
+
   + label {
     font-size: 14px;
     color: white;
@@ -18,10 +18,10 @@ input.input-file {
     border-radius: 4px;
     padding: 0 24px;
     cursor: pointer;
-}
+  }
 
   input.input-file + label,
   input.input-file + label:hover {
-      background-color: palette(cyan, base);
+    background-color: palette(cyan, base);
   }
 }

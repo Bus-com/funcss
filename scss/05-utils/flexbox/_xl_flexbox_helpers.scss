@@ -3,7 +3,6 @@
    USE THESE WHEN YOU WANT TO USE A SPEICIFC CLASS A SPECIFIC BREAKPOINT
   ========================================================================== */
 @include laptop {
-
   .xl-flex {
     display: flex;
   }
@@ -14,7 +13,8 @@
       display: block;
     }
     /* IE10 */
-    *::-ms-backdrop, .xl-ie-no-flex {
+    *::-ms-backdrop,
+    .xl-ie-no-flex {
       display: block;
     }
     /* IE11 */
@@ -106,7 +106,7 @@
     flex-shrink: 0;
   }
 
-  .xl-flex-self-start{
+  .xl-flex-self-start {
     align-self: flex-start;
   }
 
@@ -117,5 +117,4 @@
   .xl-flex-self-center {
     align-self: center;
   }
-
 }

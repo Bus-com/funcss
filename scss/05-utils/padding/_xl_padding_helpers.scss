@@ -2,7 +2,6 @@
    RESPONSIVE HELPERS LAPTOP BREAKPOINT PADDING HELPERS
   ========================================================================== */
 @include laptop {
-
   .xl-p0 {
     padding: 0;
   }
@@ -72,7 +71,7 @@
   }
   .xl-py-x {
     padding-top: $unit-x;
-    padding-bottom: $unit-x
+    padding-bottom: $unit-x;
   }
 
   .xl-p-small {
@@ -301,5 +300,4 @@
   .xl-pb-xxxxxxxxl {
     padding-bottom: $unit-xxxxxxxxl;
   }
-
 }

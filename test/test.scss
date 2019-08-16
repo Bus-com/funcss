@@ -1,0 +1,25 @@
+@import '../node_modules/sass-true/sass/true';
+@import "../scss/_all.scss";
+
+// Test palette Colors
+@include test-module('Colors - Palette') {
+  @include test('Orange - Base') {
+    $test: palette(orange, base);
+    $expected: #fda755;
+    @include assert-equal($test, $expected);
+  }
+
+  @include test('Orange - Hover') {
+    $test: palette(orange, hover);
+    $expected: #eda25b;
+    @include assert-equal($test, $expected);
+  }
+
+  @include test('Orange - xxxx-light') {
+    $test: palette(orange, xxxx-light);
+    $expected: #eae6e2;
+    @include assert-equal($test, $expected);
+  }
+}
+
+@include report;

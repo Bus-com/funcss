@@ -2,7 +2,6 @@
   RESPONSIVE HELPERS TABLET LANDSCAPE BREAKPOINT PADDING HELPERS
   ========================================================================== */
 @include tablet-landscape {
-
   .med-p0 {
     padding: 0;
   }
@@ -72,7 +71,7 @@
   }
   .med-py-x {
     padding-top: $unit-x;
-    padding-bottom: $unit-x
+    padding-bottom: $unit-x;
   }
 
   .med-p-small {
@@ -301,5 +300,4 @@
   .med-pb-xxxxxxxxl {
     padding-bottom: $unit-xxxxxxxxl;
   }
-
 }

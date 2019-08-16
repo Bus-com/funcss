@@ -9,7 +9,7 @@
   ul li.is-activated > ul {
     visibility: visible;
     min-width: 180px;
-    @include animation ("shortslidedown .3s ease-in-out");
+    @include animation("shortslidedown .3s ease-in-out");
     display: block;
     top: 48px;
     left: 0;

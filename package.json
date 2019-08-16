@@ -4,15 +4,34 @@
   "description": "func.css",
   "main": "index.html",
   "repository": "git@github.com:Bus-com/funcss.git",
-  "author": "Pablo Boerr && Philippe David",
+  "maintainers": [
+    "Philippe David <philippe@bus.com>",
+    "Pablo Boerr <pablo@bus.com>",
+    "Joanna Marsden <joanna@bus.com>"
+  ],
   "license": "MIT",
   "keywords": [
     "css",
-    "sass"
+    "sass",
+    "scss"
   ],
   "scripts": {
-    "test": "bin/build",
-    "build": "bin/build --debug",
-    "release": "bin/build --deploy"
+    "test": "jest --testRegex test_sass",
+    "coverage": "nyc report --reporter=text-lcov",
+    "fix-styles": "stylelint 'scss/**/*.scss' --fix --syntax scss",
+    "sassdoc": "sassdoc scss/ -d docs/"
+  },
+  "dependencies": {
+    "sass": "^1.22.9"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
+    "postcss": "^7.0.17",
+    "sass-true": "^5.0.0",
+    "sassdoc": "^2.7.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0"
   }
 }

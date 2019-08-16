@@ -2,18 +2,44 @@
    @LRG TYPE HELPERS LINE-HEIGHT LEADING
   ========================================================================== */
 @include small-laptop {
-  .lrg-lh0{ line-height: 0 }
-  .lrg-lh-1{ line-height: 1 }
-  .lrg-lh-1-25 { line-height: 1.25 }
-  .lrg-lh-1-5{ line-height: 1.5 }
+  .lrg-lh0 {
+    line-height: 0;
+  }
+  .lrg-lh-1 {
+    line-height: 1;
+  }
+  .lrg-lh-1-25 {
+    line-height: 1.25;
+  }
+  .lrg-lh-1-5 {
+    line-height: 1.5;
+  }
 
-  .lrg-lh-xs { line-height: $unit-xs }
-  .lrg-lh-x { line-height: $unit-x }
-  .lrg-lh-small { line-height: $unit-small }
-  .lrg-lh-medium { line-height: $unit-medium }
-  .lrg-lh-lrg { line-height: $unit-lrg }
-  .lrg-lh-xl { line-height: $unit-xl }
-  .lrg-lh-xxl { line-height: $unit-xxl }
-  .lrg-lh-xxxl { line-height: $unit-xxxl }
-  .lrg-lh-xxxxl {  line-height: $unit-xxxxl }
+  .lrg-lh-xs {
+    line-height: $unit-xs;
+  }
+  .lrg-lh-x {
+    line-height: $unit-x;
+  }
+  .lrg-lh-small {
+    line-height: $unit-small;
+  }
+  .lrg-lh-medium {
+    line-height: $unit-medium;
+  }
+  .lrg-lh-lrg {
+    line-height: $unit-lrg;
+  }
+  .lrg-lh-xl {
+    line-height: $unit-xl;
+  }
+  .lrg-lh-xxl {
+    line-height: $unit-xxl;
+  }
+  .lrg-lh-xxxl {
+    line-height: $unit-xxxl;
+  }
+  .lrg-lh-xxxxl {
+    line-height: $unit-xxxxl;
+  }
 }

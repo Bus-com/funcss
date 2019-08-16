@@ -1,231 +1,411 @@
-.greyscale { -webkit-filter: grayscale(1); filter: grayscale(1); }
+.greyscale {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+.greyscale-75 {
+  -webkit-filter: grayscale(75%);
+  filter: grayscale(75%);
 
-.greyscale-75 { -webkit-filter: grayscale(75%); filter: grayscale(75%); }
+}
+.greyscale-50 {
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
 
-.greyscale-50 { -webkit-filter: grayscale(50%); filter: grayscale(50%); }
+}
+.greyscale-25 {
+  -webkit-filter: grayscale(25%);
+  filter: grayscale(25%);
+}
+.grey {
+  color: palette(grey, base);
+}
+.light-grey {
+  color: palette(grey, light);
 
-.greyscale-25 { -webkit-filter: grayscale(25%); filter: grayscale(25%); }
+}
+.x-light-grey {
+  color: palette(grey, x-light);
 
-.grey { color: palette(grey, base); }
+}
+.xx-light-grey {
+  color: palette(grey, xx-light);
 
-.light-grey { color: palette(grey, light); }
+}
+.xxx-light-grey {
+  color: palette(grey, xxx-light);
+}
 
-.x-light-grey { color: palette(grey, x-light); }
+.dark-grey {
+  color: palette(grey, dark);
+}
 
-.xx-light-grey { color: palette(grey, xx-light); }
+.yellow {
+  color: palette(yellow, base);
 
-.xxx-light-grey { color: palette(grey, xxx-light); }
+}
+.x-light-yellow {
+  color: palette(yellow, x-light);
+}
+.xx-light-yellow {
+  color: palette(yellow, xx-light);
+}
 
-.dark-grey { color: palette(grey, dark); }
+.orange {
+  color: palette(orange, base);
+}
 
-.yellow { color: palette(yellow, base); }
+.xxx-light-orange {
+  color: palette(orange, xxx-light);
+}
 
-.x-light-yellow { color: palette(yellow, x-light); }
+.cyan {
+  color: palette(cyan, base);
+}
 
-.xx-light-yellow { color: palette(yellow, xx-light); }
+.x-dark-cyan {
+  color: palette(cyan, x-dark);
+}
 
-.orange { color: palette(orange, base); }
+.white {
+  color: $white;
+}
 
-.xxx-light-orange { color: palette(orange, xxx-light); }
+.red {
+  color: $red;
+}
 
-.cyan { color: palette(cyan, base); }
+// SVG HELPERS
 
-.x-dark-cyan { color: palette(cyan, x-dark); }
+.fill-white {
+  fill: $white;
+}
 
-.white { color: $white; }
+.stroke-white {
+  stroke: $white;
+}
 
-.red { color: $red; }
+.fill-grey {
+  fill: palette(grey, base);
+}
 
-// SVG HELPERS ////////////////////////
+.stroke-grey {
+  stroke: palette(grey, base);
+}
 
-.fill-white { fill: $white; }
+.fill-light-grey {
+  fill: palette(grey, xxx-light);
+}
 
-.stroke-white { stroke: $white; }
+.stroke-light-grey {
+  stroke: palette(grey, xxx-light);
+}
 
-.fill-grey { fill: palette(grey, base); }
+.fill-cyan {
+  fill: palette(cyan, base);
+}
 
-.stroke-grey { stroke: palette(grey, base); }
+.stroke-cyan {
+  stroke: palette(cyan, base);
+}
 
-.fill-light-grey { fill: palette(grey, xxx-light); }
+.fill-x-dark-cyan {
+  fill: palette(cyan, x-dark);
+}
 
-.stroke-light-grey { stroke: palette(grey, xxx-light); }
-
-.fill-cyan { fill: palette(cyan, base); }
-
-.stroke-cyan { stroke: palette(cyan, base); }
-
-.fill-x-dark-cyan { fill: palette(cyan, x-dark); }
-
-.stroke-x-dark-cyan { stroke: palette(cyan, x-dark); }
-
-.fill-orange { fill: palette(orange, base); }
-
-.stroke-orange { stroke: palette(orange, base); }
-
-.fill-trans { fill: transparent; }
-
-.stroke-trans { stroke: transparent; }
-
-// BG HELPERS ////////////////////////
-
-.bg-white { background: $white; }
+.stroke-x-dark-cyan {
+  stroke: palette(cyan, x-dark);
+}
 
 .bg-beige { background: #FAF9F8}
 
 // BG YELLOW ////////////////////////
+.fill-orange {
+  fill: palette(orange, base);
+}
 
-.bg-yellow { background: palette(yellow, base); }
+.stroke-orange {
+  stroke: palette(orange, base);
+}
 
-.bg-x-light-yellow { background: palette(yellow, x-light); }
+.fill-trans {
+  fill: transparent;
+}
 
-.bg-xx-light-yellow { background: palette(yellow, xx-light); }
+.stroke-trans {
+  stroke: transparent;
+}
 
-// BG GREY ////////////////////////
+// BG HELPERS
 
-.bg-grey { background: palette(grey, base); }
+.bg-white {
+  background: $white;
+}
 
-.bg-light-grey { background: palette(grey, light); }
+// BG YELLOW
 
-.bg-x-light-grey { background: palette(grey, x-light); }
+.bg-yellow {
+  background: palette(yellow, base);
 
-.bg-xx-light-grey { background: palette(grey, xx-light); }
+}
+.bg-x-light-yellow {
+  background: palette(yellow, x-light);
+}
+.bg-xx-light-yellow {
+  background: palette(yellow, xx-light);
+}
 
-.bg-xxx-light-grey { background: palette(grey, xxx-light); }
+// BG GREY
 
-.bg-xxxx-light-grey { background: palette(grey, xxxx-light); }
+.bg-grey {
+  background: palette(grey, base);
 
-.bg-dark-grey { background-color: palette(grey, x-dark) }
+}
+.bg-light-grey {
+  background: palette(grey, light);
+}
+.bg-x-light-grey {
+  background: palette(grey, x-light);
+}
+.bg-xx-light-grey {
+  background: palette(grey, xx-light);
 
-//BG DARK CYAN ////////////////////////
+}
+.bg-xxx-light-grey {
+  background: palette(grey, xxx-light);
+}
+.bg-xxxx-light-grey {
+  background: palette(grey, xxxx-light);
+}
 
-.bg-x-dark-cyan { background: palette(cyan, x-dark); }
+.bg-dark-grey {
+  background-color: palette(grey, x-dark);
+}
 
-.bg-dark-cyan { background: palette(cyan, dark); }
+//BG DARK CYAN
 
-.bg-cyan { background: palette(cyan, base); }
+.bg-x-dark-cyan {
+  background: palette(cyan, x-dark);
 
-.bg-light-cyan { background: palette(cyan, light); }
+}
+.bg-dark-cyan {
+  background: palette(cyan, dark);
 
-.bg-x-light-cyan { background: palette(cyan, x-light); }
+}
+.bg-cyan {
+  background: palette(cyan, base);
 
-.bg-xx-light-cyan { background: palette(cyan, xx-light); }
+}
+.bg-light-cyan {
+  background: palette(cyan, light);
+}
+.bg-x-light-cyan {
+  background: palette(cyan, x-light);
+}
+.bg-xx-light-cyan {
+  background: palette(cyan, xx-light);
 
-.bg-xxx-light-cyan { background: palette(cyan, xxx-light); }
+}
+.bg-xxx-light-cyan {
+  background: palette(cyan, xxx-light);
 
-.bg-xxxx-light-cyan { background: palette(cyan, xxxx-light); }
+}
+.bg-xxxx-light-cyan {
+  background: palette(cyan, xxxx-light);
+}
+.bg-xxxxx-light-cyan {
+  background: palette(cyan, xxxxx-light);
+}
 
-.bg-xxxxx-light-cyan { background: palette(cyan, xxxxx-light); }
+//BG ORANGE
 
-//BG ORANGE ////////////////////////
+.bg-orange {
+  background: palette(orange, base);
 
-.bg-orange { background: palette(orange, base); }
+}
+.bg-light-orange {
+  background: palette(orange, light);
+}
+.bg-x-light-orange {
+  background: palette(orange, x-light);
+}
+.bg-xx-light-orange {
+  background: palette(orange, xx-light);
 
-.bg-light-orange { background: palette(orange, light); }
-
-.bg-x-light-orange { background: palette(orange, x-light); }
-
-.bg-xx-light-orange { background: palette(orange, xx-light); }
-
-.bg-xxx-light-orange { background: palette(orange, xxx-light); }
-
-.bg-xxxx-light-orange { background: palette(orange, xxxx-light); }
+}
+.bg-xxx-light-orange {
+  background: palette(orange, xxx-light);
+}
+.bg-xxxx-light-orange {
+  background: palette(orange, xxxx-light);
+}
 
 .bg-facebook {
-  background: #4C68A7;
-
+  background: #4c68a7;
   &:hover {
-    background: #3E5F99 !important;
+    background: #3e5f99 !important;
     color: $white;
   }
 }
 
-.bg-trans { background: transparent; }
+.bg-trans {
+  background: transparent;
+}
 
-// RGBA HELPERS ////////////////////////
+// RGBA HELPERS
 
-.bg-white-10 { background: rgba($white, .10); }
+.bg-white-10 {
+  background: rgba($white, 0.1);
+}
 
-.bg-white-20 { background: rgba($white, .20); }
+.bg-white-20 {
+  background: rgba($white, 0.2);
+}
 
-.bg-white-30 { background: rgba($white, .30); }
+.bg-white-30 {
+  background: rgba($white, 0.3);
+}
 
-.bg-white-40 { background: rgba($white, .40); }
+.bg-white-40 {
+  background: rgba($white, 0.4);
+}
 
-.bg-white-50 { background: rgba($white, .50); }
+.bg-white-50 {
+  background: rgba($white, 0.5);
+}
 
-.bg-white-60 { background: rgba($white, .60); }
+.bg-white-60 {
+  background: rgba($white, 0.6);
+}
 
-.bg-white-70 { background: rgba($white, .70); }
+.bg-white-70 {
+  background: rgba($white, 0.7);
+}
 
-.bg-white-80 { background: rgba($white, .80); }
+.bg-white-80 {
+  background: rgba($white, 0.8);
+}
 
-.bg-white-90 { background: rgba($white, .90); }
+.bg-white-90 {
+  background: rgba($white, 0.9);
+}
 
-.bg-grey-10 { background: rgba(palette(grey, base), .10); }
+.bg-grey-10 {
+  background: rgba(palette(grey, base), 0.1);
+}
 
-.bg-grey-20 { background: rgba(palette(grey, base), .20); }
+.bg-grey-20 {
+  background: rgba(palette(grey, base), 0.2);
+}
 
-.bg-grey-30 { background: rgba(palette(grey, base), .30); }
+.bg-grey-30 {
+  background: rgba(palette(grey, base), 0.3);
+}
 
-.bg-grey-40 { background: rgba(palette(grey, base), .40); }
+.bg-grey-40 {
+  background: rgba(palette(grey, base), 0.4);
+}
 
-.bg-grey-50 { background: rgba(palette(grey, base), .50); }
+.bg-grey-50 {
+  background: rgba(palette(grey, base), 0.5);
+}
 
-.bg-grey-60 { background: rgba(palette(grey, base), .60); }
+.bg-grey-60 {
+  background: rgba(palette(grey, base), 0.6);
+}
 
-.bg-grey-70 { background: rgba(palette(grey, base), .70); }
+.bg-grey-70 {
+  background: rgba(palette(grey, base), 0.7);
+}
 
-.bg-grey-80 { background: rgba(palette(grey, base), .80); }
+.bg-grey-80 {
+  background: rgba(palette(grey, base), 0.8);
+}
 
-.bg-grey-90 { background: rgba(palette(grey, base), .90); }
+.bg-grey-90 {
+  background: rgba(palette(grey, base), 0.9);
+}
 
-.bg-dark-grey-10 { background: rgba(palette(grey, x-dark), .10); }
+.bg-dark-grey-10 {
+  background: rgba(palette(grey, x-dark), 0.1);
+}
 
-.bg-dark-grey-20 { background: rgba(palette(grey, x-dark), .20); }
+.bg-dark-grey-20 {
+  background: rgba(palette(grey, x-dark), 0.2);
+}
 
-.bg-dark-grey-30 { background: rgba(palette(grey, x-dark), .30); }
+.bg-dark-grey-30 {
+  background: rgba(palette(grey, x-dark), 0.3);
+}
 
-.bg-dark-grey-40 { background: rgba(palette(grey, x-dark), .40); }
+.bg-dark-grey-40 {
+  background: rgba(palette(grey, x-dark), 0.4);
+}
 
-.bg-dark-grey-50 { background: rgba(palette(grey, x-dark), .50); }
+.bg-dark-grey-50 {
+  background: rgba(palette(grey, x-dark), 0.5);
+}
 
-.bg-dark-grey-60 { background: rgba(palette(grey, x-dark), .60); }
+.bg-dark-grey-60 {
+  background: rgba(palette(grey, x-dark), 0.6);
+}
 
-.bg-dark-grey-70 { background: rgba(palette(grey, x-dark), .70); }
+.bg-dark-grey-70 {
+  background: rgba(palette(grey, x-dark), 0.7);
+}
 
-.bg-dark-grey-80 { background: rgba(palette(grey, x-dark), .80); }
+.bg-dark-grey-80 {
+  background: rgba(palette(grey, x-dark), 0.8);
+}
 
-.bg-dark-grey-90 { background: rgba(palette(grey, x-dark), .90); }
+.bg-dark-grey-90 {
+  background: rgba(palette(grey, x-dark), 0.9);
+}
 
-// SITE GRADIENTS ////////////////////////
+// SITE GRADIENTS
 
 .site-gradient {
-  @include gradient (135deg, palette(orange, xxx-light) 0%, palette(orange, xxxx-light) 49.86%, palette(cyan, xxx-light) 100%);
+  @include gradient(
+    135deg,
+    palette(orange, xxx-light) 0%,
+    palette(orange, xxxx-light) 49.86%,
+    palette(cyan, xxx-light) 100%
+  );
 }
 
 .white-beige-gradient {
-  @include gradient (-180deg, $white 0%, palette(orange, xxx-light) 100%);
+  @include gradient(-180deg, $white 0%, palette(orange, xxx-light) 100%);
 }
 
 .cyan-beige-gradient {
-  @include gradient(184deg, palette(orange, xxx-light) 0%, palette(cyan, x-dark) 100%);
+  @include gradient(
+    184deg,
+    palette(orange, xxx-light) 0%,
+    palette(cyan, x-dark) 100%
+  );
 }
 
 .orange-grey-gradient {
-  @include gradient(184deg, palette(orange, x-light) 0%, palette(grey, xxxx-light) 50%);
+  @include gradient(
+    184deg,
+    palette(orange, x-light) 0%,
+    palette(grey, xxxx-light) 50%
+  );
 }
 
-// HOVER STATES ////////////////////////
+// HOVER STATES
 .white.hover-white:hover {
   color: palette(white, link-hover);
 
-  path, polygon, rect {
+  path,
+  polygon,
+  rect {
     fill: palette(white, link-hover);
   }
 }
 
-button, .c-btn, .c-btn-site {
-
+button,
+.c-btn,
+.c-btn-site {
   &:hover.bg-hover-cyan {
     background: palette(cyan, base);
     color: $white;

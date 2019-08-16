@@ -2,10 +2,10 @@
   width: 70px;
 
   @include tablet-portrait {
-  	width: 90px;
+    width: 90px;
   }
 
-   @include tablet-landscape {
-  	width: 100px;
+  @include tablet-landscape {
+    width: 100px;
   }
 }

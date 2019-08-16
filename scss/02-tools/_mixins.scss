@@ -2,34 +2,34 @@
    MIXINS
   ========================================================================== */
 
-//BEM mixins
+///  BEM mixins
 
-/// Block Element
-/// @access public
-/// @param {String} $element - Element's name
+///  Block Element
+///  @access public
+///  @param {String} $element - Element's name
 @mixin element($element) {
   &__#{$element} {
     @content;
   }
 }
 
-/// Block Modifier
-/// @access public
-/// @param {String} $modifier - Modifier's name
+///  Block Modifier
+///  @access public
+///  @param {String} $modifier - Modifier's name
 @mixin modifier($modifier) {
   &--#{$modifier} {
     @content;
   }
 }
 
-/// @alias element
+///  @alias element
 @mixin e($element) {
   @include element($element) {
     @content;
   }
 }
 
-/// @alias modifier
+///  @alias modifier
 @mixin m($modifier) {
   @include modifier($modifier) {
     @content;
@@ -40,21 +40,21 @@
   display: flex;
 }
 
-//FONT SIZING
+/// FONT SIZING
 
 @mixin fontSize($size) {
-  font-size: $size; //Fallback in px
+  font-size: $size; /// Fallback in px
   font-size: calculateRem($size);
 }
 
-// PSEUDO ELEMENTS ::BEFORE   ::AFTER ///
-@mixin pseudo($display: block, $pos: absolute, $content: '') {
+///  PSEUDO ELEMENTS ::BEFORE   ::AFTER
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
   content: $content;
   display: $display;
   position: $pos;
 }
 
-/// KEYFRAME ANIMATION
+///  KEYFRAME ANIMATION
 
 @mixin keyframes($animation-name) {
   @keyframes #{$animation-name} {
@@ -66,9 +66,9 @@
   animation: #{$str};
 }
 
-/// MEDIA QUERIES ////////////////////////////////
+///  MEDIA QUERIES
 
-//pretab
+///  pre tab
 
 @mixin phone-portrait {
   @media only screen and (min-width: 300px) {
@@ -82,35 +82,35 @@
   }
 }
 
-//tab
+/// tab
 @mixin tablet-portrait {
   @media only screen and (min-width: 768px) {
     @content;
   }
 }
 
-//med
+/// med
 @mixin tablet-landscape {
   @media only screen and (min-width: 980px) {
     @content;
   }
 }
 
-//lrg
+/// lrg
 @mixin small-laptop {
   @media only screen and (min-width: 1180px) {
     @content;
   }
 }
 
-//xl
+/// xl
 @mixin laptop {
   @media only screen and (min-width: 1400px) {
     @content;
   }
 }
 
-//xxl
+/// xxl
 @mixin desktop {
   @media only screen and (min-width: 1440px) {
     @content;
@@ -135,7 +135,6 @@
   @include tablet-landscape {
     margin-bottom: 24px;
   }
-
 }
 
 @mixin list-margin-bottom($list-margin-bottom: 8px) {
@@ -146,21 +145,21 @@
   }
 }
 
-/// RETINA IMAGES ///////////////////////////
+///  RETINA IMAGES
 
 @mixin image-2x($image, $width, $height) {
   @media (-webkit-min-device-pixel-ratio: 2),
-  (min--moz-device-pixel-ratio: 2),
-  (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min--moz-device-pixel-ratio: 2),
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     /* on retina, use image that's scaled by 2 */
     background-image: url($image);
     background-size: $width $height;
   }
 }
 
-/// UTILS ///////////////////////////////////////////////
+///  UTILS
 
 @mixin gradient($gradient...) {
   background: -moz-linear-gradient($gradient);
@@ -170,7 +169,7 @@
   background: linear-gradient($gradient);
 }
 
-///Breakpoint function
+///  Breakpoint function
 @mixin screen($breakpoint) {
   @media (min-width: map-get($breakpoints, $breakpoint)) {
     @content;
@@ -188,4 +187,3 @@
     @content;
   }
 }
-

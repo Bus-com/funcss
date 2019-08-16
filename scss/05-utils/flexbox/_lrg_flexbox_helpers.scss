@@ -14,7 +14,8 @@
       display: block;
     }
     /* IE10 */
-    *::-ms-backdrop, .lrg-ie-no-flex {
+    *::-ms-backdrop,
+    .lrg-ie-no-flex {
       display: block;
     }
     /* IE11 */
@@ -106,7 +107,7 @@
     flex-shrink: 0;
   }
 
-  .lrg-flex-self-start{
+  .lrg-flex-self-start {
     align-self: flex-start;
   }
 
