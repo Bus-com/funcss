@@ -1,4 +1,4 @@
-version: 2.1
+version: 2
 jobs:
   test:
     docker:
@@ -10,37 +10,39 @@ jobs:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
             - v1-dependencies-
-      - run: yarn install
+      - run:
+          command: yarn install
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: yarn test
-
+      - run:
+          command: yarn test
   auto_deploy:
     docker:
       - image: circleci/node:10
     working_directory: ~/repo
     steps:
+      - checkout
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
       - run:
           name: Auto Deploy
-          command: bin/release
-
+          command: ./bin/release
 workflows:
   version: 2
   commit:
-    - test
+    jobs:
+      - test
   autodeploy:
     jobs:
       - test
-      - auto_deploy
-    triggers:
-      - schedule:
-          cron: "0 14 * * 1-5"  # UTC -4 is 10AM (daylight savings)
+      - auto_deploy:
           filters:
+            tags:
+              only: /.*/
             branches:
-              only: master
-
+              ignore: /.*/
+          requires:
+            - test

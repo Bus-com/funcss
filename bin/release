@@ -1,59 +1,13 @@
 #!/bin/sh
-# this script assumes you are on macOS
-# -e          : Stop on error
-# -o pipefail : sets the exit code of a pipeline to that of the rightmost command to exit with a non-zero status
 
-set -eo pipefail
-
-# replace with the new name in the index file.
-function replace_style_import() {
-    sed -i .bak "s/.*<link rel='stylesheet' href='.*'>.*/<link rel='stylesheet' href='$OUTPUT_PATH\/$OUTPUT_NAME.$OUTPUT_FORMAT'>/g" index.html
-    #not sure why; does not work without .bak syntax
-    rm index.html.bak
-}
-
-OUTPUT_PATH="dist"
-
-printf "\033[95;5m              Feeling  \033[4mSassy\033[0m?   \033[0m\n"
-printf "\033[106;30m            lib is being compiled           \033[0m\n"
-printf "\033[106;30m                copy images                 \033[0m\n"
-
-cp -R images/ dist/images
-
+set -e pipefail
 sass scss/_all.scss:dist/funcss.css --style css
 
-printf "\033[106;30m        minifying ($OUTPUT_PATH/funcss.min.css)     \033[0m\n"
-printf "\033[106;43m         ~ this can take a while ~          \033[0m\n"
+curl -X POST -s --data-urlencode "input@./dist/funcss.css" https://cssminifier.com/raw > ./dist/funcss.min.css
 
-OUTPUT_NAME="funcss.min.css"
-
-curl -X POST -s --data-urlencode "input@$OUTPUT_PATH/funcss.$OUTPUT_FORMAT" https://cssminifier.com/raw > $OUTPUT_PATH/$OUTPUT_NAME
-
-replace_style_import
-~
-# update the version number with the right type.
 npm version patch
-printf "\033[106;30m        npm version patch done.   \033[0m\n"
 npm publish
 
-# add folders, clean git
-git add dist/
-git add package.json
-
-# commit
-NEW_NPM_VERSION = $(npm view bus-funcss version)
-git commit -m "release version $NEW_NPM_VERSION"
-git tag "$NEW_NPM_VERSION"
-
-# share tags
-git push origin --tags
-
-printf "\n"
-printf "\033[106;30m                                            \033[0m\n"
-printf "\033[106;30m ▄▄▄▄· ▄• ▄▌.▄▄ ·     ▄▄·       • ▌ ▄ ·.    \033[0m\n"
-printf "\033[106;30m ▐█ ▀█ █ ██▌▐█ ▀.    ▐█ ▌       ·██ ▐███▪   \033[0m\n"
-printf "\033[106;30m ▐█▀▀█▄█▌▐█▌▄▀▀▀█▄   ██ ▄▄ ▄█▀▄ ▐█ ▌▐▌▐█·   \033[0m\n"
-printf "\033[106;30m ██▄▪▐█▐█▄█▌▐█▄▪▐█   ▐███▌▐█▌.▐▌██ ██▌▐█▌   \033[0m\n"
-printf "\033[106;30m ·▀▀▀▀  ▀▀▀  ▀▀▀▀  ▀ ·▀▀▀  ▀█▄▀▪▀▀  █▪▀▀▀   \033[0m\n"
-printf "\033[106;30m                                            \033[0m\n"
-printf "\033[106;30m      $OUTPUT_NAME has been compiled        \033[0m\n"
+# git commit -m "release version $NEW_NPM_VERSION"
+# git tag "$NEW_NPM_VERSION"
+# git push --tags
