@@ -155,7 +155,7 @@
     height: 30px;
   }
   .lrg-h-fixed-40 {
-    height: 40px;
+    height: $unit-xl;
   }
   .lrg-h-fixed-50 {
     height: 50px;
@@ -167,7 +167,7 @@
     height: 70px;
   }
   .lrg-h-fixed-80 {
-    height: 80px;
+    height: $unit-xxxxxxl;
   }
   .lrg-h-fixed-90 {
     height: 90px;
@@ -273,7 +273,7 @@
     max-height: 70px;
   }
   .lrg-max-h-fixed-80 {
-    max-height: 80px;
+    max-height: $unit-xxxxxxl;
   }
   .lrg-max-h-fixed-90 {
     max-height: 90px;

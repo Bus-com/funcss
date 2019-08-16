@@ -133,7 +133,7 @@
   margin-bottom: $margin-bottom;
 
   @include tablet-landscape {
-    margin-bottom: 24px;
+    margin-bottom: $unit-medium;
   }
 }
 
@@ -141,7 +141,7 @@
   margin-bottom: $list-margin-bottom;
 
   @include tablet-portrait {
-    margin-bottom: 24px;
+    margin-bottom: $unit-medium;
   }
 }
 

@@ -2,12 +2,12 @@
    VARIABLES
   ========================================================================== */
 
-// TYPOGRAPHY
-$base-font-family: "Avenir Next", Monterserrat, "Helvetica Neue", Helvetica,
+///  TYPOGRAPHY
+$base-font-family: "Avenir Next", Montserrat, "Helvetica Neue", Helvetica,
 Roboto, Arial, sans-serif;
 $serif-stack: Cambria, georgia, serif;
 
-// BASE TYPE SIZE
+///  BASE TYPE SIZE
 
 $base-font-size: 16px !default;
 $base-line-height: 1.8em !default;
@@ -17,12 +17,11 @@ $margin-bottom-regular: 32px;
 $heading-font-family: $base-font-family;
 $heading-font-weight: 600;
 
-// CONTAINER'S MAX  WIDTH
-
+///  CONTAINER'S MAX  WIDTH
 $max-width: 1280px !default;
 
-// UNITS OF MEASURE
-// will refactor these to only use units instead... more flexible
+///  UNITS OF MEASURE
+///  will refactor these to only use units instead... more flexible
 $space-0: 0px;
 $space-xs: 4px;
 $space-x: 8px;
@@ -51,7 +50,7 @@ $unit-xxxxxxl: 80px;
 $unit-xxxxxxxl: 88px;
 $unit-xxxxxxxxl: 96px;
 
-// Break Points
+///  Break Points
 $breakpoints: (
         phone: 576px,
         tablet: 768px,
@@ -60,16 +59,11 @@ $breakpoints: (
         xl-desktop: 1435px
 );
 
-// Header Nav Variables
+///  Header Nav Variables
 
 $max-width: 1200px !default;
 
-// OLD SHIT
-/*
-  Topbar
- */
-
-// $topbar-height: rem-calc(52);
+///  $topbar-height: rem-calc(52);
 $topbar-side-padding: 2em;
 $topbar-small-side-padding: 1em;
 
@@ -94,6 +88,6 @@ $medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max
 $large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
 $large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})";
 
-$base-font-family: "Avenir Next", Monterserrat, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$base-font-family: "Avenir Next", Montserrat, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 
 $site-wrapper-max-width: 1440px;

@@ -1,8 +1,8 @@
 .custom-select {
   cursor: pointer;
   display: inline-block;
-  height: 48px;
-  line-height: 48px;
+  height: $unit-xxl;
+  line-height: $unit-xxl;
 
   /*
     We're only using transclusion so the templateless directives are added the DOM.
@@ -26,7 +26,7 @@
       vertical-align: middle;
       overflow: hidden;
       width: 100%;
-      padding-left: 16px;
+      padding-left: $unit-small;
     }
 
     .select-spinner {
@@ -48,7 +48,7 @@
     border: 1px solid palette(grey, xx-light);
 
     .select-search {
-      padding: 8px;
+      padding: $unit-x;
 
       input[type="search"] {
         height: 36px;
@@ -64,7 +64,7 @@
       .select-option {
         display: block;
         border-bottom: 1px solid palette(grey, xx-light);
-        padding: 4px 16px;
+        padding: 4px $unit-small;
         min-height: 34px;
 
         &.no-available-options {

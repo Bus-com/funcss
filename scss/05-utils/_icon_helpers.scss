@@ -11,21 +11,21 @@
 }
 
 .icon-small {
-  width: 16px;
+  width: $unit-small;
 }
 
 .icon-medium {
-  width: 24px;
+  width: $unit-medium;
 }
 
 //FIXED WIDTH ICONS
 
 .icon-fixed-64 {
-  width: 64px;
+  width: $unit-xxxxl;
 }
 
 .icon-fixed-72 {
-  width: 72px;
+  width: $unit-xxxxxl;
 }
 
 .icon-fixed-100 {
@@ -54,19 +54,19 @@
   }
 
   .tab-icon-small {
-    width: 16px;
+    width: $unit-small;
   }
 
   .tab-icon-medium {
-    width: 24px;
+    width: $unit-medium;
   }
 
   .tab-icon-fixed-64 {
-    width: 64px;
+    width: $unit-xxxxl;
   }
 
   .tab-icon-fixed-72 {
-    width: 72px;
+    width: $unit-xxxxxl;
   }
 
   .tab-icon-fixed-100 {
@@ -95,11 +95,11 @@
 
 @include tablet-landscape {
   .med-icon-fixed-64 {
-    width: 64px;
+    width: $unit-xxxxl;
   }
 
   .med-icon-fixed-72 {
-    width: 72px;
+    width: $unit-xxxxxl;
   }
 
   .med-icon-fixed-100 {

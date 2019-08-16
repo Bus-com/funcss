@@ -85,11 +85,11 @@
   position: relative;
   display: block;
   pointer-events: none;
-  width: 80px;
-  height: 80px;
+  width: $unit-xxxxxxl;
+  height: $unit-xxxxxxl;
   margin: 0 auto;
 
-  border-width: 8px;
+  border-width: $unit-x;
   border-style: solid;
 
   border-top-color: rgba(0, 204, 187, 0.1);
@@ -130,8 +130,8 @@
   padding: 10px;
 
   .loading-spinner {
-    width: 48px;
-    height: 48px;
+    width: $unit-xxl;
+    height: $unit-xxl;
     border-width: 6px;
     position: absolute;
     top: calc(50% - 48px); //the height fo the spinning icon

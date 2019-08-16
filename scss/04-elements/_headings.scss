@@ -1,7 +1,3 @@
-/* ==========================================================================
-   HEADINGS
-  ========================================================================== */
-
 header {
   position: relative;
 }
@@ -20,7 +16,7 @@ h6 {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: $unit-medium;
 
   @include tablet-portrait {
     font-size: 28px;
@@ -35,7 +31,7 @@ h2 {
   font-size: 22px;
 
   @include tablet-portrait {
-    font-size: 24px;
+    font-size: $unit-medium;
   }
 
   @include small-laptop {
@@ -52,7 +48,7 @@ h3 {
 }
 
 h4 {
-  font-size: 16px;
+  font-size: $base-font-size;
 }
 
 h5,

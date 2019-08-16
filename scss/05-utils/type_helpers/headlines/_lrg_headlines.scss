@@ -4,21 +4,21 @@
 
 @include small-laptop {
   .lrg-hl-1 {
-    font-size: 72px;
+    font-size: $unit-xxxxxl;
   }
   .lrg-hl-2 {
-    font-size: 64px;
+    font-size: $unit-xxxxl;
   }
   .lrg-hl-3 {
-    font-size: 56px;
+    font-size: $unit-xxxl;
   }
   .lrg-hl-4 {
-    font-size: 48px;
+    font-size: $unit-xxl;
   }
   .lrg-hl-5 {
-    font-size: 40px;
+    font-size: $unit-xl;
   }
   .lrg-hl-6 {
-    font-size: 32px;
+    font-size: $unit-lrg;
   }
 }

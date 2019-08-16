@@ -11,11 +11,13 @@
 @media all and (-ms-high-contrast: none) {
   .ie-no-flex {
     display: block;
-  } /* IE10 */
+  }
+  /// IE10
   *::-ms-backdrop,
   .ie-no-flex {
     display: block;
-  } /* IE11 */
+  }
+  /// IE11
 }
 
 .flex-column {

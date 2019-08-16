@@ -4,21 +4,21 @@
 
 @include desktop {
   .xxl-hl-1 {
-    font-size: 72px;
+    font-size: $unit-xxxxxl;
   }
   .xxl-hl-2 {
-    font-size: 64px;
+    font-size: $unit-xxxxl;
   }
   .xxl-hl-3 {
-    font-size: 56px;
+    font-size: $unit-xxxl;
   }
   .xxl-hl-4 {
-    font-size: 48px;
+    font-size: $unit-xxl;
   }
   .xxl-hl-5 {
-    font-size: 40px;
+    font-size: $unit-xl;
   }
   .xxl-hl-6 {
-    font-size: 32px;
+    font-size: $unit-lrg;
   }
 }

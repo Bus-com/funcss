@@ -21,3 +21,26 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: yarn test
+  auto_deploy:
+    docker:
+      - image: circleci/node:10
+    - run:
+        name: Auto Deploy
+        command: bin/release
+workflows:
+  version: 2
+
+
+  autodeploy:
+    jobs:
+      # REACT FRONTEND
+      - build
+      - auto_deploy: *default_auto_deploy
+
+    triggers:
+      - schedule:
+          cron: "0 14 * * 1-5"  # UTC -4 is 10AM (daylight savings)
+          filters:
+            branches:
+              only: master
+

@@ -1,10 +1,10 @@
 .c-btn-small {
   appearance: none;
-  height: 32px;
-  line-height: 32px;
+  height: $unit-lrg;
+  line-height: $unit-lrg;
   font-size: 14px;
-  border-radius: 4px;
-  padding: 0 16px;
+  border-radius: $unit-xs;
+  padding: 0 $unit-small;
   text-align: center;
   font-weight: 500;
   box-shadow: none;

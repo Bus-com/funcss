@@ -154,7 +154,7 @@
     height: 30px;
   }
   .med-h-fixed-40 {
-    height: 40px;
+    height: $unit-xl;
   }
   .med-h-fixed-50 {
     height: 50px;
@@ -166,7 +166,7 @@
     height: 70px;
   }
   .med-h-fixed-80 {
-    height: 80px;
+    height: $unit-xxxxxxl;
   }
   .med-h-fixed-90 {
     height: 90px;
@@ -276,7 +276,7 @@
     max-height: 70px;
   }
   .med-max-h-fixed-80 {
-    max-height: 80px;
+    max-height: $unit-xxxxxxl;
   }
   .med-max-h-fixed-90 {
     max-height: 90px;

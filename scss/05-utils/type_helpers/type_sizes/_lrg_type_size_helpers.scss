@@ -4,7 +4,7 @@
 
 @include small-laptop {
   .lrg-fs-1 {
-    font-size: 24px;
+    font-size: $unit-medium;
   }
   .lrg-fs-2 {
     font-size: 22px;
@@ -13,7 +13,7 @@
     font-size: 18px;
   }
   .lrg-fs-4 {
-    font-size: 16px;
+    font-size: $unit-small;
   }
   .lrg-fs-5 {
     font-size: 14px;
