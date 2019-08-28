@@ -70,6 +70,8 @@
 
 .bg-white { background: $white; }
 
+.bg-beige { background: #FAF9F8}
+
 // BG YELLOW ////////////////////////
 
 .bg-yellow { background: palette(yellow, base); }
@@ -229,6 +231,11 @@ button, .c-btn, .c-btn-site {
     color: white;
   }
 
+  &:hover.bg-hover-dark-cyan {
+    background: palette(cyan, dark);
+    color: white;
+  }
+
   &:hover.bg-hover-x-dark-cyan {
     background: palette(cyan, x-dark);
     color: white;
@@ -269,7 +276,9 @@ button, .c-btn, .c-btn-site {
 }
 
 .hover-cyan {
-  &:hover { color: palette(cyan, base); }
+  &:hover { color: palette(cyan, base);
+    fill: palette(cyan, base);
+  }
 }
 
 .hover-dark-cyan {
