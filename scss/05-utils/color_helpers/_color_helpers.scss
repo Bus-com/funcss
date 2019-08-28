@@ -228,32 +228,32 @@ button, .c-btn, .c-btn-site {
 
   &:hover.bg-hover-cyan {
     background: palette(cyan, base);
-    color: white;
+    color: $white;
   }
 
   &:hover.bg-hover-dark-cyan {
     background: palette(cyan, dark);
-    color: white;
+    color: $white;
   }
 
   &:hover.bg-hover-x-dark-cyan {
     background: palette(cyan, x-dark);
-    color: white;
+    color: $white;
   }
 
   &:hover.bg-hover-orange {
     background: palette(orange, base);
-    color: white;
+    color: $white;
   }
 
   &:hover.bg-hover-x-dark-orange {
     background: palette(orange, x-dark);
-    color: white;
+    color: $white;
   }
 
   &:hover.bg-hover-grey {
     background: palette(grey, base);
-    color: white;
+    color: $white;
   }
 
   &:hover.bg-hover-b-orange {
@@ -276,7 +276,8 @@ button, .c-btn, .c-btn-site {
 }
 
 .hover-cyan {
-  &:hover { color: palette(cyan, base);
+  &:hover {
+    color: palette(cyan, base);
     fill: palette(cyan, base);
   }
 }
