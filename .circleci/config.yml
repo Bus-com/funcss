@@ -32,17 +32,17 @@ jobs:
           command: ./bin/release
 workflows:
   version: 2
-  commit:
+  build-n-deploy:
     jobs:
-      - test
-  autodeploy:
-    jobs:
-      - test
-      - auto_deploy:
-          filters:
+      - test:
+          filters:  # required since `deploy` has tag filters AND requires `build`
             tags:
               only: /.*/
-            branches:
-              ignore: /.*/
+      - auto_deploy:
           requires:
             - test
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
