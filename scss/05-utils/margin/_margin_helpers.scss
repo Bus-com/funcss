@@ -1,8 +1,3 @@
-/* ==========================================================================
-   MARGIN HELPERS
-  ========================================================================== */
-
-// TODO PABLO: Please fix me, I'm really ugly.
 .m-auto {
   margin-left: auto !important;
   margin-right: auto !important;
@@ -21,9 +16,13 @@
   margin-left: auto;
 }
 
-.mt-auto { margin-top: auto }
+.mt-auto {
+  margin-top: auto;
+}
 
-.mb-auto { margin-bottom: auto }
+.mb-auto {
+  margin-bottom: auto;
+}
 
 .m0 {
   margin: 0;

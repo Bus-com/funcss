@@ -7,21 +7,21 @@ input.input-file {
   overflow: hidden;
   position: absolute;
   z-index: -1;
-  
+
   + label {
     font-size: 14px;
     color: white;
     background-color: palette(orange, base);
     display: inline-block;
-    height: 48px;
-    line-height: 48px;
-    border-radius: 4px;
-    padding: 0 24px;
+    height: $unit-xxl;
+    line-height: $unit-xxl;
+    border-radius: $unit-xs;
+    padding: 0 $unit-medium;
     cursor: pointer;
-}
+  }
 
   input.input-file + label,
   input.input-file + label:hover {
-      background-color: palette(cyan, base);
+    background-color: palette(cyan, base);
   }
 }

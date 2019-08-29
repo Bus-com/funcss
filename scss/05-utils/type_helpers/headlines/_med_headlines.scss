@@ -4,21 +4,21 @@
 
 @include tablet-landscape {
   .med-hl-1 {
-    font-size: 72px;
+    font-size: $unit-xxxxxl;
   }
   .med-hl-2 {
-    font-size: 64px;
+    font-size: $unit-xxxxl;
   }
   .med-hl-3 {
-    font-size: 56px;
+    font-size: $unit-xxxl;
   }
   .med-hl-4 {
-    font-size: 48px;
+    font-size: $unit-xxl;
   }
   .med-hl-5 {
-    font-size: 40px;
+    font-size: $unit-xl;
   }
   .med-hl-6 {
-    font-size: 32px;
+    font-size: $unit-lrg;
   }
 }

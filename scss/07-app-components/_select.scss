@@ -1,33 +1,35 @@
 .c-select-wrapper {
-  height: 48px;
+  height: $unit-xxl;
   background: #fff;
 
-  input, select, .select-match {
+  input,
+  select,
+  .select-match {
     appearance: none;
-    height: 48px;
-    line-height: 48px;
+    height: $unit-xxl;
+    line-height: $unit-xxl;
     border-radius: 2px;
     -webkit-appearance: none;
     padding-left: $unit-x;
     background: transparent;
-    background-image: url('images/dropdown.svg');
+    background-image: url("images/dropdown.svg");
     background-position: 100% 50%;
     background-repeat: no-repeat;
-    background-size: 48px;
+    background-size: $unit-xxl;
     width: 100%;
-    border: 1px solid palette( grey, xxx-light);
+    border: 1px solid palette(grey, xxx-light);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding-right: 56px;
+    padding-right: $unit-xxxl;
     font-size: 14px;
 
     &:hover {
       background: transparent;
-      background-image: url('images/dropdown.svg');
+      background-image: url("images/dropdown.svg");
       background-position: 100% 50%;
       background-repeat: no-repeat;
-      background-size: 48px;
+      background-size: $unit-xxl;
       border-color: palette(grey, x-light);
     }
 
@@ -38,21 +40,20 @@
   &:after {
     @include pseudo;
     width: 1px;
-    height: 48px;
+    height: $unit-xxl;
     right: 47px;
     top: 0;
     bottom: 0;
     background: palette(grey, xxx-light);
   }
-
 }
 
 .c-select-small {
-  height: 32px;
+  height: $unit-lrg;
 
   select {
-    height: 32px;
-    line-height: 32px;
-    background-size: 32px;
+    height: $unit-lrg;
+    line-height: $unit-lrg;
+    background-size: $unit-lrg;
   }
 }

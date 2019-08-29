@@ -2,170 +2,587 @@
    POSITION HELPERS
   ========================================================================== */
 
-//RELATIVE//////////////
-.pos-rel { position: relative; }
+// RELATIVE
+.pos-rel {
+  position: relative;
+}
 
-//ABSOLUTE//////////////
-.pos-abs { position: absolute; }
+// ABSOLUTE
+.pos-abs {
+  position: absolute;
+}
 
-//FIXED///////////////
-.pos-fixed { position: fixed; }
+// FIXED
+.pos-fixed {
+  position: fixed;
+}
 
-//THE WHERE YOU WANT THESE TO BE MOVED OR PLACED...
+// THE WHERE YOU WANT THESE TO BE MOVED OR PLACED...
 
-.top-0 { top: 0; }
-.top-xs { top: 4px; }
-.top-x { top: 8px; }
-.top-small { top: 16px; }
-.top-medium { top: 24px; }
-.top-lrg { top: 32px; }
-.top-xl { top: 40px; }
-.top-xxl { top: 48px; }
-.top-xxxl { top: 56px; }
-.top-xxxxl { top: 64px; }
-.top-xxxxxl { top: 72px; }
-.top-xxxxxxl { top: 80px; }
-.top-xxxxxxxl { top: 88px; }
+.top-0 {
+  top: 0;
+}
 
-.bottom-0 { bottom: 0; }
-.bottom-xs { bottom: 4px; }
-.bottom-x { bottom: 8px; }
-.bottom-small { bottom: 16px; }
-.bottom-medium { bottom: 24px; }
-.bottom-lrg { bottom: 32px; }
-.bottom-xl { bottom: 40px; }
-.bottom-xxl { bottom: 48px; }
-.bottom-xxxl { bottom: 56px; }
-.bottom-xxxxl { bottom: 64px; }
-.bottom-xxxxxl { bottom: 72px; }
-.bottom-xxxxxxl { bottom: 80px; }
-.bottom-xxxxxxxl { bottom: 88px; }
+.top-xs {
+  top: $unit-xs;
+}
 
-.left-0 { left: 0; }
-.left-xs { left: 4px; }
-.left-x { left: 8px; }
-.left-small { left: 16px; }
-.left-medium { left: 24px; }
-.left-lrg { left: 32px; }
-.left-xl { left: 40px; }
-.left-xxl { left: 48px; }
-.left-xxxl { left: 56px; }
-.left-xxxxl { left: 64px; }
-.left-xxxxxl { left: 72px; }
-.left-xxxxxxl { left: 80px; }
-.left-xxxxxxxl { left: 88px; }
+.top-x {
+  top: $unit-x;
+}
 
-.right-0 { right: 0; }
-.right-xs { right: 4px; }
-.right-x { right: 8px; }
-.right-small { right: 16px; }
-.right-medium { right: 24px; }
-.right-lrg { right: 32px; }
-.right-xl { right: 40px; }
-.right-xxl { right: 48px; }
-.right-xxxl { right: 56px; }
-.right-xxxxl { right: 64px; }
-.right-xxxxxl { right: 72px; }
-.right-xxxxxxl { right: 80px; }
-.right-xxxxxxxl { right: 88px; }
+.top-small {
+  top: $unit-small;
+}
 
-//PERCENTAGE BASED/////////////////////////////////////////
+.top-medium {
+  top: $unit-medium;
+}
 
-.left-10 { left: 10%; }
-.left-20 { left: 20%; }
-.left-30 { left: 30%; }
-.left-40 { left: 40%; }
-.left-50 { left: 50%; }
-.left-60 { left: 60%; }
-.left-70 { left: 70%; }
-.left-80 { left: 80%; }
-.left-90 { left: 90%; }
-.left-100 { left: 100%; }
+.top-lrg {
+  top: $unit-lrg;
+}
 
-.right-10 { right: 10%; }
-.right-20 { right: 20%; }
-.right-30 { right: 30%; }
-.right-40 { right: 40%; }
-.right-50 { right: 50%; }
-.right-60 { right: 60%; }
-.right-70 { right: 70%; }
-.right-80 { right: 80%; }
-.right-90 { right: 90%; }
-.right-100 { right: 100%; }
+.top-xl {
+  top: $unit-xl;
+}
 
-.top-10 { top: 10%; }
-.top-20 { top: 20%; }
-.top-30 { top: 30%; }
-.top-40 { top: 40%; }
-.top-50 { top: 50%; }
-.top-60 { top: 60%; }
-.top-70 { top: 70%; }
-.top-80 { top: 80%; }
-.top-90 { top: 90%; }
-.top-100 { top: 100%; }
-.top-110 { top: 110%; }
+.top-xxl {
+  top: $unit-xxl;
+}
 
-.bottom-10  { bottom: 10%; }
-.bottom-20  { bottom: 20%; }
-.bottom-30  { bottom: 30%; }
-.bottom-40  { bottom: 40%; }
-.bottom-50  { bottom: 50%; }
-.bottom-60  { bottom: 60%; }
-.bottom-70  { bottom: 70%; }
-.bottom-80  { bottom: 80%; }
-.bottom-90  { bottom: 90%; }
-.bottom-100 { bottom: 100%; }
+.top-xxxl {
+  top: $unit-xxxl;
+}
 
-//NEGATIVE POSITIONING/////////////////////////////////////
+.top-xxxxl {
+  top: $unit-xxxxl;
+}
 
-.neg-top-xs { top: -4px; }
-.neg-top-x { top: -8px; }
-.neg-top-small { top: -16px; }
-.neg-top-medium { top: -24px; }
-.neg-top-lrg { top: -32px; }
-.neg-top-xl { top: -40px; }
-.neg-top-xxl { top: -48px; }
-.neg-top-xxxl { top: -56px; }
-.neg-top-xxxxl { top: -64px; }
-.neg-top-xxxxxl { top: -72px; }
-.neg-top-xxxxxxl { top: -80px; }
-.neg-top-xxxxxxxl { top: -88px; }
+.top-xxxxxl {
+  top: $unit-xxxxxl;
+}
 
-.neg-bottom-xs { bottom: -4px; }
-.neg-bottom-x { bottom: -8px; }
-.neg-bottom-small { bottom: -16px; }
-.neg-bottom-medium { bottom: -24px; }
-.neg-bottom-lrg { bottom: -32px; }
-.neg-bottom-xl { bottom: -40px; }
-.neg-bottom-xxl { bottom: -48px; }
-.neg-bottom-xxxl { bottom: -56px; }
-.neg-bottom-xxxxl { bottom: -64px; }
-.neg-bottom-xxxxxl { bottom: -72px; }
-.neg-bottom-xxxxxxl { bottom: -80px; }
-.neg-bottom-xxxxxxxl { bottom: -88px; }
+.top-xxxxxxl {
+  top: $unit-xxxxxxl;
+}
 
-.neg-left-xs { left: -4px; }
-.neg-left-x { left: -8px; }
-.neg-left-small { left: -16px; }
-.neg-left-medium { left: -24px; }
-.neg-left-lrg { left: -32px; }
-.neg-left-xl { left: -40px; }
-.neg-left-xxl { left: -48px; }
-.neg-left-xxxl { left: -56px; }
-.neg-left-xxxl { left: -64px; }
-.neg-left-xxxxxl { left: -72px; }
-.neg-left-xxxxxxl { left: -80px; }
-.neg-left-xxxxxxxl { left: -88px; }
+.top-xxxxxxxl {
+  top: $unit-xxxxxxxl;
+}
 
-.neg-right-xs { right: -4px; }
-.neg-right-x { right: -8px; }
-.neg-right-small { right: -16px; }
-.neg-right-medium { right: -24px; }
-.neg-right-lrg { right: -32px; }
-.neg-right-xl { right: -40px; }
-.neg-right-xxl { right: -48px; }
-.neg-right-xxxl { right: -56px; }
-.neg-right-xxxxl { right: -64px; }
-.neg-right-xxxxxl { right: -72px; }
-.neg-right-xxxxxxl { right: -80px; }
-.neg-right-xxxxxxxxl { right: -88px; }
+.bottom-0 {
+  bottom: 0;
+}
+
+.bottom-xs {
+  bottom: $unit-xs;
+}
+
+.bottom-x {
+  bottom: $unit-x;
+}
+
+.bottom-small {
+  bottom: $unit-small;
+}
+
+.bottom-medium {
+  bottom: $unit-medium;
+}
+
+.bottom-lrg {
+  bottom: $unit-lrg;
+}
+
+.bottom-xl {
+  bottom: $unit-xl;
+}
+
+.bottom-xxl {
+  bottom: $unit-xxl;
+}
+
+.bottom-xxxl {
+  bottom: $unit-xxxl;
+}
+
+.bottom-xxxxl {
+  bottom: $unit-xxxxl;
+}
+
+.bottom-xxxxxl {
+  bottom: $unit-xxxxxl;
+}
+
+.bottom-xxxxxxl {
+  bottom: $unit-xxxxxxl;
+}
+
+.bottom-xxxxxxxl {
+  bottom: $unit-xxxxxxxl;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.left-xs {
+  left: $unit-xs;
+}
+
+.left-x {
+  left: $unit-x;
+}
+
+.left-small {
+  left: $unit-small;
+}
+
+.left-medium {
+  left: $unit-medium;
+}
+
+.left-lrg {
+  left: $unit-lrg;
+}
+
+.left-xl {
+  left: $unit-xl;
+}
+
+.left-xxl {
+  left: $unit-xxl;
+}
+
+.left-xxxl {
+  left: $unit-xxxl;
+}
+
+.left-xxxxl {
+  left: $unit-xxxxl;
+}
+
+.left-xxxxxl {
+  left: $unit-xxxxxl;
+}
+
+.left-xxxxxxl {
+  left: $unit-xxxxxxl;
+}
+
+.left-xxxxxxxl {
+  left: $unit-xxxxxxxl;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.right-xs {
+  right: $unit-xs;
+}
+
+.right-x {
+  right: $unit-x;
+}
+
+.right-small {
+  right: $unit-small;
+}
+
+.right-medium {
+  right: $unit-medium;
+}
+
+.right-lrg {
+  right: $unit-lrg;
+}
+
+.right-xl {
+  right: $unit-xl;
+}
+
+.right-xxl {
+  right: $unit-xxl;
+}
+
+.right-xxxl {
+  right: $unit-xxxl;
+}
+
+.right-xxxxl {
+  right: $unit-xxxxl;
+}
+
+.right-xxxxxl {
+  right: $unit-xxxxxl;
+}
+
+.right-xxxxxxl {
+  right: $unit-xxxxxxl;
+}
+
+.right-xxxxxxxl {
+  right: $unit-xxxxxxxl;
+}
+
+// PERCENTAGE BASED
+
+.left-10 {
+  left: 10%;
+}
+
+.left-20 {
+  left: 20%;
+}
+
+.left-30 {
+  left: 30%;
+}
+
+.left-40 {
+  left: 40%;
+}
+
+.left-50 {
+  left: 50%;
+}
+
+.left-60 {
+  left: 60%;
+}
+
+.left-70 {
+  left: 70%;
+}
+
+.left-80 {
+  left: 80%;
+}
+
+.left-90 {
+  left: 90%;
+}
+
+.left-100 {
+  left: 100%;
+}
+
+.right-10 {
+  right: 10%;
+}
+
+.right-20 {
+  right: 20%;
+}
+
+.right-30 {
+  right: 30%;
+}
+
+.right-40 {
+  right: 40%;
+}
+
+.right-50 {
+  right: 50%;
+}
+
+.right-60 {
+  right: 60%;
+}
+
+.right-70 {
+  right: 70%;
+}
+
+.right-80 {
+  right: 80%;
+}
+
+.right-90 {
+  right: 90%;
+}
+
+.right-100 {
+  right: 100%;
+}
+
+.top-10 {
+  top: 10%;
+}
+
+.top-20 {
+  top: 20%;
+}
+
+.top-30 {
+  top: 30%;
+}
+
+.top-40 {
+  top: 40%;
+}
+
+.top-50 {
+  top: 50%;
+}
+
+.top-60 {
+  top: 60%;
+}
+
+.top-70 {
+  top: 70%;
+}
+
+.top-80 {
+  top: 80%;
+}
+
+.top-90 {
+  top: 90%;
+}
+
+.top-100 {
+  top: 100%;
+}
+
+.top-110 {
+  top: 110%;
+}
+
+.bottom-10 {
+  bottom: 10%;
+}
+
+.bottom-20 {
+  bottom: 20%;
+}
+
+.bottom-30 {
+  bottom: 30%;
+}
+
+.bottom-40 {
+  bottom: 40%;
+}
+
+.bottom-50 {
+  bottom: 50%;
+}
+
+.bottom-60 {
+  bottom: 60%;
+}
+
+.bottom-70 {
+  bottom: 70%;
+}
+
+.bottom-80 {
+  bottom: 80%;
+}
+
+.bottom-90 {
+  bottom: 90%;
+}
+
+.bottom-100 {
+  bottom: 100%;
+}
+
+//NEGATIVE POSITIONING
+
+.neg-top-xs {
+  top: -$unit-xs;
+}
+
+.neg-top-x {
+  top: -$unit-x;
+}
+
+.neg-top-small {
+  top: -$unit-small;
+}
+
+.neg-top-medium {
+  top: -$unit-medium;
+}
+
+.neg-top-lrg {
+  top: -$unit-lrg;
+}
+
+.neg-top-xl {
+  top: -$unit-xl;
+}
+
+.neg-top-xxl {
+  top: -$unit-xxl;
+}
+
+.neg-top-xxxl {
+  top: -$unit-xxxl;
+}
+
+.neg-top-xxxxl {
+  top: -$unit-xxxxl;
+}
+
+.neg-top-xxxxxl {
+  top: $unit-xxxxxl;
+}
+
+.neg-top-xxxxxxl {
+  top: $unit-xxxxxxl;
+}
+
+.neg-top-xxxxxxxl {
+  top: -$unit-xxxxxxxl;
+}
+
+.neg-bottom-xs {
+  bottom: -$unit-xs;
+}
+
+.neg-bottom-x {
+  bottom: -$unit-x;
+}
+
+.neg-bottom-small {
+  bottom: -$unit-small;
+}
+
+.neg-bottom-medium {
+  bottom: -$unit-medium;
+}
+
+.neg-bottom-lrg {
+  bottom: -$unit-lrg;
+}
+
+.neg-bottom-xl {
+  bottom: -$unit-xl;
+}
+
+.neg-bottom-xxl {
+  bottom: -$unit-xxl;
+}
+
+.neg-bottom-xxxl {
+  bottom: -$unit-xxxl;
+}
+
+.neg-bottom-xxxxl {
+  bottom: -$unit-xxxxl;
+}
+
+.neg-bottom-xxxxxl {
+  bottom: $unit-xxxxxl;
+}
+
+.neg-bottom-xxxxxxl {
+  bottom: $unit-xxxxxxl;
+}
+
+.neg-bottom-xxxxxxxl {
+  bottom: -$unit-xxxxxxxl;
+}
+
+.neg-left-xs {
+  left: -$unit-xs;
+}
+
+.neg-left-x {
+  left: -$unit-x;
+}
+
+.neg-left-small {
+  left: -$unit-small;
+}
+
+.neg-left-medium {
+  left: -$unit-medium;
+}
+
+.neg-left-lrg {
+  left: -$unit-lrg;
+}
+
+.neg-left-xl {
+  left: -$unit-xl;
+}
+
+.neg-left-xxl {
+  left: -$unit-xxl;
+}
+
+.neg-left-xxxl {
+  left: -$unit-xxxl;
+}
+
+.neg-left-xxxl {
+  left: -$unit-xxxxl;
+}
+
+.neg-left-xxxxxl {
+  left: $unit-xxxxxl;
+}
+
+.neg-left-xxxxxxl {
+  left: $unit-xxxxxxl;
+}
+
+.neg-left-xxxxxxxl {
+  left: -$unit-xxxxxxxl;
+}
+
+.neg-right-xs {
+  right: -$unit-xs;
+}
+
+.neg-right-x {
+  right: -$unit-x;
+}
+
+.neg-right-small {
+  right: -$unit-small;
+}
+
+.neg-right-medium {
+  right: -$unit-medium;
+}
+
+.neg-right-lrg {
+  right: -$unit-lrg;
+}
+
+.neg-right-xl {
+  right: -$unit-xl;
+}
+
+.neg-right-xxl {
+  right: -$unit-xxl;
+}
+
+.neg-right-xxxl {
+  right: -$unit-xxxl;
+}
+
+.neg-right-xxxxl {
+  right: -$unit-xxxxl;
+}
+
+.neg-right-xxxxxl {
+  right: $unit-xxxxxl;
+}
+
+.neg-right-xxxxxxl {
+  right: $unit-xxxxxxl;
+}
+
+.neg-right-xxxxxxxxl {
+  right: -$unit-xxxxxxxl;
+}

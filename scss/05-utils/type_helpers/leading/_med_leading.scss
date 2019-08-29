@@ -2,20 +2,50 @@
    @MED TYPE HELPERS LINE-HEIGHT LEADING
   ========================================================================== */
 @include tablet-landscape {
-  .med-lh0 { line-height: 0 }
-  .med-lh-1 { line-height: 1 }
-  .med-lh-1-25 { line-height: 1.25 }
-  .med-lh-1-5 { line-height: 1.5 }
+  .med-lh0 {
+    line-height: 0;
+  }
+  .med-lh-1 {
+    line-height: 1;
+  }
+  .med-lh-1-25 {
+    line-height: 1.25;
+  }
+  .med-lh-1-5 {
+    line-height: 1.5;
+  }
 
-  .med-lh-xs { line-height: $unit-xs }
-  .med-lh-x { line-height: $unit-x }
-  .med-lh-small { line-height: $unit-small }
-  .med-lh-medium { line-height: $unit-medium }
-  .med-lh-lrg { line-height: $unit-lrg }
-  .med-lh-xl { line-height: $unit-xl }
-  .med-lh-xxl { line-height: $unit-xxl }
-  .med-lh-xxxl { line-height: $unit-xxxl }
-  .med-lh-xxxxl { line-height: $unit-xxxxl }
-  .med-lh-xxxxxl { line-height: $unit-xxxxxl }
-  .med-lh-xxxxxxl { line-height: $unit-xxxxxxl }
+  .med-lh-xs {
+    line-height: $unit-xs;
+  }
+  .med-lh-x {
+    line-height: $unit-x;
+  }
+  .med-lh-small {
+    line-height: $unit-small;
+  }
+  .med-lh-medium {
+    line-height: $unit-medium;
+  }
+  .med-lh-lrg {
+    line-height: $unit-lrg;
+  }
+  .med-lh-xl {
+    line-height: $unit-xl;
+  }
+  .med-lh-xxl {
+    line-height: $unit-xxl;
+  }
+  .med-lh-xxxl {
+    line-height: $unit-xxxl;
+  }
+  .med-lh-xxxxl {
+    line-height: $unit-xxxxl;
+  }
+  .med-lh-xxxxxl {
+    line-height: $unit-xxxxxl;
+  }
+  .med-lh-xxxxxxl {
+    line-height: $unit-xxxxxxl;
+  }
 }

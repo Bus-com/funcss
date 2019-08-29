@@ -23,13 +23,6 @@ function usage() {
     echo ""
 }
 
-# replace with the new name in the index file.
-function replace_style_import() {
-    sed -i .bak "s/.*<link rel='stylesheet' href='.*'>.*/<link rel='stylesheet' href='$OUTPUT_PATH\/$OUTPUT_NAME.$OUTPUT_FORMAT'>/g" index.html
-    #not sure why; does not work without .bak syntax
-    rm index.html.bak
-}
-
 while [ "$1" != "" ]; do
     PARAM=`echo $1 | awk -F= '{print $1}'`
     VALUE=`echo $1 | awk -F= '{print $2}'`
@@ -43,13 +36,6 @@ while [ "$1" != "" ]; do
             DEPLOY=false
             PUBLISH=false
             OUTPUT_STYLE="expanded"
-            ;;
-        --deploy)
-            DEPLOY=true
-            DEBUG=false
-            PUBLISH=true
-            BUILD_TYPE=$VALUE
-            OUTPUT_STYLE="compressed"
             ;;
         *)
             echo "ERROR: unknown parameter \"$PARAM\""
@@ -73,48 +59,15 @@ printf "\033[106;30m                copy images                 \033[0m\n"
 
 cp -R images/ dist/images
 
-if [ "$DEBUG" = true ]; then
-    # replace with the new tagged name in the index file.
-    replace_style_import
-    # open the demo page
-    printf "\033[166;5m         opening index.html          \033[0m\n"
-    open index.html
-    # Open a new terminal and launch sass --watch
-    # open -a terminal -e $PWD ""
-    sass --watch scss/_all.scss:$OUTPUT_PATH/$OUTPUT_NAME.$OUTPUT_FORMAT --style $OUTPUT_STYLE
-else
-    sass scss/_all.scss:$OUTPUT_PATH/funcss.css --style $OUTPUT_STYLE
+# replace with the new tagged name in the index file.
+replace_style_import
+# open the demo page
+printf "\033[166;5m         opening index.html          \033[0m\n"
+open index.html
+# Open a new terminal and launch sass --watch
+# open -a terminal -e $PWD ""
+sass --watch scss/_all.scss:$OUTPUT_PATH/$OUTPUT_NAME.$OUTPUT_FORMAT --style $OUTPUT_STYLE
 
-    printf "\033[106;30m        minifying ($OUTPUT_PATH/funcss.min.css)     \033[0m\n"
-    printf "\033[106;43m         ~ this can take a while ~          \033[0m\n"
-
-    MIN_OUTPUT_NAME="funcss.min.css"
-
-    curl -X POST -s --data-urlencode "input@$OUTPUT_PATH/funcss.$OUTPUT_FORMAT" https://cssminifier.com/raw > $OUTPUT_PATH/$MIN_OUTPUT_NAME
-
-    OUTPUT_NAME=$MIN_OUTPUT_NAME
-
-    replace_style_import
-    #add folders, clean git
-    git add bin/
-    git add dist/
-    git add scss/
-    git add images/
-    git add index.html
-    git add README.md
-
-    #commit
-    printf "\033[106;30m enter your commit message: \033[0m"
-    read commitmessage
-    git commit -m "$commitmessage"
-
-    if [ "$DEPLOY" = true ]; then
-        # update the version number with the right type.
-        npm version $BUILD_TYPE
-        printf "\033[106;30m        npm version $BUILD_TYPE done.   \033[0m\n"
-        npm publish
-    fi
-fi
 printf "\n"
 printf "\033[106;30m                                            \033[0m\n"
 printf "\033[106;30m ▄▄▄▄· ▄• ▄▌.▄▄ ·     ▄▄·       • ▌ ▄ ·.    \033[0m\n"

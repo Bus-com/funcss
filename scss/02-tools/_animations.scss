@@ -1,9 +1,4 @@
-/* ==========================================================================
-   ANIMATIONS
-  ========================================================================== */
-
 @include keyframes(fadeSlideInLeft) {
-
   0% {
     transform: translate3d(100%, 0, 0);
     opacity: 0;
@@ -19,7 +14,6 @@
 }
 
 @include keyframes(fadeSlideInRight) {
-
   0% {
     transform: translate3d(-100%, 0, 0);
     opacity: 0;
@@ -37,12 +31,12 @@
 @include keyframes(basicSlideDown) {
   from {
     transform: translate3d(0, -100%, 0);
-    opacity: 0
+    opacity: 0;
   }
 
   to {
     transform: translate3d(0, 0, 0);
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -59,12 +53,12 @@
 @include keyframes(shortSlideDown) {
   from {
     transform: translate3d(0, -5%, 0);
-    opacity: 0
+    opacity: 0;
   }
 
   to {
     transform: translate3d(0, 0, 0);
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -83,12 +77,12 @@
 @include keyframes(comeUp) {
   from {
     transform: translate3d(0, 50%, 0);
-    opacity: 0
+    opacity: 0;
   }
 
   to {
     transform: translate3d(0, 0, 0);
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -145,5 +139,3 @@
     transform: translate3d(0, -100%, 0);
   }
 }
-
-

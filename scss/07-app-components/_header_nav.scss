@@ -18,19 +18,18 @@
         margin-left: 200vw;
       }
 
-
       @include e(toggle-menu-button) {
-        height: 24px;
-        width: 24px;
+        height: $unit-medium;
+        width: $unit-medium;
         &.open-menu {
-          background-image: url('images/nav-open.svg');
+          background-image: url("images/nav-open.svg");
           background-position: center;
           background-size: contain;
           background-repeat: no-repeat;
         }
 
         &.close-menu {
-          background-image: url('images/nav-close.svg');
+          background-image: url("images/nav-close.svg");
           background-position: center;
           background-size: contain;
           background-repeat: no-repeat;
@@ -44,16 +43,15 @@
   }
 }
 
-
 // ANIMATE HOME NAVBAR
 
 .js-body .navbar {
   background: transparent;
-  transition: background .3s ease-in;
+  transition: background 0.3s ease-in;
 }
 .animate-bg {
-background: $white !important;
-  nav{
+  background: $white !important;
+  nav {
     background-color: $white !important;
   }
 }

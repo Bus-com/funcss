@@ -1,16 +1,18 @@
-button, .c-btn, .button {
+button,
+.c-btn,
+.button {
   appearance: none;
-  height: 48px;
-  line-height: 48px;
+  height: $unit-xxl;
+  line-height: $unit-xxl;
   font-size: 14px;
-  border-radius: 4px;
-  padding: 0 24px;
+  border-radius: $unit-xs;
+  padding: 0 $unit-medium;
   text-align: center;
   font-weight: 500;
   box-shadow: none;
   cursor: pointer;
   text-decoration: none;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 
   &:focus {
     outline: none;
@@ -22,7 +24,7 @@ button, .c-btn, .button {
   color: $white !important;
 }
 
-button[disabled]{
+button[disabled] {
   background: palette(grey, xxx-light);
 
   &:hover {

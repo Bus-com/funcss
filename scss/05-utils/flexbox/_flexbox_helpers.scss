@@ -6,11 +6,18 @@
   display: flex;
 }
 
- //target ie browser only
+//target ie browser only
 
-@media all and (-ms-high-contrast:none){
-  .ie-no-flex {display: block; } /* IE10 */
-  *::-ms-backdrop, .ie-no-flex { display: block; } /* IE11 */
+@media all and (-ms-high-contrast: none) {
+  .ie-no-flex {
+    display: block;
+  }
+  /// IE10
+  *::-ms-backdrop,
+  .ie-no-flex {
+    display: block;
+  }
+  /// IE11
 }
 
 .flex-column {
@@ -50,27 +57,27 @@
 }
 
 .flex-align-center {
-  align-items: center
+  align-items: center;
 }
 
 .flex-align-baseline {
-  align-items: baseline
+  align-items: baseline;
 }
 
 .flex-align-stretch {
-  align-items: stretch
+  align-items: stretch;
 }
 
 .flex-align-start {
-  align-items: flex-start
+  align-items: flex-start;
 }
 
 .flex-end {
-  align-items: flex-end
+  align-items: flex-end;
 }
 
 .flex-1 {
-  flex: 1
+  flex: 1;
 }
 
 .flex-self-start {
@@ -106,7 +113,6 @@
 .flex-first {
   order: -1;
 }
-
 
 .flex-second {
   order: 2;

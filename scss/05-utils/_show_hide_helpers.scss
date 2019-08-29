@@ -1,13 +1,11 @@
-/* ==========================================================================
-   SHOW HIDE HELPERS
-  ========================================================================== */
+/// SHOW HIDE HELPERS
 
-//Helpers to show element depending on breakpoint
-
-.hide, .hidden {
+.hide,
+.hidden {
   display: none;
 }
 
+/// Helpers to show element depending on breakpoint
 @include tablet-portrait {
   .tab-hide {
     display: none !important;

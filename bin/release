@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e pipefail
+sass scss/_all.scss:dist/funcss.css --style css
+
+curl -X POST -s --data-urlencode "input@./dist/funcss.css" https://cssminifier.com/raw > ./dist/funcss.min.css
+
+npm version patch
+npm publish
+
+# git commit -m "release version $NEW_NPM_VERSION"
+# git tag "$NEW_NPM_VERSION"
+# git push --tags

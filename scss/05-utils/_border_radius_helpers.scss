@@ -3,90 +3,89 @@
   ========================================================================== */
 
 .br-reset {
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .br-top-left-reset {
-  border-top-left-radius: 0px;
+  border-top-left-radius: 0;
 }
 
 .br-top-right-reset {
-  border-top-right-radius: 0px;
+  border-top-right-radius: 0;
 }
 
 .br-bottom-left-reset {
-  border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0;
 }
 
 .br-bottom-right-reset {
-  border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0;
 }
 
 //Border br-xxs
 
 .br-xxs {
-  border-radius: 2px;
+  border-radius: $unit-xxs;
 }
 
 .br-left-xxs {
-  border-bottom-left-radius: 2px;
-  border-top-left-radius: 2px;
+  border-bottom-left-radius: $unit-xxs;
+  border-top-left-radius: $unit-xxs;
 }
 
 .br-right-xxs {
-  border-bottom-right-radius: 2px;
-  border-top-right-radius: 2px;
+  border-bottom-right-radius: $unit-xxs;
+  border-top-right-radius: $unit-xxs;
 }
 
 .br-top-xxs {
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
+  border-top-left-radius: $unit-xxs;
+  border-top-right-radius: $unit-xxs;
 }
 
 .br-bottom-xxs {
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: $unit-xxs;
+  border-bottom-right-radius: $unit-xxs;
 }
 
 .br-xs {
-  border-radius: 4px
+  border-radius: $unit-xs;
 }
 
 .br-left-xs {
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
+  border-bottom-left-radius: $unit-xs;
+  border-top-left-radius: $unit-xs;
 }
 
 .br-right-xs {
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px;
+  border-bottom-right-radius: $unit-xs;
+  border-top-right-radius: $unit-xs;
 }
 
-
 .br-top-xs {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: $unit-xs;
+  border-top-right-radius: $unit-xs;
 }
 
 .br-bottom-xs {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: $unit-xs;
+  border-bottom-right-radius: $unit-xs;
 }
 
 .br-top-x {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: $unit-x;
+  border-top-right-radius: $unit-x;
 }
 
 .br-bottom-x {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: $unit-x;
+  border-bottom-right-radius: $unit-x;
 }
 
-///x
+// x
 
 .br-x {
-  border-radius: 8px;
+  border-radius: $unit-x;
 }
 
 .br-small {

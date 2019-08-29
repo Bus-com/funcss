@@ -4,13 +4,13 @@
 }
 
 .ui-icon-big {
-  width: 40px;
-  height: 40px;
+  width: $unit-xl;
+  height: $unit-xl;
 }
 
 .ui-icon {
-  width: 32px;
-  height: 32px;
+  width: $unit-lrg;
+  height: $unit-lrg;
 }
 
 .ui-icon-medium {
@@ -19,15 +19,14 @@
 }
 
 .ui-icon-small {
-  width: 16px;
-  height: 16px;
+  width: $unit-small;
+  height: $unit-small;
 }
 
-
 .stroke-width-1 {
-	stroke-width: 1;
+  stroke-width: 1;
 }
 
 .stroke-width-2 {
-	stroke-width: 2;
+  stroke-width: 2;
 }

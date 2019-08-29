@@ -1,23 +1,19 @@
-/* ==========================================================================
-   SMALL LAPTOP FLEXBOX HELPERS...
-   USE THESE WHEN YOU WANT TO USE A SPEICIFC CLASS A SPECIFIC BREAKPOINT
-  ========================================================================== */
-
 @include small-laptop {
   .lrg-flex {
     display: flex;
   }
 
-  //target ie browser only
+  /// target ie browser only
   @media all and (-ms-high-contrast: none) {
     .lrg-ie-no-flex {
       display: block;
     }
-    /* IE10 */
-    *::-ms-backdrop, .lrg-ie-no-flex {
+    /// IE10
+    *::-ms-backdrop,
+    .lrg-ie-no-flex {
       display: block;
     }
-    /* IE11 */
+    /// IE11
   }
 
   .lrg-flex-column {
@@ -106,7 +102,7 @@
     flex-shrink: 0;
   }
 
-  .lrg-flex-self-start{
+  .lrg-flex-self-start {
     align-self: flex-start;
   }
 

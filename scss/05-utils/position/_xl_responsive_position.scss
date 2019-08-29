@@ -3,174 +3,460 @@
   ========================================================================== */
 
 @include laptop {
-  //XL-RELATIVE////////////////
-  .xl-pos-rel { position: relative; }
+  // XL-RELATIVE
+  .xl-pos-rel {
+    position: relative;
+  }
 
-  //XL-ABSOLUTE///////////////
-  .xl-pos-abs { position: absolute; }
+  // XL-ABSOLUTE
+  .xl-pos-abs {
+    position: absolute;
+  }
 
-  //XL-FIXED///////////////////
-  .xl-pos-fixed { position: fixed; }
+  // XL-FIXED
+  .xl-pos-fixed {
+    position: fixed;
+  }
 }
 
-//XL -> THE WHERE YOU WANT THESE TO BE MOVED OR PLACED...
+// XL -> THE WHERE YOU WANT THESE TO BE MOVED OR PLACED...
 @include laptop {
+  .xl-top-0 {
+    top: 0;
+  }
+  .xl-top-xs {
+    top: $unit-xs;
+  }
+  .xl-top-x {
+    top: $unit-x;
+  }
+  .xl-top-small {
+    top: $unit-small;
+  }
+  .xl-top-medium {
+    top: $unit-medium;
+  }
+  .xl-top-lrg {
+    top: $unit-lrg;
+  }
+  .xl-top-xl {
+    top: $unit-xl;
+  }
+  .xl-top-xxl {
+    top: $unit-xxl;
+  }
+  .xl-top-xxxl {
+    top: $unit-xxxl;
+  }
+  .xl-top-xxxxl {
+    top: $unit-xxxxl;
+  }
+  .xl-top-xxxxxl {
+    top: $unit-xxxxxl;
+  }
+  .xl-top-xxxxxxl {
+    top: $unit-xxxxxxl;
+  }
+  .xl-top-xxxxxxxl {
+    top: $unit-xxxxxxxl;
+  }
 
-  .xl-top-0 { top: 0; }
-  .xl-top-xs { top: 4px; }
-  .xl-top-x { top: 8px; }
-  .xl-top-small { top: 16px; }
-  .xl-top-medium { top: 24px; }
-  .xl-top-lrg { top: 32px; }
-  .xl-top-xl { top: 40px; }
-  .xl-top-xxl { top: 48px; }
-  .xl-top-xxxl { top: 56px; }
-  .xl-top-xxxxl { top: 64px; }
-  .xl-top-xxxxxl { top: 72px; }
-  .xl-top-xxxxxxl { top: 80px; }
-  .xl-top-xxxxxxxl { top: 88px; }
+  .xl-bottom-0 {
+    bottom: 0;
+  }
+  .xl-bottom-xs {
+    bottom: $unit-xs;
+  }
+  .xl-bottom-x {
+    bottom: $unit-x;
+  }
+  .xl-bottom-small {
+    bottom: $unit-small;
+  }
+  .xl-bottom-medium {
+    bottom: $unit-medium;
+  }
+  .xl-bottom-lrg {
+    bottom: $unit-lrg;
+  }
+  .xl-bottom-xl {
+    bottom: $unit-xl;
+  }
+  .xl-bottom-xxl {
+    bottom: $unit-xxl;
+  }
+  .xl-bottom-xxxl {
+    bottom: $unit-xxxl;
+  }
+  .xl-bottom-xxxxl {
+    bottom: $unit-xxxxl;
+  }
+  .xl-bottom-xxxxxl {
+    bottom: $unit-xxxxxl;
+  }
+  .xl-bottom-xxxxxxl {
+    bottom: $unit-xxxxxxl;
+  }
+  .xl-bottom-xxxxxxxl {
+    bottom: $unit-xxxxxxxl;
+  }
 
-  .xl-bottom-0 { bottom: 0; }
-  .xl-bottom-xs { bottom: 4px; }
-  .xl-bottom-x { bottom: 8px; }
-  .xl-bottom-small { bottom: 16px; }
-  .xl-bottom-medium { bottom: 24px; }
-  .xl-bottom-lrg { bottom: 32px; }
-  .xl-bottom-xl { bottom: 40px; }
-  .xl-bottom-xxl { bottom: 48px; }
-  .xl-bottom-xxxl { bottom: 56px; }
-  .xl-bottom-xxxxl { bottom: 64px; }
-  .xl-bottom-xxxxxl { bottom: 72px; }
-  .xl-bottom-xxxxxxl { bottom: 80px; }
-  .xl-bottom-xxxxxxxl { bottom: 88px; }
+  .xl-left-0 {
+    left: 0;
+  }
+  .xl-left-xs {
+    left: $unit-xs;
+  }
+  .xl-left-x {
+    left: $unit-x;
+  }
+  .xl-left-small {
+    left: $unit-small;
+  }
+  .xl-left-medium {
+    left: $unit-medium;
+  }
+  .xl-left-lrg {
+    left: $unit-lrg;
+  }
+  .xl-left-xl {
+    left: $unit-xl;
+  }
+  .xl-left-xxl {
+    left: $unit-xxl;
+  }
+  .xl-left-xxxl {
+    left: $unit-xxxl;
+  }
+  .xl-left-xxxxl {
+    left: $unit-xxxxl;
+  }
+  .xl-left-xxxxxl {
+    left: $unit-xxxxxl;
+  }
+  .xl-left-xxxxxxl {
+    left: $unit-xxxxxxl;
+  }
+  .xl-left-xxxxxxxl {
+    left: $unit-xxxxxxxl;
+  }
 
-  .xl-left-0 { left: 0; }
-  .xl-left-xs { left: 4px; }
-  .xl-left-x { left: 8px; }
-  .xl-left-small { left: 16px; }
-  .xl-left-medium { left: 24px; }
-  .xl-left-lrg { left: 32px; }
-  .xl-left-xl { left: 40px; }
-  .xl-left-xxl { left: 48px; }
-  .xl-left-xxxl { left: 56px; }
-  .xl-left-xxxxl { left: 64px; }
-  .xl-left-xxxxxl { left: 72px; }
-  .xl-left-xxxxxxl { left: 80px; }
-  .xl-left-xxxxxxxl { left: 88px; }
+  .xl-right-0 {
+    right: 0;
+  }
+  .xl-right-xs {
+    right: $unit-xs;
+  }
+  .xl-right-x {
+    right: $unit-x;
+  }
+  .xl-right-small {
+    right: $unit-small;
+  }
+  .xl-right-medium {
+    right: $unit-medium;
+  }
+  .xl-right-lrg {
+    right: $unit-lrg;
+  }
+  .xl-right-xl {
+    right: $unit-xl;
+  }
+  .xl-right-xxl {
+    right: $unit-xxl;
+  }
+  .xl-right-xxxl {
+    right: $unit-xxxl;
+  }
+  .xl-right-xxxxl {
+    right: $unit-xxxxl;
+  }
+  .xl-right-xxxxxl {
+    right: $unit-xxxxxl;
+  }
+  .xl-right-xxxxxxl {
+    right: $unit-xxxxxxl;
+  }
+  .xl-right-xxxxxxxl {
+    right: $unit-xxxxxxxl;
+  }
 
-  .xl-right-0 { right: 0; }
-  .xl-right-xs { right: 4px; }
-  .xl-right-x { right: 8px; }
-  .xl-right-small { right: 16px; }
-  .xl-right-medium { right: 24px; }
-  .xl-right-lrg { right: 32px; }
-  .xl-right-xl { right: 40px; }
-  .xl-right-xxl { right: 48px; }
-  .xl-right-xxxl { right: 56px; }
-  .xl-right-xxxxl { right: 64px; }
-  .xl-right-xxxxxl { right: 72px; }
-  .xl-right-xxxxxxl { right: 80px; }
-  .xl-right-xxxxxxxl { right: 88px; }
+  // PERCENTAGE BASED
 
-  //PERCENTAGE BASED/////////////////////////////////////////
+  .xl-left-10 {
+    left: 10%;
+  }
+  .xl-left-20 {
+    left: 20%;
+  }
+  .xl-left-30 {
+    left: 30%;
+  }
+  .xl-left-40 {
+    left: 40%;
+  }
+  .xl-left-50 {
+    left: 50%;
+  }
+  .xl-left-60 {
+    left: 60%;
+  }
+  .xl-left-70 {
+    left: 70%;
+  }
+  .xl-left-80 {
+    left: 80%;
+  }
+  .xl-left-90 {
+    left: 90%;
+  }
+  .xl-left-100 {
+    left: 100%;
+  }
 
-  .xl-left-10 { left: 10%; }
-  .xl-left-20 { left: 20%; }
-  .xl-left-30 { left: 30%; }
-  .xl-left-40 { left: 40%; }
-  .xl-left-50 { left: 50%; }
-  .xl-left-60 { left: 60%; }
-  .xl-left-70 { left: 70%; }
-  .xl-left-80 { left: 80%; }
-  .xl-left-90 { left: 90%; }
-  .xl-left-100 { left: 100%; }
+  .xl-right-10 {
+    right: 10%;
+  }
+  .xl-right-20 {
+    right: 20%;
+  }
+  .xl-right-30 {
+    right: 30%;
+  }
+  .xl-right-40 {
+    right: 40%;
+  }
+  .xl-right-50 {
+    right: 50%;
+  }
+  .xl-right-60 {
+    right: 60%;
+  }
+  .xl-right-70 {
+    right: 70%;
+  }
+  .xl-right-80 {
+    right: 80%;
+  }
+  .xl-right-90 {
+    right: 90%;
+  }
+  .xl-right-100 {
+    right: 100%;
+  }
 
-  .xl-right-10 { right: 10%; }
-  .xl-right-20 { right: 20%; }
-  .xl-right-30 { right: 30%; }
-  .xl-right-40 { right: 40%; }
-  .xl-right-50 { right: 50%; }
-  .xl-right-60 { right: 60%; }
-  .xl-right-70 { right: 70%; }
-  .xl-right-80 { right: 80%; }
-  .xl-right-90 { right: 90%; }
-  .xl-right-100 { right: 100%; }
+  .xl-top-10 {
+    top: 10%;
+  }
+  .xl-top-20 {
+    top: 20%;
+  }
+  .xl-top-30 {
+    top: 30%;
+  }
+  .xl-top-40 {
+    top: 40%;
+  }
+  .xl-top-50 {
+    top: 50%;
+  }
+  .xl-top-60 {
+    top: 60%;
+  }
+  .xl-top-70 {
+    top: 70%;
+  }
+  .xl-top-80 {
+    top: 80%;
+  }
+  .xl-top-90 {
+    top: 90%;
+  }
+  .xl-top-100 {
+    top: 100%;
+  }
+  .xl-top-110 {
+    top: 110%;
+  }
 
-  .xl-top-10 { top: 10%; }
-  .xl-top-20 { top: 20%; }
-  .xl-top-30 { top: 30%; }
-  .xl-top-40 { top: 40%; }
-  .xl-top-50 { top: 50%; }
-  .xl-top-60 { top: 60%; }
-  .xl-top-70 { top: 70%; }
-  .xl-top-80 { top: 80%; }
-  .xl-top-90 { top: 90%; }
-  .xl-top-100 { top: 100%; }
-  .xl-top-110 { top: 110%; }
+  .xl-bottom-10 {
+    bottom: 10%;
+  }
+  .xl-bottom-20 {
+    bottom: 20%;
+  }
+  .xl-bottom-30 {
+    bottom: 30%;
+  }
+  .xl-bottom-40 {
+    bottom: 40%;
+  }
+  .xl-bottom-50 {
+    bottom: 50%;
+  }
+  .xl-bottom-60 {
+    bottom: 60%;
+  }
+  .xl-bottom-70 {
+    bottom: 70%;
+  }
+  .xl-bottom-80 {
+    bottom: 80%;
+  }
+  .xl-bottom-90 {
+    bottom: 90%;
+  }
+  .xl-bottom-100 {
+    bottom: 100%;
+  }
 
-  .xl-bottom-10 { bottom: 10%; }
-  .xl-bottom-20 { bottom: 20%; }
-  .xl-bottom-30 { bottom: 30%; }
-  .xl-bottom-40 { bottom: 40%; }
-  .xl-bottom-50 { bottom: 50%; }
-  .xl-bottom-60 { bottom: 60%; }
-  .xl-bottom-70 { bottom: 70%; }
-  .xl-bottom-80 { bottom: 80%; }
-  .xl-bottom-90 { bottom: 90%; }
-  .xl-bottom-100 { bottom: 100%; }
+  // NEGATIVE POSITIONING
 
-  //NEGATIVE POSITIONING/////////////////////////////////////
+  .xl-neg-top-xs {
+    top: -$unit-xs;
+  }
+  .xl-neg-top-x {
+    top: -$unit-x;
+  }
+  .xl-neg-top-small {
+    top: -$unit-small;
+  }
+  .xl-neg-top-medium {
+    top: -$unit-medium;
+  }
+  .xl-neg-top-lrg {
+    top: -$unit-lrg;
+  }
+  .xl-neg-top-xl {
+    top: -$unit-xl;
+  }
+  .xl-neg-top-xxl {
+    top: -$unit-xxl;
+  }
+  .xl-neg-top-xxxl {
+    top: -$unit-xxxl;
+  }
+  .xl-neg-top-xxxxl {
+    top: -$unit-xxxxl;
+  }
+  .xl-neg-top-xxxxxl {
+    top: -$unit-xxxxxl;
+  }
+  .xl-neg-top-xxxxxxl {
+    top: -$unit-xxxxxxl;
+  }
+  .xl-neg-top-xxxxxxxl {
+    top: -$unit-xxxxxxxl;
+  }
 
-  .xl-neg-top-xs { top: -4px; }
-  .xl-neg-top-x { top: -8px; }
-  .xl-neg-top-small { top: -16px; }
-  .xl-neg-top-medium { top: -24px; }
-  .xl-neg-top-lrg { top: -32px; }
-  .xl-neg-top-xl { top: -40px; }
-  .xl-neg-top-xxl { top: -48px; }
-  .xl-neg-top-xxxl { top: -56px; }
-  .xl-neg-top-xxxxl { top: -64px; }
-  .xl-neg-top-xxxxxl { top: -72px; }
-  .xl-neg-top-xxxxxxl { top: -80px; }
-  .xl-neg-top-xxxxxxxl { top: -88px; }
+  .xl-neg-bottom-xs {
+    bottom: -$unit-xs;
+  }
+  .xl-neg-bottom-x {
+    bottom: -$unit-x;
+  }
+  .xl-neg-bottom-small {
+    bottom: -$unit-small;
+  }
+  .xl-neg-bottom-medium {
+    bottom: -$unit-medium;
+  }
+  .xl-neg-bottom-lrg {
+    bottom: -$unit-lrg;
+  }
+  .xl-neg-bottom-xl {
+    bottom: -$unit-xl;
+  }
+  .xl-neg-bottom-xxl {
+    bottom: -$unit-xxl;
+  }
+  .xl-neg-bottom-xxxl {
+    bottom: -$unit-xxxl;
+  }
+  .xl-neg-bottom-xxxxl {
+    bottom: -$unit-xxxxl;
+  }
+  .xl-neg-bottom-xxxxxl {
+    bottom: -$unit-xxxxxl;
+  }
+  .xl-neg-bottom-xxxxxxl {
+    bottom: -$unit-xxxxxxl;
+  }
+  .xl-neg-bottom-xxxxxxxl {
+    bottom: -$unit-xxxxxxxl;
+  }
 
-  .xl-neg-bottom-xs { bottom: -4px; }
-  .xl-neg-bottom-x { bottom: -8px; }
-  .xl-neg-bottom-small { bottom: -16px; }
-  .xl-neg-bottom-medium { bottom: -24px; }
-  .xl-neg-bottom-lrg { bottom: -32px; }
-  .xl-neg-bottom-xl { bottom: -40px; }
-  .xl-neg-bottom-xxl { bottom: -48px; }
-  .xl-neg-bottom-xxxl { bottom: -56px; }
-  .xl-neg-bottom-xxxxl { bottom: -64px; }
-  .xl-neg-bottom-xxxxxl { bottom: -72px; }
-  .xl-neg-bottom-xxxxxxl { bottom: -80px; }
-  .xl-neg-bottom-xxxxxxxl { bottom: -88px; }
+  .xl-neg-left-xs {
+    left: -$unit-xs;
+  }
+  .xl-neg-left-x {
+    left: -$unit-x;
+  }
+  .xl-neg-left-small {
+    left: -$unit-small;
+  }
+  .xl-neg-left-medium {
+    left: -$unit-medium;
+  }
+  .xl-neg-left-lrg {
+    left: -$unit-lrg;
+  }
+  .xl-neg-left-xl {
+    left: -$unit-xl;
+  }
+  .xl-neg-left-xxl {
+    left: -$unit-xxl;
+  }
+  .xl-neg-left-xxxl {
+    left: -$unit-xxxl;
+  }
+  .xl-neg-left-xxxl {
+    left: -$unit-xxxxl;
+  }
+  .xl-neg-left-xxxxxl {
+    left: -$unit-xxxxxl;
+  }
+  .xl-neg-left-xxxxxxl {
+    left: -$unit-xxxxxxl;
+  }
+  .xl-neg-left-xxxxxxxl {
+    left: -$unit-xxxxxxxl;
+  }
 
-  .xl-neg-left-xs { left: -4px; }
-  .xl-neg-left-x { left: -8px; }
-  .xl-neg-left-small { left: -16px; }
-  .xl-neg-left-medium { left: -24px; }
-  .xl-neg-left-lrg { left: -32px; }
-  .xl-neg-left-xl { left: -40px; }
-  .xl-neg-left-xxl { left: -48px; }
-  .xl-neg-left-xxxl { left: -56px; }
-  .xl-neg-left-xxxl { left: -64px; }
-  .xl-neg-left-xxxxxl { left: -72px; }
-  .xl-neg-left-xxxxxxl { left: -80px; }
-  .xl-neg-left-xxxxxxxl { left: -88px; }
-
-  .xl-neg-right-xs { right: -4px; }
-  .xl-neg-right-x { right: -8px; }
-  .xl-neg-right-small { right: -16px; }
-  .xl-neg-right-medium { right: -24px; }
-  .xl-neg-right-lrg { right: -32px; }
-  .xl-neg-right-xl { right: -40px; }
-  .xl-neg-right-xxl { right: -48px; }
-  .xl-neg-right-xxxl { right: -56px; }
-  .xl-neg-right-xxxxl { right: -64px; }
-  .xl-neg-right-xxxxxl { right: -72px; }
-  .xl-neg-right-xxxxxxl { right: -80px; }
-  .xl-neg-right-xxxxxxxxl { right: -88px; }
-
+  .xl-neg-right-xs {
+    right: -$unit-xs;
+  }
+  .xl-neg-right-x {
+    right: -$unit-x;
+  }
+  .xl-neg-right-small {
+    right: -$unit-small;
+  }
+  .xl-neg-right-medium {
+    right: -$unit-medium;
+  }
+  .xl-neg-right-lrg {
+    right: -$unit-lrg;
+  }
+  .xl-neg-right-xl {
+    right: -$unit-xl;
+  }
+  .xl-neg-right-xxl {
+    right: -$unit-xxl;
+  }
+  .xl-neg-right-xxxl {
+    right: -$unit-xxxl;
+  }
+  .xl-neg-right-xxxxl {
+    right: -$unit-xxxxl;
+  }
+  .xl-neg-right-xxxxxl {
+    right: -$unit-xxxxxl;
+  }
+  .xl-neg-right-xxxxxxl {
+    right: -$unit-xxxxxxl;
+  }
+  .xl-neg-right-xxxxxxxxl {
+    right: -$unit-xxxxxxxl;
+  }
 }

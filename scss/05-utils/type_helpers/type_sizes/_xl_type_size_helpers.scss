@@ -4,7 +4,7 @@
 
 @include laptop {
   .xl-fs-1 {
-    font-size: 24px;
+    font-size: $unit-medium;
   }
   .xl-fs-2 {
     font-size: 22px;
@@ -13,7 +13,7 @@
     font-size: 18px;
   }
   .xl-fs-4 {
-    font-size: 16px;
+    font-size: $unit-small;
   }
   .xl-fs-5 {
     font-size: 14px;

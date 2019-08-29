@@ -4,7 +4,7 @@
 
 @include tablet-landscape {
   .med-fs-1 {
-    font-size: 24px;
+    font-size: $unit-medium;
   }
   .med-fs-2 {
     font-size: 22px;
@@ -13,7 +13,7 @@
     font-size: 18px;
   }
   .med-fs-4 {
-    font-size: 16px;
+    font-size: $unit-small;
   }
   .med-fs-5 {
     font-size: 14px;

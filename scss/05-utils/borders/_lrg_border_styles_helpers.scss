@@ -3,73 +3,163 @@
 ========================================================================== */
 
 @include small-laptop {
+  //light grey borders
+  .lrg-b-light {
+    border: 1px solid palette(grey, xxxx-light);
+  }
+  .lrg-bt-light {
+    border-top: 1px solid palette(grey, xxxx-light);
+  }
+  .lrg-bl-light {
+    border-left: 1px solid palette(grey, xxxx-light);
+  }
+  .lrg-bb-light {
+    border-bottom: 1px solid palette(grey, xxxx-light);
+  }
+  .lrg-br-light {
+    border-right: 1px solid palette(grey, xxxx-light);
+  }
 
-//light grey borders
-.lrg-b-light { border: 1px solid palette(grey, xxxx-light); }
-.lrg-bt-light { border-top: 1px solid palette(grey, xxxx-light); }
-.lrg-bl-light { border-left: 1px solid palette(grey, xxxx-light); }
-.lrg-bb-light { border-bottom: 1px solid palette(grey, xxxx-light); }
-.lrg-br-light { border-right: 1px solid palette(grey, xxxx-light); }
+  //grey borders
+  .lrg-b-grey {
+    border: 1px solid palette(grey, xxx-light);
+  }
+  .lrg-bt-grey {
+    border-top: 1px solid palette(grey, xxx-light);
+  }
+  .lrg-bl-grey {
+    border-left: 1px solid palette(grey, xxx-light);
+  }
+  .lrg-bb-grey {
+    border-bottom: 1px solid palette(grey, xxx-light);
+  }
+  .lrg-br-grey {
+    border-right: 1px solid palette(grey, xxx-light);
+  }
 
-//grey borders
-.lrg-b-grey { border: 1px solid palette(grey, xxx-light); }
-.lrg-bt-grey { border-top: 1px solid palette(grey, xxx-light); }
-.lrg-bl-grey { border-left: 1px solid palette(grey, xxx-light); }
-.lrg-bb-grey { border-bottom: 1px solid palette(grey, xxx-light); }
-.lrg-br-grey { border-right: 1px solid palette(grey, xxx-light); }
+  //orange borders
+  .lrg-b-orange {
+    border: 1px solid palette(orange, base);
+  }
+  .lrg-bt-orange {
+    border-top: 1px solid palette(orange, base);
+  }
+  .lrg-bl-orange {
+    border-left: 1px solid palette(orange, base);
+  }
+  .lrg-bb-orange {
+    border-bottom: 1px solid palette(orange, base);
+  }
+  .lrg-br-orange {
+    border-right: 1px solid palette(orange, base);
+  }
 
-//orange borders
-.lrg-b-orange { border: 1px solid palette(orange, base); }
-.lrg-bt-orange { border-top: 1px solid palette(orange, base); }
-.lrg-bl-orange { border-left: 1px solid palette(orange, base); }
-.lrg-bb-orange { border-bottom: 1px solid palette(orange, base); }
-.lrg-br-orange { border-right: 1px solid palette(orange, base); }
+  .lrg-b-xxx-light-orange {
+    border: 1px solid palette(orange, xxx-light);
+  }
+  .lrg-bt-xxx-light-orange {
+    border-top: 1px solid palette(orange, xxx-light);
+  }
+  .lrg-bl-xxx-light-orange {
+    border-left: 1px solid palette(orange, xxx-light);
+  }
+  .lrg-bb-xxx-light-orange {
+    border-bottom: 1px solid palette(orange, xxx-light);
+  }
+  .lrg-br-xxx-light-orange {
+    border-right: 1px solid palette(orange, xxx-light);
+  }
 
-.lrg-b-xxx-light-orange { border: 1px solid palette(orange, xxx-light) }
-.lrg-bt-xxx-light-orange { border-top: 1px solid palette(orange, xxx-light) }
-.lrg-bl-xxx-light-orange { border-left: 1px solid palette(orange, xxx-light) }
-.lrg-bb-xxx-light-orange { border-bottom: 1px solid palette(orange, xxx-light) }
-.lrg-br-xxx-light-orange { border-right: 1px solid palette(orange, xxx-light) }
+  .lrg-bl-xxx-light-orange-2 {
+    border-left: 2px solid palette(orange, xxx-light);
+  }
 
-.lrg-bl-xxx-light-orange-2 { border-left: 2px solid palette(orange, xxx-light) }
+  .lrg-b-xxxx-light-orange {
+    border: 1px solid palette(orange, xxxx-light);
+  }
+  .lrg-bt-xxxx-light-orange {
+    border-top: 1px solid palette(orange, xxxx-light);
+  }
+  .lrg-bl-xxxx-light-orange {
+    border-left: 1px solid palette(orange, xxxx-light);
+  }
+  .lrg-bb-xxxx-light-orange {
+    border-bottom: 1px solid palette(orange, xxxx-light);
+  }
+  .lrg-br-xxxx-light-orange {
+    border-right: 1px solid palette(orange, xxxx-light);
+  }
 
-.lrg-b-xxxx-light-orange { border: 1px solid palette(orange, xxxx-light) }
-.lrg-bt-xxxx-light-orange { border-top: 1px solid palette(orange, xxxx-light) }
-.lrg-bl-xxxx-light-orange { border-left: 1px solid palette(orange, xxxx-light) }
-.lrg-bb-xxxx-light-orange { border-bottom: 1px solid palette(orange, xxxx-light) }
-.lrg-br-xxxx-light-orange { border-right: 1px solid palette(orange, xxxx-light) }
+  //orange borders
+  .lrg-b-cyan {
+    border: 1px solid palette(cyan, base);
+  }
+  .lrg-bt-cyan {
+    border-top: 1px solid palette(cyan, base);
+  }
+  .lrg-bl-cyan {
+    border-left: 1px solid palette(cyan, base);
+  }
+  .lrg-bb-cyan {
+    border-bottom: 1px solid palette(cyan, base);
+  }
+  .lrg-br-cyan {
+    border-right: 1px solid palette(cyan, base);
+  }
 
-//orange borders
-.lrg-b-cyan { border: 1px solid palette(cyan, base); }
-.lrg-bt-cyan { border-top: 1px solid palette(cyan, base); }
-.lrg-bl-cyan { border-left: 1px solid palette(cyan, base); }
-.lrg-bb-cyan { border-bottom: 1px solid palette(cyan, base); }
-.lrg-br-cyan { border-right: 1px solid palette(cyan, base); }
+  //orange borders
+  .lrg-b-cyan {
+    border: 1px solid palette(cyan, base);
+  }
+  .lrg-bt-cyan {
+    border-top: 1px solid palette(cyan, base);
+  }
+  .lrg-bl-cyan {
+    border-left: 1px solid palette(cyan, base);
+  }
+  .lrg-bb-cyan {
+    border-bottom: 1px solid palette(cyan, base);
+  }
+  .lrg-br-cyan {
+    border-right: 1px solid palette(cyan, base);
+  }
 
-//orange borders
-.lrg-b-cyan  {border: 1px solid palette(cyan, base);}
-.lrg-bt-cyan {border-top:1px solid palette(cyan, base);}
-.lrg-bl-cyan {border-left:1px solid palette(cyan, base);}
-.lrg-bb-cyan {border-bottom:1px solid palette(cyan, base);}
-.lrg-br-cyan {border-right:1px solid palette(cyan, base);}
+  // dark cyan borders
+  .lrg-b-x-dark-cyan-xxs {
+    border: 2px solid palette(cyan, x-dark);
+  }
+  .lrg-bt-x-dark-cyan-xxs {
+    border-top: 2px solid palette(cyan, x-dark);
+  }
+  .lrg-bl-x-dark-cyan-xxs {
+    border-left: 2px solid palette(cyan, x-dark);
+  }
+  .lrg-bb-x-dark-cyan-xxs {
+    border-bottom: 2px solid palette(cyan, x-dark);
+  }
+  .lrg-br-x-dark-cyan-xxs {
+    border-right: 2px solid palette(cyan, x-dark);
+  }
 
-// dark cyan borders
-.lrg-b-x-dark-cyan-xxs { border: 2px solid palette(cyan, x-dark); }
-.lrg-bt-x-dark-cyan-xxs { border-top: 2px solid palette(cyan, x-dark); }
-.lrg-bl-x-dark-cyan-xxs { border-left: 2px solid palette(cyan, x-dark); }
-.lrg-bb-x-dark-cyan-xxs { border-bottom: 2px solid palette(cyan, x-dark); }
-.lrg-br-x-dark-cyan-xxs { border-right: 2px solid palette(cyan, x-dark); }
+  //border none
+  .lrg-b-none {
+    border: none;
+  }
+  .lrg-bt-none {
+    border-top: none;
+  }
+  .lrg-bl-none {
+    border-left: none;
+  }
+  .lrg-bb-none {
+    border-bottom: none;
+  }
+  .lrg-br-none {
+    border-right: none;
+  }
 
-
-//border none
-.lrg-b-none { border: none; }
-.lrg-bt-none { border-top: none; }
-.lrg-bl-none { border-left: none; }
-.lrg-bb-none { border-bottom: none; }
-.lrg-br-none { border-right: none; }
-
-//shadowed style lines
-.lrg-b-xxxx-light-grey-shadow {
-  box-shadow: 0 0 0 1px palette(grey, xxxx-light) inset;
-}
+  //shadowed style lines
+  .lrg-b-xxxx-light-grey-shadow {
+    box-shadow: 0 0 0 1px palette(grey, xxxx-light) inset;
+  }
 }

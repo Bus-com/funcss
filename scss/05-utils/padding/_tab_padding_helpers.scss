@@ -1,8 +1,4 @@
-/* ==========================================================================
-  RESPONSIVE HELPERS TABLET PORTRAIT BREAKPOINT PADDING HELPERS
-  ========================================================================== */
 @include tablet-portrait {
-
   .tab-p0 {
     padding: 0;
   }
@@ -72,7 +68,7 @@
   }
   .tab-py-x {
     padding-top: $unit-x;
-    padding-bottom: $unit-x
+    padding-bottom: $unit-x;
   }
 
   .tab-p-small {
@@ -301,5 +297,4 @@
   .tab-pb-xxxxxxxxl {
     padding-bottom: $unit-xxxxxxxxl;
   }
-
 }
