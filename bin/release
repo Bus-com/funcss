@@ -1,20 +1,21 @@
 #!/bin/sh
 
 set -e pipefail
-sass scss/_all.scss:dist/funcss.css --style css
+
+./node_modules/.bin/sass scss/_all.scss:dist/funcss.css
 
 curl -X POST -s --data-urlencode "input@./dist/funcss.css" https://cssminifier.com/raw > ./dist/funcss.min.css
 
-git commit -am --allow-empty-message
+git commit -a --allow-empty-message -m ''
 
 npm version patch
-NEW_NPM_VERSION = $(npm view bus-funcss version)
+NEW_NPM_VERSION=$(npm view bus-funcss version)
 
-./node_modules/.bin/json -I -f package.json -e 'this.version="$NEW_NPM_VERSION"'
+./node_modules/.bin/json -I -f package.json -e "this.version=\"$NEW_NPM_VERSION\""
 
-git commit -am "release version $NEW_NPM_VERSION" --amend
+git commit -am "release version $NEW_NPM_VERSION"
 
 npm publish
 
-git tag "$NEW_NPM_VERSION"
+git tag "${NEW_NPM_VERSION}"
 git push --tags
