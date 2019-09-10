@@ -1,18 +1,16 @@
 /// MED POSITION HELPERS
 @include tablet-landscape {
-  /// MED-RELATIVE
   .med-pos-rel {
     position: relative;
   }
-
-  /// MED-ABSOLUTE
   .med-pos-abs {
     position: absolute;
   }
-
-  /// MED-FIXED
   .med-pos-fixed {
     position: fixed;
+  }
+  .med-pos-static  {
+    position: static;
   }
 }
 

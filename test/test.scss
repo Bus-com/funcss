@@ -20,6 +20,18 @@
     $expected: #eae6e2;
     @include assert-equal($test, $expected);
   }
+
+  @include test('Beige - biscuit') {
+    $test: palette(beige, biscuit);
+    $expected: #FAF9F8;
+    @include assert-equal($test, $expected);
+  }
+
+  @include test('Beige - warm-biscuit') {
+    $test: palette(beige, warm-biscuit);
+    $expected: #F3EFEB;
+    @include assert-equal($test, $expected);
+  }
 }
 
 @include report;

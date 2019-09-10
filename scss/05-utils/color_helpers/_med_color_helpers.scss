@@ -215,6 +215,14 @@
     background: palette(orange, xxxx-light);
   }
 
+  //BG BISCUIT
+  .med-bg-biscuit {
+    background: palette(beige, biscuit);
+  }
+  .med-bg-warm-biscuit {
+    background: palette(beige, warm-biscuit);
+  }
+
   .med-bg-facebook {
     background: #4c68a7;
     &:hover {

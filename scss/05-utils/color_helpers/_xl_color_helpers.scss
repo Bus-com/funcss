@@ -215,6 +215,14 @@
     background: palette(orange, xxxx-light);
   }
 
+  //BG BISCUIT
+  .xl-bg-biscuit {
+    background: palette(beige, biscuit);
+  }
+  .xl-bg-warm-biscuit {
+    background: palette(beige, warm-biscuit);
+  }
+
   .xl-bg-facebook {
     background: #4c68a7;
     &:hover {

@@ -216,6 +216,14 @@
     background: palette(orange, xxxx-light);
   }
 
+  //BG BISCUIT
+  .tab-bg-biscuit {
+    background: palette(beige, biscuit);
+  }
+  .tab-bg-warm-biscuit {
+    background: palette(beige, warm-biscuit);
+  }
+
   .tab-bg-facebook {
     background: #4c68a7;
     &:hover {

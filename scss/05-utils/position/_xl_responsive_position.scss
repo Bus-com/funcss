@@ -3,19 +3,17 @@
   ========================================================================== */
 
 @include laptop {
-  // XL-RELATIVE
   .xl-pos-rel {
     position: relative;
   }
-
-  // XL-ABSOLUTE
   .xl-pos-abs {
     position: absolute;
   }
-
-  // XL-FIXED
   .xl-pos-fixed {
     position: fixed;
+  }
+  .xl-pos-static  {
+    position: static;
   }
 }
 
