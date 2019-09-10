@@ -3,19 +3,17 @@
   ========================================================================== */
 
 @include tablet-portrait {
-  //TAB-RELATIVE
   .tab-pos-rel {
     position: relative;
   }
-
-  //TAB-ABSOLUTE
   .tab-pos-abs {
     position: absolute;
   }
-
-  //TAB-FIXED
   .tab-pos-fixed {
     position: fixed;
+  }
+  .tab-pos-static  {
+    position: static;
   }
 }
 

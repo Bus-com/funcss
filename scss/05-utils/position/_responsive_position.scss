@@ -2,19 +2,17 @@
    POSITION HELPERS
   ========================================================================== */
 
-// RELATIVE
 .pos-rel {
   position: relative;
 }
-
-// ABSOLUTE
 .pos-abs {
   position: absolute;
 }
-
-// FIXED
 .pos-fixed {
   position: fixed;
+}
+.pos-static  {
+  position: static;
 }
 
 // THE WHERE YOU WANT THESE TO BE MOVED OR PLACED...

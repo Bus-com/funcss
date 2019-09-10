@@ -1,18 +1,16 @@
 /// LRG POSITION HELPERS
 @include small-laptop {
-  /// LRG-RELATIVE
   .lrg-pos-rel {
     position: relative;
   }
-
-  /// LRG-ABSOLUTE
   .lrg-pos-abs {
     position: absolute;
   }
-
-  /// LRG-FIXED
   .lrg-pos-fixed {
     position: fixed;
+  }
+  .lrg-pos-static  {
+    position: static;
   }
 }
 
