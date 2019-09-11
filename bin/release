@@ -9,7 +9,7 @@ echo "minifying"
 curl -X POST -s --data-urlencode "input@./dist/funcss.css" https://cssminifier.com/raw > ./dist/funcss.min.css
 git commit -a --allow-empty --allow-empty-message -m ''
 
-echo "version patch"
+echo "npm version patch"
 NEW_NPM_VERSION=$(npm version patch)
 
 echo "commiting"
