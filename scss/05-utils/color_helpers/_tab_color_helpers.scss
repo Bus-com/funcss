@@ -330,6 +330,10 @@
   &:hover { color: palette(cyan, base)}
 }
 
+.tab-focus-cyan {
+  &:focus { color: palette(cyan, base)}
+}
+
 .tab-hover-dark-cyan {
   &:hover { color: palette(cyan, dark)}
 }

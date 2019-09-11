@@ -329,6 +329,10 @@
   &:hover { color: palette(cyan, base)}
 }
 
+.xl-focus-cyan {
+  &:focus { color: palette(cyan, base)}
+}
+
 .xl-hover-dark-cyan {
   &:hover { color: palette(cyan, dark)}
 }
