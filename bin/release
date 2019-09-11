@@ -13,7 +13,7 @@ echo "npm version patch"
 NEW_NPM_VERSION=$(npm version patch)
 
 echo "commiting"
-git commit -am "release version $NEW_NPM_VERSION"
+git commit -am --allow-empty "release version $NEW_NPM_VERSION"
 
 echo "publishing"
 npm publish
