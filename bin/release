@@ -2,20 +2,21 @@
 
 set -e pipefail
 
+echo "compiling sass"
 ./node_modules/.bin/sass scss/_all.scss:dist/funcss.css
 
+echo "minifying"
 curl -X POST -s --data-urlencode "input@./dist/funcss.css" https://cssminifier.com/raw > ./dist/funcss.min.css
-
 git commit -a --allow-empty-message -m ''
 
-npm version patch
-NEW_NPM_VERSION=$(npm view bus-funcss version)
+echo "version patch"
+NEW_NPM_VERSION=$(npm version patch)
 
-./node_modules/.bin/json -I -f package.json -e "this.version=\"$NEW_NPM_VERSION\""
-
+echo "commiting"
 git commit -am "release version $NEW_NPM_VERSION"
 
+echo "publishing"
 npm publish
 
-git tag "${NEW_NPM_VERSION}"
+echo "push tags"
 git push --tags
