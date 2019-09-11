@@ -7,7 +7,7 @@ echo "compiling sass"
 
 echo "minifying"
 curl -X POST -s --data-urlencode "input@./dist/funcss.css" https://cssminifier.com/raw > ./dist/funcss.min.css
-git commit -a --allow-empty-message -m ''
+git commit -a --allow-empty --allow-empty-message -m ''
 
 echo "version patch"
 NEW_NPM_VERSION=$(npm version patch)
