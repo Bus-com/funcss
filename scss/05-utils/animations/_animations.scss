@@ -17,3 +17,7 @@
 .ani-fade-out {
   @include animation("fadeOut .3s ease-in");
 }
+
+.anim-quick-ease {
+  @include animation("all 0s ease")
+}
