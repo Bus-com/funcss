@@ -462,6 +462,13 @@ button,
   }
 }
 
+.focus-cyan {
+  &:focus {
+    color: palette(cyan, base);
+    fill: palette(cyan, base);
+  }
+}
+
 .hover-dark-cyan {
   &:hover { color: palette(cyan, dark); }
 }
