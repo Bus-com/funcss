@@ -18,6 +18,23 @@
   @include animation("fadeOut .3s ease-in");
 }
 
-.anim-quick-ease {
-  @include animation("all 0s ease")
+.trans-quick-ease {
+  @include transition("all 0s ease");
 }
+
+.new-item-enter {
+	opacity: 1;
+}
+
+.new-item-enter-active {
+	@include animation("easeOutElastic 400ms ease-in");
+}
+
+.item-exit, .new-item-exit {
+	height: 200px;
+}
+
+.item-exit-active, .new-item-exit-active {
+	height: 0px;
+	@include transition("slideOutUp 400ms ease");
+} 
