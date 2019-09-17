@@ -18,6 +18,6 @@
   @include animation("fadeOut .3s ease-in");
 }
 
-.anim-quick-ease {
-  @include animation("all 0s ease")
+.new-item-enter-active {
+  @include animation("easeOutElastic 400ms ease-in");
 }
