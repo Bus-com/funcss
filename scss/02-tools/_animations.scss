@@ -141,25 +141,25 @@
 }
 
 @include keyframes(easeOutElastic) {
-	from {
-		transform: translateY(-50%);
+  from {
+    transform: translateY(-50%);
   }
-  
-	70% {
-		transform: translateY(5%);
+
+  70% {
+    transform: translateY(5%);
   }
-  
-	to {
-		transform: translateY(0%);
-	}
+
+  to {
+    transform: translateY(0%);
+  }
 }
 
 @include keyframes(slideOutUp) {
-	from {
-		transform: translateY(0%);
+  from {
+    transform: translateY(0%);
   }
-  
-	to {
-		transform: translateY(-75%);
-	}
+
+  to {
+    transform: translateY(-75%);
+  }
 }
