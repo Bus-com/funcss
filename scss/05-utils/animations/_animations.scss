@@ -23,9 +23,9 @@
 }
 
 .new-item-enter-active {
-	@include animation("easeOutElastic 400ms ease-in");
+  @include animation("easeOutElastic 400ms ease-in");
 }
 
 .item-exit-active, .new-item-exit-active {
-	@include transition("slideOutUp 400ms ease");
+  @include transition("slideOutUp 400ms ease");
 }
