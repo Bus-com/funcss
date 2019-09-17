@@ -1,0 +1,7 @@
+.trans-quick-ease {
+  @include transition("all 0s ease");
+}
+
+.item-exit-active, .new-item-exit-active {
+  @include transition("slideOutUp 400ms ease");
+}
