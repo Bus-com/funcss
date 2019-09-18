@@ -1,4 +1,3 @@
-@import "helpers";
 @import "icon_helpers";
 @import "border_radius_helpers";
 @import "list_helpers";
@@ -8,6 +7,10 @@
 @import "table_helpers";
 @import "debug";
 @import "opacity_helpers";
+
+//HELPERS
+@import "helpers/helpers";
+@import "helpers/tab_helpers";
 
 //BORDERS
 @import "borders/all";
