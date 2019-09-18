@@ -115,12 +115,12 @@
   text-indent: -9999px;
 }
 
-// DISSABLED STATES
+// DISABLED STATES
 .disabled {
   color: palette(grey, xxx-light) !important;
 }
 
-// INPUT DISSABLED STATES
+// INPUT DISABLED STATES
 .disabled-state {
   border-color: palette(grey, xxx-light) !important;
   background: rgba(palette(grey, xxx-light), 0.75) !important;
