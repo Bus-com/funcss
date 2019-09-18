@@ -66,10 +66,6 @@
   animation: #{$str};
 }
 
-@mixin transition($str) {
-  transition: #{$str};
-}
-
 ///  MEDIA QUERIES
 
 ///  pre tab
