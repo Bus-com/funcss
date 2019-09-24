@@ -130,6 +130,25 @@
     transform: translate3d(0, -100%, 0);
   }
 }
+@keyframes easeOutElastic {
+  from {
+    transform: translateY(-50%);
+  }
+  70% {
+    transform: translateY(5%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes slideOutUp {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-75%);
+  }
+}
 /* ==========================================================================
    BOX-SIZING
   ========================================================================== */
@@ -473,127 +492,6 @@ body {
   font-display: swap;
   src: url("https://funcss.s3.amazonaws.com/fonts/ca9162bc-20bd-4810-91a9-e816fdc64dae.eot?#iefix") format("eot"), url("https://funcss.s3.amazonaws.com/fonts/71b9791b-4350-4b52-8b43-c03b82004511.woff2") format("woff2"), url("https://funcss.s3.amazonaws.com/fonts/8c17992f-c017-49e0-b573-779f62016f06.woff") format("woff"), url("https://funcss.s3.amazonaws.com/fonts/2b4885a7-fc02-4aa0-b998-5b008a589c80.ttf") format("truetype");
 }
-/* ==========================================================================
-   HELPERS
-  ========================================================================== */
-@media only screen and (min-width: 768px) {
-  .f-left {
-    float: left;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .f-right {
-    float: right;
-  }
-}
-
-.clear {
-  clear: both;
-}
-
-.block {
-  display: block;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.rotate-45 {
-  transform: rotate(45deg);
-}
-
-.over-visible {
-  overflow: visible;
-}
-
-.over-hidden {
-  overflow: hidden;
-}
-
-.over-scroll {
-  overflow: scroll;
-}
-
-.over-auto {
-  overflow: auto;
-}
-
-.over-x-visible {
-  overflow-x: visible;
-}
-
-.over-x-hidden {
-  overflow-x: hidden;
-}
-
-.over-x-scroll {
-  overflow-x: scroll;
-}
-
-.over-x-auto {
-  overflow-x: auto;
-}
-
-.over-y-visible {
-  overflow-y: visible;
-}
-
-.over-y-hidden {
-  overflow-y: hidden;
-}
-
-.over-y-scroll {
-  overflow-y: scroll;
-}
-
-.over-y-auto {
-  overflow-y: auto;
-}
-
-.hover-pointer:hover {
-  cursor: pointer;
-}
-
-.hover-copy:hover {
-  cursor: copy;
-}
-
-.hover-not-allowed:hover {
-  cursor: not-allowed;
-}
-
-.negative-t-1 {
-  margin-top: -1px;
-}
-
-.negative-b-1 {
-  margin-bottom: -1px;
-}
-
-.negative-l-1 {
-  margin-left: -1px;
-}
-
-.negative-r-1 {
-  margin-right: -1px;
-}
-
-.neg-text-indent {
-  text-indent: -9999px;
-}
-
-.disabled {
-  color: #cccdd0 !important;
-}
-
-.disabled-state {
-  border-color: #cccdd0 !important;
-  background: rgba(204, 205, 208, 0.75) !important;
-  cursor: not-allowed;
-}
-
 /* ==========================================================================
    INLINE ICON HELPERS
   ========================================================================== */
@@ -957,6 +855,10 @@ body {
   box-shadow: 3px 14px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
+.bs-broad {
+  box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 18px 0 rgba(63, 63, 68, 0.15);
+}
+
 .bs-complex {
   box-shadow: 0 14px 34px rgba(50, 50, 90, 0.1), 0 4px 14px rgba(0, 0, 0, 0.07);
 }
@@ -1205,6 +1107,132 @@ ul.striped-odd li:nth-child(odd) {
   opacity: 0.1;
 }
 
+/* ==========================================================================
+   HELPERS
+  ========================================================================== */
+@media only screen and (min-width: 768px) {
+  .f-left {
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .f-right {
+    float: right;
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.rotate-45 {
+  transform: rotate(45deg);
+}
+
+.over-visible {
+  overflow: visible;
+}
+
+.over-hidden {
+  overflow: hidden;
+}
+
+.over-scroll {
+  overflow: scroll;
+}
+
+.over-auto {
+  overflow: auto;
+}
+
+.over-x-visible {
+  overflow-x: visible;
+}
+
+.over-x-hidden {
+  overflow-x: hidden;
+}
+
+.over-x-scroll {
+  overflow-x: scroll;
+}
+
+.over-x-auto {
+  overflow-x: auto;
+}
+
+.over-y-visible {
+  overflow-y: visible;
+}
+
+.over-y-hidden {
+  overflow-y: hidden;
+}
+
+.over-y-scroll {
+  overflow-y: scroll;
+}
+
+.over-y-auto {
+  overflow-y: auto;
+}
+
+.hover-pointer:hover {
+  cursor: pointer;
+}
+
+.hover-copy:hover {
+  cursor: copy;
+}
+
+.hover-not-allowed:hover {
+  cursor: not-allowed;
+}
+
+.negative-t-1 {
+  margin-top: -1px;
+}
+
+.negative-b-1 {
+  margin-bottom: -1px;
+}
+
+.negative-l-1 {
+  margin-left: -1px;
+}
+
+.negative-r-1 {
+  margin-right: -1px;
+}
+
+.neg-text-indent {
+  text-indent: -9999px;
+}
+
+.disabled {
+  color: #cccdd0 !important;
+}
+
+.disabled-state {
+  border-color: #cccdd0 !important;
+  background: rgba(204, 205, 208, 0.75) !important;
+  cursor: not-allowed;
+}
+
+@media only screen and (min-width: 768px) {
+  .tab-over-y-auto {
+    overflow-y: auto;
+  }
+}
 /* ==========================================================================
  BORDER HELPERS
 ========================================================================== */
@@ -4467,6 +4495,10 @@ button:hover.hover-orange,
 
 .xl-hover-xx-dark-cyan:hover {
   color: #d08946;
+}
+
+.focus-no-outline:focus {
+  outline: none;
 }
 
 /* ==========================================================================
@@ -16844,8 +16876,16 @@ button:hover.hover-orange,
   animation: fadeOut .3s ease-in;
 }
 
-.anim-quick-ease {
-  animation: all 0s ease;
+.new-item-enter-active {
+  animation: easeOutElastic 400ms ease-in;
+}
+
+.trans-quick-ease {
+  transition: all 0s ease;
+}
+
+.item-exit-active, .new-item-exit-active {
+  transition: slideOutUp 400ms ease;
 }
 
 .new-dashboard-section {
