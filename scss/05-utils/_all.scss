@@ -7,7 +7,6 @@
 @import "table_helpers";
 @import "debug";
 @import "opacity_helpers";
-@import "state_helpers/state_helpers";
 
 //HELPERS
 @import "helpers/helpers";
@@ -18,6 +17,9 @@
 
 // Colors
 @import "color_helpers/all";
+
+//STATE
+@import "state_helpers/all";
 
 //POSITION
 @import "position/responsive_position";
