@@ -7,7 +7,7 @@ input {
   display: block;
   width: 100%;
   border-radius: 2px;
-  font-size: 14px;
+  font-size: 16px;
   transition: border-color 0.3s ease-in;
   -webkit-box-shadow: 0 0 0 1000px white inset;
 
@@ -15,6 +15,12 @@ input {
   &:focus {
     border-color: palette(cyan, base);
     outline: none !important;
+  }
+
+  @include placeholder {
+    font-weight: 500;
+    font-family: "AvenirNextMedium", sans-serif;
+    color: palette(grey, base);
   }
 }
 
