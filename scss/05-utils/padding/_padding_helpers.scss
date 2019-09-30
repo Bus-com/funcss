@@ -178,6 +178,36 @@
   padding-bottom: $unit-lrg;
 }
 
+.px-l {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.py-l {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.pt-l {
+  padding-top: 36px;
+}
+
+.pb-l {
+  padding-bottom: 36px;
+}
+
+.pl-l {
+  padding-left: 36px;
+}
+
+.pr-l {
+  padding-right: 36px;
+}
+
+.p-l {
+  padding: 36px;
+}
+
 .p-xl {
   padding: $unit-xl;
 }
