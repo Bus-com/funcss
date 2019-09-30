@@ -9657,6 +9657,36 @@ button:hover.hover-orange,
   padding-bottom: 32px;
 }
 
+.px-l {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.py-l {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.pt-l {
+  padding-top: 36px;
+}
+
+.pb-l {
+  padding-bottom: 36px;
+}
+
+.pl-l {
+  padding-left: 36px;
+}
+
+.pr-l {
+  padding-right: 36px;
+}
+
+.p-l {
+  padding: 36px;
+}
+
 .p-xl {
   padding: 40px;
 }
@@ -10032,6 +10062,36 @@ button:hover.hover-orange,
     padding-bottom: 32px;
   }
 
+  .tab-px-l {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .tab-py-l {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .tab-pt-l {
+    padding-top: 36px;
+  }
+
+  .tab-pb-l {
+    padding-bottom: 36px;
+  }
+
+  .tab-pl-l {
+    padding-left: 36px;
+  }
+
+  .tab-pr-l {
+    padding-right: 36px;
+  }
+
+  .tab-p-l {
+    padding: 36px;
+  }
+
   .tab-p-xl {
     padding: 40px;
   }
@@ -10397,6 +10457,36 @@ button:hover.hover-orange,
   .med-py-lrg {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+
+  .med-px-l {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .med-py-l {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .med-pt-l {
+    padding-top: 36px;
+  }
+
+  .med-pb-l {
+    padding-bottom: 36px;
+  }
+
+  .med-pl-l {
+    padding-left: 36px;
+  }
+
+  .med-pr-l {
+    padding-right: 36px;
+  }
+
+  .med-p-l {
+    padding: 36px;
   }
 
   .med-p-xl {
@@ -10766,6 +10856,36 @@ button:hover.hover-orange,
     padding-bottom: 32px;
   }
 
+  .lrg-px-l {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .lrg-py-l {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .lrg-pt-l {
+    padding-top: 36px;
+  }
+
+  .lrg-pb-l {
+    padding-bottom: 36px;
+  }
+
+  .lrg-pl-l {
+    padding-left: 36px;
+  }
+
+  .lrg-pr-l {
+    padding-right: 36px;
+  }
+
+  .lrg-p-l {
+    padding: 36px;
+  }
+
   .lrg-p-xl {
     padding: 40px;
   }
@@ -11131,6 +11251,36 @@ button:hover.hover-orange,
   .xl-py-lrg {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+
+  .xl-px-l {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .xl-py-l {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .xl-pt-l {
+    padding-top: 36px;
+  }
+
+  .xl-pb-l {
+    padding-bottom: 36px;
+  }
+
+  .xl-pl-l {
+    padding-left: 36px;
+  }
+
+  .xl-pr-l {
+    padding-right: 36px;
+  }
+
+  .xl-p-l {
+    padding: 36px;
   }
 
   .xl-p-xl {
