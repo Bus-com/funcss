@@ -143,6 +143,30 @@
     padding-bottom: $unit-lrg;
   }
 
+  .med-px-l {
+    padding-left: $unit-l;
+    padding-right: $unit-l;
+  }
+  .med-py-l {
+    padding-top: $unit-l;
+    padding-bottom: $unit-l;
+  }
+  .med-pt-l {
+    padding-top: $unit-l;
+  }
+  .med-pb-l {
+    padding-bottom: $unit-l;
+  }
+  .med-pl-l {
+    padding-left: $unit-l;
+  }
+  .med-pr-l {
+    padding-right: $unit-l;
+  }
+  .med-p-l {
+    padding: $unit-l;
+  }
+
   .med-p-xl {
     padding: $unit-xl;
   }
@@ -271,29 +295,23 @@
     padding-top: $unit-xxxxxxl;
     padding-bottom: $unit-xxxxxxl;
   }
-
   .med-pt-xxxxxxxl {
     padding-top: $unit-xxxxxxxl;
   }
-
   .med-pb-xxxxxxxl {
     padding-bottom: $unit-xxxxxxxl;
   }
-
   .med-px-xxxxxxxl {
     padding-left: $unit-xxxxxxxl;
     padding-right: $unit-xxxxxxxl;
   }
-
   .med-py-xxxxxxxl {
     padding-top: $unit-xxxxxxxl;
     padding-bottom: $unit-xxxxxxxl;
   }
-
   .med-pt-xxxxxxxxl {
     padding-top: $unit-xxxxxxxxl;
   }
-
   .med-pb-xxxxxxxxl {
     padding-bottom: $unit-xxxxxxxxl;
   }

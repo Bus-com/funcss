@@ -143,6 +143,30 @@
     padding-bottom: $unit-lrg;
   }
 
+  .tab-px-l {
+    padding-left: $unit-l;
+    padding-right: $unit-l;
+  }
+  .tab-py-l {
+    padding-top: $unit-l;
+    padding-bottom: $unit-l;
+  }
+  .tab-pt-l {
+    padding-top: $unit-l;
+  }
+  .tab-pb-l {
+    padding-bottom: $unit-l;
+  }
+  .tab-pl-l {
+    padding-left: $unit-l;
+  }
+  .tab-pr-l {
+    padding-right: $unit-l;
+  }
+  .tab-p-l {
+    padding: $unit-l;
+  }
+
   .tab-p-xl {
     padding: $unit-xl;
   }
@@ -271,29 +295,23 @@
     padding-top: $unit-xxxxxxl;
     padding-bottom: $unit-xxxxxxl;
   }
-
   .tab-pt-xxxxxxxl {
     padding-top: $unit-xxxxxxxl;
   }
-
   .tab-pb-xxxxxxxl {
     padding-bottom: $unit-xxxxxxxl;
   }
-
   .tab-px-xxxxxxxl {
     padding-left: $unit-xxxxxxxl;
     padding-right: $unit-xxxxxxxl;
   }
-
   .tab-py-xxxxxxxl {
     padding-top: $unit-xxxxxxxl;
     padding-bottom: $unit-xxxxxxxl;
   }
-
   .tab-pt-xxxxxxxxl {
     padding-top: $unit-xxxxxxxxl;
   }
-
   .tab-pb-xxxxxxxxl {
     padding-bottom: $unit-xxxxxxxxl;
   }

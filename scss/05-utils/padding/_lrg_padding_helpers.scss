@@ -143,6 +143,30 @@
     padding-bottom: $unit-lrg;
   }
 
+  .lrg-px-l {
+    padding-left: $unit-l;
+    padding-right: $unit-l;
+  }
+  .lrg-py-l {
+    padding-top: $unit-l;
+    padding-bottom: $unit-l;
+  }
+  .lrg-pt-l {
+    padding-top: $unit-l;
+  }
+  .lrg-pb-l {
+    padding-bottom: $unit-l;
+  }
+  .lrg-pl-l {
+    padding-left: $unit-l;
+  }
+  .lrg-pr-l {
+    padding-right: $unit-l;
+  }
+  .lrg-p-l {
+    padding: $unit-l;
+  }
+
   .lrg-p-xl {
     padding: $unit-xl;
   }
@@ -271,29 +295,23 @@
     padding-top: $unit-xxxxxxl;
     padding-bottom: $unit-xxxxxxl;
   }
-
   .lrg-pt-xxxxxxxl {
     padding-top: $unit-xxxxxxxl;
   }
-
   .lrg-pb-xxxxxxxl {
     padding-bottom: $unit-xxxxxxxl;
   }
-
   .lrg-px-xxxxxxxl {
     padding-left: $unit-xxxxxxxl;
     padding-right: $unit-xxxxxxxl;
   }
-
   .lrg-py-xxxxxxxl {
     padding-top: $unit-xxxxxxxl;
     padding-bottom: $unit-xxxxxxxl;
   }
-
   .lrg-pt-xxxxxxxxl {
     padding-top: $unit-xxxxxxxxl;
   }
-
   .lrg-pb-xxxxxxxxl {
     padding-bottom: $unit-xxxxxxxxl;
   }
