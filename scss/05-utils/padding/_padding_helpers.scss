@@ -88,6 +88,66 @@
   padding-bottom: $unit-x;
 }
 
+.p-xx {
+  padding: $unit-xx;
+}
+
+.pt-xx {
+  padding-top: $unit-xx;
+}
+
+.pr-xx {
+  padding-right: $unit-xx;
+}
+
+.pb-xx {
+  padding-bottom: $unit-xx;
+}
+
+.pl-xx {
+  padding-left: $unit-xx;
+}
+
+.px-xx {
+  padding-left: $unit-xx;
+  padding-right: $unit-xx;
+}
+
+.py-xx {
+  padding-top: $unit-xx;
+  padding-bottom: $unit-xx;
+}
+
+.p-xxx {
+  padding: $unit-xxx;
+}
+
+.pt-xxx {
+  padding-top: $unit-xxx;
+}
+
+.pr-xxx {
+  padding-right: $unit-xxx;
+}
+
+.pb-xxx {
+  padding-bottom: $unit-xxx;
+}
+
+.pl-xxx {
+  padding-left: $unit-xxx;
+}
+
+.px-xxx {
+  padding-left: $unit-xxx;
+  padding-right: $unit-xxx;
+}
+
+.py-xxx {
+  padding-top: $unit-xxx;
+  padding-bottom: $unit-xxx;
+}
+
 .p-small {
   padding: $unit-small;
 }
@@ -116,6 +176,36 @@
 .py-small {
   padding-top: $unit-small;
   padding-bottom: $unit-small;
+}
+
+.p-xxxm {
+  padding: $unit-xxxm;
+}
+
+.pt-xxxm {
+  padding-top: $unit-xxxm;
+}
+
+.pr-xxxm {
+  padding-right: $unit-xxxm;
+}
+
+.pb-xxxm {
+  padding-bottom: $unit-xxxm;
+}
+
+.pl-xxxm {
+  padding-left: $unit-xxxm;
+}
+
+.px-xxxm {
+  padding-left: $unit-xxxm;
+  padding-right: $unit-xxxm;
+}
+
+.py-xxxm {
+  padding-top: $unit-xxxm;
+  padding-bottom: $unit-xxxm;
 }
 
 .p-medium {

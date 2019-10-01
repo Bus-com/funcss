@@ -71,6 +71,54 @@
     padding-bottom: $unit-x;
   }
 
+  .tab-p-xx {
+    padding: $unit-xx;
+  }
+  .tab-pt-xx {
+    padding-top: $unit-xx;
+  }
+  .tab-pr-xx {
+    padding-right: $unit-xx;
+  }
+  .tab-pb-xx {
+    padding-bottom: $unit-xx;
+  }
+  .tab-pl-xx {
+    padding-left: $unit-xx;
+  }
+  .tab-px-xx {
+    padding-left: $unit-xx;
+    padding-right: $unit-xx;
+  }
+  .tab-py-xx {
+    padding-top: $unit-xx;
+    padding-bottom: $unit-xx;
+  }
+
+  .tab-p-xxx {
+    padding: $unit-xxx;
+  }
+  .tab-pt-xxx {
+    padding-top: $unit-xxx;
+  }
+  .tab-pr-xxx {
+    padding-right: $unit-xxx;
+  }
+  .tab-pb-xxx {
+    padding-bottom: $unit-xxx;
+  }
+  .tab-pl-xxx {
+    padding-left: $unit-xxx;
+  }
+  .tab-px-xxx {
+    padding-left: $unit-xxx;
+    padding-right: $unit-xxx;
+  }
+  .tab-py-xxx {
+    padding-top: $unit-xxx;
+    padding-bottom: $unit-xxx;
+  }  
+
   .tab-p-small {
     padding: $unit-small;
   }
@@ -94,6 +142,30 @@
     padding-top: $unit-small;
     padding-bottom: $unit-small;
   }
+
+  .tab-p-xxxm {
+    padding: $unit-xxxm;
+  }
+  .tab-pt-xxxm {
+    padding-top: $unit-xxxm;
+  }
+  .tab-pr-xxxm {
+    padding-right: $unit-xxxm;
+  }
+  .tab-pb-xxxm {
+    padding-bottom: $unit-xxxm;
+  }
+  .tab-pl-xxxm {
+    padding-left: $unit-xxxm;
+  }
+  .tab-px-xxxm {
+    padding-left: $unit-xxxm;
+    padding-right: $unit-xxxm;
+  }
+  .tab-py-xxxm {
+    padding-top: $unit-xxxm;
+    padding-bottom: $unit-xxxm;
+  }  
 
   .tab-p-medium {
     padding: $unit-medium;

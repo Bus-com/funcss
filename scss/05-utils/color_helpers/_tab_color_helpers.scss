@@ -31,10 +31,12 @@
   .tab-xxx-light-grey {
     color: palette(grey, xxx-light);
   }
-
   .tab-dark-grey {
     color: palette(grey, dark);
   }
+  .tab-xx-dark-grey {
+    color: palette(grey, xx-dark);
+  }  
 
   .tab-yellow {
     color: palette(yellow, base);
@@ -164,6 +166,9 @@
   .tab-bg-xxxx-light-grey {
     background: palette(grey, xxxx-light);
   }
+  .tab-bg-xx-dark-grey {
+    background-color: palette(grey, xx-dark);
+  }  
 
   //BG DARK CYAN
 

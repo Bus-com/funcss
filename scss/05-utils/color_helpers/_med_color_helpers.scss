@@ -30,9 +30,11 @@
   .med-xxx-light-grey {
     color: palette(grey, xxx-light);
   }
-
   .med-dark-grey {
     color: palette(grey, dark);
+  }
+  .med-xx-dark-grey {
+    color: palette(grey, xx-dark);
   }
 
   .med-yellow {
@@ -163,6 +165,9 @@
   .med-bg-xxxx-light-grey {
     background: palette(grey, xxxx-light);
   }
+  .med-bg-xx-dark-grey {
+    background-color: palette(grey, xx-dark);
+  }  
 
   //BG DARK CYAN
 

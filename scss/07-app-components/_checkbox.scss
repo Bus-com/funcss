@@ -43,3 +43,11 @@ input[type="checkbox"]:checked + label {
     transform: rotate(45deg);
   }
 }
+
+input.white-checkbox[type="checkbox"] + label {
+  &:before {
+    border-radius: 0px;
+    border: 1px solid palette(white, base); 
+    background: palette(white, base); 
+  }
+}

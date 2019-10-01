@@ -71,6 +71,54 @@
     padding-bottom: $unit-x;
   }
 
+  .xl-p-xx {
+    padding: $unit-xx;
+  }
+  .xl-pt-xx {
+    padding-top: $unit-xx;
+  }
+  .xl-pr-xx {
+    padding-right: $unit-xx;
+  }
+  .xl-pb-xx {
+    padding-bottom: $unit-xx;
+  }
+  .xl-pl-xx {
+    padding-left: $unit-xx;
+  }
+  .xl-px-xx {
+    padding-left: $unit-xx;
+    padding-right: $unit-xx;
+  }
+  .xl-py-xx {
+    padding-top: $unit-xx;
+    padding-bottom: $unit-xx;
+  }
+
+  .xl-p-xxx {
+    padding: $unit-xxx;
+  }
+  .xl-pt-xxx {
+    padding-top: $unit-xxx;
+  }
+  .xl-pr-xxx {
+    padding-right: $unit-xxx;
+  }
+  .xl-pb-xxx {
+    padding-bottom: $unit-xxx;
+  }
+  .xl-pl-xxx {
+    padding-left: $unit-xxx;
+  }
+  .xl-px-xxx {
+    padding-left: $unit-xxx;
+    padding-right: $unit-xxx;
+  }
+  .xl-py-xxx {
+    padding-top: $unit-xxx;
+    padding-bottom: $unit-xxx;
+  }
+
   .xl-p-small {
     padding: $unit-small;
   }
@@ -93,6 +141,30 @@
   .xl-py-small {
     padding-top: $unit-small;
     padding-bottom: $unit-small;
+  }
+
+  .xl-p-xxxm {
+    padding: $unit-xxxm;
+  }
+  .xl-pt-xxxm {
+    padding-top: $unit-xxxm;
+  }
+  .xl-pr-xxxm {
+    padding-right: $unit-xxxm;
+  }
+  .xl-pb-xxxm {
+    padding-bottom: $unit-xxxm;
+  }
+  .xl-pl-xxxm {
+    padding-left: $unit-xxxm;
+  }
+  .xl-px-xxxm {
+    padding-left: $unit-xxxm;
+    padding-right: $unit-xxxm;
+  }
+  .xl-py-xxxm {
+    padding-top: $unit-xxxm;
+    padding-bottom: $unit-xxxm;
   }
 
   .xl-p-medium {
