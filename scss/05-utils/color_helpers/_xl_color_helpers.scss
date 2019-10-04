@@ -30,10 +30,12 @@
   .xl-xxx-light-grey {
     color: palette(grey, xxx-light);
   }
-
   .xl-dark-grey {
     color: palette(grey, dark);
   }
+  .xl-xx-dark-grey {
+    color: palette(grey, xx-dark);
+  }  
 
   .xl-yellow {
     color: palette(yellow, base);
@@ -163,6 +165,9 @@
   .xl-bg-xxxx-light-grey {
     background: palette(grey, xxxx-light);
   }
+  .xl-bg-xx-dark-grey {
+    background-color: palette(grey, xx-dark);
+  }  
 
   //BG DARK CYAN
 
