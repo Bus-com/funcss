@@ -1,0 +1,25 @@
+@include tablet-portrait {
+  .tab-l-cntnt {
+    width: 1250px;
+    max-width: 90%;
+  }
+
+  .tab-l-cntnt-lrg {
+    width: 1440px;
+    max-width: 90%;
+  }
+
+  .tab-page {
+    height: 100vh;
+  }
+
+  .tab-l-page {
+    max-width: 1440px;
+    width: 100%;
+  }
+
+  .tab-l-zone {
+    width: 100%;
+    max-width: 100%;
+  }
+}

@@ -45,6 +45,9 @@ input[type="checkbox"]:checked + label {
 }
 
 input.white-checkbox[type="checkbox"] + label {
+  padding-left: 29px;
+  padding-top: $unit-xxs;
+
   &:before {
     border-radius: 0px;
     border: 1px solid palette(white, base); 

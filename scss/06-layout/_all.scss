@@ -1,8 +1,5 @@
 // These will be removed
 @import "new_dashboard_section";
-@import "page";
-@import "zone";
-@import "content";
 
 // GRIDS
 @import "grids/col_grid";
@@ -15,3 +12,10 @@
 @import "grids/med_offset_grid";
 @import "grids/lrg_offset_grid";
 @import "grids/xl_offset_grid";
+
+// CONTENT
+@import "content/content";
+@import "content/tab_content";
+@import "content/med_content";
+@import "content/lrg_content";
+@import "content/xl_content";
