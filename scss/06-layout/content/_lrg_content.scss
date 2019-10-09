@@ -1,0 +1,25 @@
+@include small-laptop {
+  .lrg-l-cntnt {
+    width: 1250px;
+    max-width: 90%;
+  }
+
+  .lrg-l-cntnt-lrg {
+    width: 1440px;
+    max-width: 90%;
+  }
+
+  .lrg-page {
+    height: 100vh;
+  }
+
+  .lrg-l-page {
+    max-width: 1440px;
+    width: 100%;
+  }
+
+  .lrg-l-zone {
+    width: 100%;
+    max-width: 100%;
+  }
+}

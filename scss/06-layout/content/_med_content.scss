@@ -1,0 +1,25 @@
+@include tablet-landscape {
+  .med-l-cntnt {
+    width: 1250px;
+    max-width: 90%;
+  }
+
+  .med-l-cntnt-lrg {
+    width: 1440px;
+    max-width: 90%;
+  }
+
+  .med-page {
+    height: 100vh;
+  }
+
+  .med-l-page {
+    max-width: 1440px;
+    width: 100%;
+  }
+
+  .med-l-zone {
+    width: 100%;
+    max-width: 100%;
+  }
+}
