@@ -39,4 +39,13 @@
   .lrg-object-fit-cover {
     object-fit: cover;
   }
+  .lrg-object-fit-contain {
+    object-fit: contain;
+  }
+  .lrg-object-fit-none {
+    object-fit: none;
+  }
+  .lrg-object-fit-fill {
+    object-fit: fill;
+  }  
 }

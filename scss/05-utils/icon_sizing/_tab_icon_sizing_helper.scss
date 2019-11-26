@@ -39,4 +39,13 @@
   .tab-object-fit-cover {
     object-fit: cover;
   }
+  .tab-object-fit-contain {
+    object-fit: contain;
+  }
+  .tab-object-fit-none {
+    object-fit: none;
+  }
+  .tab-object-fit-fill {
+    object-fit: fill;
+  }    
 }

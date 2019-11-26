@@ -166,6 +166,36 @@
   margin-bottom: $unit-xx;
 }
 
+.m-xxx {
+  margin: $unit-xxx;
+}
+
+.mt-xxx {
+  margin-top: $unit-xxx;
+}
+
+.mr-xxx {
+  margin-right: $unit-xxx;
+}
+
+.mb-xxx {
+  margin-bottom: $unit-xxx;
+}
+
+.ml-xxx {
+  margin-left: $unit-xxx;
+}
+
+.mx-xxx {
+  margin-left: $unit-xxx;
+  margin-right: $unit-xxx;
+}
+
+.my-xxx {
+  margin-top: $unit-xxx;
+  margin-bottom: $unit-xxx;
+} 
+
 .m-small {
   margin: $unit-small;
 }
@@ -195,6 +225,36 @@
   margin-top: $unit-small;
   margin-bottom: $unit-small;
 }
+
+.m-xxxm {
+  margin: $unit-xxxm;
+}
+
+.mt-xxxm {
+  margin-top: $unit-xxxm;
+}
+
+.mr-xxxm {
+  margin-right: $unit-xxxm;
+}
+
+.mb-xxxm {
+  margin-bottom: $unit-xxxm;
+}
+
+.ml-xxxm {
+  margin-left: $unit-xxxm;
+}
+
+.mx-xxxm {
+  margin-left: $unit-xxxm;
+  margin-right: $unit-xxxm;
+}
+
+.my-xxxm {
+  margin-top: $unit-xxxm;
+  margin-bottom: $unit-xxxm;
+}  
 
 .m-medium {
   margin: $unit-medium;
@@ -255,6 +315,36 @@
   margin-top: $unit-lrg;
   margin-bottom: $unit-lrg;
 }
+
+.mx-l {
+  margin-left: $unit-l;
+  margin-right: $unit-l;
+}
+
+.my-l {
+  margin-top: $unit-l;
+  margin-bottom: $unit-l;
+}
+
+.mt-l {
+  margin-top: $unit-l;
+}
+
+.mb-l {
+  margin-bottom: $unit-l;
+}
+
+.ml-l {
+  margin-left: $unit-l;
+}
+
+.mr-l {
+  margin-right: $unit-l;
+}
+
+.m-l {
+  margin: $unit-l;
+}  
 
 .m-xl {
   margin: $unit-xl;

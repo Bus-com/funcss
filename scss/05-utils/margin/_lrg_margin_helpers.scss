@@ -104,6 +104,30 @@
     margin-bottom: $unit-xx;
   }
 
+  .lrg-m-xxx {
+    margin: $unit-xxx;
+  }
+  .lrg-mt-xxx {
+    margin-top: $unit-xxx;
+  }
+  .lrg-mr-xxx {
+    margin-right: $unit-xxx;
+  }
+  .lrg-mb-xxx {
+    margin-bottom: $unit-xxx;
+  }
+  .lrg-ml-xxx {
+    margin-left: $unit-xxx;
+  }
+  .lrg-mx-xxx {
+    margin-left: $unit-xxx;
+    margin-right: $unit-xxx;
+  }
+  .lrg-my-xxx {
+    margin-top: $unit-xxx;
+    margin-bottom: $unit-xxx;
+  }  
+
   .lrg-m-small {
     margin: $unit-small;
   }
@@ -127,6 +151,30 @@
     margin-top: $unit-small;
     margin-bottom: $unit-small;
   }
+
+  .lrg-m-xxxm {
+    margin: $unit-xxxm;
+  }
+  .lrg-mt-xxxm {
+    margin-top: $unit-xxxm;
+  }
+  .lrg-mr-xxxm {
+    margin-right: $unit-xxxm;
+  }
+  .lrg-mb-xxxm {
+    margin-bottom: $unit-xxxm;
+  }
+  .lrg-ml-xxxm {
+    margin-left: $unit-xxxm;
+  }
+  .lrg-mx-xxxm {
+    margin-left: $unit-xxxm;
+    margin-right: $unit-xxxm;
+  }
+  .lrg-my-xxxm {
+    margin-top: $unit-xxxm;
+    margin-bottom: $unit-xxxm;
+  }  
 
   .lrg-m-medium {
     margin: $unit-medium;
@@ -175,6 +223,30 @@
     margin-top: $unit-lrg;
     margin-bottom: $unit-lrg;
   }
+
+  .lrg-mx-l {
+    margin-left: $unit-l;
+    margin-right: $unit-l;
+  }
+  .lrg-my-l {
+    margin-top: $unit-l;
+    margin-bottom: $unit-l;
+  }
+  .lrg-mt-l {
+    margin-top: $unit-l;
+  }
+  .lrg-mb-l {
+    margin-bottom: $unit-l;
+  }
+  .lrg-ml-l {
+    margin-left: $unit-l;
+  }
+  .lrg-mr-l {
+    margin-right: $unit-l;
+  }
+  .lrg-m-l {
+    margin: $unit-l;
+  }  
 
   .lrg-m-xl {
     margin: $unit-xl;
