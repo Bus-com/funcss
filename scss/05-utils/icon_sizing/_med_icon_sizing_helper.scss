@@ -38,5 +38,14 @@
   }
   .med-object-fit-cover {
     object-fit: cover;
-  } 
+  }
+  .med-object-fit-contain {
+    object-fit: contain;
+  }
+  .med-object-fit-none {
+    object-fit: none;
+  }
+  .med-object-fit-fill {
+    object-fit: fill;
+  }     
 }

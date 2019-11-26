@@ -37,6 +37,53 @@
     height: 10vh;
   }
 
+  /// VIEWPORT HEIGHT FIXED
+  .tab-h-fixed-150 {
+    height: 150px;
+  }  
+  .tab-h-fixed-140 {
+    height: 140px;
+  }  
+  .tab-h-fixed-130 {
+    height: 130px;
+  }  
+  .tab-h-fixed-120 {
+    height: 120px;
+  } 
+  .tab-h-fixed-110 {
+    height: 110px;
+  } 
+  .tab-h-fixed-100 {
+    height: 100px;
+  } 
+  .tab-h-fixed-90 {
+    height: 90px;
+  } 
+  .tab-h-fixed-80 {
+    height: 80px;
+  } 
+  .tab-h-fixed-70 {
+    height: 70px;
+  } 
+  .tab-h-fixed-60 {
+    height: 60px;
+  }   
+  .tab-h-fixed-50 {
+    height: 50px;
+  }  
+  .tab-h-fixed-40 {
+    height: 40px;
+  }  
+  .tab-h-fixed-30 {
+    height: 30px;
+  }  
+  .tab-h-fixed-20 {
+    height: 20px;
+  } 
+  .tab-h-fixed-10 {
+    height: 10px;
+  }  
+
   // VIEWPORT MIN HEIGHT
 
   .tab-min-vh-100 {
@@ -139,6 +186,12 @@
   .tab-min-h-fixed-400 {
     min-height: 400px;
   }      
+  .tab-min-h-fixed-350 {
+    min-height: 350px;
+  } 
+  .tab-min-h-fixed-300 {
+    min-height: 300px;
+  } 
 
   // VIEWPORT MAX HEIGHT
 
@@ -242,6 +295,18 @@
   .tab-max-h-fixed-400 {
     max-height: 400px;
   }    
+  .tab-max-h-fixed-370 {
+    max-height: 370px;
+  } 
+  .tab-max-h-fixed-360 {
+    max-height: 360px;
+  }    
+  .tab-max-h-fixed-350 {
+    max-height: 350px;
+  } 
+  .tab-max-h-fixed-300 {
+    max-height: 300px;
+  }  
 
   // VIEWPORT WIDTH
 
@@ -342,6 +407,9 @@
     max-width: 10vw;
   }
 
+  .tab-max-w-fixed-1000 {
+    max-width: 1000px;
+  } 
   .tab-max-w-fixed-900 {
     max-width: 900px;
   } 

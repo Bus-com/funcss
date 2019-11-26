@@ -48,6 +48,32 @@
   }
 }
 
+.basic-select-wrapper {
+  background: $white;
+
+  input,
+  select,
+  .basic-select {
+    appearance: none;
+    height: $unit-xxl;
+    line-height: $unit-xxl;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    padding-left: $unit-small;
+    background: transparent;
+    background-image: url("images/dropdown.svg");
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: $unit-xxl;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: $unit-xxxl;
+    font-size: 14px;
+  }
+}
+
 .c-select-small {
   height: $unit-lrg;
 
