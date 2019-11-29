@@ -71,6 +71,10 @@
     text-overflow: ellipsis;
     padding-right: $unit-xxxl;
     font-size: 14px;
+
+    &:required:invalid {
+      opacity: .8;
+    }    
   }
 }
 
