@@ -21,6 +21,13 @@
 //STATE
 @import "state_helpers/all";
 
+//Background
+@import "background/bg_helpers";
+@import "background/tab_bg_helpers";
+@import "background/med_bg_helpers";
+@import "background/lrg_bg_helpers";
+@import "background/xl_bg_helpers";
+
 //POSITION
 @import "position/responsive_position";
 @import "position/tab_responsive_position";
