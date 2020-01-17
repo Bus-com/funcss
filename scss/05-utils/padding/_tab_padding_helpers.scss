@@ -22,7 +22,71 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-
+  .tab-p-1 {
+    padding: $unit-1;
+  }
+  .tab-pt-1 {
+    padding-top: $unit-1;
+  }
+  .tab-pr-1 {
+    padding-right: $unit-1;
+  }
+  .tab-pb-1 {
+    padding-bottom: $unit-1;
+  }
+  .tab-pl-1 {
+    padding-left: $unit-1;
+  }
+  .tab-px-1 {
+    padding-left: $unit-1;
+    padding-right: $unit-1;
+  }
+  .tab-py-11 {
+    padding-top: $unit-odd-small;
+    padding-bottom: $unit-odd-small;
+  }
+  .tab-p-11 {
+    padding: $unit-odd-small;
+  }
+  .tab-pt-11 {
+    padding-top: $unit-odd-small;
+  }
+  .tab-pr-11 {
+    padding-right: $unit-odd-small;
+  }
+  .tab-pb-11 {
+    padding-bottom: $unit-odd-small;
+  }
+  .tab-pl-11 {
+    padding-left: $unit-odd-small;
+  }
+  .tab-px-11 {
+    padding-left: $unit-odd-small;
+    padding-right: $unit-odd-small;
+  }
+  .tab-py-13 {
+    padding-top: $unit-odd-xm;
+    padding-bottom: $unit-odd-xm;
+  }
+  .tab-p-13 {
+    padding: $unit-odd-xm;
+  }
+  .tab-pt-13 {
+    padding-top: $unit-odd-xm;
+  }
+  .tab-pr-13 {
+    padding-right: $unit-odd-xm;
+  }
+  .tab-pb-13 {
+    padding-bottom: $unit-odd-xm;
+  }
+  .tab-pl-13 {
+    padding-left: $unit-odd-xm;
+  }
+  .tab-px-13 {
+    padding-left: $unit-odd-xm;
+    padding-right: $unit-odd-xm;
+  }
   .tab-p-xs {
     padding: $unit-xs;
   }
@@ -190,6 +254,78 @@
     padding-top: $unit-medium;
     padding-bottom: $unit-medium;
   }
+
+  .tab-p-mx {
+    padding: $unit-mx;
+  }
+  .tab-pt-mx {
+    padding-top: $unit-mx;
+  }
+  .tab-pr-mx {
+    padding-right: $unit-mx;
+  }
+  .tab-pb-mx {
+    padding-bottom: $unit-mx;
+  }
+  .tab-pl-mx {
+    padding-left: $unit-mx;
+  }
+  .tab-px-mx {
+    padding-left: $unit-mx;
+    padding-right: $unit-mx;
+  }
+  .tab-py-mx {
+    padding-top: $unit-mx;
+    padding-bottom: $unit-mx;
+  }    
+
+  .tab-py-27 {
+    padding-top: $unit-odd-mxx;
+    padding-bottom: $unit-odd-mxx;
+  }
+  .tab-p-27 {
+    padding: $unit-odd-mxx;
+  }
+  .tab-pt-27 {
+    padding-top: $unit-odd-mxx;
+  }
+  .tab-pr-27 {
+    padding-right: $unit-odd-mxx;
+  }
+  .tab-pb-27 {
+    padding-bottom: $unit-odd-mxx;
+  }
+  .tab-pl-27 {
+    padding-left: $unit-odd-mxx;
+  }
+  .tab-px-27 {
+    padding-left: $unit-odd-mxx;
+    padding-right: $unit-odd-mxx;
+  }
+
+  .tab-p-mxxx {
+    padding: $unit-mxxx;
+  }
+  .tab-pt-mxxx {
+    padding-top: $unit-mxxx;
+  }
+  .tab-pr-mxxx {
+    padding-right: $unit-mxxx;
+  }
+  .tab-pb-mxxx {
+    padding-bottom: $unit-mxxx;
+  }
+  .tab-pl-mxxx {
+    padding-left: $unit-mxxx;
+  }
+  .tab-px-mxxx {
+    padding-left: $unit-mxxx;
+    padding-right: $unit-mxxx;
+  }
+  .tab-py-mxxx {
+    padding-top: $unit-mxxx;
+    padding-bottom: $unit-mxxx;
+  }   
 
   .tab-p-lrg {
     padding: $unit-lrg;

@@ -28,6 +28,91 @@
   padding-bottom: 0;
 }
 
+.p-1 {
+  padding: $unit-1;
+}
+
+.pt-1 {
+  padding-top: $unit-1;
+}
+
+.pr-1 {
+  padding-right: $unit-1;
+}
+
+.pb-1 {
+  padding-bottom: $unit-1;
+}
+
+.pl-1 {
+  padding-left: $unit-1;
+}
+
+.px-1 {
+  padding-left: $unit-1;
+  padding-right: $unit-1;
+}
+
+.py-11 {
+  padding-top: $unit-odd-small;
+  padding-bottom: $unit-odd-small;
+}
+
+.p-11 {
+  padding: $unit-odd-small;
+}
+
+.pt-11 {
+  padding-top: $unit-odd-small;
+}
+
+.pr-11 {
+  padding-right: $unit-odd-small;
+}
+
+.pb-11 {
+  padding-bottom: $unit-odd-small;
+}
+
+.pl-11 {
+  padding-left: $unit-odd-small;
+}
+
+.px-11 {
+  padding-left: $unit-odd-small;
+  padding-right: $unit-odd-small;
+}
+
+.py-13 {
+  padding-top: $unit-odd-xm;
+  padding-bottom: $unit-odd-xm;
+}
+
+.p-13 {
+  padding: $unit-odd-xm;
+}
+
+.pt-13 {
+  padding-top: $unit-odd-xm;
+}
+
+.pr-13 {
+  padding-right: $unit-odd-xm;
+}
+
+.pb-13 {
+  padding-bottom: $unit-odd-xm;
+}
+
+.pl-13 {
+  padding-left: $unit-odd-xm;
+}
+
+.px-13 {
+  padding-left: $unit-odd-xm;
+  padding-right: $unit-odd-xm;
+}
+
 .p-xs {
   padding: $unit-xs;
 }
@@ -236,6 +321,91 @@
 .py-medium {
   padding-top: $unit-medium;
   padding-bottom: $unit-medium;
+}
+
+.p-mx {
+  padding: $unit-mx;
+}
+
+.pt-mx {
+  padding-top: $unit-mx;
+}
+
+.pr-mx {
+  padding-right: $unit-mx;
+}
+
+.pb-mx {
+  padding-bottom: $unit-mx;
+}
+
+.pl-mx {
+  padding-left: $unit-mx;
+}
+
+.px-mx {
+  padding-left: $unit-mx;
+  padding-right: $unit-mx;
+}
+
+.py-mx {
+  padding-top: $unit-mx;
+  padding-bottom: $unit-mx;
+}
+
+
+.py-27 {
+  padding-top: $unit-odd-mxx;
+  padding-bottom: $unit-odd-mxx;
+}
+.p-27 {
+  padding: $unit-odd-mxx;
+}
+.pt-27 {
+  padding-top: $unit-odd-mxx;
+}
+.pr-27 {
+  padding-right: $unit-odd-mxx;
+}
+.pb-27 {
+  padding-bottom: $unit-odd-mxx;
+}
+.pl-27 {
+  padding-left: $unit-odd-mxx;
+}
+.px-27 {
+  padding-left: $unit-odd-mxx;
+  padding-right: $unit-odd-mxx;
+}
+
+.p-mxxx {
+  padding: $unit-mx;
+}
+
+.pt-mxxx {
+  padding-top: $unit-mxxx;
+}
+
+.pr-mxxx {
+  padding-right: $unit-mxxx;
+}
+
+.pb-mxxx {
+  padding-bottom: $unit-mxxx;
+}
+
+.pl-mxxx {
+  padding-left: $unit-mxxx;
+}
+
+.px-mxxx {
+  padding-left: $unit-mxxx;
+  padding-right: $unit-mxxx;
+}
+
+.py-mxxx {
+  padding-top: $unit-mxxx;
+  padding-bottom: $unit-mxxx;
 }
 
 .p-lrg {

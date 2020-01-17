@@ -20,6 +20,38 @@
     border-right: 1px solid palette(grey, xxxx-light);
   }
 
+  //white borders
+  .lrg-b-white-2 {
+    border: 2px solid $white;
+  }
+  .lrg-bt-white-2 {
+    border-top: 2px solid $white;
+  }
+  .lrg-bl-white-2 {
+    border-left: 2px solid $white;
+  }
+  .lrg-bb-white-2 {
+    border-bottom: 2px solid $white;
+  }
+  .lrg-br-white-2 {
+    border-right: 2px solid $white;
+  }
+  .lrg-b-white {
+    border: 1px solid $white;
+  }
+  .lrg-bt-white {
+    border-top: 1px solid $white;
+  }
+  .lrg-bl-white {
+    border-left: 1px solid $white;
+  }
+  .lrg-bb-white {
+    border-bottom: 1px solid $white;
+  }
+  .lrg-br-white {
+    border-right: 1px solid $white;
+  }
+
   //grey borders
   .lrg-b-grey {
     border: 1px solid palette(grey, xxx-light);
