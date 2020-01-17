@@ -37,6 +37,38 @@
     border-right: 1px solid palette(grey, xxx-light);
   }
 
+  //white borders
+  .tab-b-white-2 {
+    border: 2px solid $white;
+  }
+  .tab-bt-white-2 {
+    border-top: 2px solid $white;
+  }
+  .tab-bl-white-2 {
+    border-left: 2px solid $white;
+  }
+  .tab-bb-white-2 {
+    border-bottom: 2px solid $white;
+  }
+  .tab-br-white-2 {
+    border-right: 2px solid $white;
+  }
+  .tab-b-white {
+    border: 1px solid $white;
+  }
+  .tab-bt-white {
+    border-top: 1px solid $white;
+  }
+  .tab-bl-white {
+    border-left: 1px solid $white;
+  }
+  .tab-bb-white {
+    border-bottom: 1px solid $white;
+  }
+  .tab-br-white {
+    border-right: 1px solid $white;
+  }  
+
   //orange borders
   .tab-b-orange {
     border: 1px solid palette(orange, base);

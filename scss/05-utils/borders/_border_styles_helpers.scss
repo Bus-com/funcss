@@ -53,8 +53,20 @@
   border-right: 1px solid $white;
 }
 
+.b-white-2 {
+  border: 2px solid $white;
+}
+.bt-white-2 {
+  border-top: 2px solid $white;
+}
 .bl-white-2 {
   border-left: 2px solid $white;
+}
+.bb-white-2 {
+  border-bottom: 2px solid $white;
+}
+.br-white-2 {
+  border-right: 2px solid $white;
 }
 
 //light grey borders

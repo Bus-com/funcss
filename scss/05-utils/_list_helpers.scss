@@ -12,3 +12,17 @@
   list-style: none;
   padding-left: 0;
 }
+
+ul.list-styled-sq {
+  + li {
+    &:before {
+      width: $unit-x;
+      height: $unit-x;
+      background-color: palette(orange, base);
+      content: '';
+      position: absolute;
+      left: 0;
+      top: $unit-xsmall;    
+    }
+  }
+}

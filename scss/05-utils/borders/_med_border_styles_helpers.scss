@@ -39,6 +39,38 @@
     border-right: 2px solid transparent;
   }
 
+  //white borders
+  .med-b-white-2 {
+    border: 2px solid $white;
+  }
+  .med-bt-white-2 {
+    border-top: 2px solid $white;
+  }
+  .med-bl-white-2 {
+    border-left: 2px solid $white;
+  }
+  .med-bb-white-2 {
+    border-bottom: 2px solid $white;
+  }
+  .med-br-white-2 {
+    border-right: 2px solid $white;
+  }
+  .med-b-white {
+    border: 1px solid $white;
+  }
+  .med-bt-white {
+    border-top: 1px solid $white;
+  }
+  .med-bl-white {
+    border-left: 1px solid $white;
+  }
+  .med-bb-white {
+    border-bottom: 1px solid $white;
+  }
+  .med-br-white {
+    border-right: 1px solid $white;
+  }
+
   //light grey borders
   .med-b-light {
     border: 1px solid palette(grey, xxxx-light);
