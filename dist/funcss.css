@@ -727,16 +727,6 @@ body {
   padding-left: 0;
 }
 
-ul.list-styled-sq + li:before {
-  width: 8px;
-  height: 8px;
-  background-color: #fda755;
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 6px;
-}
-
 .hide,
 .hidden {
   display: none;
@@ -24670,6 +24660,16 @@ input.input-file input.input-file + label:hover {
   height: 8px;
   background: #ffd23f;
   display: block;
+}
+
+.list-styled-sq li:before {
+  width: 8px;
+  height: 8px;
+  background-color: #fda755;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
 }
 
 .ui-icon-xl {
