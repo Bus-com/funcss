@@ -15543,6 +15543,10 @@ button:hover.hover-orange,
   letter-spacing: 2.37px;
 }
 
+.ls-xloose {
+  letter-spacing: 3px;
+}
+
 /* ==========================================================================
    @TAB TYPE HELPERS LETTER-SPACING
   ========================================================================== */
@@ -15565,6 +15569,10 @@ button:hover.hover-orange,
 
   .tab-ls-loose {
     letter-spacing: 2px;
+  }
+
+  .tab-ls-xloose {
+    letter-spacing: 2.5px;
   }
 }
 /* ==========================================================================
@@ -15590,6 +15598,10 @@ button:hover.hover-orange,
   .med-ls-loose {
     letter-spacing: 2px;
   }
+
+  .med-ls-xloose {
+    letter-spacing: 2.5px;
+  }
 }
 /* ==========================================================================
    @LRG TYPE HELPERS LINE-HEIGHT LEADING
@@ -15614,6 +15626,10 @@ button:hover.hover-orange,
   .lrg-ls-loose {
     letter-spacing: 2px;
   }
+
+  .lrg-ls-xloose {
+    letter-spacing: 2.5px;
+  }
 }
 /* ==========================================================================
    @XL TYPE HELPERS LETTER SPACING
@@ -15637,6 +15653,10 @@ button:hover.hover-orange,
 
   .xl-ls-loose {
     letter-spacing: 2px;
+  }
+
+  .xl-ls-xloose {
+    letter-spacing: 2.5px;
   }
 }
 /* ==========================================================================
