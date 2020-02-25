@@ -1,55 +1,59 @@
-.tab-bg-size-cover {
-  background-size: cover;
-}
+@include tablet-portrait {
 
-.tab-bg-size-contain {
-  background-size: contain;
-}
+  .tab-bg-size-cover {
+    background-size: cover;
+  }
 
-.tab-bg-size-auto {
-  background-size: auto;
-}
+  .tab-bg-size-contain {
+    background-size: contain;
+  }
 
-.tab-bg-repeat {
-  background-repeat: repeat;
-}
+  .tab-bg-size-auto {
+    background-size: auto;
+  }
 
-.tab-bg-no-repeat {
-  background-repeat: no-repeat;
-}
+  .tab-bg-repeat {
+    background-repeat: repeat;
+  }
 
-.tab-bg-repeat-x {
-  background-repeat: repeat-x;
-}
+  .tab-bg-no-repeat {
+    background-repeat: no-repeat;
+  }
 
-.tab-bg-repeat-y {
-  background-repeat: repeat-y;
-}
+  .tab-bg-repeat-x {
+    background-repeat: repeat-x;
+  }
 
-.tab-bg-repeat-space {
-  background-repeat: space;
-}
+  .tab-bg-repeat-y {
+    background-repeat: repeat-y;
+  }
 
-.tab-bg-repeat-round {
-  background-repeat: round;
-}
+  .tab-bg-repeat-space {
+    background-repeat: space;
+  }
 
-.tab-bg-position-top {
-  background-position: top;
-}
+  .tab-bg-repeat-round {
+    background-repeat: round;
+  }
 
-.tab-bg-position-center {
-  background-position: center;
-}
+  .tab-bg-position-top {
+    background-position: top;
+  }
 
-.tab-bg-position-bottom {
-  background-position: bottom;
-}
+  .tab-bg-position-center {
+    background-position: center;
+  }
 
-.tab-bg-position-left {
-  background-position: left;
-}
+  .tab-bg-position-bottom {
+    background-position: bottom;
+  }
 
-.tab-bg-position-right {
-  background-position: right;
+  .tab-bg-position-left {
+    background-position: left;
+  }
+
+  .tab-bg-position-right {
+    background-position: right;
+  }
+
 }

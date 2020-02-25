@@ -1,55 +1,59 @@
-.xl-bg-size-cover {
-  background-size: cover;
-}
+@include laptop {
 
-.xl-bg-size-contain {
-  background-size: contain;
-}
+  .xl-bg-size-cover {
+    background-size: cover;
+  }
 
-.xl-bg-size-auto {
-  background-size: auto;
-}
+  .xl-bg-size-contain {
+    background-size: contain;
+  }
 
-.xl-bg-repeat {
-  background-repeat: repeat;
-}
+  .xl-bg-size-auto {
+    background-size: auto;
+  }
 
-.xl-bg-no-repeat {
-  background-repeat: no-repeat;
-}
+  .xl-bg-repeat {
+    background-repeat: repeat;
+  }
 
-.xl-bg-repeat-x {
-  background-repeat: repeat-x;
-}
+  .xl-bg-no-repeat {
+    background-repeat: no-repeat;
+  }
 
-.xl-bg-repeat-y {
-  background-repeat: repeat-y;
-}
+  .xl-bg-repeat-x {
+    background-repeat: repeat-x;
+  }
 
-.xl-bg-repeat-space {
-  background-repeat: space;
-}
+  .xl-bg-repeat-y {
+    background-repeat: repeat-y;
+  }
 
-.xl-bg-repeat-round {
-  background-repeat: round;
-}
+  .xl-bg-repeat-space {
+    background-repeat: space;
+  }
 
-.xl-bg-position-top {
-  background-position: top;
-}
+  .xl-bg-repeat-round {
+    background-repeat: round;
+  }
 
-.xl-bg-position-center {
-  background-position: center;
-}
+  .xl-bg-position-top {
+    background-position: top;
+  }
 
-.xl-bg-position-bottom {
-  background-position: bottom;
-}
+  .xl-bg-position-center {
+    background-position: center;
+  }
 
-.xl-bg-position-left {
-  background-position: left;
-}
+  .xl-bg-position-bottom {
+    background-position: bottom;
+  }
 
-.xl-bg-position-right {
-  background-position: right;
+  .xl-bg-position-left {
+    background-position: left;
+  }
+
+  .xl-bg-position-right {
+    background-position: right;
+  }
+
 }
