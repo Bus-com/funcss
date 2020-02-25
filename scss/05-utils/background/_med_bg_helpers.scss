@@ -1,55 +1,59 @@
-.med-bg-size-cover {
-  background-size: cover;
-}
+@include tablet-landscape {
 
-.med-bg-size-contain {
-  background-size: contain;
-}
+  .med-bg-size-cover {
+    background-size: cover;
+  }
 
-.med-bg-size-auto {
-  background-size: auto;
-}
+  .med-bg-size-contain {
+    background-size: contain;
+  }
 
-.med-bg-repeat {
-  background-repeat: repeat;
-}
+  .med-bg-size-auto {
+    background-size: auto;
+  }
 
-.med-bg-no-repeat {
-  background-repeat: no-repeat;
-}
+  .med-bg-repeat {
+    background-repeat: repeat;
+  }
 
-.med-bg-repeat-x {
-  background-repeat: repeat-x;
-}
+  .med-bg-no-repeat {
+    background-repeat: no-repeat;
+  }
 
-.med-bg-repeat-y {
-  background-repeat: repeat-y;
-}
+  .med-bg-repeat-x {
+    background-repeat: repeat-x;
+  }
 
-.med-bg-repeat-space {
-  background-repeat: space;
-}
+  .med-bg-repeat-y {
+    background-repeat: repeat-y;
+  }
 
-.med-bg-repeat-round {
-  background-repeat: round;
-}
+  .med-bg-repeat-space {
+    background-repeat: space;
+  }
 
-.med-bg-position-top {
-  background-position: top;
-}
+  .med-bg-repeat-round {
+    background-repeat: round;
+  }
 
-.med-bg-position-center {
-  background-position: center;
-}
+  .med-bg-position-top {
+    background-position: top;
+  }
 
-.med-bg-position-bottom {
-  background-position: bottom;
-}
+  .med-bg-position-center {
+    background-position: center;
+  }
 
-.med-bg-position-left {
-  background-position: left;
-}
+  .med-bg-position-bottom {
+    background-position: bottom;
+  }
 
-.med-bg-position-right {
-  background-position: right;
+  .med-bg-position-left {
+    background-position: left;
+  }
+
+  .med-bg-position-right {
+    background-position: right;
+  }
+
 }

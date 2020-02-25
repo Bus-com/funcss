@@ -1,55 +1,59 @@
-.lrg-bg-size-cover {
-  background-size: cover;
-}
+@include small-laptop {
 
-.lrg-bg-size-contain {
-  background-size: contain;
-}
+  .lrg-bg-size-cover {
+    background-size: cover;
+  }
 
-.lrg-bg-size-auto {
-  background-size: auto;
-}
+  .lrg-bg-size-contain {
+    background-size: contain;
+  }
 
-.lrg-bg-repeat {
-  background-repeat: repeat;
-}
+  .lrg-bg-size-auto {
+    background-size: auto;
+  }
 
-.lrg-bg-no-repeat {
-  background-repeat: no-repeat;
-}
+  .lrg-bg-repeat {
+    background-repeat: repeat;
+  }
 
-.lrg-bg-repeat-x {
-  background-repeat: repeat-x;
-}
+  .lrg-bg-no-repeat {
+    background-repeat: no-repeat;
+  }
 
-.lrg-bg-repeat-y {
-  background-repeat: repeat-y;
-}
+  .lrg-bg-repeat-x {
+    background-repeat: repeat-x;
+  }
 
-.lrg-bg-repeat-space {
-  background-repeat: space;
-}
+  .lrg-bg-repeat-y {
+    background-repeat: repeat-y;
+  }
 
-.lrg-bg-repeat-round {
-  background-repeat: round;
-}
+  .lrg-bg-repeat-space {
+    background-repeat: space;
+  }
 
-.lrg-bg-position-top {
-  background-position: top;
-}
+  .lrg-bg-repeat-round {
+    background-repeat: round;
+  }
 
-.lrg-bg-position-center {
-  background-position: center;
-}
+  .lrg-bg-position-top {
+    background-position: top;
+  }
 
-.lrg-bg-position-bottom {
-  background-position: bottom;
-}
+  .lrg-bg-position-center {
+    background-position: center;
+  }
 
-.lrg-bg-position-left {
-  background-position: left;
-}
+  .lrg-bg-position-bottom {
+    background-position: bottom;
+  }
 
-.lrg-bg-position-right {
-  background-position: right;
+  .lrg-bg-position-left {
+    background-position: left;
+  }
+
+  .lrg-bg-position-right {
+    background-position: right;
+  }
+  
 }
