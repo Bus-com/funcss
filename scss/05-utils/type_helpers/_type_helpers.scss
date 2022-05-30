@@ -23,7 +23,7 @@
   text-decoration: none;
 }
 
-//font weight  helpers
+// font weight helpers
 
 .fw-light {
   font-weight: 200;
@@ -31,27 +31,22 @@
 
 .fw-regular {
   font-weight: 400;
-  font-family: "AvenirNextRegular";
 }
 
 .fw-medium {
   font-weight: 500;
-  font-family: "AvenirNextMedium";
 }
 
 .fw-demi-bold {
   font-weight: 700;
-  font-family: "AvenirNextDemi";
 }
 
 .fw-bold {
   font-weight: 800;
-  font-family: "AvenirNextBold";
 }
 
 .fw-heavy {
   font-weight: 900;
-  font-family: "AvenirNextHeavy";
 }
 
 // text nowrap truncate breakwords
@@ -76,31 +71,26 @@
 }
 
 .italic {
-  font-family: "AvenirNextMediumItalic";
   font-style: italic;
 }
 
 .italic-regular {
-  font-family: "AvenirNextRegularItalic";
   font-style: italic;
 }
 
 .italic-medium {
-  font-family: "AvenirNextMediumItalic";
   font-style: italic;
 }
 
 .italic-demi-bold {
-  font-family: "AvenirNextDemiItalic";
   font-style: italic;
 }
+
 .italic-bold {
-  font-family: "AvenirNextBoldItalic";
   font-style: italic;
 }
 
 .italic-heavy {
-  font-family: "AvenirNextHeavyItalic";
   font-style: italic;
 }
 

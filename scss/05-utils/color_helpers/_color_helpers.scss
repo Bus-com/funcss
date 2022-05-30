@@ -58,12 +58,12 @@
   color: palette(orange, xxx-light);
 }
 
-.cyan {
-  color: palette(cyan, base);
+.blue {
+  color: palette(blue, base);
 }
 
-.x-dark-cyan {
-  color: palette(cyan, x-dark);
+.x-dark-blue {
+  color: palette(blue, x-dark);
 }
 
 .white {
@@ -100,20 +100,20 @@
   stroke: palette(grey, xxx-light);
 }
 
-.fill-cyan {
-  fill: palette(cyan, base);
+.fill-blue {
+  fill: palette(blue, base);
 }
 
-.stroke-cyan {
-  stroke: palette(cyan, base);
+.stroke-blue {
+  stroke: palette(blue, base);
 }
 
-.fill-x-dark-cyan {
-  fill: palette(cyan, x-dark);
+.fill-x-dark-blue {
+  fill: palette(blue, x-dark);
 }
 
-.stroke-x-dark-cyan {
-  stroke: palette(cyan, x-dark);
+.stroke-x-dark-blue {
+  stroke: palette(blue, x-dark);
 }
 
 .bg-beige { background: #FAF9F8}
@@ -182,32 +182,32 @@
 
 //BG DARK CYAN
 
-.bg-x-dark-cyan {
-  background: palette(cyan, x-dark);
+.bg-x-dark-blue {
+  background: palette(blue, x-dark);
 }
-.bg-dark-cyan {
-  background: palette(cyan, dark);
+.bg-dark-blue {
+  background: palette(blue, dark);
 }
-.bg-cyan {
-  background: palette(cyan, base);
+.bg-blue {
+  background: palette(blue, base);
 }
-.bg-light-cyan {
-  background: palette(cyan, light);
+.bg-light-blue {
+  background: palette(blue, light);
 }
-.bg-x-light-cyan {
-  background: palette(cyan, x-light);
+.bg-x-light-blue {
+  background: palette(blue, x-light);
 }
-.bg-xx-light-cyan {
-  background: palette(cyan, xx-light);
+.bg-xx-light-blue {
+  background: palette(blue, xx-light);
 }
-.bg-xxx-light-cyan {
-  background: palette(cyan, xxx-light);
+.bg-xxx-light-blue {
+  background: palette(blue, xxx-light);
 }
-.bg-xxxx-light-cyan {
-  background: palette(cyan, xxxx-light);
+.bg-xxxx-light-blue {
+  background: palette(blue, xxxx-light);
 }
-.bg-xxxxx-light-cyan {
-  background: palette(cyan, xxxxx-light);
+.bg-xxxxx-light-blue {
+  background: palette(blue, xxxxx-light);
 }
 
 //BG ORANGE
@@ -369,7 +369,7 @@
     135deg,
     palette(orange, xxx-light) 0%,
     palette(orange, xxxx-light) 49.86%,
-    palette(cyan, xxx-light) 100%
+    palette(blue, xxx-light) 100%
   );
 }
 
@@ -377,11 +377,11 @@
   @include gradient(-180deg, $white 0%, palette(orange, xxx-light) 100%);
 }
 
-.cyan-beige-gradient {
+.blue-beige-gradient {
   @include gradient(
     184deg,
     palette(orange, xxx-light) 0%,
-    palette(cyan, x-dark) 100%
+    palette(blue, x-dark) 100%
   );
 }
 
@@ -407,18 +407,18 @@
 button,
 .c-btn,
 .c-btn-site {
-  &:hover.bg-hover-cyan {
-    background: palette(cyan, base);
+  &:hover.bg-hover-blue {
+    background: palette(blue, base);
     color: $white;
   }
 
-  &:hover.bg-hover-dark-cyan {
-    background: palette(cyan, dark);
+  &:hover.bg-hover-dark-blue {
+    background: palette(blue, dark);
     color: $white;
   }
 
-  &:hover.bg-hover-x-dark-cyan {
-    background: palette(cyan, x-dark);
+  &:hover.bg-hover-x-dark-blue {
+    background: palette(blue, x-dark);
     color: $white;
   }
 
@@ -456,29 +456,29 @@ button,
   }
 }
 
-.hover-cyan {
+.hover-blue {
   &:hover {
-    color: palette(cyan, base);
-    fill: palette(cyan, base);
+    color: palette(blue, base);
+    fill: palette(blue, base);
   }
 }
 
-.focus-cyan {
+.focus-blue {
   &:focus {
-    color: palette(cyan, base);
+    color: palette(blue, base);
   }
 }
 
-.hover-dark-cyan {
-  &:hover { color: palette(cyan, dark); }
+.hover-dark-blue {
+  &:hover { color: palette(blue, dark); }
 }
 
-.hover-x-dark-cyan {
-  &:hover { color: palette(cyan, x-dark); }
+.hover-x-dark-blue {
+  &:hover { color: palette(blue, x-dark); }
 }
 
-.hover-xx-dark-cyan {
-  &:hover { color: palette(cyan, xx-dark); }
+.hover-xx-dark-blue {
+  &:hover { color: palette(blue, xx-dark); }
 }
 
 .hover-orange {
@@ -493,6 +493,6 @@ button,
   &:hover { color: palette(orange, x-dark); }
 }
 
-.hover-xx-dark-cyan {
+.hover-xx-dark-blue {
   &:hover { color: palette(orange, xx-dark); }
 }
