@@ -1,6 +1,7 @@
 .c-select-wrapper {
   height: $unit-xxl;
   background: #fff;
+  border-radius: $unit-xs;
 
   input,
   select,
@@ -8,7 +9,8 @@
     appearance: none;
     height: $unit-xxl;
     line-height: $unit-xxl;
-    border-radius: 2px;
+    border: 1px solid palette(grey, xxx-light);
+    border-radius: $unit-xs;
     -webkit-appearance: none;
     padding-left: $unit-x;
     background: transparent;
@@ -17,7 +19,6 @@
     background-repeat: no-repeat;
     background-size: $unit-xxl;
     width: 100%;
-    border: 1px solid palette(grey, xxx-light);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -57,7 +58,8 @@
     appearance: none;
     height: $unit-xxl;
     line-height: $unit-xxl;
-    border-radius: 2px;
+    border: 1px solid palette(grey, x-light);
+    border-radius: $unit-xs;
     -webkit-appearance: none;
     padding-left: $unit-small;
     background: transparent;
