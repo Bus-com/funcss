@@ -18,11 +18,11 @@ input[type="radio"] {
   }
 
   &:checked + label:before {
-    border-color: palette(cyan, base);
+    border-color: palette(blue, base);
   }
 
   &:checked + label {
-    color: palette(cyan, base);
+    color: palette(blue, base);
     font-weight: bold;
   }
 
@@ -59,7 +59,7 @@ input[type="radio"] {
       content: "";
       width: 12px;
       height: 12px;
-      background: palette(cyan, base);
+      background: palette(blue, base);
       position: absolute;
       top: 9px;
       left: $unit-xs;
@@ -75,14 +75,14 @@ input[type="radio"] {
   transititon: all 0.3s ease-in;
 
   &:hover {
-    color: palette(cyan, base);
-    border-bottom: 3px solid palette(cyan, base) !important; // overiding the transparent border
+    color: palette(blue, base);
+    border-bottom: 3px solid palette(blue, base) !important; // overiding the transparent border
   }
 }
 
 .radio-selected {
-  color: palette(cyan, base);
-  border-bottom: 3px solid palette(cyan, base) !important; // overiding the transparent border
+  color: palette(blue, base);
+  border-bottom: 3px solid palette(blue, base) !important; // overiding the transparent border
 }
 
 
@@ -146,7 +146,7 @@ input.white-radio[type="radio"] {
       content: "";
       width: 9px;
       height: 9px;
-      background: palette(cyan, base);
+      background: palette(blue, base);
       position: absolute;
       top: 5px;
       left: 3px;

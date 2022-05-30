@@ -4,16 +4,16 @@ input {
   padding: 0 $unit-small;
   background: $white;
   border: 1px solid palette(grey, xxx-light);
+  border-radius: $unit-xs;
   display: block;
   width: 100%;
-  border-radius: 2px;
-  font-size: 14px;
+  font-size: $base-font-size;
   transition: border-color 0.3s ease-in;
   -webkit-box-shadow: 0 0 0 1000px white inset;
 
   &:hover,
   &:focus {
-    border-color: palette(cyan, base);
+    border-color: palette(blue, base);
     outline: none !important;
   }
 }

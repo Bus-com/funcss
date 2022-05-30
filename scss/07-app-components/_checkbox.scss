@@ -20,14 +20,14 @@ input[type="checkbox"] + label {
     width: $unit-small;
     height: $unit-small;
     border-radius: 2px;
-    border: 1px solid palette(cyan, base);
+    border: 1px solid palette(blue, base);
   }
 }
 
 input[type="checkbox"]:checked + label {
   &:before {
-    border-color: palette(cyan, base);
-    background: palette(cyan, base);
+    border-color: palette(blue, base);
+    background: palette(blue, base);
   }
 
   &:after {
@@ -57,8 +57,8 @@ input.white-checkbox[type="checkbox"] + label {
 
 input.white-checkbox[type="checkbox"]:checked + label {
   &:before {
-    border-color: palette(cyan, base);
-    background: palette(cyan, base);
+    border-color: palette(blue, base);
+    background: palette(blue, base);
   }
 
   &:after {

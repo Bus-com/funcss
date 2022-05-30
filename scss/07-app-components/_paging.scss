@@ -7,7 +7,7 @@ ul.pagination {
 
 ul.pagination li.current a {
   color: $white !important;
-  background-color: palette(cyan, base);
+  background-color: palette(blue, base);
   padding: $unit-xs $unit-x;
   border-radius: $unit-xs;
 }

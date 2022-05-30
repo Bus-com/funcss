@@ -60,7 +60,7 @@ printf "\033[106;30m                copy images                 \033[0m\n"
 cp -R images/ dist/images
 
 # replace with the new tagged name in the index file.
-replace_style_import
+#replace_style_import
 # open the demo page
 printf "\033[166;5m         opening index.html          \033[0m\n"
 open index.html

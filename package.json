@@ -18,6 +18,8 @@
   "scripts": {
     "test": "mocha -c",
     "fix-styles": "stylelint 'scss/**/*.scss' --fix --syntax scss",
+    "build": "./bin/build",
+    "release": "./bin/release",
     "sassdoc": "sassdoc scss/ -d docs/"
   },
   "dependencies": {

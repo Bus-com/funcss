@@ -1,7 +1,8 @@
 textarea {
   width: 100%;
   min-height: 160px;
-  border: 1px solid palette(grey, xxxl-light);
+  border: 1px solid palette(grey, xxx-light);
+  border-radius: $unit-xs;
   background: $white;
   padding: $unit-small;
   line-height: 1.8;

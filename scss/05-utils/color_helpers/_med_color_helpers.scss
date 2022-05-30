@@ -54,11 +54,11 @@
     color: palette(orange, xxx-light);
   }
 
-  .med-cyan {
-    color: palette(cyan, base);
+  .med-blue {
+    color: palette(blue, base);
   }
-  .med-x-dark-cyan {
-    color: palette(cyan, x-dark);
+  .med-x-dark-blue {
+    color: palette(blue, x-dark);
   }
 
   .med-white {
@@ -95,20 +95,20 @@
     stroke: palette(grey, xxx-light);
   }
 
-  .med-fill-cyan {
-    fill: palette(cyan, base);
+  .med-fill-blue {
+    fill: palette(blue, base);
   }
 
-  .med-stroke-cyan {
-    stroke: palette(cyan, base);
+  .med-stroke-blue {
+    stroke: palette(blue, base);
   }
 
-  .med-fill-x-dark-cyan {
-    fill: palette(cyan, x-dark);
+  .med-fill-x-dark-blue {
+    fill: palette(blue, x-dark);
   }
 
-  .med-stroke-x-dark-cyan {
-    stroke: palette(cyan, x-dark);
+  .med-stroke-x-dark-blue {
+    stroke: palette(blue, x-dark);
   }
 
   .med-fill-orange {
@@ -171,32 +171,32 @@
 
   //BG DARK CYAN
 
-  .med-bg-x-dark-cyan {
-    background: palette(cyan, x-dark);
+  .med-bg-x-dark-blue {
+    background: palette(blue, x-dark);
   }
-  .med-bg-dark-cyan {
-    background: palette(cyan, dark);
+  .med-bg-dark-blue {
+    background: palette(blue, dark);
   }
-  .med-bg-cyan {
-    background: palette(cyan, base);
+  .med-bg-blue {
+    background: palette(blue, base);
   }
-  .med-bg-light-cyan {
-    background: palette(cyan, light);
+  .med-bg-light-blue {
+    background: palette(blue, light);
   }
-  .med-bg-x-light-cyan {
-    background: palette(cyan, x-light);
+  .med-bg-x-light-blue {
+    background: palette(blue, x-light);
   }
-  .med-bg-xx-light-cyan {
-    background: palette(cyan, xx-light);
+  .med-bg-xx-light-blue {
+    background: palette(blue, xx-light);
   }
-  .med-bg-xxx-light-cyan {
-    background: palette(cyan, xxx-light);
+  .med-bg-xxx-light-blue {
+    background: palette(blue, xxx-light);
   }
-  .med-bg-xxxx-light-cyan {
-    background: palette(cyan, xxxx-light);
+  .med-bg-xxxx-light-blue {
+    background: palette(blue, xxxx-light);
   }
-  .med-bg-xxxxx-light-cyan {
-    background: palette(cyan, xxxxx-light);
+  .med-bg-xxxxx-light-blue {
+    background: palette(blue, xxxxx-light);
   }
 
   //BG ORANGE
@@ -305,7 +305,7 @@
       135deg,
       palette(orange, xxx-light) 0%,
       palette(orange, xxxx-light) 49.86%,
-      palette(cyan, xxx-light) 100%
+      palette(blue, xxx-light) 100%
     );
   }
 
@@ -313,11 +313,11 @@
     @include gradient(-180deg, $white 0%, palette(orange, xxx-light) 100%);
   }
 
-  .med-cyan-beige-gradient {
+  .med-blue-beige-gradient {
     @include gradient(
       184deg,
       palette(orange, xxx-light) 0%,
-      palette(cyan, x-dark) 100%
+      palette(blue, x-dark) 100%
     );
   }
 
@@ -330,24 +330,24 @@
   }
 }
 
-.med-hover-cyan {
-  &:hover { color: palette(cyan, base)}
+.med-hover-blue {
+  &:hover { color: palette(blue, base)}
 }
 
-.med-focus-cyan {
-  &:focus { color: palette(cyan, base)}
+.med-focus-blue {
+  &:focus { color: palette(blue, base)}
 }
 
-.med-hover-dark-cyan {
-  &:hover { color: palette(cyan, dark)}
+.med-hover-dark-blue {
+  &:hover { color: palette(blue, dark)}
 }
 
-.med-hover-x-dark-cyan {
-  &:hover { color: palette(cyan, x-dark)}
+.med-hover-x-dark-blue {
+  &:hover { color: palette(blue, x-dark)}
 }
 
-.med-hover-xx-dark-cyan {
-  &:hover { color: palette(cyan, xx-dark)}
+.med-hover-xx-dark-blue {
+  &:hover { color: palette(blue, xx-dark)}
 }
 
 .med-hover-orange {
@@ -362,6 +362,6 @@
   &:hover { color: palette(orange, x-dark)}
 }
 
-.med-hover-xx-dark-cyan {
+.med-hover-xx-dark-blue {
   &:hover { color: palette(orange, xx-dark)}
 }
