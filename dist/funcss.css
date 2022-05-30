@@ -24447,6 +24447,7 @@ button[disabled]:hover {
 .c-select-wrapper {
   height: 48px;
   background: #fff;
+  border-radius: 4px;
 }
 .c-select-wrapper input,
 .c-select-wrapper select,
@@ -24454,7 +24455,8 @@ button[disabled]:hover {
   appearance: none;
   height: 48px;
   line-height: 48px;
-  border-radius: 2px;
+  border: 1px solid #cccdd0;
+  border-radius: 4px;
   -webkit-appearance: none;
   padding-left: 8px;
   background: transparent;
@@ -24463,7 +24465,6 @@ button[disabled]:hover {
   background-repeat: no-repeat;
   background-size: 48px;
   width: 100%;
-  border: 1px solid #cccdd0;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -24506,7 +24507,8 @@ button[disabled]:hover {
   appearance: none;
   height: 48px;
   line-height: 48px;
-  border-radius: 2px;
+  border: 1px solid #898b93;
+  border-radius: 4px;
   -webkit-appearance: none;
   padding-left: 16px;
   background: transparent;
